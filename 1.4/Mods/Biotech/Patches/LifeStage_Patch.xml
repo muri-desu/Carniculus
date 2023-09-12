@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus"]/race/lifeStageAges/li[1]</xpath>
+		<order>Append</order>
+		<value>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>1</minAge>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus"]/alienRace/graphicPaths/body/genderGraphics/Female/ageGraphics</xpath>
+		<value>
+			<HumanlikeToddler>Things/Pawn/Carni/Bodies/Naked_Child</HumanlikeToddler>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus"]/alienRace/graphicPaths/body/genderGraphics/Male/ageGraphics</xpath>
+		<value>
+			<HumanlikeToddler>Things/Pawn/Carni/Bodies/Naked_Child</HumanlikeToddler>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/race/lifeStageAges/li[1]</xpath>
+		<order>Append</order>
+		<value>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>1</minAge>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/alienRace/graphicPaths/body/ageGraphics</xpath>
+		<value>
+			<HumanlikeToddler>Things/Pawn/Carni/Bodies/Naked_Child</HumanlikeToddler>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/alienRace/graphicPaths/head/ageGraphics</xpath>
+		<value>
+			<HumanlikeToddler>Things/Pawn/Carni/Heads/Baby</HumanlikeToddler>
+		</value>
+	</Operation>
+
+</Patch>
