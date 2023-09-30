@@ -52,7 +52,7 @@
 	</lifeStageWorkSettings>
 <lifeStageAges>
 	<li MayRequire="Ludeon.RimWorld.Biotech" Class="AlienRace.LifeStageAgeAlien">
-		<def>CarniBaby</def>
+		<def>HumanlikeBaby</def>
 		<minAge>0</minAge>
 		<headOffsetDirectional>
 			<south>(0.0, 0)</south>
@@ -264,7 +264,7 @@
 <graphicPaths>
 	<head><path>Things/Pawn/Mama/Heads/Average</path>
 		<ageGraphics>
-			<CarniBaby>Things/Pawn/Carni/Heads/Baby</CarniBaby>
+			<HumanlikeBaby>Things/Pawn/Carni/Heads/Baby</HumanlikeBaby>
 			<HumanlikeChild>Things/Pawn/Mama/Heads/Average_Child</HumanlikeChild>
 			<HumanlikeAdult>Things/Pawn/Mama/Heads/Average</HumanlikeAdult>
 		</ageGraphics>
@@ -272,7 +272,7 @@
 
 	<body><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
 		<ageGraphics>
-			<CarniBaby>Things/Pawn/Carni/Bodies/Naked_Baby</CarniBaby>
+			<HumanlikeBaby>Things/Pawn/Carni/Bodies/Naked_Baby</HumanlikeBaby>
 			<HumanlikeChild>Things/Pawn/Mama/Bodies/Naked_Child</HumanlikeChild>
 			<HumanlikeAdult>Things/Pawn/Mama/Bodies/Naked_Female</HumanlikeAdult>
 		</ageGraphics>

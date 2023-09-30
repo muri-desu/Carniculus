@@ -119,6 +119,10 @@
         <thingDef>MedicineUltratech</thingDef>
         <countRange>10~50</countRange>
       </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Meat_Human</thingDef>
+        <countRange>150~250</countRange>
+      </li>
 
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
@@ -156,6 +160,12 @@
       <li MayRequire="sarg.alphagenes" Class="StockGenerator_SingleDef">
         <thingDef>AG_Mixedpack</thingDef>
         <countRange>2~5</countRange>
+      </li>
+
+      <!-- Archite capsules -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>3~5</countRange>
       </li>
 
 	<!-- Slaves -->
@@ -206,6 +216,10 @@
         <tradeTag>MortarShell</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>20~40</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Meat_Human</thingDef>
+        <countRange>250~350</countRange>
       </li>
 
       <!-- Drugs -->
@@ -260,6 +274,12 @@
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
         <countRange>15~30</countRange>
+      </li>
+      
+      <!-- Archite capsules -->
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>10~20</countRange>
       </li>
       
       <!-- Slaves -->

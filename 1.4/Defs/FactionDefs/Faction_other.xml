@@ -59,9 +59,6 @@
 		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Horrible</li>
 		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Disapproved</li>
 		<li MayRequire="rjw.sexperience.ideology">Masturbation_Disapproved</li>
-		<li MayRequire="rim.job.world.pe">Marriage_Child_Abhorrent</li>
-		<li MayRequire="rim.job.world.pe">Marriage_Child_Prohibited</li>
-		<li MayRequire="rim.job.world.pe">Marriage_Child_Disapproved</li>
 	</disallowedPrecepts>
 	<structureMemeWeights>
 		<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
