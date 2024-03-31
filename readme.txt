@@ -65,5 +65,5 @@ Rimworld用種族mod
 - 奴隷やインプラントを多く扱っている
 
 
-1.3 Ver. (abandoned maybe)⬇️
-https://github.com/muri-desu/Carniculus
+old Ver.⬇️
+https://github.com/muri-desu/Carniculus_old
