@@ -210,54 +210,21 @@
 </alienPartGenerator>
 
 <disallowedTraits>
-	<li>
-		<defName>Beauty</defName>
-		<degree>-1</degree>
-		<chance>100</chance>
-	</li>
-	<li>
-		<defName>Beauty</defName>
-		<degree>-2</degree>
-		<chance>100</chance>
-	</li>
-	<li>
-		<defName>Abrasive</defName>
-	</li>
-	<li>
-		<defName>Jealous</defName>
-	</li>
-	<li>
-		<defName>Greedy</defName>
-	</li>
-	<li>
-		<defName>DislikesMen</defName>
-	</li>
-	<li>
-		<defName>DislikesWomen</defName>
-	</li>
-	<li>
-		<defName>AnnoyingVoice</defName>
-	</li>
-	<li>
-		<defName>CreepyBreathing</defName>
-	</li>
-	<li>
-		<defName>Pyromaniac</defName>
-	</li>
-	<li>
-		<defName>Asexual</defName>
-	</li>
+	<li><defName>Beauty</defName><degree>-1</degree><chance>100</chance></li>
+	<li><defName>Beauty</defName><degree>-2</degree><chance>100</chance></li>
+	<li><defName>Abrasive</defName></li>
+	<li><defName>Jealous</defName></li>
+	<li><defName>Greedy</defName></li>
+	<li><defName>DislikesMen</defName></li>
+	<li><defName>DislikesWomen</defName></li>
+	<li><defName>AnnoyingVoice</defName></li>
+	<li><defName>CreepyBreathing</defName></li>
+	<li><defName>Pyromaniac</defName></li>
+	<li><defName>Asexual</defName></li>
 </disallowedTraits>
 <forcedRaceTraitEntries>
-	<li>
-		<defName>Bisexual</defName>
-	</li>
-	<li>
-		<defName>Masochist</defName>
-	</li>
-	<li>
-		<defName>Nymphomaniac</defName>
-	</li>
+	<li><defName>Bisexual</defName></li>
+	<li><defName>Masochist</defName></li>
 </forcedRaceTraitEntries>
 
 </generalSettings>
@@ -343,15 +310,35 @@
 		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_MamaChildDress</li>
 	</apparelList>
 	<whiteApparelList>
+		<li>Apparel_PsychicShockLance</li>
+		<li>Apparel_PsychicInsanityLance</li>
 		<li>Apparel_ShieldBelt</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_boots</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_military_Boots</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_sandals</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_shoes</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_work_gloves</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_medic_gloves</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_ring</li>
-		<li MayRequire="Techmago.BootsnStuff">Apparel_shoes</li>
+		<li>Apparel_SmokepopBelt</li>
+		<li>Apparel_FirefoampopPack</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_PackJump</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_PackBroadshield</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_PackJump</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackTox</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_AirwireHeadset</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_IntegratorHeadset</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArmorHelmetMechCommander</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArrayHeadset</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_TackleBox</li>
+		<li MayRequire="Solaris.RatkinRaceMod">RK_EarCostume</li>
+		<li MayRequire="SutSutMan.MinchoTheMintChocoSlimeHARver">Mincho_BunnyGirlEar</li>
+		<li MayRequire="SutSutMan.MinchoTheMintChocoSlimeHARver">Mincho_BunnyGirlTail</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_JinDou</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_LianHua</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_FengHuoLun</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_ShieldBeltStrong</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackMelee</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackRanger</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_TravelersBackPack</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerShieldBelt</li>
 		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Hirameki</li>
 		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Tuchi</li>
 		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Wa</li>
@@ -360,6 +347,39 @@
 		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Karibito</li>
 		<li MayRequire="YokaiMura.1.32">Yokai_Hi_No_Magatama</li>
 		<li MayRequire="YokaiMura.1.32">Yokai_Nagi_no_Magatama</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Silver</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Slate</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Medicine</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Limestone</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Granite</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Marble</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Sandstone</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Steel</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Iron</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Jade</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Gold</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Magicyte</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Wood</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfThePacifist</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDefense</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDeflection</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfKeenIntellect</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfBlood</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfEternalBlue</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfMalice</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfConviction</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls_Full</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfEternal</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_NecroticOrb</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_boots</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_military_Boots</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_sandals</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_shoes</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_work_gloves</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_medic_gloves</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_ring</li>
+		<li MayRequire="Techmago.BootsnStuff">Apparel_shoes</li>
 	</whiteApparelList>
 
 <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
@@ -454,32 +474,6 @@
 		<li>Affair</li>
 		<li>Incestuous</li>
 <!-- RJW -->
-		<li>MySonDied_Beast</li>
-		<li>MyDaughterDied_Beast</li>
-		<li>MyBrotherDied_Beast</li>
-		<li>MySisterDied_Beast</li>
-		<li>MyGrandchildDied_Beast</li>
-		<li>MyNieceDied_Beast</li>
-		<li>MyNephewDied_Beast</li>
-		<li>MyHalfSiblingDied_Beast</li>
-		<li>MyAuntDied_Beast</li>
-		<li>MyUncleDied_Beast</li>
-		<li>MyGrandparentDied_Beast</li>
-		<li>MyCousinDied_Beast</li>
-		<li>MyPupDied</li>
-		<li>MyPupDiedFemale</li>
-		<li>KilledMyPup</li>
-		<li>KilledMyPupFemale</li>
-		<li>GotBredByAnimal</li>
-		<li>GotAnalBredByAnimal</li>
-		<li>AllowedAnimalToBreed</li>
-		<li>GotLickedByAnimal</li>
-		<li>GotRaped</li>
-		<li>GotAnalRaped</li>
-		<li>GotAnalRapedByFemale</li>
-		<li>GotRapedUnconscious</li>
-		<li>HateMyRapist</li>
-		<li>AllowedMeToGetRaped</li>
 		<li MayRequire="rim.job.world.pe">ChildRapedByAdult</li>
 		<li MayRequire="rim.job.world.pe">RapedMyChild</li>
 </cannotReceiveThoughts>
@@ -498,52 +492,9 @@
 	<RoyalFavorValue>3</RoyalFavorValue>
 	<SocialImpact>1.25</SocialImpact>
 	<NegotiationAbility>1.25</NegotiationAbility>
-	<Vulnerability>3</Vulnerability>
 </statBases>
 
 <recipes>
-	<li>InstallArchotechEye</li>
-	<li>InstallArchotechArm</li>
-	<li>InstallArchotechLeg</li>
-	<li>InstallPowerClaw</li>
-	<li>InstallBionicEye</li>
-	<li>InstallBionicArm</li>
-	<li>InstallBionicLeg</li>
-	<li>InstallBionicSpine</li>
-	<li>InstallBionicHeart</li>
-	<li>InstallBionicStomach</li>
-	<li>InstallBionicEar</li>
-	<li>InstallSimpleProstheticArm</li>
-	<li>InstallSimpleProstheticLeg</li>
-	<li>InstallSimpleProstheticHeart</li>
-	<li>InstallCochlearImplant</li>
-	<li>InstallPegLeg</li>
-	<li>InstallWoodenFoot</li>
-	<li>InstallDenture</li>
-	<li>InstallJoywire</li>
-	<li>InstallPainstopper</li>
-	<li>InstallNaturalHeart</li>
-	<li>InstallNaturalLung</li>
-	<li>InstallNaturalKidney</li>
-	<li>InstallNaturalLiver</li>
-	<li>ExciseCarcinoma</li>
-	<li>AdministerMechSerumHealer</li>
-	<li>RemoveBodyPart</li>
-	<li>Euthanize</li>
-	<li>Anesthetize</li>
-	<li>CureScaria</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
-	<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
-	<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
-	<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
 </recipes>
 
 </AlienRace.ThingDef_AlienRace>

@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
 	<v1.4>
-	<li>Contents</li>
-	<li>1.4</li>
+		<li>Contents</li>
+		<li>1.4</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/Mods/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Mods/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/Mods/Biotech</li>
-		<li IfModActive="rim.job.world">1.4/Mods/RJW</li>
+		<li IfModActive="rim.job.world">1.4/Mods/Rjw</li>
 		<li IfModActive="shauaputa.rimnudeworld">1.4/Mods/Rimnude</li>
-		<li IfModActive="cyanobot.toddlers">1.4/Mods/Toddlers</li>
+		<li IfModActive="rim.job.world.pe">1.4/Mods/Pe</li>
+		<li IfModActive="rjw.menstruation">1.4/Mods/Mens</li>
+		<li IfModActive="VanillaExpanded.VanillaTraitsExpanded">1.4/Mods/Vte</li>
 	</v1.4>
+	<v1.5>
+		<li>Contents</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>
+		<li IfModActive="rim.job.world">1.5/Mods/Rjw</li>
+		<li IfModActive="shauaputa.rimnudeworld">1.5/Mods/Rimnude</li>
+		<li IfModActive="rim.job.world.pe">1.5/Mods/Pe</li>
+		<li IfModActive="rjw.menstruation">1.5/Mods/Mens</li>
+		<li IfModActive="VanillaExpanded.VanillaTraitsExpanded">1.5/Mods/Vte</li>
+	</v1.5>
 </loadFolders>

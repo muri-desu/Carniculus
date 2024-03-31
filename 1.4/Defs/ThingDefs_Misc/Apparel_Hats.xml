@@ -317,13 +317,26 @@
 		<bodyPartGroups>
 			<li>Teeth</li>
 		</bodyPartGroups>
-		<layers>
-			<li>Overhead</li>
-		</layers>
 	<wornGraphicPath>Things/Apparel/Hats/Gasmask</wornGraphicPath>
 	<useWornGraphicMask>true</useWornGraphicMask>
-	<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+	<!-- <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace> -->
 	<immuneToToxGasExposure>true</immuneToToxGasExposure>
+     <!-- <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <dataNorth>
+          <layer>-3</layer>
+        </dataNorth>
+      </drawData> -->
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
 	</apparel>
 
 <colorGenerator Class="ColorGenerator_Options">

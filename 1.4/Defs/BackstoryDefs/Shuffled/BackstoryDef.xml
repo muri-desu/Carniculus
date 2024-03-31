@@ -31,6 +31,8 @@
 		<li><key>Social</key><value>3</value></li>
 		<li><key>Intellectual</key><value>3</value></li>
 </skillGains>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 	</spawnCategories>
@@ -144,6 +146,8 @@
 <forcedTraits>
 		<Undergrounder>0</Undergrounder>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -162,6 +166,8 @@
 <forcedTraits>
 		<Ascetic>0</Ascetic>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -184,6 +190,8 @@
 		<li>Artistic</li>
 		<li>Social</li>
 	</workDisables>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniFeral</li>
 	</spawnCategories>
@@ -204,7 +212,6 @@
 </skillGains>
 <forcedTraits>
 		<DislikesMen>0</DislikesMen>
-		<Rapist>0</Rapist>
 		<Bloodlust>0</Bloodlust>
 </forcedTraits>
 <disallowedTraits>
@@ -214,6 +221,8 @@
 		<DislikesWomen>0</DislikesWomen>
 		<Wimp>0</Wimp>
 </disallowedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 	</spawnCategories>
@@ -231,9 +240,6 @@
 	<li><key>Social</key><value>5</value></li>
 	<li><key>Animals</key><value>3</value></li>
 </skillGains>
-<forcedTraits>
-		<Rapist>0</Rapist>
-</forcedTraits>
 <disallowedTraits>
 		<Asexual>0</Asexual>
 		<Bisexual>0</Bisexual>
@@ -241,6 +247,8 @@
 		<DislikesMen>0</DislikesMen>
 		<Wimp>0</Wimp>
 </disallowedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <workDisables>
 	<li>Cleaning</li>
 </workDisables>
@@ -259,8 +267,9 @@
 	<maleCommonality>0.05</maleCommonality>
 <forcedTraits>
 		<Bisexual>0</Bisexual>
-		<Nymphomaniac>0</Nymphomaniac>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -276,9 +285,10 @@
 	<femaleCommonality>0.05</femaleCommonality>
 	<maleCommonality>0</maleCommonality>
 <forcedTraits>
-		<Nymphomaniac>0</Nymphomaniac>
 		<Masochist>0</Masochist>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -299,6 +309,8 @@
 		<Gourmand>0</Gourmand>
 		<Brawler>0</Brawler>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -316,9 +328,6 @@
 	<li><key>Medicine</key><value>5</value></li>
 	<li><key>Intellectual</key><value>3</value></li>
 </skillGains>
-<forcedTraits>
-		<Psychopath>0</Psychopath>
-</forcedTraits>
 <disallowedTraits>
 		<Kind>0</Kind>
 </disallowedTraits>
@@ -326,6 +335,11 @@
 		<li>Mining</li>
 		<li>PlantWork</li>
 	</workDisables>
+<forcedTraits>
+		<Psychopath>0</Psychopath>
+</forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniStory</li>
 		<li>CarniFeral</li>
@@ -341,13 +355,12 @@
 <skillGains>
 	<li><key>Animals</key><value>5</value></li>
 </skillGains>
-<forcedTraits>
-		<Zoophile>0</Zoophile>
-</forcedTraits>
 <workDisables>
 	<li>Artistic</li>
 	<li>Cooking</li>
 </workDisables>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 </spawnCategories>
@@ -365,6 +378,8 @@
 <workDisables>
 	<li>Artistic</li>
 </workDisables>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 	<li>CarniFeral</li>
@@ -386,6 +401,8 @@
 <forcedTraits>
 		<Industriousness>-2</Industriousness>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 	<li>CarniFeral</li>
@@ -406,6 +423,8 @@
 		<Tough>0</Tough>
 		<Brawler>0</Brawler>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 	<li>CarniFeral</li>
@@ -422,6 +441,8 @@
 	<li><key>Construction</key><value>4</value></li>
 	<li><key>Mining</key><value>4</value></li>
 </skillGains>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 </spawnCategories>
@@ -441,6 +462,8 @@
 <workDisables>
 	<li>PlantWork</li>
 </workDisables>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 	<li>CarniFeral</li>
@@ -465,10 +488,6 @@
 		<chance>100</chance>
 	</li>
 	<li>
-		<defName>Rapist</defName>
-		<chance>30</chance>
-	</li>
-	<li>
 		<defName>Bloodlust</defName>
 		<chance>30</chance>
 	</li>
@@ -489,14 +508,15 @@
 <skillGains>
 	<li><key>Animals</key><value>3</value></li>
 </skillGains>
-<forcedTraits>
-		<Zoophile>0</Zoophile>
-		<Tough>0</Tough>
-</forcedTraits>
 <workDisables>
 	<li>Artistic</li>
 	<li>Cooking</li>
 </workDisables>
+<forcedTraits>
+		<Tough>0</Tough>
+</forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniStory</li>
 	<li>CarniFeral</li>
@@ -516,6 +536,8 @@
 <forcedTraits>
 		<Xenophobia>1</Xenophobia>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniFeral</li>
 </spawnCategories>
@@ -532,9 +554,10 @@
 	<li><key>Medicine</key><value>3</value></li>
 </skillGains>
 <forcedTraits>
-		<Rapist>0</Rapist>
 		<Xenophobia>-1</Xenophobia>
 </forcedTraits>
+<forcedTraitsChance>
+</forcedTraitsChance>
 <spawnCategories>
 	<li>CarniFeral</li>
 </spawnCategories>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+	<operations>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Matriarch"]/forcedTraitsChance</xpath>
+		<value>
+			<li>
+				<defName>Toddlercon</defName>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Kidnapper"]/forcedTraitsChance</xpath>
+		<value>
+			<li>
+				<defName>ChildLover</defName>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>ChildRapedByAdult</li>
+			<li>RapedMyChild</li>
+		</value>
+	</li>
+
+	</operations>
+</Operation>
+</Patch>

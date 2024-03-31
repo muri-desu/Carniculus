@@ -101,51 +101,51 @@
 		<kindDef>Combat</kindDef>
 		<commonality>100</commonality>
 		<options>
-			<Carni_Worker>10</Carni_Worker>
-			<Carni_Miner>10</Carni_Miner>
-			<Carni_Butcher>10</Carni_Butcher>
-			<Carni_Boss>5</Carni_Boss>
+			<Carni_worker>10</Carni_worker>
+			<Carni_butcher>10</Carni_butcher>
+			<Carni_miner>10</Carni_miner>
+			<Carni_boss>5</Carni_boss>
 		</options>
 	</li>
 	<li>
 		<kindDef>Trader</kindDef>
 		<traders>
-			<Carni_Boss>1</Carni_Boss>
+			<Carni_boss>1</Carni_boss>
 		</traders>
 		<carriers>
 			<Carnigigas>6</Carnigigas>
 		</carriers>
 		<guards>
-			<Carni_Worker>20</Carni_Worker>
-			<Carni_Butcher>10</Carni_Butcher>
-			<SlaveMama>1</SlaveMama>
+			<Carni_worker>20</Carni_worker>
+			<Carni_butcher>10</Carni_butcher>
+			<CarniMama_slave>1</CarniMama_slave>
 		</guards>
 	</li>
 	<li>
 		<kindDef>Settlement</kindDef>
 		<commonality>30</commonality>
 		<options>
-			<Carni_Boss>5</Carni_Boss>
-			<BossMama>1</BossMama>
-			<Carni_Worker>50</Carni_Worker>
-			<SlaveMama>10</SlaveMama>
+			<Carni_boss>5</Carni_boss>
+			<CarniMama_slave>1</CarniMama_slave>
+			<Carni_worker>50</Carni_worker>
+			<CarniMama_slave>10</CarniMama_slave>
 		</options>
 	</li>
 	<li>
 		<kindDef>Settlement</kindDef>
 		<commonality>30</commonality>
 		<options>
-			<Carni_Boss>1</Carni_Boss>
-		<BossMama>1</BossMama>
-			<SlaveMama>20</SlaveMama>
+			<Carni_boss>1</Carni_boss>
+			<CarniMama_boss>1</CarniMama_boss>
+			<CarniMama_slave>100</CarniMama_slave>
 		</options>
 	</li>
 	<li>
 		<kindDef>Settlement</kindDef>
 		<commonality>30</commonality>
 		<options>
-			<BossMama>1</BossMama>
-			<Carni_Boss>1</Carni_Boss>
+			<CarniMama_boss>1</CarniMama_boss>
+			<Carni_boss>1</Carni_boss>
 			<CarniSlave>20</CarniSlave>
 		</options>
 	</li>
@@ -153,25 +153,26 @@
 		<kindDef>Settlement</kindDef>
 		<commonality>30</commonality>
 		<options>
-			<Carni_Boss>1</Carni_Boss>
-			<BossMama>1</BossMama>
-			<LittleMama MayRequire="Ludeon.RimWorld.Biotech">50</LittleMama>
+			<CarniMama_boss>1</CarniMama_boss>
+			<Carni_boss>1</Carni_boss>
+			<Carni_worker>50</Carni_worker>
 		</options>
 	</li>
 	<li>
 		<kindDef>Peaceful</kindDef>
 		<commonality>20</commonality>
 		<options>
-			<Carni_Boss>1</Carni_Boss>
-			<BossMama>1</BossMama>
-			<Carni_Worker>50</Carni_Worker>
+			<CarniMama_boss>1</CarniMama_boss>
+			<Carni_boss>1</Carni_boss>
+			<Carni_worker>50</Carni_worker>
 		</options>
 	</li>
 	<li>
 		<kindDef>Peaceful</kindDef>
 		<commonality>20</commonality>
 		<options>
-			<BossMama>1</BossMama>
+			<CarniMama_boss>1</CarniMama_boss>
+			<Carni_boss>1</Carni_boss>
 			<CarniSlave>20</CarniSlave>
 		</options>
 	</li>
@@ -179,16 +180,8 @@
 		<kindDef>Peaceful</kindDef>
 		<commonality>20</commonality>
 		<options>
-			<Carni_Boss>1</Carni_Boss>
-			<LittleMama MayRequire="Ludeon.RimWorld.Biotech">50</LittleMama>
-		</options>
-	</li>
-	<li>
-		<kindDef>Peaceful</kindDef>
-		<commonality>20</commonality>
-		<options>
-			<BossMama>1</BossMama>
-			<CarniChild MayRequire="Ludeon.RimWorld.Biotech">50</CarniChild>
+			<Carni_boss>1</Carni_boss>
+			<CarniMama_slave>100</CarniMama_slave>
 		</options>
 	</li>
 
@@ -196,32 +189,32 @@
 	<kindDef>Miners</kindDef>
 	<commonality>1</commonality>
 		<options>
-			<Carni_Miner>20</Carni_Miner>
-			<Carni_Worker>5</Carni_Worker>
+			<Carni_miner>20</Carni_miner>
+			<Carni_worker>5</Carni_worker>
 		</options>
 </li>
 <li MayRequire="Ludeon.RimWorld.Ideology">
 	<kindDef>Hunters</kindDef>
 	<commonality>1</commonality>
 		<options>
-			<Carni_Butcher>20</Carni_Butcher>
-			<Carni_Worker>5</Carni_Worker>
+			<Carni_butcher>20</Carni_butcher>
+			<Carni_worker>5</Carni_worker>
 		</options>
 </li>
 <li MayRequire="Ludeon.RimWorld.Ideology">
 	<kindDef>Loggers</kindDef>
 	<commonality>1</commonality>
 		<options>
-			<Carni_Logger>20</Carni_Logger>
-			<Carni_Worker>5</Carni_Worker>
+			<Carni_logger>20</Carni_logger>
+			<Carni_worker>5</Carni_worker>
 		</options>
 </li>
 <li MayRequire="Ludeon.RimWorld.Ideology">
 	<kindDef>Farmers</kindDef>
 	<commonality>1</commonality>
 		<options>
-			<Carni_Logger>20</Carni_Logger>
-			<Carni_Worker>5</Carni_Worker>
+			<Carni_logger>20</Carni_logger>
+			<Carni_worker>5</Carni_worker>
 		</options>
 </li>
 

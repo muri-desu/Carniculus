@@ -23,7 +23,7 @@
 	<skillGains>
 		<li><key>Social</key><value>3</value></li>
 		<li><key>Intellectual</key><value>3</value></li>
-</skillGains>
+	</skillGains>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Adulthood -->
@@ -33,9 +33,9 @@
 		<baseDesc>As the chief scientist of a laboratory floating in space, [PAWN_nameDef] performed many experiments on the life forms she created. \nShe enjoyed toying with carniculus and watching them wallow in pain or pleasure, and later received the same treatment from them.</baseDesc>
 		<slot>Adulthood</slot>
 		<linkedBackstory>BadGirl</linkedBackstory>
-<skillGains>
+	<skillGains>
 		<li><key>Animals</key><value>1</value></li>
 		<li><key>Intellectual</key><value>3</value></li>
-</skillGains>
+	</skillGains>
 </AlienRace.AlienBackstoryDef>
 </Defs>

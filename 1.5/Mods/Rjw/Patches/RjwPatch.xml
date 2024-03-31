@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+
+	<li Class="PatchOperationAdd"><!-- carni race trait -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus"]/alienRace/forcedRaceTraitEntries</xpath>
+		<value>
+			<li>
+				<defName>Nymphomaniac</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Rapist</defName>
+				<chance>100</chance>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- mama race trait -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/alienRace/forcedRaceTraitEntries</xpath>
+		<value>
+			<li>
+				<defName>Nymphomaniac</defName>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- mama -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/statBases</xpath>
+		<value>
+				<Vulnerability>3</Vulnerability>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- carni -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>GotBredByAnimal</li>
+			<li>GotAnalBredByAnimal</li>
+			<li>AllowedAnimalToBreed</li>
+			<li>GotLickedByAnimal</li>
+			<li>GotRaped</li>
+			<li>GotAnalRaped</li>
+			<li>GotAnalRapedByFemale</li>
+			<li>GotRapedUnconscious</li>
+			<li>HateMyRapist</li>
+			<li>AllowedMeToGetRaped</li>
+			<li>UnfortunateLostVirginity</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- mama -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>MySonDied_Beast</li>
+			<li>MyDaughterDied_Beast</li>
+			<li>MyBrotherDied_Beast</li>
+			<li>MySisterDied_Beast</li>
+			<li>MyGrandchildDied_Beast</li>
+			<li>MyNieceDied_Beast</li>
+			<li>MyNephewDied_Beast</li>
+			<li>MyHalfSiblingDied_Beast</li>
+			<li>MyUncleDied_Beast</li>
+			<li>MyAuntDied_Beast</li>
+			<li>MyGrandparentDied_Beast</li>
+			<li>MyCousinDied_Beast</li>
+			<li>MyPupDied</li>
+			<li>MyPupDiedFemale</li>
+			<li>KilledMyPup</li>
+			<li>KilledMyPupFemale</li>
+			<li>GotBredByAnimal</li>
+			<li>GotAnalBredByAnimal</li>
+			<li>AllowedAnimalToBreed</li>
+			<li>GotLickedByAnimal</li>
+			<li>GotRaped</li>
+			<li>GotAnalRaped</li>
+			<li>GotAnalRapedByFemale</li>
+			<li>GotRapedUnconscious</li>
+			<li>HateMyRapist</li>
+			<li>AllowedMeToGetRaped</li>
+			<li>UnfortunateLostVirginity</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- backstory trait -->
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Kidnapper" or @Name = "AlphaMale" or @Name = "Matriarch" or @Name = "RabidCarni"]/forcedTraitsChance</xpath>
+		<value>
+			<li>
+				<defName>Rapist</defName>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="B_TestSubM" or @Name = "B_TestSubF"]/forcedTraitsChance</xpath>
+		<value>
+			<li>
+				<defName>Zoophile</defName>
+				<chance>10</chance>
+			</li>
+			<li>
+				<defName>Nymphomaniac</defName>
+				<chance>100</chance>
+			</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Livestocker" or @Name = "CattleFucker" or @Name = "CattleKiller"]/forcedTraitsChance</xpath>
+		<value>
+			<li>
+				<defName>Zoophile</defName>
+				<chance>100</chance>
+			</li>
+		</value>
+	</li>
+
+	</operations>
+</Operation>
+
+</Patch>

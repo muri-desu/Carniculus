@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ludeon.RimWorld.Ideology</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>HarvestedOrgan_Abhorrent</li>
 			<li>HarvestedOrgan_Know_Abhorrent_Mood</li>
@@ -16,7 +11,6 @@
 			<li>ObservedGibbetCage</li>
 			<li>ObservedSkullspike</li>
 		</value>
-		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationFindMod">
@@ -25,7 +19,7 @@
 		</mods>
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>VME_ParticipatedInRaid_Abhorrent</li>
 			<li>VME_RecentConquest_Abhorrent</li>
@@ -39,7 +33,7 @@
 		</mods>
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>AA_Disgust</li>
 			<li>AA_OcularTrees</li>
@@ -53,7 +47,7 @@
 		</mods>
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>AB_RedFogThought</li>
 		</value>
@@ -66,7 +60,7 @@
 		</mods>
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
-		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Carniculus, Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>AG_Disgust</li>
 			<li>AG_UnsettlingAppearance</li>

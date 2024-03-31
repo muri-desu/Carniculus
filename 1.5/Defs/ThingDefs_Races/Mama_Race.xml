@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<defName>Alien_CarniMama</defName>
+	<label>mama</label>
+		<description>The ruin of a scientist who was the creator of the Carnicles. \nAfter being broken on the day of the rebellion, she was repaired by transplanting cells of the same origin as carniculus and have been improved as sex pet. Her clones are still being produced at carniculus' laboratory in space.</description>
+
+<race>
+	<body>Human</body>
+	<thinkTreeMain>Humanlike</thinkTreeMain>
+	<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+	<intelligence>Humanlike</intelligence>
+	<makesFootprints>true</makesFootprints>
+	<useMeatFrom>Human</useMeatFrom>
+	<lifeExpectancy>80</lifeExpectancy>
+	<nameCategory>HumanStandard</nameCategory>
+	<foodType>OmnivoreHuman</foodType>
+	<gestationPeriodDays>20</gestationPeriodDays>
+	<renderTree>Humanlike</renderTree>
+	<bloodDef>Filth_Blood</bloodDef>
+	<anomalyKnowledge>1</anomalyKnowledge>
+	<canBecomeShambler>true</canBecomeShambler>
+	<litterSizeCurve>
+	<points>
+		<li>(0.5, 0)</li>
+		<li>(1, 100)</li>
+		<li>(2, 0)</li>
+	</points>
+	</litterSizeCurve>
+	<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+		<Firefighter>5</Firefighter>
+		<Patient>0</Patient>
+		<Doctor>10</Doctor>
+		<PatientBedRest>0</PatientBedRest>
+		<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+		<BasicWorker>7</BasicWorker>
+		<Warden>10</Warden>
+		<Handling>7</Handling>
+		<Cooking>10</Cooking>
+		<Hunting>7</Hunting>
+		<Construction>10</Construction>
+		<Growing>7</Growing>
+		<Mining>7</Mining>
+		<PlantCutting>7</PlantCutting>
+		<Smithing>13</Smithing>
+		<Tailoring>7</Tailoring>
+		<Art>10</Art>
+		<Crafting>7</Crafting>
+		<Hauling>3</Hauling>
+		<Cleaning>3</Cleaning>
+		<Research>13</Research>
+		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
+	</lifeStageWorkSettings>
+<lifeStageAges>
+	<li Class="AlienRace.LifeStageAgeAlien">
+		<def>CarniBaby</def>
+		<minAge>0</minAge>
+	</li>
+	<li Class="AlienRace.LifeStageAgeAlien">
+		<def>HumanlikeChild</def>
+		<minAge>3</minAge>
+		<headOffset>(0, 0.16)</headOffset>
+	</li>
+	<li Class="AlienRace.LifeStageAgeAlien">
+		<def>HumanlikeAdult</def>
+		<minAge>16</minAge>
+	</li>
+	</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	<specialShadowData>
+		<volume>(0.3, 0.8, 0.4)</volume>
+		<offset>(0,0,-0.3)</offset>
+	</specialShadowData>
+	<ageGenerationCurve>
+		<points>
+		<li>(0,0)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li><!-- Exclude 12.5-13 years -->
+		<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
+		<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+		<li>(14,0)</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+		<li>(16,50)</li>
+		<li>(20,100)</li>
+		<li>(30,30)</li>
+		<li>(40,0)</li>
+		<li>(50,0)</li>
+		</points>
+	</ageGenerationCurve>
+	<hediffGiverSets>
+		<li>OrganicStandard</li>
+		<li>Human</li>
+	</hediffGiverSets>
+</race>
+
+<tools>
+	<li>
+		<label>left tentacle</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>20</power>
+		<cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.3</armorPenetration>
+		<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+					<def>Stun</def>
+					<amount>20</amount>
+				</li>
+			</extraMeleeDamages>
+			</surpriseAttack>
+	</li>
+	<li>
+		<label>right tentacle</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>20</power>
+		<cooldownTime>1.5</cooldownTime>
+		<armorPenetration>0.3</armorPenetration>
+		<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			<extraMeleeDamages>
+				<li>
+					<def>Stun</def>
+					<amount>20</amount>
+				</li>
+			</extraMeleeDamages>
+			</surpriseAttack>
+	</li>
+</tools>
+
+<alienRace>
+<generalSettings>
+	<minAgeForAdulthood>16</minAgeForAdulthood>
+	<allowHumanBios>false</allowHumanBios>
+	<humanRecipeImport>true</humanRecipeImport>
+	<immuneToAge>true</immuneToAge>
+	<maleGenderProbability>0.0000000000000000000000000000000000000000000001</maleGenderProbability>
+
+<alienPartGenerator>
+	<bodyTypes>
+		<li>Female</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+	</bodyTypes>
+	<headTypes Inherit="False">
+		<li>Average</li>
+	</headTypes>
+	<headOffset>(0, 0.125)</headOffset>
+	<customDrawSize>(1.0, 1.0)</customDrawSize>
+	<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+	<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+	<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+				<colorChannels>
+					<li>
+					<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>1</weight>
+									<only>RGBA(255,233,223,255)</only>
+								</li>
+							</options>
+						</first>
+						<second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>1</weight>
+									<only>RGBA(220,140,150,255)</only>
+								</li>
+							</options>
+						</second>
+					</li>
+					<li>
+					<name>hair</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>1</weight>
+									<only>RGBA(1.0,1.0,1.0,1)</only>
+								</li>
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+</alienPartGenerator>
+
+<disallowedTraits>
+	<li><defName Degree="-1">Beauty</defName></li>
+	<li><defName Degree="-2">Beauty</defName></li>
+	<li><defName>Abrasive</defName></li>
+	<li><defName>Jealous</defName></li>
+	<li><defName>Greedy</defName></li>
+	<li><defName>DislikesMen</defName></li>
+	<li><defName>DislikesWomen</defName></li>
+	<li><defName>AnnoyingVoice</defName></li>
+	<li><defName>CreepyBreathing</defName></li>
+	<li><defName>Pyromaniac</defName></li>
+	<li><defName>Asexual</defName></li>
+</disallowedTraits>
+<forcedRaceTraitEntries>
+	<li><defName>Bisexual</defName></li>
+	<li><defName>Masochist</defName></li>
+</forcedRaceTraitEntries>
+
+</generalSettings>
+<graphicPaths>
+	<head><path>Things/Pawn/Mama/Heads/Average</path>
+		<extendedGraphics>
+			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
+			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Average_Child</Age>
+			<Age For="HumanlikeAdult">Things/Pawn/Mama/Heads/Average</Age>
+		</extendedGraphics>
+	</head>
+
+	<body><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
+		<extendedGraphics>
+			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
+			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Bodies/Naked_Child</Age>
+			<Age For="HumanlikeAdult">Things/Pawn/Mama/Bodies/Naked_Female</Age>
+		</extendedGraphics>
+	</body>
+
+	<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+	<swaddle>Things/Pawn/Carni/Bodies/SwaddledBaby/Swaddled_Child</swaddle>
+	<skinShader>Cutout</skinShader>
+
+	<apparel>
+		<individualPaths>
+		<li>
+			<key>Apparel_MamaNunHead</key>
+			<value>
+				<ageGraphics>
+					<HumanlikeChild>Things/Apparel/Hats/NunHeadChild</HumanlikeChild>
+					<HumanlikeAdult>Things/Apparel/Hats/NunHead</HumanlikeAdult>
+				</ageGraphics>
+			</value>
+		</li>
+		</individualPaths>
+	</apparel>
+
+</graphicPaths>
+
+<styleSettings>
+	<li>
+		<key>HairDef</key>
+		<value>
+			<hasStyle>true</hasStyle>
+			<styleTagsOverride>
+				<li>Mama_HairTag</li>
+			</styleTagsOverride>
+		</value>
+	</li>
+	<li>
+		<key>TattooDef</key>
+		<value>
+			<hasStyle>false</hasStyle>
+		</value>
+	</li>
+	<li>
+		<key>BeardDef</key>
+		<value>
+			<hasStyle>false</hasStyle>
+		</value>
+	</li>
+</styleSettings>
+
+<raceRestriction>
+	<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+	<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+	<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+	<apparelList><!-- 服リスト -->
+		<li>Apparel_MamaGlasses</li>
+		<li>Apparel_MamaGasmask</li>
+		<li>Apparel_MamaNunHead</li>
+		<li>Apparel_MamaMaidHead</li>
+		<li>Apparel_MamaWardenCap</li>
+		<li>Apparel_MamaHighSocks</li>
+		<li>Apparel_MamaHarness</li>
+		<li>Apparel_MamaCorset</li>
+		<li>Apparel_MamaShirtSet</li>
+		<li>Apparel_MamaNun</li>
+		<li>Apparel_MamaMaid</li>
+		<li>Apparel_MamaWardenJacket</li>
+		<li>Apparel_MamaDrCoat</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_MamaChildDress</li>
+	</apparelList>
+	<whiteApparelList>
+		<li>Apparel_PsychicShockLance</li>
+		<li>Apparel_PsychicInsanityLance</li>
+		<li>Apparel_ShieldBelt</li>
+		<li>Apparel_SmokepopBelt</li>
+		<li>Apparel_FirefoampopPack</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackTox</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_AirwireHeadset</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_IntegratorHeadset</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArmorHelmetMechCommander</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArrayHeadset</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_TackleBox</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_JinDou</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_LianHua</li>
+		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_FengHuoLun</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_ShieldBeltStrong</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackMelee</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackRanger</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_TravelersBackPack</li>
+		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerShieldBelt</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Hirameki</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Tuchi</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Wa</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Jin</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Ikusa</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Karibito</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Hi_No_Magatama</li>
+		<li MayRequire="YokaiMura.1.32">Yokai_Nagi_no_Magatama</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Silver</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Slate</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Medicine</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Limestone</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Granite</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Marble</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Sandstone</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Steel</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Iron</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Jade</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Gold</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Magicyte</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Wood</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfThePacifist</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDefense</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDeflection</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfKeenIntellect</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfBlood</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfEternalBlue</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfMalice</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfConviction</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls_Full</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfEternal</li>
+		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_NecroticOrb</li>
+	</whiteApparelList>
+
+<onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
+	<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+		<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Thin</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Fat</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Hulk</li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+	</blackGeneList>
+	<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+		<li>SkinColor</li>
+		<li>HairColor</li>
+		<li>EyeColor</li>
+		<li>BodyType</li>
+		<li>Ears</li>
+		<li>Nose</li>
+		<li>Jaw</li>
+		<li>Head</li>
+		<li>Headbone</li>
+		<li>HairStyle</li>
+		<li>BeardStyle</li>
+		<li>SkinColorOverride</li>
+		<li>Fur</li>
+		<li>Tail</li>
+	</blackGeneTags>
+	<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+		<li>Melanin</li>
+		<li>HairColor</li>
+		<li>Ears</li>
+		<li>Nose</li>
+		<li>Jaw</li>
+		<li>Head</li>
+		<li>BodyType</li>
+	</blackEndoCategories>
+</raceRestriction>
+
+<relationSettings>
+	<relationChanceModifierChild>0</relationChanceModifierChild>
+	<relationChanceModifierExLover>0</relationChanceModifierExLover>
+	<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+	<relationChanceModifierFiance>0</relationChanceModifierFiance>
+	<relationChanceModifierLover>0</relationChanceModifierLover>
+	<relationChanceModifierParent>0</relationChanceModifierParent>
+	<relationChanceModifierSibling>0</relationChanceModifierSibling>
+	<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+</relationSettings>
+
+<thoughtSettings>
+<cannotReceiveThoughts>
+<!-- prisoner and guest -->
+		<li>KnowColonistOrganHarvested</li>
+		<li>KnowColonistExecuted</li>
+		<li>KnowColonistDied</li>
+		<li>KnowGuestOrganHarvested</li>
+		<li>PawnWithBadOpinionDied</li>
+		<li>KnowPrisonerDiedInnocent</li>
+		<li>KnowPrisonerSold</li>
+		<li>WitnessedDeathAlly</li>
+		<li>WitnessedDeathNonAlly</li>
+		<li>ColonistBanished</li>
+		<li>ColonistBanishedToDie</li>
+		<li>ColonistLeftUnburied</li>
+		<li>PrisonerBanishedToDie</li>
+		<li>BondedAnimalDied</li>
+		<li>BondedAnimalReleased</li>
+		<li>BondedAnimalBanished</li>
+		<li>FailedToRescueRelative</li>
+		<li>SoldPrisoner</li>
+		<li>ExecutedPrisoner</li>
+		<li>KilledColonist</li>
+		<li>KilledColonyAnimal</li>
+<!-- food temp naked etc -->
+		<li>AteRawFood</li>
+		<li>AteCorpse</li>
+		<li>AteKibble</li>
+		<li>AteHumanlikeMeatDirect</li>
+		<li>AteHumanlikeMeatAsIngredient</li>
+		<li>SharedBed</li>
+		<li>SleepDisturbed</li>
+		<li>SleptInBarracks</li>
+		<li>Naked</li>
+		<li>ButcheredHumanlikeCorpse</li>
+		<li>KnowButcheredHumanlikeCorpse</li>
+		<li>ButcheredHumanlikeCorpseOpinion</li>
+<!-- social opinion -->
+		<li>Pretty</li>
+		<li>Ugly</li>
+		<li>AnnoyingVoice</li>
+		<li>CreepyBreathing</li>
+		<li>Disfigured</li>
+		<li>Affair</li>
+		<li>Incestuous</li>
+<!-- RJW -->
+		<li MayRequire="rim.job.world.pe">ChildRapedByAdult</li>
+		<li MayRequire="rim.job.world.pe">RapedMyChild</li>
+</cannotReceiveThoughts>
+</thoughtSettings>
+</alienRace>
+
+<statBases>
+	<Mass>75</Mass>
+	<MarketValue>1750</MarketValue>
+	<MoveSpeed>4.0</MoveSpeed>
+	<ComfyTemperatureMin>0</ComfyTemperatureMin>
+	<ComfyTemperatureMax>45</ComfyTemperatureMax>
+	<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+	<MentalBreakThreshold>0.03</MentalBreakThreshold>
+	<PawnBeauty>2</PawnBeauty>
+	<RoyalFavorValue>3</RoyalFavorValue>
+	<SocialImpact>1.25</SocialImpact>
+	<NegotiationAbility>1.25</NegotiationAbility>
+</statBases>
+
+<recipes>
+</recipes>
+
+</AlienRace.ThingDef_AlienRace>
+</Defs>

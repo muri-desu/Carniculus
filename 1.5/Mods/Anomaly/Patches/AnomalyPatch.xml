@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+	<match Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+
+		<!-- <li Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li></li>
+			</value>
+		</li> -->
+
+		<li Class="PatchOperationAdd"><!-- シウツ -->
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/recipes</xpath>
+			<value>
+				<li>SurgicalInspection</li>
+				<li>BlissLobotomy</li>
+				<li>GhoulInfusion</li>
+			</value>
+		</li>
+	</operations>
+	</match>
+</Operation>
+</Patch>

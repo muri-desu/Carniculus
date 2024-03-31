@@ -113,9 +113,9 @@
 	<costStuffCount>65</costStuffCount>
 
 	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
-		<PawnBeauty>0.1</PawnBeauty>
-		<SexAbility MayRequire="rjw.sexperience">0.1</SexAbility>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+		<PawnBeauty>0.3</PawnBeauty>
+		<SexAbility MayRequire="rjw.sexperience">0.5</SexAbility>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -168,14 +168,15 @@
 	<costStuffCount>65</costStuffCount>
 
 	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
-		<PawnBeauty>0.1</PawnBeauty>
-		<SexAbility MayRequire="rjw.sexperience">0.1</SexAbility>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
+		<PawnBeauty>0.3</PawnBeauty>
+		<SexAbility MayRequire="rjw.sexperience">0.5</SexAbility>
 	</equippedStatOffsets>
 
 	<apparel>
 		<bodyPartGroups>
 			<li>Torso</li>
+			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
 			<li>OnSkin</li>
@@ -223,9 +224,9 @@
 	<costStuffCount>45</costStuffCount>
 
 	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
 		<PawnBeauty>0.25</PawnBeauty>
-		<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+		<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -233,6 +234,7 @@
 			<li>Neck</li>
 			<li>Shoulders</li>
 			<li>Legs</li>
+			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
 			<li>Middle</li>
@@ -280,8 +282,8 @@
 	<costStuffCount>55</costStuffCount>
 
 	<equippedStatOffsets>
-		<PawnBeauty>0.25</PawnBeauty>
-		<SocialImpact>0.1</SocialImpact>
+		<PawnBeauty>0.5</PawnBeauty>
+		<SocialImpact>0.5</SocialImpact>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -337,9 +339,9 @@
 	<costStuffCount>55</costStuffCount>
 
 	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
-		<PawnBeauty>0.25</PawnBeauty>
-		<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
+		<PawnBeauty>0.5</PawnBeauty>
+		<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -395,10 +397,10 @@
 	<costStuffCount>65</costStuffCount>
 
 	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
 		<PawnBeauty>0.25</PawnBeauty>
-		<NegotiationAbility>0.25</NegotiationAbility>
-		<ArrestSuccessChance>0.25</ArrestSuccessChance>
+		<NegotiationAbility>0.5</NegotiationAbility>
+		<ArrestSuccessChance>0.5</ArrestSuccessChance>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -453,11 +455,11 @@
 	<costStuffCount>75</costStuffCount>
 
 	<equippedStatOffsets>
-		<ResearchSpeed>0.1</ResearchSpeed>
-		<MedicalTendSpeed>0.05</MedicalTendSpeed>
-		<MedicalTendQuality>0.05</MedicalTendQuality>
-		<DrugCookingSpeed>0.05</DrugCookingSpeed>
-		<DrugSynthesisSpeed>0.05</DrugSynthesisSpeed>
+		<ResearchSpeed>0.25</ResearchSpeed>
+		<MedicalTendSpeed>0.25</MedicalTendSpeed>
+		<MedicalTendQuality>0.25</MedicalTendQuality>
+		<DrugCookingSpeed>0.5</DrugCookingSpeed>
+		<DrugSynthesisSpeed>0.5</DrugSynthesisSpeed>
 	</equippedStatOffsets>
 
 	<apparel>
