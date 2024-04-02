@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<Apparel_CarniApron.label>皮革围裙</Apparel_CarniApron.label>
+<Apparel_CarniApron.description>适合烹饪和冶炼工作的围裙。</Apparel_CarniApron.description>
+<Apparel_CarniGloves.label>手套</Apparel_CarniGloves.label>
+<Apparel_CarniGloves.description>将畸瘤扭歪的触手整合成手臂的长手套。</Apparel_CarniGloves.description>
+<Apparel_CarniFat.label>脂肪</Apparel_CarniFat.label>
+<Apparel_CarniFat.description>由抽出的脂肪的衣物。用于抵御严寒。</Apparel_CarniFat.description>
+<Apparel_CarniVein.label>散热网</Apparel_CarniVein.label>
+<Apparel_CarniVein.description>重新构造的静脉网络。用于促进体表散热。</Apparel_CarniVein.description>
+<Apparel_CarniLeatherSuit.label>皮革套装</Apparel_CarniLeatherSuit.label>
+<Apparel_CarniLeatherSuit.description>覆盖全身的皮革工作服。</Apparel_CarniLeatherSuit.description>
+<Apparel_CarniFleshArmor.label>触手盔甲</Apparel_CarniFleshArmor.label>
+<Apparel_CarniFleshArmor.description>生物组织加工成的护具。通过感应器协调穿戴者的作战能力，但由于触手从穿戴者血管中摄取营养，会导致穿戴者更容易饥饿。</Apparel_CarniFleshArmor.description>
+<Apparel_CarniCollodionArmor.label>胶壳护甲</Apparel_CarniCollodionArmor.label>
+<Apparel_CarniCollodionArmor.description>一种接触外部空气就会分泌硬化物质的护甲。结实且能提高穿着者的止血速度，但会使移动速度下降。</Apparel_CarniCollodionArmor.description>
+<Apparel_CarniNecroArmor.label>坏疽装甲</Apparel_CarniNecroArmor.label>
+<Apparel_CarniNecroArmor.description>把坏死的组织像外壳一样缠在一起的护甲。能使穿戴者适应有毒环境，但会对周围环境产生不良卫生影响。</Apparel_CarniNecroArmor.description>
+</LanguageData>

@@ -458,7 +458,7 @@
 	<Shooting>3</Shooting>
 </skillGains>
 <forcedTraitsChance>
-	<li><defName Degree="1">HAR_Xenophobia</defName></li>
+	<li><defName>HAR_Xenophobia</defName></li>
 	<li><defName>Bloodlust</defName></li>
 </forcedTraitsChance>
 <spawnCategories>
@@ -499,7 +499,7 @@
 	<Animals>2</Animals>
 </skillGains>
 <forcedTraitsChance>
-	<li><defName Degree="1">HAR_Xenophobia</defName></li>
+	<li><defName>HAR_Xenophobia</defName></li>
 </forcedTraitsChance>
 <spawnCategories>
 	<li>CarniFeral</li>

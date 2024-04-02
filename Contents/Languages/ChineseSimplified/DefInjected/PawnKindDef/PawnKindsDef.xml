@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<CarniColonist.label>畸瘤殖民者</CarniColonist.label>
+<CarniWanderer.label>畸瘤游荡者</CarniWanderer.label>
+<CarniSlave.label>畸瘤肉奴</CarniSlave.label>
+<Carni_boss.labelMale>阿尔法畸瘤</Carni_boss.labelMale>
+<Carni_boss.labelFemale>畸瘤女族长</Carni_boss.labelFemale>
+<Carni_worker.label>畸瘤劳工</Carni_worker.label>
+<Carni_butcher.label>畸瘤屠夫</Carni_butcher.label>
+<Carni_miner.label>畸瘤矿工</Carni_miner.label>
+<Carni_logger.label>畸瘤伐木工</Carni_logger.label>
+<CarniMama_nun.label>“妈妈”</CarniMama_nun.label>
+<CarniMama_maid.label>“妈妈”</CarniMama_maid.label>
+<CarniMama_police.label>“妈妈”</CarniMama_police.label>
+<CarniMama_dr.label>“妈妈”</CarniMama_dr.label>
+<CarniMama_boss.label>“妈妈”</CarniMama_boss.label>
+<CarniMama_slave.label>“妈妈”性奴隶</CarniMama_slave.label>
+<Carnigigas.label>畸瘤衍生物</Carnigigas.label>
+<HomoPecudes.label>人畜</HomoPecudes.label>
+</LanguageData>

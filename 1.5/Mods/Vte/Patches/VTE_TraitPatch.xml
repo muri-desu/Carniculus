@@ -11,14 +11,14 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = E_TestSub]/forcedTraitsChance</xpath>
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "E_TestSub"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName>VTE_Desensitized</defName><chance>50</chance></li>
 		</value>
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = PlayingDead]/forcedTraitsChance</xpath>
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "PlayingDead"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName>VTE_IronStomach</defName><chance>70</chance></li>
 		</value>
@@ -75,14 +75,7 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "Constructor"]/disallowedTraitsChance</xpath>
-		<value>
-			<li><defName>VTE_Groundbreaker</defName></li>
-		</value>
-	</li>
-
-	<li Class="PatchOperationAdd">
-		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "CattleFucker"]/forcedTraitsChance</xpath>
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "Constructor"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName>VTE_Groundbreaker</defName></li>
 		</value>

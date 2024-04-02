@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<Hediff_CollodionArmor.label>胶壳护甲</Hediff_CollodionArmor.label>
+<Hediff_CollodionArmor.description>胶壳护甲能促进止血。</Hediff_CollodionArmor.description>
+<Hediff_NecroArmor.labelNoun>坏疽护甲</Hediff_NecroArmor.labelNoun>
+<Hediff_NecroArmor.label>坏疽护甲</Hediff_NecroArmor.label>
+<Hediff_NecroArmor.description>可利用坏疽护甲积蓄的毒素进行攻击。</Hediff_NecroArmor.description>
+<Hediff_NecroArmor.labelNoun>坏疽糜烂</Hediff_NecroArmor.labelNoun>
+<Hediff_NecroArmor.tools.0.label>带毒啃咬</Hediff_NecroArmor.tools.0.label>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<Melee_CarniButcherknife.label>切肉刀</Melee_CarniButcherknife.label>
+<Melee_CarniButcherknife.description>死肉活肉都容易切开的大菜刀。</Melee_CarniButcherknife.description>
+<Melee_CarniGardenScissors.label>园艺剪刀</Melee_CarniGardenScissors.label>
+<Melee_CarniGardenScissors.description>双手使用的特大剪刀。</Melee_CarniGardenScissors.description>
+<Melee_CarniPickax.label>鹤嘴锄</Melee_CarniPickax.label>
+<Melee_CarniPickax.description>协助不擅长土石作业的畸瘤的坚固工具。</Melee_CarniPickax.description>
+<Melee_CarniProd.label>电牛棒</Melee_CarniProd.label>
+<Melee_CarniProd.description>用电驱赶家畜的工具，当然对牛以外的生物也有效。</Melee_CarniProd.description>
+</LanguageData>

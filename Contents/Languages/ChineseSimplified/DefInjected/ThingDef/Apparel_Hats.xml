@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!-- headgear -->
+<Apparel_CarniSack.label>纸袋</Apparel_CarniSack.label>
+<Apparel_CarniSack.description>一种用于遮丑的简朴帽子。这样就容易和人类交朋友了。</Apparel_CarniSack.description>
+<Apparel_CarniVeil.label>面纱</Apparel_CarniVeil.label>
+<Apparel_CarniVeil.description>面向害羞淑女的面纱。只要你把脸藏起来，就可以进入他人视线了。</Apparel_CarniVeil.description>
+<Apparel_CarniLeatherMask.label>皮革口罩</Apparel_CarniLeatherMask.label>
+<Apparel_CarniLeatherMask.description>用厚皮做成的防毒面具。</Apparel_CarniLeatherMask.description>
+<!-- mama headgear -->
+<Apparel_MamaGlasses.label>“妈妈”的眼镜</Apparel_MamaGlasses.label>
+<Apparel_MamaGlasses.description>一副近视眼镜。</Apparel_MamaGlasses.description>
+<Apparel_MamaGasmask.label>“妈妈”的防毒面具</Apparel_MamaGasmask.label>
+<Apparel_MamaGasmask.description>用于防护大气中毒尘的防毒面具。</Apparel_MamaGasmask.description>
+<Apparel_MamaNunHead.label>“妈妈”的头巾</Apparel_MamaNunHead.label>
+<Apparel_MamaNunHead.description>修女风格的头巾。</Apparel_MamaNunHead.description>
+<Apparel_MamaMaidHead.label>“妈妈”的女仆发饰</Apparel_MamaMaidHead.label>
+<Apparel_MamaMaidHead.description>女仆的头饰。</Apparel_MamaMaidHead.description>
+<Apparel_MamaWardenCap.label>“妈妈”的狱警帽</Apparel_MamaWardenCap.label>
+<Apparel_MamaWardenCap.description>监狱游戏的制服帽。</Apparel_MamaWardenCap.description>
+</LanguageData>
