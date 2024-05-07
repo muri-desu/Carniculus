@@ -19,7 +19,7 @@
 	<gestationPeriodDays>20</gestationPeriodDays>
 	<renderTree>Humanlike</renderTree>
 	<bloodDef>Filth_Blood</bloodDef>
-	<anomalyKnowledge>1</anomalyKnowledge>
+	<anomalyKnowledge>1.5</anomalyKnowledge>
 	<canBecomeShambler>true</canBecomeShambler>
 	<litterSizeCurve>
 	<points>
@@ -60,7 +60,7 @@
 	<li Class="AlienRace.LifeStageAgeAlien">
 		<def>HumanlikeChild</def>
 		<minAge>3</minAge>
-		<headOffset>(0, 0.16)</headOffset>
+		<headOffset>(0, 0.2)</headOffset>
 	</li>
 	<li Class="AlienRace.LifeStageAgeAlien">
 		<def>HumanlikeAdult</def>
@@ -300,57 +300,11 @@
 		<li>Apparel_ShieldBelt</li>
 		<li>Apparel_SmokepopBelt</li>
 		<li>Apparel_FirefoampopPack</li>
-		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
-		<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackTox</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_AirwireHeadset</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_IntegratorHeadset</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArmorHelmetMechCommander</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_ArrayHeadset</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_TackleBox</li>
-		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_JinDou</li>
-		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_LianHua</li>
-		<li MayRequire="Dajian.ChiTeaditional.Expanded">Apparel_FengHuoLun</li>
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_ShieldBeltStrong</li>
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackMelee</li>
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackRanger</li>
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_TravelersBackPack</li>
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerShieldBelt</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Hirameki</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Tuchi</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Wa</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Jin</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Ikusa</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Omamori_Karibito</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Hi_No_Magatama</li>
-		<li MayRequire="YokaiMura.1.32">Yokai_Nagi_no_Magatama</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Silver</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Slate</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Medicine</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Limestone</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Granite</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Marble</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Sandstone</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Steel</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Iron</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Jade</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Gold</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Magicyte</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_Wood</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfThePacifist</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDefense</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_BracersOfDeflection</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfKeenIntellect</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfBlood</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfEternalBlue</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_RingOfMalice</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfConviction</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfSouls_Full</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_OrbOfEternal</li>
-		<li MayRequire="Torann.ARimworldOfMagic">TM_Artifact_NecroticOrb</li>
 	</whiteApparelList>
 
 <onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>

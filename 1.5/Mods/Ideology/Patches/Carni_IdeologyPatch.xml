@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+	<operations>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>HarvestedOrgan_Abhorrent</li>
+			<li>HarvestedOrgan_Know_Abhorrent_Mood</li>
+			<li>HarvestedOrgan_Horrible</li>
+			<li>HarvestedOrgan_Know_Horrible_Mood</li>
+			<li>ObservedTerror</li>
+			<li>ObservedGibbetCage</li>
+			<li>ObservedSkullspike</li>
+			<li>AnyBodyPartCovered_Disapproved_Male</li>
+			<li>AnyBodyPartCovered_Disapproved_Memory</li>
+			<li>AnyBodyPartCovered_Disapproved_Social_Male</li>
+			<li>AnyBodyPartCovered_Disapproved_Social_Female</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Male</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Female</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Memory</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Social_Male</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Social_Female</li>
+			<li>GroinUncovered_Disapproved_Male</li>
+			<li>GroinUncovered_Disapproved_Female</li>
+			<li>GroinUncovered_Disapproved_Social_Male</li>
+			<li>GroinUncovered_Disapproved_Social_Female</li>
+			<li>GroinOrChestUncovered_Disapproved_Male</li>
+			<li>GroinOrChestUncovered_Disapproved_Female</li>
+			<li>GroinOrChestUncovered_Disapproved_Social_Male</li>
+			<li>GroinOrChestUncovered_Disapproved_Social_Female</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Male</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Female</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
+		</value>
+	</li>
+
+
+	</operations>
+</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VanillaExpanded.VMemesE</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>VME_ParticipatedInRaid_Abhorrent</li>
+			<li>VME_RecentConquest_Abhorrent</li>
+		</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>sarg.alphaanimals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>AA_Disgust</li>
+			<li>AA_OcularTrees</li>
+		</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>sarg.alphabiomes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>AB_RedFogThought</li>
+		</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>sarg.alphagenes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or @Name = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>AG_Disgust</li>
+			<li>AG_UnsettlingAppearance</li>
+			<li>AG_EldritchVisage</li>
+		</value>
+		</match>
+	</Operation>
+</Patch>

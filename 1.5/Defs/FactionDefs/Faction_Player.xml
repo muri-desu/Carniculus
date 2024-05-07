@@ -35,5 +35,10 @@
 	<settlementTexturePath>WorldIcon/Carnicolonylarge</settlementTexturePath>
 	<factionIconPath>WorldIcon/Carnicolony</factionIconPath>
 	<colorSpectrum><li>(255,255,255)</li></colorSpectrum>
+<apparelStuffFilter>
+	<thingDefs>
+		<li>Leather_Human</li>
+	</thingDefs>
+</apparelStuffFilter>
 </FactionDef>
 </Defs>

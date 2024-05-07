@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<LifeStageDef ParentName="HumanlikeAdolescent">
+<LifeStageDef>
 	<defName>CarniBaby</defName>
 	<label>baby</label>
 	<bodySizeFactor>0.1</bodySizeFactor>
@@ -11,7 +11,7 @@
 	<headSizeFactor>0.6</headSizeFactor>
 	<eyeSizeFactor>0.7</eyeSizeFactor>
 	<foodMaxFactor>0.625</foodMaxFactor>
-	<hungerRateFactor>0.125</hungerRateFactor>
+	<hungerRateFactor>0.075</hungerRateFactor>
 	<healthScaleFactor>0.2</healthScaleFactor>
 	<marketValueFactor>0.5</marketValueFactor>
 	<meleeDamageFactor>0.5</meleeDamageFactor>
@@ -51,6 +51,12 @@
 		<li>(.60, Infinity)</li>
 	</points>
 	</involuntarySleepMTBDaysFromRest>
+	<hairStyleFilter>
+		<whitelist>false</whitelist>
+		<tags>
+			<li>Balding</li>
+		</tags>
+	</hairStyleFilter>
 </LifeStageDef>
 
 <LifeStageDef Name="CarniChild" ParentName="HumanlikeAdolescent">
@@ -79,6 +85,12 @@
 	<statFactors>
 		<MoveSpeed>0.75</MoveSpeed>
 	</statFactors>
+	<hairStyleFilter>
+		<whitelist>false</whitelist>
+		<tags>
+			<li>Balding</li>
+		</tags>
+	</hairStyleFilter>
 </LifeStageDef>
 
 </Defs>

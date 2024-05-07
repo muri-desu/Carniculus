@@ -149,7 +149,7 @@
 	<defName>Carni_logger</defName>
 	<label>logger</label>
 	<apparelRequired>
-		<li>Apparel_CarniSack</li>
+		<li>Apparel_CarniHood</li>
 		<li>Apparel_CarniApron</li>
 	</apparelRequired>
 	<weaponTags>

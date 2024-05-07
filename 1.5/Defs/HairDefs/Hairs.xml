@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Male -->
 <HairDef>
 	<defName>CarniBald</defName>
 	<label>Bald</label>
-	<styleGender>Male</styleGender>
+	<styleGender>MaleUsually</styleGender>
 	<texPath>Hairs/Bald</texPath>
 	<category>Carni_Hair</category>
 		<styleTags>
 			<li>Carni_Hair</li>
+			<li>Balding</li>
 		</styleTags>
 </HairDef>
+
+<!-- Male -->
 
 <!-- Female -->
 <HairDef>

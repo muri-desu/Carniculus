@@ -32,7 +32,7 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.AlienBackstoryDef[defName = "AlphaMale" or defName = "Matriarch" or defName = "RabidCarni"]/forcedTraitsChance</xpath>
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "AlphaMale" or defName = "Matriarch" or defName = "RabidCarni"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName>VTE_Rebel</defName><chance>50</chance></li>
 			<li><defName>VTE_ThickSkinned</defName><chance>50</chance></li>
@@ -47,7 +47,7 @@
 	</li>
 
 	<li Class="PatchOperationAdd">
-		<xpath>/Defs/AlienRace.AlienBackstoryDef[defName = "Torturer"]/forcedTraitsChance</xpath>
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "Torturer"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName>VTE_MadSurgeon</defName><chance>80</chance></li>
 		</value>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+	<operations>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>CarniPlayerFaction</li>
+		</value>
+	</li>
+
+	<li Class="PatchOperationAdd"><!-- Apparels -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>Apparel_PackJump</li>
+			<li>Apparel_PackBroadshield</li>
+		</value>
+	</li>
+
+
+	</operations>
+</Operation>
+</Patch>

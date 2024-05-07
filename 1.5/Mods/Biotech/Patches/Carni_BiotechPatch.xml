@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+	<li Class="PatchOperationAdd"><!-- こども服・パック類追加 -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>Apparel_Haragake</li>
+			<li>Apparel_Yukinko</li>
+			<li>Apparel_PackControl</li>
+			<li>Apparel_PackBandwidth</li>
+			<li>Apparel_PackTox</li>
+			<li>Apparel_AirwireHeadset</li>
+			<li>Apparel_IntegratorHeadset</li>
+			<li>Apparel_ArmorHelmetMechCommander</li>
+			<li>Apparel_ArrayHeadset</li>
+		</value>
+	</li>
+
+		</operations>
+	</Operation>
+</Patch>

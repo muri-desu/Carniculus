@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Boots and Stuff</li>
+			<li>1488970545</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>Apparel_Socks</li>
+				<li>Apparel_ring</li>
+				<li>Apparel_work_gloves</li>
+				<li>Apparel_thick_gloves</li>
+				<li>Apparel_medic_gloves</li>
+				<li>Apparel_boots</li>
+				<li>Apparel_military_Boots</li>
+				<li>Apparel_sandals</li>
+				<li>Apparel_shoes</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+			<li>2636329500</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>VME_TackleBox</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SZ] [综合内容+持续更新版] 含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded</li>
+			<li>2877536640</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>Apparel_JinDou</li>
+				<li>Apparel_LianHua</li>
+				<li>Apparel_FengHuoLun</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>妖怪村</li>
+			<li>1532938687</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>Yokai_Omamori_Hirameki</li>
+				<li>Yokai_Omamori_Tuchi</li>
+				<li>Yokai_Omamori_Wa</li>
+				<li>Yokai_Omamori_Jin</li>
+				<li>Yokai_Omamori_Ikusa</li>
+				<li>Yokai_Omamori_Karibito</li>
+				<li>Yokai_Hi_No_Magatama</li>
+				<li>Yokai_Nagi_no_Magatama</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A RimWorld of Magic</li>
+			<li>1201382956</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>TM_Artifact_Silver</li>
+				<li>TM_Artifact_Slate</li>
+				<li>TM_Artifact_Medicine</li>
+				<li>TM_Artifact_Limestone</li>
+				<li>TM_Artifact_Granite</li>
+				<li>TM_Artifact_Marble</li>
+				<li>TM_Artifact_Sandstone</li>
+				<li>TM_Artifact_Steel</li>
+				<li>TM_Artifact_Iron</li>
+				<li>TM_Artifact_Jade</li>
+				<li>TM_Artifact_Gold</li>
+				<li>TM_Artifact_Magicyte</li>
+				<li>TM_Artifact_Wood</li>
+				<li>TM_Artifact_BracersOfThePacifist</li>
+				<li>TM_Artifact_BracersOfDefense</li>
+				<li>TM_Artifact_BracersOfDeflection</li>
+				<li>TM_Artifact_RingOfKeenIntellect</li>
+				<li>TM_Artifact_RingOfBlood</li>
+				<li>TM_Artifact_RingOfEternalBlue</li>
+				<li>TM_Artifact_RingOfMalice</li>
+				<li>TM_Artifact_OrbOfConviction</li>
+				<li>TM_Artifact_OrbOfSouls</li>
+				<li>TM_Artifact_OrbOfSouls_Full</li>
+				<li>TM_Artifact_OrbOfEternal</li>
+				<li>TM_Artifact_NecroticOrb</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[Aya]Eveliet Race</li>
+			<li>3153539856</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>HAR_EL_EyeCover_a</li>
+				<li>HAR_EL_EyeCover_b</li>
+				<li>HAR_EL_EyeCover_c</li>
+				<li>HAR_EL_EyeCover_d</li>
+				<li>HAR_EL_EyeCover_e</li>
+				<li>HAR_EL_EyeCover_f</li>
+				<li>HAR_EL_EyeCover_g</li>
+				<li>HAR_EL_EyeCover_h</li>
+				<li>HAR_EL_EyeCover_i</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
