@@ -66,4 +66,8 @@ Rimworld用種族mod
 
 
 old Ver.⬇️
+<<<<<<< HEAD
 https://github.com/muri-desu/Carniculus_old
+=======
+https://github.com/muri-desu/Carniculus_old
+>>>>>>> 38ef7125fcd10b5b7d03b7b2c670bcb5614a0d74
