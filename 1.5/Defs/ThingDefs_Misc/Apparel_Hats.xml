@@ -14,6 +14,7 @@
 </ThingCategoryDef>
 
 <ThingDef Name="Carni_HatBase" ParentName="HatBase" Abstract="True">
+	<techLevel>Medieval</techLevel>
 	<recipeMaker>
 		<recipeUsers>
 			<li>HandTailoringBench</li>
@@ -41,6 +42,7 @@
 </ThingDef>
 
 <ThingDef Name="CarniMama_HatBase" ParentName="HatBase" Abstract="True">
+	<techLevel>Medieval</techLevel>
 	<recipeMaker>
 		<recipeUsers>
 			<li>HandTailoringBench</li>
@@ -52,7 +54,6 @@
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 	</recipeMaker>
-	<techLevel>Medieval</techLevel>
 	<apparel>
 		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<tags>
@@ -68,15 +69,15 @@
 </ThingDef>
 
 
-<ThingDef ParentName="Carni_HatBase"><!-- ♂袋 -->
+<ThingDef ParentName="Carni_HatBase"><!-- フード -->
 	<defName>Apparel_CarniHood</defName>
-		<label>hood</label>
+		<label>carni hood</label>
 		<description>simple headgear that hides a scary face. Maybe you can make human friends easily now.</description>
 		<recipeMaker>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-		</recipeUsers>
-	</recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
 
 	<graphicData>
 		<texPath>Things/Apparel/Hats/CarniHood</texPath>
@@ -115,19 +116,20 @@
 		<layers>
 			<li>Overhead</li>
 		</layers>
-	<wornGraphicPath>Things/Apparel/Hats/CarniHood</wornGraphicPath>
+		<wornGraphicPath>Things/Apparel/Hats/CarniHood</wornGraphicPath>
 		<tags>
 			<li>Butcher</li>
 		</tags>
-	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+	<developmentalStageFilter>Adult</developmentalStageFilter>
 	</apparel>
+
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 </ThingDef>
 
 <ThingDef ParentName="Carni_HatBase"><!-- 革マスク -->
 	<defName>Apparel_CarniLeatherMask</defName>
 		<label>leather mask</label>
 		<description>Gas masks made of thick leather.</description>
-		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Hats/LeatherMask</texPath>
@@ -244,7 +246,6 @@
 	<defName>Apparel_MamaGasmask</defName>
 		<label>mama's gasmask</label>
 		<description>protects against poisonous gases and airborne dust.</description>
-		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Hats/Gasmask</texPath>
@@ -322,7 +323,6 @@
 	<defName>Apparel_MamaNunHead</defName>
 		<label>mama's veil</label>
 		<description>mama's devotee veil.</description>
-		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Hats/NunHead</texPath>
@@ -381,7 +381,6 @@
 	<defName>Apparel_MamaMaidHead</defName>
 		<label>mama's brim</label>
 		<description>mama's maid head dress.</description>
-		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Hats/MaidHead</texPath>

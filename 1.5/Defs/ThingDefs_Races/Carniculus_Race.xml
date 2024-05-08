@@ -39,6 +39,7 @@
 	</li>
 	<li Class="AlienRace.LifeStageAgeAlien">
 		<def>CarniChild</def>
+			<headOffset>(0, 0.1)</headOffset>
 		<minAge>3</minAge>
 	</li>
 	<li>
@@ -173,6 +174,7 @@
 		<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 	</bodyTypes>
 	<headOffset>(0, 0)</headOffset>
+	<headFemaleOffset>(0, 0.075)</headFemaleOffset>
 	<customDrawSize>(1, 1)</customDrawSize>
 	<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 	<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
@@ -295,13 +297,21 @@
 				<key>Apparel_CarniHood</key>
 				<value>
 					<extendedGraphics>
-						<BodyType For="Child">Things/Apparel/Hats/CarniHood_Child</BodyType>
-						<HeadType For="Male_Head1">Things/Apparel/Hats/CarniHood_M1</HeadType>
-						<HeadType For="Male_Head2">Things/Apparel/Hats/CarniHood_M2</HeadType>
-						<HeadType For="Male_Head3">Things/Apparel/Hats/CarniHood_M3</HeadType>
-						<HeadType For="Female_Head1">Things/Apparel/Hats/CarniHood_F1</HeadType>
-						<HeadType For="Female_Head2">Things/Apparel/Hats/CarniHood_F2</HeadType>
-						<HeadType For="Female_Head3">Things/Apparel/Hats/CarniHood_F3</HeadType>
+						<BodyType MayRequire="Ludeon.RimWorld.Biotech" For="Child">Things/Apparel/Hats/CarniHood_Child</BodyType>
+						<BodyType For="Male"><path>Things/Apparel/Hats/</path>
+							<extendedGraphics>
+								<HeadType For="Male_Head1">Things/Apparel/Hats/CarniHood_M1</HeadType>
+								<HeadType For="Male_Head2">Things/Apparel/Hats/CarniHood_M2</HeadType>
+								<HeadType For="Male_Head3">Things/Apparel/Hats/CarniHood_M3</HeadType>
+							</extendedGraphics>
+						</BodyType>
+						<BodyType For="Female"><path>Things/Apparel/Hats/</path>
+							<extendedGraphics>
+								<HeadType For="Female_Head1">Things/Apparel/Hats/CarniHood_F1</HeadType>
+								<HeadType For="Female_Head2">Things/Apparel/Hats/CarniHood_F2</HeadType>
+								<HeadType For="Female_Head3">Things/Apparel/Hats/CarniHood_F3</HeadType>
+							</extendedGraphics>
+						</BodyType>
 					</extendedGraphics>
 				</value>
 			</li>

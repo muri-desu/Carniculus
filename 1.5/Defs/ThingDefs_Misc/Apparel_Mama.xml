@@ -19,7 +19,7 @@
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 	</recipeMaker>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<smeltable>true</smeltable>
 	<apparel>
 		<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -220,6 +220,7 @@
 	<defName>Apparel_MamaShirtSet</defName>
 		<label>mama's tie n shirt</label>
 		<description>Set-up of shirt, tie and skirt.</description>
+		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Mama/ShirtSet</texPath>
@@ -403,6 +404,7 @@
 	<defName>Apparel_MamaWardenJacket</defName>
 		<label>mama's warden jacket</label>
 		<description>guard's jacket with a solid collar.</description>
+		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Mama/WardenJacket</texPath>
@@ -464,6 +466,7 @@
 	<defName>Apparel_MamaDrCoat</defName>
 		<label>mama's white coat</label>
 		<description>same model of white coat that the original mama wore during her working years.</description>
+		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Mama/DrCoat</texPath>

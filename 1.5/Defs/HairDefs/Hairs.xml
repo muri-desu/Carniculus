@@ -3,7 +3,7 @@
 
 <HairDef>
 	<defName>CarniBald</defName>
-	<label>Bald</label>
+	<label>Carni Bald</label>
 	<styleGender>MaleUsually</styleGender>
 	<texPath>Hairs/Bald</texPath>
 	<category>Carni_Hair</category>
@@ -18,7 +18,7 @@
 <!-- Female -->
 <HairDef>
 	<defName>CarniShortF</defName>
-	<label>ShortF</label>
+	<label>Carni ShortF</label>
 	<styleGender>Female</styleGender>
 	<texPath>Hairs/ShortF</texPath>
 	<category>Carni_Hair</category>
@@ -29,7 +29,7 @@
 
 <HairDef>
 	<defName>CarniMiddleF</defName>
-	<label>MiddleF</label>
+	<label>Carni MiddleF</label>
 	<styleGender>Female</styleGender>
 	<texPath>Hairs/MiddleF</texPath>
 	<category>Carni_Hair</category>
@@ -40,9 +40,42 @@
 
 <HairDef>
 	<defName>CarniLongF</defName>
-	<label>LongF</label>
+	<label>Carni LongF</label>
 	<styleGender>Female</styleGender>
 	<texPath>Hairs/LongF</texPath>
+	<category>Carni_Hair</category>
+		<styleTags>
+			<li>Carni_Hair</li>
+		</styleTags>
+</HairDef>
+
+<HairDef>
+	<defName>CarniPointyF</defName>
+	<label>Carni WildBangsF</label>
+	<styleGender>Female</styleGender>
+	<texPath>Hairs/PointyF</texPath>
+	<category>Carni_Hair</category>
+		<styleTags>
+			<li>Carni_Hair</li>
+		</styleTags>
+</HairDef>
+
+<HairDef>
+	<defName>CarniBraidF</defName>
+	<label>Carni SideBraidF</label>
+	<styleGender>Female</styleGender>
+	<texPath>Hairs/BraidF</texPath>
+	<category>Carni_Hair</category>
+		<styleTags>
+			<li>Carni_Hair</li>
+		</styleTags>
+</HairDef>
+
+<HairDef>
+	<defName>CarniWavyF</defName>
+	<label>Carni ElegantWavyF</label>
+	<styleGender>Female</styleGender>
+	<texPath>Hairs/WavyF</texPath>
 	<category>Carni_Hair</category>
 		<styleTags>
 			<li>Carni_Hair</li>

@@ -1,3 +1,13 @@
+Recent change
+
+『ずだ袋』と『ベール』を『フード』に統合。男が装備するとずだ袋になって女が装備するとベールっぽくなります
+上記頭装備とレザーマスクがheadtypeによって見た目が変わるようになった
+アノマリーのパックなどユーティリティ装備を身につけられるようになった
+アノマリーやイデオロギーのthoughtsをいくつか無効化した
+（全裸でエンティティと同じ部屋で寝起きして肉の触手を生やしながら捻れた肉を食べるのが平気になった）
+
+
+
 A race mod for Rimworld.
 Adds "carniculus", an alien race made of lumps of tumor. HAR & RJW required
 

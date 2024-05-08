@@ -7,8 +7,6 @@
 	<li Class="PatchOperationAdd"><!-- こども服・パック類追加 -->
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
 		<value>
-			<li>Apparel_Haragake</li>
-			<li>Apparel_Yukinko</li>
 			<li>Apparel_PackControl</li>
 			<li>Apparel_PackBandwidth</li>
 			<li>Apparel_PackTox</li>

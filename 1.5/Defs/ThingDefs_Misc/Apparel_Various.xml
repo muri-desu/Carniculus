@@ -104,7 +104,6 @@
 	<defName>Apparel_CarniApron</defName>
 		<label>leather apron</label>
 		<description>apron perfect for cooking and forge work.</description>
-		<techLevel>Medieval</techLevel>
 
 	<recipeMaker>
 		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -334,7 +333,6 @@
 	<defName>Apparel_CarniLeatherSuit</defName>
 		<label>leather suit</label>
 		<description>leather suit that cover the entire body.</description>
-		<techLevel>Medieval</techLevel>
 
 	<recipeMaker>
 		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -408,7 +406,6 @@
 		</recipeUsers>
 		<unfinishedThingDef>UnfinishedCarniApparel</unfinishedThingDef>
 	</recipeMaker>
-	<techLevel>Spacer</techLevel>
 
 	<statBases>
 		<WorkToMake>50000</WorkToMake>
