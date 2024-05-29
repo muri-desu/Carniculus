@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Carniculus_GeneCat.label>カルニクルス</Carniculus_GeneCat.label>
+<CarniGene.label>カルニクルスコア</CarniGene.label>
+<CarniGene.labelShortAdj>カルニクルスコア</CarniGene.labelShortAdj>
+<CarniGene.description>カルニクルスのわがままボディ（とわがままマインド）を構成する遺伝子. (Carniculus Race)</CarniGene.description>
+<CarniGene.symbolPack.prefixSymbols.0.symbol>カルニ</CarniGene.symbolPack.prefixSymbols.0.symbol>
+<CarniGene.symbolPack.prefixSymbols.1.symbol>テラト</CarniGene.symbolPack.prefixSymbols.1.symbol>
+<CarniMamaGene.label>ママの愛</CarniMamaGene.label>
+<CarniMamaGene.labelShortAdj>ママの愛</CarniMamaGene.labelShortAdj>
+<CarniMamaGene.description>カルニクルスたちが理想化した母性をかたどる遺伝子. (Carniculus Race)</CarniMamaGene.description>
+<CarniMamaGene.symbolPack.prefixSymbols.0.symbol>ママ</CarniMamaGene.symbolPack.prefixSymbols.0.symbol>
+<CarniMamaGene.symbolPack.prefixSymbols.1.symbol>マム</CarniMamaGene.symbolPack.prefixSymbols.1.symbol>
+<CarniMamaGene.symbolPack.prefixSymbols.2.symbol>マトリ</CarniMamaGene.symbolPack.prefixSymbols.2.symbol>
+
+</LanguageData>

@@ -154,7 +154,7 @@
 				<li>Stab</li>
 			</capacities>
 			<power>20</power>
-			<armorPenetration>0.50</armorPenetration>
+			<armorPenetration>0.75</armorPenetration>
 			<cooldownTime>1.7</cooldownTime>
 		</li>
 	</tools>

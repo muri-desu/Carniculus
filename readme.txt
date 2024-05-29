@@ -1,10 +1,15 @@
 Recent change
 
-•女の髪型をいくつか追加
-•『ずだ袋』と『ベール』を『フード』に統合。男が装備するとずだ袋になって女が装備するとベールっぽくなります
-•上記頭装備とレザーマスクがheadtypeによって見た目が変わるようになった
-•アノマリーのパックなどユーティリティ装備を身につけられるようになった
-•アノマリーやイデオロギーのthoughtsをいくつか無効化
+・1.4フォルダを削除　今後は1.5のみ更新になります
+・髪の毛をボディアドオンに変更
+・独自遺伝子を追加
+・体の構成とテクスチャを調整
+・服装の重なり順などを調整
+・女の髪型をいくつか追加
+・『ずだ袋』と『ベール』を『フード』に統合。男が装備するとずだ袋になって女が装備するとベールっぽくなります
+・上記頭装備とレザーマスクがheadtypeによって見た目が変わるようになった
+・アノマリーのパックなどユーティリティ装備を身につけられるようになった
+・アノマリーやイデオロギーのthoughtsをいくつか無効化
 （全裸でエンティティと同じ部屋で寝起きして肉の触手を生やしながら捻れた肉を食べるのが平気になった）
 
 
@@ -32,7 +37,7 @@ Carnigigas (livestock)
 - Other than that they are mostly the same as elephants.
 
 "Metastasis and Proliferation" (scenario)
-- Starts with 3 naked carniculus (or "mama") + one carnigigas
+- Starts with 3 carniculus (or "mama") + one carnigigas
 
 Carniculus’ trading ship (trader)
 - Trader ships by carniculus who stayed on the spaceship.
@@ -75,9 +80,8 @@ Rimworld用種族mod
 - 奴隷やインプラントを多く扱っている
 
 
-old Ver.⬇️
-<<<<<<< HEAD
+1.3 or earlier Ver.⬇️
 https://github.com/muri-desu/Carniculus_old
-=======
-https://github.com/muri-desu/Carniculus_old
->>>>>>> 38ef7125fcd10b5b7d03b7b2c670bcb5614a0d74
+
+ko-fi⬇️
+https://ko-fi.com/muri151075

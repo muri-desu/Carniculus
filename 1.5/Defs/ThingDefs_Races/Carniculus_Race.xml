@@ -21,8 +21,9 @@
 	<gestationPeriodDays>13</gestationPeriodDays>
 	<renderTree>Humanlike</renderTree>
 	<bloodDef>Filth_Blood</bloodDef>
-	<anomalyKnowledge>1.2</anomalyKnowledge>
-	<canBecomeShambler>true</canBecomeShambler>
+	<anomalyKnowledge>1</anomalyKnowledge>
+	<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+	<canBecomeShambler>false</canBecomeShambler>
 	<litterSizeCurve>
 	<points>
 		<li>(0.5, 0)</li>
@@ -38,7 +39,7 @@
 			<headOffset>(0, -0.05)</headOffset>
 	</li>
 	<li Class="AlienRace.LifeStageAgeAlien">
-		<def>CarniChild</def>
+		<def>HumanlikeChild</def>
 			<headOffset>(0, 0.1)</headOffset>
 		<minAge>3</minAge>
 	</li>
@@ -152,7 +153,7 @@
 
 <alienRace>
 <generalSettings>
-	<minAgeForAdulthood>16</minAgeForAdulthood>
+	<minAgeForAdulthood>18</minAgeForAdulthood>
 	<allowHumanBios>false</allowHumanBios>
 	<humanRecipeImport>true</humanRecipeImport>
 	<immuneToAge>true</immuneToAge>
@@ -179,60 +180,104 @@
 	<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 	<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
 	<customPortraitHeadDrawSize>(1, 1)</customPortraitHeadDrawSize>
-				<colorChannels>
+				<colorChannels Inherit="False">
 					<li>
 					<name>skin</name>
 						<first Class="ColorGenerator_Options">
 							<options>
 								<li>
-									<weight>1</weight>
-									<only>(220,140,150)</only>
+									<weight>100</weight>
+									<only>RGBA(220,140,150,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>(187,116,134)</only>
+									<weight>100</weight>
+									<only>RGBA(187,116,134,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>(160,77,90)</only>
+									<weight>100</weight>
+									<only>RGBA(160,77,90,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>(225,187,161)</only>
+									<weight>100</weight>
+									<only>RGBA(225,187,161,255)</only>
 								</li>
-						</options>
+							</options>
 						</first>
 					</li>
-
 					<li>
 					<name>hair</name>
 						<first Class="ColorGenerator_Options">
 							<options>
 								<li>
-									<weight>1</weight>
-									<only>RGBA(220,140,150)</only>
+									<weight>100</weight>
+									<only>RGBA(220,140,150,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>RGBA(169,74,87)</only>
+									<weight>100</weight>
+									<only>RGBA(187,116,134,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>RGBA(188,104,113)</only>
+									<weight>100</weight>
+									<only>RGBA(160,77,90,255)</only>
 								</li>
 								<li>
-									<weight>1</weight>
-									<only>RGBA(154,71,76)</only>
-								</li>
-								<li>
-									<weight>1</weight>
-									<only>RGBA(143,47,58)</only>
+									<weight>100</weight>
+									<only>RGBA(225,187,161,255)</only>
 								</li>
 							</options>
 						</first>
 					</li>
 				</colorChannels>
 	<oldHairAgeRange>10000~99999</oldHairAgeRange>
+
+<bodyAddons>
+		<li><!-- 髪の毛 -->
+			<path>Hairs/CarniHair</path>
+			<inFrontOfBody>true</inFrontOfBody>
+			<defaultOffset>Center</defaultOffset>
+			<alignWithHead>true</alignWithHead>
+			<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+			<colorChannel>hair</colorChannel>
+			<conditions>
+				<BodyPart>
+					<bodyPart>Head</bodyPart>
+					<drawWithoutPart>false</drawWithoutPart>
+				</BodyPart>
+				<Apparel>
+					<hiddenUnderApparelFor>
+						<li>UpperHead</li>
+					</hiddenUnderApparelFor>
+				</Apparel>
+				<RotStage>Fresh,Rotting</RotStage>
+				<Posture>
+					<drawnStanding>true</drawnStanding>
+					<drawnLaying>true</drawnLaying>
+					<drawnInBed>true</drawnInBed>
+				</Posture>
+			</conditions>
+			<extendedGraphics>
+				<Gender For="Male">Things/Pawn/Carni/blank</Gender>
+				<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
+				<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
+				<Age For="HumanlikeAdult">Hairs/CarniHair</Age>
+			</extendedGraphics>
+			<offsets>
+				<south>
+					<layerOffset>-0.275</layerOffset>
+					<offset>(0,-0)</offset>
+				</south>
+				<north>
+					<layerOffset>-0.322</layerOffset>
+					<offset>(0,-0)</offset>
+				</north>
+				<east>
+					<layerOffset>-0.275</layerOffset>
+					<offset>(0,-0)</offset>
+				</east>
+			</offsets>
+		</li>
+</bodyAddons>
+
 </alienPartGenerator>
 
 <disallowedTraits>
@@ -253,7 +298,7 @@
 	<head><path>Things/Pawn/Carni/Heads/</path>
 		<extendedGraphics>
 			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
-			<Age For="CarniChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Child</Age>
+			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Carni/Heads/</path>
 				<extendedGraphics>
 					<Gender For="Female"><path>Things/Pawn/Carni/Heads/</path>
@@ -278,7 +323,7 @@
 	<body><path>Things/Pawn/Carni/Bodies/</path>
 		<extendedGraphics>
 			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
-			<Age For="CarniChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Child</Age>
+			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Carni/Bodies/</path>
 				<extendedGraphics>
 					<Gender For="Female">Things/Pawn/Carni/Bodies/Naked_Female</Gender>
@@ -337,14 +382,7 @@
 	<li>
 		<key>HairDef</key>
 		<value>
-			<hasStyle>true</hasStyle>
-			<genderRespected>true</genderRespected>
-			<styleTags>
-				<li>Carni_Hair</li>
-			</styleTags>
-			<styleTagsOverride>
-				<li>Carni_Hair</li>
-			</styleTagsOverride>
+			<hasStyle>false</hasStyle>
 		</value>
 	</li>
 	<li>
@@ -380,6 +418,11 @@
 		<li>Apparel_CarniNecroArmor</li>
 	</apparelList>
 	<whiteApparelList>
+		<li>OrbitalTargeterBombardment</li>
+		<li>OrbitalTargeterPowerBeam</li>
+		<li>TornadoGenerator</li>
+		<li>Apparel_PsychicShockLance</li>
+		<li>Apparel_PsychicInsanityLance</li>
 		<li>Apparel_ShieldBelt</li>
 		<li>Apparel_SmokepopBelt</li>
 		<li>Apparel_FirefoampopPack</li>
@@ -390,39 +433,38 @@
 		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerShieldBelt</li>
 	</whiteApparelList>
 
-<onlyHaveRaceRestrictedGenes>false</onlyHaveRaceRestrictedGenes>
-	<blackXenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-		<li>Highmate</li>
-	</blackXenotypeList>
-	<blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
-		<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li> -->
-		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Thin</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Fat</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">Body_Hulk</li>
-		<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
-	</blackGeneList>
-	<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
-		<li>Melanin</li>
-		<li>HairColor</li>
-		<li>BodyType</li>
-		<li>Nose</li>
-		<li>Jaw</li>
-		<li>Head</li>
-		<li>Headbone</li>
-		<li>HairStyle</li>
-		<li>BeardStyle</li>
-		<li>SkinColorOverride</li>
-		<li>Fur</li>
-		<li>Tail</li>
-	</blackGeneTags>
-	<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
-		<li>Melanin</li>
-		<li>HairColor</li>
-		<li>Nose</li>
-		<li>Jaw</li>
-		<li>Head</li>
-		<li>BodyType</li>
-	</blackEndoCategories>
+	<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>
+		<blackXenotypeList>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+		</blackXenotypeList>
+		<blackGeneList>
+			<li MayRequire="Ludeon.RimWorld.Biotech">CarniMamaGene</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Inbred</li>
+		</blackGeneList>
+		<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+			<li>Melanin</li>
+			<li>HairColor</li>
+			<li>BodyType</li>
+			<li>Nose</li>
+			<li>Jaw</li>
+			<li>Head</li>
+			<li>Headbone</li>
+			<li>HairStyle</li>
+			<li>BeardStyle</li>
+			<li>SkinColorOverride</li>
+			<li>Fur</li>
+			<li>Tail</li>
+			<li MayRequire="sarg.alphagenes">AG_Cosmetic_Heads</li>
+			<li MayRequire="sarg.alphagenes">AG_Cosmetic_Bodies</li>
+		</blackGeneTags>
+		<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+			<li>Melanin</li>
+			<li>HairColor</li>
+			<li>Nose</li>
+			<li>Jaw</li>
+			<li>Head</li>
+			<li>BodyType</li>
+		</blackEndoCategories>
 </raceRestriction>
 
 <relationSettings>
@@ -432,41 +474,40 @@
 	<relationChanceModifierFiance>0</relationChanceModifierFiance>
 	<relationChanceModifierLover>0</relationChanceModifierLover>
 	<relationChanceModifierParent>0.2</relationChanceModifierParent>
-	<relationChanceModifierSibling>0.5</relationChanceModifierSibling>
+	<relationChanceModifierSibling>1</relationChanceModifierSibling>
 	<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 </relationSettings>
 
 <thoughtSettings>
-<cannotReceiveThoughts>
-<!-- food temp naked etc -->
-	<li>SharedBed</li>
-	<li>AteRawFood</li>
-	<li>AteCorpse</li>
-	<li>AteHumanlikeMeatDirect</li>
-	<li>AteHumanlikeMeatAsIngredient</li>
-	<li>ObservedLayingCorpse</li>
-	<li>ObservedLayingRottingCorpse</li>
-	<li>Naked</li>
-	<li>ButcheredHumanlikeCorpse</li>
-	<li>KnowButcheredHumanlikeCorpse</li>
-	<li>ButcheredHumanlikeCorpseOpinion</li>
-	<li>KnowGuestOrganHarvested</li>
-	<li>KnowColonistOrganHarvested</li>
-<!-- social opinion -->
-	<li>Ugly</li>
-	<li>AnnoyingVoice</li>
-	<li>CreepyBreathing</li>
-	<li>Disfigured</li>
-	<li>Affair</li>
-	<li>Incestuous</li>
-<!-- BadHygiene -->
-	<li MayRequire="Dubwise.DubsBadHygiene">WashPrivacy</li>
-	<li MayRequire="Dubwise.DubsBadHygiene">ToiletPrivacy</li>
-	<li MayRequire="Dubwise.DubsBadHygiene">openDefecation</li>
-<!-- RJW -->
-	<li MayRequire="rim.job.world.pe">ChildRapedByAdult</li>
-	<li MayRequire="rim.job.world.pe">RapedMyChild</li>
-</cannotReceiveThoughts>
+	<cannotReceiveThoughts>
+	<!-- food temp naked etc -->
+		<li>SharedBed</li>
+		<li>AteRawFood</li>
+		<li>AteCorpse</li>
+		<li>AteHumanlikeMeatDirect</li>
+		<li>AteHumanlikeMeatAsIngredient</li>
+		<li>ObservedLayingCorpse</li>
+		<li>ObservedLayingRottingCorpse</li>
+		<li>Naked</li>
+		<li>ButcheredHumanlikeCorpse</li>
+		<li>KnowButcheredHumanlikeCorpse</li>
+		<li>ButcheredHumanlikeCorpseOpinion</li>
+		<li>KnowGuestOrganHarvested</li>
+		<li>KnowColonistOrganHarvested</li>
+	<!-- social opinion -->
+		<li>Ugly</li>
+		<li>AnnoyingVoice</li>
+		<li>CreepyBreathing</li>
+		<li>Disfigured</li>
+		<li>Affair</li>
+		<li>Incestuous</li>
+	<!-- BadHygiene -->
+		<li MayRequire="Dubwise.DubsBadHygiene">WashPrivacy</li>
+		<li MayRequire="Dubwise.DubsBadHygiene">ToiletPrivacy</li>
+		<li MayRequire="Dubwise.DubsBadHygiene">openDefecation</li>
+	<!-- etc -->
+		<li MayRequire="sarg.alphagenes">AG_Disgust</li>
+	</cannotReceiveThoughts>
 </thoughtSettings>
 </alienRace>
 

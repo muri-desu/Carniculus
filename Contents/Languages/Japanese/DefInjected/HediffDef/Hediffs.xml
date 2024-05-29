@@ -7,4 +7,7 @@
 <Hediff_NecroArmor.description>壊疽アーマーが蓄えた毒素を利用した噛みつき攻撃が可能になります.</Hediff_NecroArmor.description>
 <Hediff_NecroArmor.labelNoun>壊疽アーマー</Hediff_NecroArmor.labelNoun>
 <Hediff_NecroArmor.tools.0.label>毒噛みつき</Hediff_NecroArmor.tools.0.label>
+<Mama_Lactating.label>乳母</Mama_Lactating.label>
+<Mama_Lactating.description>妊娠出産のサイクルに関係なく母乳が分泌されます.</Mama_Lactating.description>
+<Mama_Lactating.comps.0.labelInBrackets>母乳貯留量</Mama_Lactating.comps.0.labelInBrackets>
 </LanguageData>

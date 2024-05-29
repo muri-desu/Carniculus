@@ -3,7 +3,7 @@
 <Operation Class="PatchOperationSequence">
 	<operations>
 
-	<li Class="PatchOperationAdd">
+	<li Class="PatchOperationAdd"><!-- faction relation -->
 		<xpath>Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
 		<value>
 			<li>CarniPlayerFaction</li>
@@ -13,11 +13,36 @@
 	<li Class="PatchOperationAdd"><!-- Apparels -->
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
 		<value>
+			<li>OrbitalTargeterMechCluster</li>
 			<li>Apparel_PackJump</li>
 			<li>Apparel_PackBroadshield</li>
 		</value>
 	</li>
 
+	<li Class="PatchOperationAdd"><!-- Guests -->
+		<xpath>Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+			<factionDef>CarniNPCFaction</factionDef>
+				<pawnKinds>
+					<li>Carni_boss</li>
+					<li>Carni_worker</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd"><!-- Mercenaries -->
+		<xpath>/Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+		<value>
+			<li>
+			<factionDef>CarniNPCFaction</factionDef>
+				<pawnKinds>
+					<li>Carni_worker</li>
+					<li>Carni_miner</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</li>
 
 	</operations>
 </Operation>

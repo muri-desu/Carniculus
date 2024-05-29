@@ -323,6 +323,7 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/NunDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 	<tags>
 		<li>mama_nun</li>
 	</tags>
@@ -384,6 +385,7 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/MaidDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 	<tags>
 		<li>mama_maid</li>
 	</tags>
@@ -446,6 +448,7 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/WardenJacket</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 	<tags>
 		<li>mama_police</li>
 	</tags>
@@ -511,6 +514,7 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/DrCoat</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 	<tags>
 		<li>mama_dr</li>
 	</tags>

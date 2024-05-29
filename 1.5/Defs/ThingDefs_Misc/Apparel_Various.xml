@@ -66,6 +66,7 @@
 	</statBases>
 	<altitudeLayer>Item</altitudeLayer>
 	<alwaysHaulable>True</alwaysHaulable>
+	<smeltable>true</smeltable>
 	<tickerType>Never</tickerType>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
@@ -150,6 +151,7 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Apron/Apron</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 		<tags>
 			<li>Butcher</li>
 		</tags>
@@ -250,7 +252,6 @@
 	<apparel>
 		<bodyPartGroups>
 			<li>FullHead</li>
-			<li>UpperHead</li>
 			<li>Neck</li>
 			<li>Shoulders</li>
 			<li>Torso</li>
@@ -309,7 +310,6 @@
 	<apparel>
 		<bodyPartGroups>
 			<li>FullHead</li>
-			<li>UpperHead</li>
 			<li>Neck</li>
 			<li>Shoulders</li>
 			<li>Torso</li>
@@ -347,7 +347,7 @@
 	<statBases>
 		<WorkToMake>38000</WorkToMake>
 		<MaxHitPoints>290</MaxHitPoints>
-		<Mass>15</Mass>
+		<Mass>2</Mass>
 		<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
@@ -379,7 +379,7 @@
 			<li>Feet</li>
 		</bodyPartGroups>
 		<layers>
-			<li>Shell</li>
+			<li>Middle</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Suit/Suit</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -396,6 +396,7 @@
 </ThingDef>
 
 <ThingDef Name="CarniArmorBase" ParentName="ApparelBase" Abstract="True"><!-- アーマーbase -->
+	<smeltable>true</smeltable>
 	<recipeMaker>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
@@ -410,7 +411,7 @@
 	<statBases>
 		<WorkToMake>50000</WorkToMake>
 		<MaxHitPoints>450</MaxHitPoints>
-		<Mass>12</Mass>
+		<Mass>10</Mass>
 		<EquipDelay>15</EquipDelay>
 	</statBases>
 

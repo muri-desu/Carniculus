@@ -26,40 +26,47 @@
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
 </PawnKindDef>
 
 <!-- Player -->
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
-	<defName>CarniMama_nun</defName>
+<PawnKindDef Name="CarniMamaColonist" ParentName="BaseCarniMamaPawnKind">
+	<defName>CarniMama_colonist</defName>
 	<label>mama</label>
 	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
+</PawnKindDef>
+
+<PawnKindDef ParentName="CarniMamaColonist">
+	<defName>CarniMama_nun</defName>
+	<label>mama</label>
 	<apparelTags>
 		<li>mama_nun</li>
 	</apparelTags>
 </PawnKindDef>
 
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="CarniMamaColonist">
 	<defName>CarniMama_maid</defName>
 	<label>mama</label>
-	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
 	<apparelTags>
 		<li>mama_maid</li>
 	</apparelTags>
 </PawnKindDef>
 
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="CarniMamaColonist">
 	<defName>CarniMama_police</defName>
 	<label>mama</label>
-	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
 	<apparelTags>
 		<li>mama_police</li>
 	</apparelTags>
 </PawnKindDef>
 
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="CarniMamaColonist">
 	<defName>CarniMama_dr</defName>
 	<label>mama</label>
-	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
 	<apparelTags>
 		<li>mama_dr</li>
 	</apparelTags>

@@ -32,7 +32,7 @@
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
-	</PawnKindDef>
+</PawnKindDef>
 
 <PawnKindDef ParentName="BaseCarniPawnKind"><!-- Slave -->
 	<defName>CarniSlave</defName>
@@ -68,6 +68,7 @@
 	<techHediffsChance>0.4</techHediffsChance>
 		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+	<invNutrition>3.55</invNutrition>
 	<weaponMoney>255~3500</weaponMoney>
 	<backstoryFiltersOverride>
 		<li>
@@ -84,10 +85,9 @@
 	<labelMale>alpha</labelMale>
 	<labelFemale>matriarch</labelFemale>
 	<trader>true</trader>
-	<combatPower>85</combatPower>
+	<combatPower>95</combatPower>
 	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	<apparelMoney>1500~5000</apparelMoney>
-	<invNutrition>3.55</invNutrition>
 	<weaponMoney>350~5000</weaponMoney>
 	<weaponTags>
 		<li>Gun</li>
@@ -107,6 +107,11 @@
 		<li>CarniBossApparel</li>
 		<li>BeltDefensePop</li>
 	</apparelTags>
+	<xenotypeSet Inherit="False">
+		<xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+		</xenotypeChances>
+	</xenotypeSet>
 </PawnKindDef>
 
 <PawnKindDef ParentName="BaseCarniPawnKind_NPC"><!-- basic worker -->
@@ -139,6 +144,7 @@
 		<li>Apparel_CarniLeatherMask</li>
 		<li>Apparel_CarniLeatherSuit</li>
 	</apparelRequired>
+	<weaponMoney Inherit="False">255~500</weaponMoney>
 	<weaponTags>
 		<li>Miner</li>
 		<li>GrenadeDestructive</li>

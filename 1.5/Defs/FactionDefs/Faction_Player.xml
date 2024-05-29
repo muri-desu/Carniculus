@@ -40,5 +40,10 @@
 		<li>Leather_Human</li>
 	</thingDefs>
 </apparelStuffFilter>
+<xenotypeSet>
+	<xenotypeChances>
+		<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+	</xenotypeChances>
+</xenotypeSet>
 </FactionDef>
 </Defs>

@@ -62,7 +62,7 @@
 	<structureMemeWeights>
 		<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 	</structureMemeWeights>
-   <techLevel>Spacer</techLevel>
+   <techLevel>Industrial</techLevel>
 	<allowedCultures>
 		<li>CarniCultures</li>
 	</allowedCultures>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 <!-- headgear -->
+<Apparel_CarniHood.label>ずだ袋</Apparel_CarniHood.label>
+<Apparel_CarniHood.description>コワイ顔を隠す簡素なかぶりものです. これで簡単に人間と友達になれます.</Apparel_CarniHood.description>
 <Apparel_CarniSack.label>ずだ袋</Apparel_CarniSack.label>
 <Apparel_CarniSack.description>コワイ顔を隠す簡素なかぶりものです. これで簡単に人間と友達になれます.</Apparel_CarniSack.description>
 <Apparel_CarniVeil.label>ベール</Apparel_CarniVeil.label>
