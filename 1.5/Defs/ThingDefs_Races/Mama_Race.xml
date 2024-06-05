@@ -320,26 +320,106 @@
 				</ageGraphics>
 			</value>
 		</li>
+
+		<li>
+			<key>Apparel_MamaHarness</key>
+			<value><path>Things/Apparel/Mama/Harness_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaCorset</key>
+			<value><path>Things/Apparel/Mama/Corset_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+							<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaShirtSet</key>
+			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+							<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaNun</key>
+			<value><path>Things/Apparel/Mama/NunDress_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunDress_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+							<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaMaid</key>
+			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+							<Severity For="0.333">Things/Apparel/Mama/Preg/MaidDress</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaDrCoat</key>
+			<value><path>Things/Apparel/Mama/DrCoat_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</Age>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+						<extendedGraphics>
+							<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
 		</individualPaths>
 
+	<!--
 		<pathPrefix>
 			<path>Things/Apparel/Mama/</path>
-				<hediffGraphics>
-					<PregnantHuman MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
 					<path>Things/Apparel/Mama/</path>
 						<extendedGraphics>
-							<!-- <severity>
-								<a0.666>Things/Apparel/Mama/PregLate/</a0.666>
-								<a0.333>Things/Apparel/Mama/Preg/</a0.333>
-								<a0.01>Things/Apparel/Mama/</a0.01>
-							</severity>-->
 							<Severity For="0.666">Things/Apparel/Mama/PregLate/</Severity>
 							<Severity For="0.333">Things/Apparel/Mama/Preg/</Severity>
 							<Severity For="0.01">Things/Apparel/Mama/</Severity>
 						</extendedGraphics>
-					</PregnantHuman>
-				</hediffGraphics>
+					</Hediff>
+				</extendedGraphics>
 		</pathPrefix>
+	-->
 
 	</apparel>
 </graphicPaths>

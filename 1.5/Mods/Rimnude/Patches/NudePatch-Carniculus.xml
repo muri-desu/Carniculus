@@ -18,11 +18,6 @@
 				<drawnStanding>true</drawnStanding>
 				<drawnLaying>true</drawnLaying>
 			</Posture>
-			<!--<Apparel>
-				<hiddenUnderApparelFor>
-					<li>Legs</li>
-				</hiddenUnderApparelFor>
-			</Apparel>-->
 			<RotStage>Fresh,Rotting</RotStage>
 			<Age>HumanlikeAdult</Age>
 		</conditions>
@@ -166,76 +161,11 @@
 			<RotStage>Fresh,Rotting</RotStage>
 			<Age>HumanlikeAdult</Age>
 		</conditions>
-		<extendedGraphics>
-			<BodyType For="Baby" MayRequire="ludeon.rimworld.biotech">Things/Pawn/Carni/blank</BodyType>
-			<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Pawn/Carni/blank</BodyType>
 
+		<extendedGraphics>
 			<Hediff For="Breasts">
 				<path>Things/Pawn/Carni/blank</path>
 				<extendedGraphics>
-
-					<Severity For="0.75"><!-- おっぱい・特大 -->
-						<path>Things/Pawn/Carni/Breasts/breasts_huge</path>
-						<extendedGraphics>
-							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><!-- biotech -->
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="RJW_pregnancy"><!-- rjw -->
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="RJW_pregnancy_beast">
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="RJW_pregnancy_mech">
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="RJW_UnknownEgg">
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="RJW_InsectHiveEgg">
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs"><!--Licentia Labs-->
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Belly/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Belly/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
-								<path>Things/Pawn/Carni/Breasts/breasts_huge_preg</path>
-									<extendedGraphics>
-										<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_huge_preglate</Severity>
-										<Severity For="0.333">Things/Pawn/Carni/Breasts/breasts_huge_preg</Severity>
-									</extendedGraphics>
-							</Hediff>
-						</extendedGraphics>
-					</Severity>
-
 					<Severity For="0.5"><!-- おっぱい・大 -->
 						<path>Things/Pawn/Carni/Breasts/breasts_large</path>
 						<extendedGraphics>
