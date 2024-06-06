@@ -430,11 +430,6 @@
 				<drawnStanding>true</drawnStanding>
 				<drawnLaying>true</drawnLaying>
 			</Posture>
-			<Apparel>
-				<hiddenUnderApparelFor>
-					<li>Torso</li>
-				</hiddenUnderApparelFor>
-			</Apparel>
 			<RotStage>Fresh,Rotting</RotStage>
 			<Age>HumanlikeAdult</Age>
 		</conditions>

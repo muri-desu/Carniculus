@@ -4,7 +4,6 @@
 <Operation Class="PatchOperationFindMod"><!-- RimnudeとSAが無い時用のやつ -->
 	<mods>
 		<li>RimNudeWorld</li>
-		<li>Sized Apparel for RJW (SAR version)</li>
 	</mods>
 
 <nomatch Class="PatchOperationAdd">

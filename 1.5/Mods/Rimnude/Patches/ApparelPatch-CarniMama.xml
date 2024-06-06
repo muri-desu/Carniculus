@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths</xpath>
+		<value>
+		<individualPaths>
+		<li>
+			<key>Apparel_MamaNunHead</key>
+			<value>
+				<ageGraphics>
+					<HumanlikeChild MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Hats/NunHeadChild</HumanlikeChild>
+					<HumanlikeAdult>Things/Apparel/Mama/Hats/NunHead</HumanlikeAdult>
+				</ageGraphics>
+			</value>
+		</li>
+
+		<li><!-- ハーネス -->
+			<key>Apparel_MamaHarness</key>
+			<value><path>Things/Apparel/Mama/Harness_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/Harness</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/Harness</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/Harness</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/Harness</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/Preg/Harness
+							</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/Preg/Harness
+							</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/Harness</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/Harness</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/Harness</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/Harness_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/Harness</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/Harness</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+	<li><!-- コルセット -->
+	<key>Apparel_MamaCorset</key>
+	<value><path>Things/Apparel/Mama/Corset_Female</path>
+		<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/Corset</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/Corset</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/Corset</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/Corset</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/PregLate/Corset</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/PregLate/Corset</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/Corset</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/Corset</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/Corset</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/Corset_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/Corset</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/Corset</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li><!-- シャツセット -->
+			<key>Apparel_MamaShirtSet</key>
+			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/ShirtSet</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/ShirtSet</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/PregLate/ShirtSet</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/PregLate/ShirtSet</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/ShirtSet</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/ShirtSet</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/ShirtSet</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/ShirtSet_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/ShirtSet</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/ShirtSet</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+
+		<li><!-- 修道服 -->
+			<key>Apparel_MamaNun</key>
+			<value><path>Things/Apparel/Mama/NunDress_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunDress_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/NunDress</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/NunDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/NunDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/NunDress</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/PregLate/NunDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/PregLate/NunDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/NunDress</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/NunDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/NunDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/NunDress_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/NunDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/NunDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+
+		<li><!-- メイド服 -->
+			<key>Apparel_MamaMaid</key>
+			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/MaidDress</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/MaidDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/MaidDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Huge/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/MaidDress</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/PregLate/MaidDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/PregLate/MaidDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/MaidDress</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/MaidDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/MaidDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Average/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/MaidDress_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/MaidDress</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/MaidDress</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/MaidDress</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+
+		<li><!-- 白衣 -->
+			<key>Apparel_MamaDrCoat</key>
+			<value><path>Things/Apparel/Mama/DrCoat_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/DrCoat</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/DrCoat</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/DrCoat</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/DrCoat</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/PregLate/DrCoat</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/PregLate/DrCoat</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/DrCoat</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/DrCoat</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/DrCoat</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.01"><path>Things/Apparel/Mama/DrCoat_Female</path><!-- 乳small -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/PregLate/DrCoat</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/PregLate/DrCoat</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+
+		<li><!-- 看守ジャケ -->
+			<key>Apparel_MamaWardenJacket</key>
+			<value><path>Things/Apparel/Mama/WardenJacket_Female</path>
+				<extendedGraphics>
+			<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/WardenJacket_Child</Age>
+			<Hediff For="Breasts" MayRequire="ludeon.rimworld.biotech">
+				<extendedGraphics>
+					<Severity For="0.75"><path>Things/Apparel/Mama/Huge/WardenJacket</path><!-- 乳・huge -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Huge/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.5"><path>Things/Apparel/Mama/Large/WardenJacket</path><!-- 乳・large -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Large/Preg/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Large/Preg/WardenJacket</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Large/Preg/WardenJacket</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Large/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+					<Severity For="0.25"><path>Things/Apparel/Mama/Average/WardenJacket</path><!-- 乳・average -->
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">Things/Apparel/Mama/Average/PregLate/WardenJacket</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">Things/Apparel/Mama/Average/PregLate/WardenJacket</Hediff>
+							<Hediff For="Cumflation" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="lustlicentia.rjwlabs">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/Average/PregLate/WardenJacket</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Severity>
+
+				</extendedGraphics>
+			</Hediff>
+				</extendedGraphics>
+			</value>
+		</li>
+		</individualPaths>
+
+	</value>
+</Operation>
+</Patch>
