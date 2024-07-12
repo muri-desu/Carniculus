@@ -13,6 +13,7 @@
 	<parent>CarniMamaApparel</parent>
 </ThingCategoryDef>
 
+
 <ThingDef Name="Carni_HatBase" ParentName="HatBase" Abstract="True">
 	<techLevel>Medieval</techLevel>
 	<recipeMaker>
@@ -48,11 +49,11 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 	</recipeMaker>
 	<apparel>
 		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
@@ -60,6 +61,14 @@
 			<li>CarniMamaApparel</li>
 		</tags>
 	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255)</only>
+		</li>
+	</options>
+	</colorGenerator>
 	<thingCategories>
 		<li>CarniMamaHeadgear</li>
 	</thingCategories>
@@ -122,7 +131,6 @@
 		</tags>
 	<developmentalStageFilter>Adult</developmentalStageFilter>
 	</apparel>
-
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 </ThingDef>
 
@@ -170,14 +178,13 @@
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<immuneToToxGasExposure>true</immuneToToxGasExposure>
 	</apparel>
-
 	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>1</weight>
-				<only>RGBA(1,1,1,0)</only>
-			</li>
-		</options>
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255)</only>
+		</li>
+	</options>
 	</colorGenerator>
 </ThingDef>
 
@@ -196,7 +203,7 @@
 
 	<statBases>
 		<WorkToMake>4000</WorkToMake>
-		<MaxHitPoints>100</MaxHitPoints>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<Mass>0.1</Mass>
 		<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
 		<EquipDelay>0.5</EquipDelay>
@@ -217,9 +224,10 @@
 			<li>UpperHead</li>
 		</bodyPartGroups>
 		<layers>
-			<li>EyeCover</li>
+			<li>Megane</li>
 		</layers>
 	<wornGraphicPath>Things/Apparel/Mama/Hats/Glasses</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 	<renderSkipFlags>
 		<li>None</li>
 	</renderSkipFlags>
@@ -242,7 +250,6 @@
 	</apparel>
 </ThingDef>
 
-
 <ThingDef ParentName="CarniMama_HatBase"><!-- ガスマスク -->
 	<defName>Apparel_MamaGasmask</defName>
 		<label>mama's gasmask</label>
@@ -252,13 +259,13 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Hats/Gasmask</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(1.4, 1.4)</drawSize>
 	</graphicData>
 
 	<statBases>
 		<WorkToMake>6000</WorkToMake>
 		<MaxHitPoints>200</MaxHitPoints>
-		<Mass>0.5</Mass>
+		<Mass>0.4</Mass>
 		<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
@@ -287,7 +294,7 @@
 			<li>Teeth</li>
 		</bodyPartGroups>
 	<wornGraphicPath>Things/Apparel/Mama/Hats/Gasmask</wornGraphicPath>
-	<useWornGraphicMask>true</useWornGraphicMask>
+		<useWornGraphicMask>true</useWornGraphicMask>
 	<immuneToToxGasExposure>true</immuneToToxGasExposure>
 	<renderSkipFlags>
 		<li>None</li>
@@ -310,15 +317,6 @@
 		<li>mama_maid</li>
 	</tags>
 	</apparel>
-
-<colorGenerator Class="ColorGenerator_Options">
-	<options>
-		<li>
-			<weight>10</weight>
-			<only>RGBA(1,1,1,1)</only>
-		</li>
-	</options>
-</colorGenerator>
 </ThingDef>
 
 <ThingDef ParentName="CarniMama_HatBase"><!-- 修道女頭 -->
@@ -329,7 +327,6 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Hats/NunHead</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -368,15 +365,6 @@
 		<li>mama_nun</li>
 	</tags>
 	</apparel>
-
-<colorGenerator Class="ColorGenerator_Options">
-	<options>
-		<li>
-			<weight>10</weight>
-			<only>RGBA(1,1,1,1)</only>
-		</li>
-	</options>
-</colorGenerator>
 </ThingDef>
 
 <ThingDef ParentName="CarniMama_HatBase"><!-- メイド頭 -->
@@ -387,7 +375,6 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Hats/MaidHead</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -425,15 +412,6 @@
 		<li>mama_maid</li>
 	</tags>
 	</apparel>
-
-<colorGenerator Class="ColorGenerator_Options">
-	<options>
-		<li>
-			<weight>10</weight>
-			<only>RGBA(0.33,0.33,0.33,1)</only>
-		</li>
-	</options>
-</colorGenerator>
 </ThingDef>
 
 <ThingDef ParentName="CarniMama_HatBase"><!-- 看守頭 -->
@@ -445,7 +423,6 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Hats/WardenCap</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.2, 1.2)</drawSize>
 	</graphicData>
 
@@ -485,15 +462,80 @@
 		<li>mama_police</li>
 	</tags>
 	</apparel>
-
-<colorGenerator Class="ColorGenerator_Options">
-	<options>
-		<li>
-			<weight>10</weight>
-			<only>RGBA(0.33,0.33,0.33,1)</only>
-		</li>
-	</options>
-</colorGenerator>
 </ThingDef>
+
+<ThingDef ParentName="ArmorHelmetMakeableBase">
+	<defName>Apparel_MamaArmorMet</defName>
+		<label>mama's power armor helmet</label>
+		<description>power armor helmet.</description>
+	<techLevel>Spacer</techLevel>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>PoweredArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<graphicData>
+		<texPath>Things/Apparel/Mama/Hats/MamaArmorMet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<uiIconScale>1.25</uiIconScale>
+	<statBases>
+		<WorkToMake>21000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>1.5</Mass>
+		<Flammability>0.4</Flammability>
+		<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<costList>
+		<ComponentSpacer>2</ComponentSpacer>
+		<Neutroamine>2</Neutroamine>
+	</costList>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>70</costStuffCount>
+	<apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Mama/Hats/MamaArmorMet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Mama_combat</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		<forceEyesVisibleForRotations>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</forceEyesVisibleForRotations>
+		<tags>
+			<li>CarniMamaApparel</li>
+		</tags>
+	</apparel>
+	<thingCategories>
+		<li>CarniMamaHeadgear</li>
+	</thingCategories>
+	<tradeTags>
+		<li>Carni_Apparel</li>
+		<li>HiTechArmor</li>
+		<li>Armor</li>
+	</tradeTags>
+  </ThingDef>
 
 </Defs>

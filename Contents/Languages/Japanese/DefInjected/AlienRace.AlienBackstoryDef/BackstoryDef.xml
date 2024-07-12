@@ -74,8 +74,17 @@
 <Kidnapper.baseDesc>孤独を紛らわせるために[PAWN_nameDef]はしばしば人間の子供をさらって住処の洞窟に連れ込みました. 洞窟の中で何がなされているかは誰も知りませんが子供たちが家に帰る事はなく, [PAWN_nameDef]だけが新しい子供を求めて外へ出てくるのみでした.</Kidnapper.baseDesc>
 <BadGirl.title>性悪な少女</BadGirl.title><!-- mama -->
 <BadGirl.titleShort>性悪な少女</BadGirl.titleShort>
-<BadGirl.baseDesc>裕福な家庭にデザイナーベイビーとして産まれた[PAWN_nameDef]は物心つく前からさまざまな指導や訓練を受け, 一流の教育機関への入学を許可されました.\n学園では凶悪ないじめっ子として有名でしたが、大人の前では猫を被るので更生の機会を得ることはできませんでした.</BadGirl.baseDesc>
+<BadGirl.baseDesc>不幸にもカルニクルスの手によってこの世に生まれ落ちてきてしまった量産型少女です. ”ママ”は皆同じ顔ですが幼少期の個体は例外なく「自分だけは他と違って特別」と信じています.</BadGirl.baseDesc>
 <GoodMama.title>みんなのママ</GoodMama.title>
 <GoodMama.titleShort>みんなのママ</GoodMama.titleShort>
-<GoodMama.baseDesc>宇宙に浮かぶ研究所の主任科学者となった[PAWN_nameDef]は自分が作り出した生命体にさまざまな実験を施しました.\n愛情深い人物を演じる裏でカルニクルスの実験体をおもちゃにして苦痛や快楽にのたうつ様子を愉しんでいましたが, のちに脱走した彼らから同じ扱いを受けました.</GoodMama.baseDesc>
+<GoodMama.baseDesc>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.baseDesc>
+<VatGrownCarni.title>人工培養カルニクルス</VatGrownCarni.title>
+<VatGrownCarni.titleShort>人工培養</VatGrownCarni.titleShort>
+<VatGrownCarni.baseDesc>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.baseDesc>
+<GoodGirl.title>善良な少女</GoodGirl.title>
+<GoodGirl.titleShort>善良な少女</GoodGirl.titleShort>
+<GoodGirl.baseDesc>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニックママです. 100%無農薬・抗生物質不使用・ホルモン剤フリーです（多分）</GoodGirl.baseDesc>
+<VatGrownMama.title>人工培養ママ</VatGrownMama.title>
+<VatGrownMama.titleShort>人工培養</VatGrownMama.titleShort>
+<VatGrownMama.baseDesc>[PAWN_nameDef]は培養槽で育ちました. 通常の個体より戦闘向きですが不妊で, 社交力と免疫力にハンデがあります.</VatGrownMama.baseDesc>
 </LanguageData>

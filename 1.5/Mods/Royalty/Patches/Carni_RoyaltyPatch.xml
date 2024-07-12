@@ -46,4 +46,10 @@
 
 	</operations>
 </Operation>
+<Operation Class="PatchOperationAdd"><!-- styleable throne -->
+	<xpath>/Defs/ThingDef[@Name = "ThroneBase"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Styleable" />
+		</value>
+</Operation>
 </Patch>

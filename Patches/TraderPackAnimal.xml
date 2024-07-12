@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/BiomeDef/allowedPackAnimals</xpath>
-			<value>
-				<li>Carnigigas</li>
-			</value>
-	</Operation>
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/BiomeDef/allowedPackAnimals</xpath>
+		<value>
+			<li>Carnigigas</li>
+		</value>
+</Operation>
 </Patch>

@@ -1,60 +1,49 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-	<operations>
-
-	<li Class="PatchOperationAdd"><!-- thoughts -->
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
-		<value>
-
-			<li>Bestiality_Abhorrent</li>
-			<li>Bestiality_Know_Abhorrent</li>
-			<li>Bestiality_Horrible</li>
-			<li>Bestiality_Know_Horrible</li>
-			<li>Bestiality_Disapproved</li>
-			<li>Bestiality_Know_Disapproved</li>
-			<li>Bestiality_Nonvenerated_Disapproved</li>
-			<li>Bestiality_Nonvenerated_Know_Disapproved</li>
-			<li>Bestiality_NonBonded_Disapproved</li>
-			<li>Bestiality_NonBonded_Know_Disapproved</li>
-			<li>IncestuosMarriage_Forbidden</li>
-			<li>IncestuosMarriage_Disapproved</li>
-			<li>Sex_Know_Incest_Disapproved</li>
-			<li>Sex_Know_Incest_Forbidden</li>
-			<li>Sex_Know_IncestMarriage_Disapproved</li>
-			<li>Sex_Know_IncestMarriage_Forbidden</li>
-			<li>Sex_Know_Incest_Violated</li>
-			<li>Sex_Know_IncestMarriage_Violated</li>
-			<li>Necrophilia_Abhorrent</li>
-			<li>Necrophilia_Know_Abhorrent</li>
-			<li>Necrophilia_Horrible</li>
-			<li>Necrophilia_Know_Horrible</li>
-			<li>Necrophilia_Disapproved</li>
-			<li>Necrophilia_Know_Disapproved</li>
-			<li>Pregnancy_Horrible_Pregnant_Social</li>
-			<li>Pregnancy_Horrible_Pregnant</li>
-			<li>Pregnancy_Horrible_NonPregnant_Social</li>
-			<li>Rape_Abhorrent</li>
-			<li>Rape_Know_Abhorrent</li>
-			<li>Rape_Horrible</li>
-			<li>Rape_Know_Horrible</li>
-			<li>Rape_Disapproved</li>
-			<li>Rape_Know_Disapproved</li>
-			<li>Sex_Know_Promiscuous</li>
-			<li>Sex_Know_NonPromiscuous</li>
-			<li>BeenRaped_Submissive</li>
-			<li>BeenRaped_NotSubmissive</li>
-			<li>Raped_Know_NotBeingSubmissive</li>
-			<li>Virgin_Precious_Taken_Forcefully</li>
-			<li>Virgin_Precious_Taken</li>
-			<li>Virgin_OnlyForSpouse_Know_Taken</li>
-
-		</value>
-	</li>
-
-	</operations>
+<Operation Class="PatchOperationAdd"><!-- thoughts -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>Bestiality_Abhorrent</li>
+		<li>Bestiality_Know_Abhorrent</li>
+		<li>Bestiality_Horrible</li>
+		<li>Bestiality_Know_Horrible</li>
+		<li>Bestiality_Disapproved</li>
+		<li>Bestiality_Know_Disapproved</li>
+		<li>Bestiality_Nonvenerated_Disapproved</li>
+		<li>Bestiality_Nonvenerated_Know_Disapproved</li>
+		<li>Bestiality_NonBonded_Disapproved</li>
+		<li>Bestiality_NonBonded_Know_Disapproved</li>
+		<li>IncestuosMarriage_Forbidden</li>
+		<li>IncestuosMarriage_Disapproved</li>
+		<li>Sex_Know_Incest_Disapproved</li>
+		<li>Sex_Know_Incest_Forbidden</li>
+		<li>Sex_Know_IncestMarriage_Disapproved</li>
+		<li>Sex_Know_IncestMarriage_Forbidden</li>
+		<li>Sex_Know_Incest_Violated</li>
+		<li>Sex_Know_IncestMarriage_Violated</li>
+		<li>Necrophilia_Abhorrent</li>
+		<li>Necrophilia_Know_Abhorrent</li>
+		<li>Necrophilia_Horrible</li>
+		<li>Necrophilia_Know_Horrible</li>
+		<li>Necrophilia_Disapproved</li>
+		<li>Necrophilia_Know_Disapproved</li>
+		<li>Pregnancy_Horrible_Pregnant_Social</li>
+		<li>Pregnancy_Horrible_Pregnant</li>
+		<li>Pregnancy_Horrible_NonPregnant_Social</li>
+		<li>Rape_Abhorrent</li>
+		<li>Rape_Know_Abhorrent</li>
+		<li>Rape_Horrible</li>
+		<li>Rape_Know_Horrible</li>
+		<li>Rape_Disapproved</li>
+		<li>Rape_Know_Disapproved</li>
+		<li>Sex_Know_Promiscuous</li>
+		<li>Sex_Know_NonPromiscuous</li>
+		<li>BeenRaped_Submissive</li>
+		<li>BeenRaped_NotSubmissive</li>
+		<li>Raped_Know_NotBeingSubmissive</li>
+		<li>Virgin_Precious_Taken_Forcefully</li>
+		<li>Virgin_Precious_Taken</li>
+		<li>Virgin_OnlyForSpouse_Know_Taken</li>
+	</value>
 </Operation>
-
 </Patch>

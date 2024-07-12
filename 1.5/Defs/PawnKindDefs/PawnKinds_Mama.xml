@@ -19,13 +19,6 @@
 	<techHediffsDisallowTags>
 		<li>PainCauser</li>
 	</techHediffsDisallowTags>
-	<backstoryFiltersOverride>
-		<li>
-			<categories>
-				<li>CarniMama</li>
-			</categories>
-		</li>
-	</backstoryFiltersOverride>
 		<xenotypeSet>
 			<xenotypeChances>
 				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
@@ -38,6 +31,17 @@
 	<defName>CarniMama_colonist</defName>
 	<label>mama</label>
 	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
+	<apparelRequired>
+		<li>Apparel_MamaHighSocks</li>
+		<li>Apparel_MamaCorset</li>
+	</apparelRequired>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>CarniMama</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
 </PawnKindDef>
 
 <PawnKindDef ParentName="CarniMamaColonist">
@@ -84,7 +88,39 @@
 	<apparelTags>
 		<li>mama_nun</li>
 	</apparelTags>
-	<humanPregnancyChance>0.2</humanPregnancyChance>
+	<humanPregnancyChance>0.75</humanPregnancyChance>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>CarniMama_Vat</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+</PawnKindDef>
+
+<!-- npc --><!-- 雑魚戦闘員 -->
+<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+	<defName>CarniMama_soldier</defName>
+	<defaultFactionType>CarniNPCFaction</defaultFactionType>
+	<label>combatant</label>
+	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+	<techHediffsChance Inherit="False">0</techHediffsChance>
+	<chemicalAddictionChance>0.4</chemicalAddictionChance>
+	<weaponMoney>350~2000</weaponMoney>
+	<weaponTags>
+		<li>Gun</li>
+	</weaponTags>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>CarniMama_Vat</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelRequired>
+		<li>Apparel_MamaArmorMet</li>
+		<li>Apparel_MamaArmor</li>
+	</apparelRequired>
 </PawnKindDef>
 
 <!-- Slave 奴隷ママ -->
@@ -97,6 +133,13 @@
 		<li>mama_slave</li>
 	</apparelTags>
 	<humanPregnancyChance>0.75</humanPregnancyChance>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>CarniMama</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
 </PawnKindDef>
 
 </Defs>

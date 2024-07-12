@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]</xpath>
+		<value>
+<li><!-- 3:oppai -->
+<name>breasts</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Chest</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<Apparel>
+			<hiddenUnderApparelFor>
+				<li>ChestBPG</li>
+			</hiddenUnderApparelFor>
+		</Apparel>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Hediff For="MamaVariant_MegaOppai">Things/Pawn/Mama/Breasts/breasts_mega</Hediff>
+		<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_small_preglate</Hediff>
+		<Hediff For="Breasts"><path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.75"><!-- 特大 -->
+					<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+					<extendedGraphics>
+						<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Hediff>
+						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_beast">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_mech">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+									<Severity For="0.333">Things/Pawn/Mama/Breasts/breasts_huge_preg</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_UnknownEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_InsectHiveEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_huge</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+					</extendedGraphics>
+				</Severity>
+
+				<Severity For="0.5"><!-- 大 -->
+					<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+					<extendedGraphics>
+						<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_large_preglate</Hediff>
+						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_beast">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_mech">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_UnknownEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_InsectHiveEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+					</extendedGraphics>
+				</Severity>
+
+				<Severity For="0.25"><!-- 中 -->
+					<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+					<extendedGraphics>
+						<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_average_preglate</Hediff>
+						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+							<path>Things/Pawn/Mama/Breasts/breasts_average_preg</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_beast">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_mech">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_UnknownEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_InsectHiveEgg">
+							<path>Things/Pawn/Carni/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+					</extendedGraphics>
+				</Severity>
+
+				<Severity For="0.1"><!-- 小 -->
+					<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+					<extendedGraphics>
+						<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_small_preglate</Hediff>
+						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_beast">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_pregnancy_mech">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_UnknownEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="RJW_InsectHiveEgg">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+						<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+								</extendedGraphics>
+						</Hediff>
+					</extendedGraphics>
+				</Severity>
+				</extendedGraphics>
+			</Hediff>
+		</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.2904</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.289</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.2904</layerOffset>
+		</east>
+	</offsets>
+</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace"><!-- bodyPart fix: 乳首 -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]/conditions/BodyPart</xpath>
+		<value>
+		<BodyPart>
+			<bodyPart>Chest</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd"><!-- belly -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[5]/extendedGraphics</xpath>
+		<value>
+		<Hediff For="RJW_pregnancy">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Belly/belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+		<Hediff For="RJW_pregnancy_beast">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Belly/belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+		<Hediff For="RJW_pregnancy_mech">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Belly/belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+		<Hediff For="RJW_UnknownEgg">
+			<path>Things/Pawn/Mama/Belly/belly_huge</path>
+		</Hediff>
+		<Hediff For="RJW_InsectHiveEgg">
+			<path>Things/Pawn/Mama/Belly/belly_huge</path>
+		</Hediff>
+		<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Belly/belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+		<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Carni/Mama/belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace"><!-- bodyPart fix: genital -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[6]/conditions/BodyPart</xpath>
+		<value>
+		<BodyPart>
+			<bodyPart>Genitals</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		</value>
+</Operation>
+
+<!-- 改造手術Recipeまわり -->
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RecipeDef[defName = "MamaSurgery_MegaOppai" or "MamaSurgery_MegaNipple" or defName = "MamaSurgery_DickNipple"]/appliedOnFixedBodyParts/li</xpath>
+		<value>
+			<li>Chest</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RecipeDef[defName = "MamaSurgery_Thorn"]/appliedOnFixedBodyParts/li</xpath>
+		<value>
+			<li>Flank</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/RecipeDef[defName = "MamaSurgery_BigBaby"]/appliedOnFixedBodyParts/li</xpath>
+		<value>
+			<li>Genitals</li>
+		</value>
+</Operation>
+
+</Patch>

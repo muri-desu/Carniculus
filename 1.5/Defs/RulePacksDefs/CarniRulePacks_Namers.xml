@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RulePackDef>
+	<defName>NamerCarniUtility</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>Mama_First->Names/Mama_First</li>
+				<li>Mama_Middle->Names/Animal_Female</li>
+				<li>Mama_LastCap->WordParts/CapitalLetters</li>
+				<li>Carni_People->Names/Carni_people</li>
+				<li>Carni_adjective->Names/Carni_adjctv</li>
+				<li>Carni_nounMed->Names/Carni_noun</li>
+				<li>Carni_nounLewd->Names/Carni_nounlewd</li>
+				<li>Carni_Place->Names/Carni_place</li>
+			</rulesFiles>
+		</rulePack>
+</RulePackDef>
+
+<RulePackDef>
+	<defName>Mama_NameMaker</defName>
+		<include>
+			<li>NamerCarniUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Mama_First] '[Mama_Middle]' [Mama_LastCap][Digit][Digit][Digit][Digit]</li>
+			</rulesStrings>
+		</rulePack>
+</RulePackDef>
+
+<RulePackDef>
+	<defName>NamerFactionCarni</defName>
+		<include>
+			<li>NamerCarniUtility</li>
+		</include>
+	<rulePack>
+		<rulesStrings>
+			<li>r_name->[Carni_People] of the [Carni_adjective][Mama_First]</li>
+			<li>r_name->[Carni_People] of [Carni_adjective][Carni_nounMed]</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+
+<RulePackDef>
+	<defName>NamerSettlementCarni</defName>
+		<include>
+			<li>NamerCarniUtility</li>
+		</include>
+	<rulePack>
+		<rulesStrings>
+			<li>r_name->[Carni_Place] for [Mama_First]</li>
+			<li>r_name->[Carni_People]'s [Carni_Place]</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+
+<!-- Ideology -->
+<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>NamerIdeoCarni</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ideoName->Neoplasmism</li>
+				<li>r_ideoName->Neoplasm's vow</li>
+				<li>r_ideoName->Neoplasm's law</li>
+				<li>r_ideoName->The Law of the Writhing Tumors</li>
+				<li>r_ideoName->Rapoinfiltrationism</li>
+				<li>r_ideoName->Schizoproliferationism</li>
+				<li>r_ideoName->The Church of the Deformed Mother</li>
+				<li>r_ideoName->The Church of the Dismembered Mother</li>
+
+				<li>r_memberName->[Carni_adjective][Carni_People]</li>
+				<li>r_memberName->Neoplasmist</li>
+				<li>r_name->[Carni_People] of [Carni_nounMed]</li>
+				<li>r_ideoAdjective->Neoplasmic</li>
+			</rulesStrings>
+		</rulePack>
+</RulePackDef>
+
+<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>DeityTypeMakerCarni</defName>
+	<rulePack>
+		<rulesStrings>
+			<li>r_deityType->[god] of [memeConcept]</li>
+			<li>r_deityType->[adjctv][god]</li>
+
+			<li>adjctv->Original</li>
+			<li>adjctv->Ancestral</li>
+			<li>adjctv->Miraculous</li>
+			<li>god->Baby</li>
+			<li>god->Orphan</li>
+			<li>god->Lump of nucleic acids</li>
+			<li>god->Star of organic acids</li>
+			<li>god->Runaway from Errored universe</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+
+<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>NamerDeityCarni</defName>
+	<rulePack>
+		<rulesStrings>
+			<li>r_deityName->the Firstborn</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+
+<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>LeaderTitleMakerCarni</defName>
+	<include>
+		<li>LeaderTitleMaker_GlobalStructure</li>
+	</include>
+	<rulePack>
+		<rulesStrings>
+			<li>r_leaderTitle(gender!=Female)->Alpha</li>
+			<li>r_leaderTitle(gender==Female)-->Matriarch</li>
+		</rulesStrings>
+	</rulePack>
+</RulePackDef>
+
+<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>NamerFestivalCarni</defName>
+		<include>
+			<li>NamerCarniUtility</li>
+			<li>NamerFestivalGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>festivalName->[Carni_People]'s mass breeding</li>
+				<li>festivalName->prayer of [Carni_nounLewd]</li>
+				<li>festivalName->prayer of [Carni_nounMed]</li>
+				<li>festivalName->[Carni_People]'s [Carni_adjective] feast</li>
+			</rulesStrings>
+		</rulePack>
+</RulePackDef>
+
+</Defs>

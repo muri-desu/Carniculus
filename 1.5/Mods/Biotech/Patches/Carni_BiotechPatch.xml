@@ -1,63 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<Operation Class="PatchOperationSequence">
-	<operations>
-		<li Class="PatchOperationAdd"><!-- パック類追加 -->
-			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
-			<value>
-				<li>Apparel_PackControl</li>
-				<li>Apparel_PackBandwidth</li>
-				<li>Apparel_PackTox</li>
-				<li>Apparel_AirwireHeadset</li>
-				<li>Apparel_IntegratorHeadset</li>
-				<li>Apparel_ArmorHelmetMechCommander</li>
-				<li>Apparel_ArrayHeadset</li>
-			</value>
-		</li>
-		<li Class="PatchOperationAdd"><!-- thoughts -->
-			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
-			<value>
-				<li>GrowthVat_Prohibited_GrowthVatInColony</li>
-				<li>GrowthVat_Prohibited_ChildInGrowthVat</li>
-			</value>
-		</li>
-	</operations>
+<Operation Class="PatchOperationAdd"><!-- パック類追加 -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+	<value>
+		<li>Apparel_PackControl</li>
+		<li>Apparel_PackBandwidth</li>
+		<li>Apparel_PackTox</li>
+		<li>Apparel_AirwireHeadset</li>
+		<li>Apparel_IntegratorHeadset</li>
+		<li>Apparel_ArmorHelmetMechCommander</li>
+		<li>Apparel_ArrayHeadset</li>
+	</value>
+</Operation>
+<Operation Class="PatchOperationAdd"><!-- thoughts -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>GrowthVat_Prohibited_GrowthVatInColony</li>
+		<li>GrowthVat_Prohibited_ChildInGrowthVat</li>
+	</value>
 </Operation>
 
-<Operation Class="PatchOperationSequence">
-	<operations>
-	<li Class="PatchOperationAdd"><!-- genes -->
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/generalSettings</xpath>
-			<value>
-				<raceGenes>
-					<li><defName>CarniGene</defName><chance>100</chance></li>
-					<li><defName>Libido_High</defName><chance>100</chance></li>
-					<li><defName>Fertile</defName><chance>75</chance></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_rapist</defName><chance>100</chance></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_sadist_gene</defName><chance>50</chance></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_bisexual</defName><chance>50</chance></li>
-				</raceGenes>
-			</value>
-	</li>
-	<li Class="PatchOperationAdd"><!-- ママgenes -->
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings</xpath>
-			<value>
-				<raceGenes>
-					<li><defName>CarniMamaGene</defName></li>
-					<li><defName>Libido_High</defName></li>
-					<li><defName>Nearsighted</defName></li>
-					<li><defName>NakedSpeed</defName></li>
-					<li><defName>AptitudeRemarkable_Social</defName></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_hypersexual</defName></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_masochist</defName></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_bisexual</defName></li>
-					<li MayRequire="jaaldabaoth.rjw.genes"><defName>rjw_genes_aphrodisiac_pheromones</defName></li>
-				</raceGenes>
-			</value>
-	</li>
-	</operations>
+<Operation Class="PatchOperationAdd"><!-- CEによる体型バグ防止用 -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/blackGeneList</xpath>
+		<value>
+			<li MayRequire="void.charactereditor">SZBodySize_40</li>
+			<li MayRequire="void.charactereditor">SZBodySize_30</li>
+			<li MayRequire="void.charactereditor">SZBodySize_20</li>
+			<li MayRequire="void.charactereditor">SZBodySize_19</li>
+			<li MayRequire="void.charactereditor">SZBodySize_18</li>
+			<li MayRequire="void.charactereditor">SZBodySize_17</li>
+			<li MayRequire="void.charactereditor">SZBodySize_16</li>
+			<li MayRequire="void.charactereditor">SZBodySize_15</li>
+			<li MayRequire="void.charactereditor">SZBodySize_14</li>
+			<li MayRequire="void.charactereditor">SZBodySize_13</li>
+			<li MayRequire="void.charactereditor">SZBodySize_12</li>
+			<li MayRequire="void.charactereditor">SZBodySize_11</li>
+			<li MayRequire="void.charactereditor">SZBodySize_10</li>
+			<li MayRequire="void.charactereditor">SZBodySize_09</li>
+			<li MayRequire="void.charactereditor">SZBodySize_08</li>
+			<li MayRequire="void.charactereditor">SZBodySize_07</li>
+		</value>
 </Operation>
 
+<Operation Class="PatchOperationAdd"><!-- genes -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/generalSettings</xpath>
+		<value>
+			<raceGenes>
+				<li><defName>CarniGene</defName><chance>100</chance></li>
+				<li><defName>Libido_High</defName><chance>100</chance></li>
+				<li><defName>Fertile</defName><chance>75</chance></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_rapist</defName><chance>100</chance></li>
+				<!-- <li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_sadist_gene</defName><chance>50</chance></li> -->
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_bisexual</defName><chance>50</chance></li>
+			</raceGenes>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd"><!-- ママgenes -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings</xpath>
+		<value>
+			<raceGenes>
+				<li><defName>CarniMamaGene</defName></li>
+				<li><defName>Libido_High</defName></li>
+				<li><defName>Nearsighted</defName></li>
+				<li><defName>NakedSpeed</defName></li>
+				<li><defName>AptitudeRemarkable_Social</defName></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_hypersexual</defName></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_masochist</defName></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_bisexual</defName></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_aphrodisiac_pheromones</defName></li>
+			</raceGenes>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/generalSettings</xpath>
+		<value>
+			<adultVatBackstoryFilter>
+				<li>
+					<categories>
+					<li>Carni_Vat</li>
+					</categories>
+					<commonality>1</commonality>
+				</li>
+			</adultVatBackstoryFilter>
+		</value>
+</Operation>
 <Operation Class="PatchOperationAdd">
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings</xpath>
 		<value>
@@ -76,10 +103,84 @@
 					<li>
 						<partnerRace>Human</partnerRace>
 						<childKindDef>CarniColonist</childKindDef>
-						<probability>50</probability>
+						<probability>20</probability>
 					</li>
 				</hybridSpecific>
 			</reproduction>
+			<childBackstoryFilter>
+				<li>
+					<categories>
+					<li>CarniMama_Colony</li>
+					</categories>
+					<commonality>1</commonality>
+				</li>
+			</childBackstoryFilter>
+			<adultVatBackstoryFilter>
+				<li>
+					<categories>
+					<li>CarniMama_Vat</li>
+					</categories>
+					<commonality>1</commonality>
+				</li>
+			</adultVatBackstoryFilter>
 		</value>
 </Operation>
+
+<Operation Class="PatchOperationConditional"><!-- ニンゲンさんからもうまれるようにするパッチ -->
+	<xpath>Defs/ThingDef[defName="Human"]</xpath>
+	<match Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings</xpath>
+					<value><alienRace /><generalSettings /></value>
+			</nomatch>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings</xpath>
+			<value>
+				<reproduction>
+					<hybridSpecific>
+						<li>
+							<partnerRace>Alien_Carniculus</partnerRace>
+							<childKindDef>CarniColonist</childKindDef>
+							<probability>100</probability>
+						</li>
+					</hybridSpecific>
+				</reproduction>
+			</value>
+		</li>
+	</operations>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Traits Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "VatGrownMama" or "VatGrownCarni"]/forcedTraitsChance</xpath>
+					<value>
+						<li><defName>VTE_ThickSkinned</defName><chance>50</chance></li>
+						<li><defName>VTE_MartialArtist</defName><chance>30</chance></li>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "VatGrownMama" or "VatGrownCarni"]/disallowedTraits</xpath>
+					<value>
+						<VTE_Prude>0</VTE_Prude>
+						<VTE_Coward>0</VTE_Coward>
+						<VTE_Wanderlust>0</VTE_Wanderlust>
+						<VTE_Technophobe>0</VTE_Technophobe>
+						<VTE_IronStomach>0</VTE_IronStomach>
+					</value>
+			</li>
+	</operations>
+	</match>
+</Operation>
+
 </Patch>

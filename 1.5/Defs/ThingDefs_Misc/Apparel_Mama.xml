@@ -28,6 +28,14 @@
 		</tags>
 		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255,1)</only>
+		</li>
+	</options>
+	</colorGenerator>
 	<thingCategories>
 		<li>CarniMamaApparel</li>
 	</thingCategories>
@@ -46,13 +54,12 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/HighSo</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
 		<WorkToMake>2000</WorkToMake>
-		<MaxHitPoints>120</MaxHitPoints>
-		<Mass>0.5</Mass>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>0.3</Mass>
 		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
@@ -74,7 +81,7 @@
 			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>
-			<li>OnSkin</li>
+			<li>MamaOnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/HighSo</wornGraphicPath>
 	<tags>
@@ -86,14 +93,6 @@
 	</tags>
 	</apparel>
 
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>RGBA(1,1,1,0.1)</only>
-			</li>
-		</options>
-	</colorGenerator>
 </ThingDef>
 
 <!-- ハーネス -->
@@ -131,10 +130,10 @@
 
 	<apparel>
 		<bodyPartGroups>
-			<li>Torso</li>
+			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
-			<li>OnSkin</li>
+			<li>MamaOnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/Harness</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -142,15 +141,6 @@
 		<li>mama_slave</li>
 	</tags>
 	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>RGBA(1,1,1,0.1)</only>
-			</li>
-		</options>
-	</colorGenerator>
 </ThingDef>
 
 <!-- コルセット -->
@@ -189,11 +179,10 @@
 
 	<apparel>
 		<bodyPartGroups>
-			<li>Torso</li>
 			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
-			<li>OnSkin</li>
+			<li>MamaOnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/Corset</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -204,151 +193,17 @@
 		<li>mama_maid</li>
 	</tags>
 	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>RGBA(1,1,1,0.1)</only>
-			</li>
-		</options>
-	</colorGenerator>
-</ThingDef>
-
-<!-- シャツセットアップ -->
-<ThingDef ParentName="CarniMamaApparelBase">
-	<defName>Apparel_MamaShirtSet</defName>
-		<label>mama's tie n shirt</label>
-		<description>Set-up of shirt, tie and skirt.</description>
-		<techLevel>Industrial</techLevel>
-
-	<graphicData>
-		<texPath>Things/Apparel/Mama/ShirtSet</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-
-	<statBases>
-		<WorkToMake>6000</WorkToMake>
-		<MaxHitPoints>200</MaxHitPoints>
-		<Mass>0.65</Mass>
-		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>1</EquipDelay>
-	</statBases>
-
-	<stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-	</stuffCategories>
-	<costStuffCount>45</costStuffCount>
-
-	<equippedStatOffsets>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
-		<PawnBeauty>0.25</PawnBeauty>
-		<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
-	</equippedStatOffsets>
-
-	<apparel>
-		<bodyPartGroups>
-			<li>Neck</li>
-			<li>Shoulders</li>
-			<li>Legs</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Middle</li>
-		</layers>
-		<wornGraphicPath>Things/Apparel/Mama/ShirtSet</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
-	<tags>
-		<li>mama_police</li>
-		<li>mama_dr</li>
-	</tags>
-	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-	<only>RGBA(0.9,0.9,0.9,0.01)</only>
-			</li>
-		</options>
-	</colorGenerator>
-</ThingDef>
-
-<!-- 修道女服 -->
-<ThingDef ParentName="CarniMamaApparelBase">
-	<defName>Apparel_MamaNun</defName>
-		<label>mama's monastic dress</label>
-		<description>mama's body is sacred and should not be hidden.</description>
-
-	<graphicData>
-		<texPath>Things/Apparel/Mama/NunDress</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-
-	<statBases>
-		<WorkToMake>5000</WorkToMake>
-		<MaxHitPoints>150</MaxHitPoints>
-		<Mass>0.5</Mass>
-		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>1.5</EquipDelay>
-	</statBases>
-
-	<stuffCategories>
-		<li>Fabric</li>
-		<li>Leathery</li>
-	</stuffCategories>
-	<costStuffCount>55</costStuffCount>
-
-	<equippedStatOffsets>
-		<PawnBeauty>0.5</PawnBeauty>
-		<SocialImpact>0.5</SocialImpact>
-	</equippedStatOffsets>
-
-	<apparel>
-		<bodyPartGroups>
-			<li>Arms</li>
-			<li>Shoulders</li>
-			<li>Neck</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Middle</li>
-			<li>Shell</li>
-		</layers>
-		<wornGraphicPath>Things/Apparel/Mama/NunDress</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<shellRenderedBehindHead>true</shellRenderedBehindHead>
-	<tags>
-		<li>mama_nun</li>
-	</tags>
-	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-	<only>RGBA(0.3,0.3,0.3,0.01)</only>
-			</li>
-		</options>
-	</colorGenerator>
 </ThingDef>
 
 <!-- メイド服 -->
 <ThingDef ParentName="CarniMamaApparelBase">
 	<defName>Apparel_MamaMaid</defName>
-		<label>mama's maid dress</label>
+		<label>mama's work dress</label>
 		<description>work clothes openly made for busy mama.</description>
 
 	<graphicData>
 		<texPath>Things/Apparel/Mama/MaidDress</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -378,10 +233,11 @@
 			<li>Arms</li>
 			<li>Shoulders</li>
 			<li>Neck</li>
+			<li MayRequire="rim.job.world">FlankBPG</li>
+			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>
-			<li>Middle</li>
-			<li>Shell</li>
+			<li>MamaInner</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/MaidDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -390,28 +246,125 @@
 		<li>mama_maid</li>
 	</tags>
 	</apparel>
+</ThingDef>
 
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-	<only>RGBA(0.3,0.3,0.3,0.01)</only>
-			</li>
-		</options>
-	</colorGenerator>
+<!-- シャツセットアップ -->
+<ThingDef ParentName="CarniMamaApparelBase">
+	<defName>Apparel_MamaShirtSet</defName>
+		<label>mama's tie n shirt</label>
+		<description>Set-up of shirt, tie and skirt.</description>
+		<techLevel>Industrial</techLevel>
+
+	<graphicData>
+		<texPath>Things/Apparel/Mama/ShirtSet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>6000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>0.65</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1</EquipDelay>
+	</statBases>
+
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>45</costStuffCount>
+
+	<equippedStatOffsets>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.5</SlaveSuppressionOffset>
+		<PawnBeauty>0.25</PawnBeauty>
+		<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+	</equippedStatOffsets>
+
+	<apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Legs</li>
+			<li MayRequire="rim.job.world">GenitalsBPG</li>
+		</bodyPartGroups>
+		<layers>
+			<li>MamaInner</li>
+			<li>Middle</li>
+			<li>Shell</li>
+		</layers>
+		<wornGraphicPath>Things/Apparel/Mama/ShirtSet</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+	<tags>
+		<li>mama_police</li>
+		<li>mama_dr</li>
+	</tags>
+	</apparel>
+</ThingDef>
+
+<!-- 修道女マント -->
+<ThingDef ParentName="CarniMamaApparelBase">
+	<defName>Apparel_MamaNun</defName>
+		<label>mama's monastic cape</label>
+		<description>mama's body is sacred and should not be hidden.</description>
+
+	<graphicData>
+		<texPath>Things/Apparel/Mama/NunDress</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>5000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>0.5</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+	</statBases>
+
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>55</costStuffCount>
+
+	<equippedStatOffsets>
+		<PawnBeauty>0.5</PawnBeauty>
+		<SocialImpact>0.5</SocialImpact>
+	</equippedStatOffsets>
+
+	<apparel>
+		<bodyPartGroups>
+			<li>Arms</li>
+			<li>Shoulders</li>
+			<li>Neck</li>
+			<li>Torso</li>
+		</bodyPartGroups>
+		<layers>
+			<li>MamaCape</li>
+		</layers>
+		<wornGraphicPath>Things/Apparel/Mama/NunDress</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
+	<tags>
+		<li>mama_nun</li>
+	</tags>
+	</apparel>
 </ThingDef>
 
 <!-- 看守ジャケット -->
 <ThingDef ParentName="CarniMamaApparelBase">
 	<defName>Apparel_MamaWardenJacket</defName>
-		<label>mama's warden jacket</label>
-		<description>guard's jacket with a solid collar.</description>
+		<label>mama's warden cape</label>
+		<description>guard's cape with a solid collar.</description>
 		<techLevel>Industrial</techLevel>
 
 	<graphicData>
 		<texPath>Things/Apparel/Mama/WardenJacket</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -442,26 +395,18 @@
 			<li>Arms</li>
 			<li>Shoulders</li>
 			<li>Neck</li>
+			<li>Torso</li>
 		</bodyPartGroups>
 		<layers>
-			<li>Shell</li>
+			<li>MamaCape</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/WardenJacket</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
-		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
 	<tags>
 		<li>mama_police</li>
 	</tags>
 	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-	<only>RGBA(0.3,0.3,0.3,0.01)</only>
-			</li>
-		</options>
-	</colorGenerator>
 </ThingDef>
 
 <!-- 白衣 -->
@@ -474,7 +419,6 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/DrCoat</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -510,17 +454,94 @@
 			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>
-			<li>Shell</li>
+			<li>MamaCape</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/DrCoat</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
-		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
 	<tags>
 		<li>mama_dr</li>
 	</tags>
 	</apparel>
+	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255,0)</only>
+		</li>
+	</options>
+	</colorGenerator>
+</ThingDef>
 
-	<colorGenerator Class="ColorGenerator_StandardApparel" />
+<ThingDef ParentName="ArmorMachineableBase">
+	<defName>Apparel_MamaArmor</defName>
+		<label>mama's power armor</label>
+		<description>Mama's power armor.</description>
+	<techLevel>Spacer</techLevel>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>PoweredArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<graphicData>
+		<texPath>Things/Apparel/Mama/MamaArmor</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<WorkToMake>60000</WorkToMake>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Mass>12</Mass>
+		<Flammability>0.4</Flammability>
+		<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+		<Insulation_Cold>34</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+		<EquipDelay>14</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.4</MoveSpeed>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+	</equippedStatOffsets>
+	<thingCategories>
+		<li>ApparelArmor</li>
+	</thingCategories>
+	<tradeTags>
+		<li>HiTechArmor</li>
+		<li>Armor</li>
+	</tradeTags>
+	<costList>
+		<ComponentSpacer>4</ComponentSpacer>
+		<Neutroamine>4</Neutroamine>
+	</costList>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>100</costStuffCount>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+			<li MayRequire="rim.job.world">ChestBPG</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Mama/MamaArmor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<layers>
+			<li>MamaCape</li>
+		</layers>
+		<defaultOutfitTags>
+			<li>Mama_combat</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		<soundWear>Wear_PowerArmor</soundWear>
+		<soundRemove>Remove_PowerArmor</soundRemove>
+	</apparel>
 </ThingDef>
 
 </Defs>

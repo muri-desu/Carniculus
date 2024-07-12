@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<Operation Class="PatchOperationSequence">
-	<success>Always</success>
-	<operations>
-
-	<li Class="PatchOperationAdd"><!-- thoughts -->
+	<Operation Class="PatchOperationAdd"><!-- thoughts -->
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>MySonDied_Beast</li>
@@ -82,53 +78,298 @@
 			<li>trap2female</li>
 			<li>UnfortunateLostVirginity</li>
 		</value>
-	</li>
+	</Operation>
 
-	<li Class="PatchOperationAdd"><!-- carni race trait -->
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/forcedRaceTraitEntries</xpath>
+	<Operation Class="PatchOperationAdd"><!-- carni race trait -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/generalSettings/forcedRaceTraitEntries</xpath>
 		<value>
-			<li><defName Degree="0">Nymphomaniac</defName><chance>10</chance></li>
-			<li><defName Degree="0">Rapist</defName><chance>100</chance></li>
+			<li><defName>Nymphomaniac</defName><chance>10</chance></li>
+			<li><defName>Rapist</defName></li>
 		</value>
-	</li>
+	</Operation>
 
-	<li Class="PatchOperationAdd"><!-- mama race trait -->
-		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/forcedRaceTraitEntries</xpath>
+	<Operation Class="PatchOperationAdd"><!-- mama trait -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings/forcedRaceTraitEntries</xpath>
 		<value>
-			<li><defName Degree="0">Nymphomaniac</defName></li>
+			<li><defName>Nymphomaniac</defName></li>
 		</value>
-	</li>
+	</Operation>
 
-	<li Class="PatchOperationAdd"><!-- mama stats -->
+	<Operation Class="PatchOperationAdd"><!-- mama stats -->
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/statBases</xpath>
 		<value>
 			<Vulnerability>3</Vulnerability>
+			<SexFrequency>2</SexFrequency>
 		</value>
-	</li>
+	</Operation>
 
-	<li Class="PatchOperationAdd"><!-- backstory trait -->
+	<!-- <Operation Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "Kidnapper" or defName = "AlphaMale" or defName = "Matriarch" or defName = "RabidCarni"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName Degree="0">Rapist</defName></li>
 		</value>
-	</li>
+	</Operation>-->
 
-	<li Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "B_TestSubM" or defName = "B_TestSubF"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName Degree="0">Zoophile</defName><chance>10</chance></li>
 			<li><defName Degree="0">Nymphomaniac</defName><chance>100</chance></li>
 		</value>
-	</li>
+	</Operation>
 
-	<li Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/AlienRace.AlienBackstoryDef[defName = "Livestocker" or defName = "CattleFucker" or defName = "CattleKiller"]/forcedTraitsChance</xpath>
 		<value>
 			<li><defName Degree="0">Zoophile</defName><chance>100</chance></li>
 		</value>
-	</li>
+	</Operation>
 
-	</operations>
-</Operation>
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[3]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaHarness</key>
+			<value><path>Things/Apparel/Mama/Harness_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</Age>
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Harness_Female</path>
+						<extendedGraphics>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/Harness_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+							</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+							</Hediff>
+							<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Harness_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Age>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[4]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaCorset</key>
+			<value><path>Things/Apparel/Mama/Corset_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</Age>
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Corset_Female</path>
+						<extendedGraphics>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/Corset_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<path>Things/Apparel/Mama/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<path>Things/Apparel/Mama/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<path>Things/Apparel/Mama/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<path>Things/Apparel/Mama/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">
+								<path>Things/Apparel/Mama/PregLate/Corset_Female</path>
+							</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">
+								<path>Things/Apparel/Mama/PregLate/Corset_Female</path>
+							</Hediff>
+							<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Age>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[5]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaShirtSet</key>
+			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</Age>
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/ShirtSet_Female</path>
+						<extendedGraphics>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/ShirtSet_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<path>Things/Apparel/Mama/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<path>Things/Apparel/Mama/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<path>Things/Apparel/Mama/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">
+								<path>Things/Apparel/Mama/PregLate/ShirtSet_Female</path>
+							</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">
+								<path>Things/Apparel/Mama/PregLate/ShirtSet_Female</path>
+							</Hediff>
+							<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Age>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[7]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaMaid</key>
+			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
+				<extendedGraphics>
+					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</Age>
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/MaidDress_Female</path>
+						<extendedGraphics>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/MaidDress_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy">
+								<path>Things/Apparel/Mama/MaidDress_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_beast">
+								<path>Things/Apparel/Mama/ShirtSet_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_pregnancy_mech">
+								<path>Things/Apparel/Mama/MaidDress_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="RJW_UnknownEgg">
+								<path>Things/Apparel/Mama/PregLate/MaidDress_Female</path>
+							</Hediff>
+							<Hediff For="RJW_InsectHiveEgg">
+								<path>Things/Apparel/Mama/PregLate/MaidDress_Female</path>
+							</Hediff>
+							<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/MaidDress_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+							<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
+								<path>Things/Apparel/Mama/Preg/MaidDress_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</Age>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+	</Operation>
 
 </Patch>

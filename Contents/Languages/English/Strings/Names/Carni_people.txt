@@ -1,0 +1,5 @@
+children
+sons
+daughters
+offsprings
+gametes

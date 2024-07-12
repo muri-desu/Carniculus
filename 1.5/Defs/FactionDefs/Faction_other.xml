@@ -12,8 +12,8 @@
 	<naturalEnemy>true</naturalEnemy>
 	<requiredCountAtGameStart>1</requiredCountAtGameStart>
 	<settlementGenerationWeight>1</settlementGenerationWeight>
-	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<factionNameMaker>NamerFactionCarni</factionNameMaker>
+	<settlementNameMaker>NamerSettlementCarni</settlementNameMaker>
 	<canMakeRandomly>true</canMakeRandomly>
 	<canSiege>true</canSiege>
 	<canStageAttacks>true</canStageAttacks>
@@ -28,39 +28,8 @@
 		<li MayRequire="rjw.sexperience.ideology">Zoophile</li>
 		<li MayRequire="rjw.sexperience.ideology">Lewd</li>
 	</allowedMemes>
-	<disallowedPrecepts>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Abhorrent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
-		<li MayRequire="rjw.sexperience.ideology">Rape_Abhorrent</li>
-		<li MayRequire="rjw.sexperience.ideology">Rape_Horrible</li>
-		<li MayRequire="rjw.sexperience.ideology">Rape_Disapproved</li>
-		<li MayRequire="rjw.sexperience.ideology">Incestuos_Forbidden</li>
-		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved</li>
-		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved_CloseOnly</li>
-		<li MayRequire="rjw.sexperience.ideology">Bestiality_Abhorrent</li>
-		<li MayRequire="rjw.sexperience.ideology">Bestiality_Horrible</li>
-		<li MayRequire="rjw.sexperience.ideology">Bestiality_Disapproved</li>
-		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Abhorrent</li>
-		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Horrible</li>
-		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Disapproved</li>
-		<li MayRequire="rjw.sexperience.ideology">Masturbation_Disapproved</li>
-	</disallowedPrecepts>
 	<structureMemeWeights>
-		<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 	</structureMemeWeights>
    <techLevel>Industrial</techLevel>
 	<allowedCultures>
@@ -106,6 +75,15 @@
 		</options>
 	</li>
 	<li>
+		<kindDef>Combat</kindDef>
+		<commonality>50</commonality>
+		<options>
+			<CarniMama_soldier>10</CarniMama_soldier>
+			<Carnigigas>6</Carnigigas>
+			<CarniMama_boss>1</CarniMama_boss>
+		</options>
+	</li>
+	<li>
 		<kindDef>Trader</kindDef>
 		<traders>
 			<Carni_boss>1</Carni_boss>
@@ -116,44 +94,29 @@
 		<guards>
 			<Carni_worker>20</Carni_worker>
 			<Carni_butcher>10</Carni_butcher>
-			<CarniMama_slave>1</CarniMama_slave>
+		</guards>
+	</li>
+	<li>
+		<kindDef>Trader</kindDef>
+		<traders>
+			<Carni_boss>1</Carni_boss>
+		</traders>
+		<carriers>
+			<Carnigigas>6</Carnigigas>
+		</carriers>
+		<guards>
+			<CarniMama_soldier>50</CarniMama_soldier>
 		</guards>
 	</li>
 	<li>
 		<kindDef>Settlement</kindDef>
 		<commonality>30</commonality>
 		<options>
-			<Carni_boss>5</Carni_boss>
-			<CarniMama_slave>1</CarniMama_slave>
-			<Carni_worker>50</Carni_worker>
-			<CarniMama_slave>10</CarniMama_slave>
-		</options>
-	</li>
-	<li>
-		<kindDef>Settlement</kindDef>
-		<commonality>30</commonality>
-		<options>
 			<Carni_boss>1</Carni_boss>
 			<CarniMama_boss>1</CarniMama_boss>
-			<CarniMama_slave>100</CarniMama_slave>
-		</options>
-	</li>
-	<li>
-		<kindDef>Settlement</kindDef>
-		<commonality>30</commonality>
-		<options>
-			<CarniMama_boss>1</CarniMama_boss>
-			<Carni_boss>1</Carni_boss>
-			<CarniSlave>20</CarniSlave>
-		</options>
-	</li>
-	<li>
-		<kindDef>Settlement</kindDef>
-		<commonality>30</commonality>
-		<options>
-			<CarniMama_boss>1</CarniMama_boss>
-			<Carni_boss>1</Carni_boss>
-			<Carni_worker>50</Carni_worker>
+			<Carni_worker>30</Carni_worker>
+			<CarniMama_soldier>10</CarniMama_soldier>
+			<CarniMama_slave>50</CarniMama_slave>
 		</options>
 	</li>
 	<li>
@@ -163,6 +126,7 @@
 			<CarniMama_boss>1</CarniMama_boss>
 			<Carni_boss>1</Carni_boss>
 			<Carni_worker>50</Carni_worker>
+			<CarniMama_soldier>50</CarniMama_soldier>
 		</options>
 	</li>
 	<li>
@@ -170,7 +134,6 @@
 		<commonality>20</commonality>
 		<options>
 			<CarniMama_boss>1</CarniMama_boss>
-			<Carni_boss>1</Carni_boss>
 			<CarniSlave>20</CarniSlave>
 		</options>
 	</li>

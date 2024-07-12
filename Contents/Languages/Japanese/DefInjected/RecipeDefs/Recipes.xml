@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<MamaSurgery_MegaOppai.label>改造手術（超乳化）</MamaSurgery_MegaOppai.label>
+<MamaSurgery_MegaOppai.description>超乳化します.</MamaSurgery_MegaOppai.description>
+<MamaSurgery_MegaNipple.label>改造手術（乳頭肥大化）</MamaSurgery_MegaNipple.label>
+<MamaSurgery_MegaNipple.description>乳頭および乳輪を巨大化します.</MamaSurgery_MegaNipple.description>
+<MamaSurgery_DickNipple.label>改造手術（乳頭陰茎化）</MamaSurgery_DickNipple.label>
+<MamaSurgery_DickNipple.description>乳頭部に陰茎を植え付けます. 周りを汚す頻度が増えます.</MamaSurgery_DickNipple.description>
+<MamaSurgery_Thorn.label>改造手術（毒棘触手）</MamaSurgery_Thorn.label>
+<MamaSurgery_Thorn.description>触手に有毒の棘を発生させます. \n近接攻撃に毒が付与されるようになり, 毒耐性も得ますが空腹率が少し上がります.</MamaSurgery_Thorn.description>
+<MamaSurgery_BigBaby.label>改造手術（恒久妊娠）</MamaSurgery_BigBaby.label>
+<MamaSurgery_BigBaby.description>子宮を独占する寄生生物を植え付けます. \nこの寄生生物はママの養分を吸い取り内側から犯し続け新たな妊娠を妨げます.</MamaSurgery_BigBaby.description>
+</LanguageData>

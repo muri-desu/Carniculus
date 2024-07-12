@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<HediffDef ParentName="DiseaseBase">
+	<defName>Hediff_MamaGrowth</defName>
+	<label>aureoloma</label>
+	<defaultLabelColor>(187,116,134)</defaultLabelColor>
+	<description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体機能が向上しますが, 一定のフェーズに達すると思考と容貌が人間離れしていき精神異常をきたすようになります.</description>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<maxSeverity>13</maxSeverity>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>0.017</severityPerDay>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<label>phase 0</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.01</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.01</offset></li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>1</minSeverity>
+			<label>phase 1</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.05</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.05</offset></li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>2</minSeverity>
+			<label>phase 2</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.1</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.1</offset></li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>3</minSeverity>
+			<label>phase 3</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>4</minSeverity>
+			<label>phase 4</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.3</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>20</forgetMemoryThoughtMtbDays><!-- ? -->
+		</li>
+		<li>
+			<minSeverity>5</minSeverity>
+			<label>phase 5</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.4</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>10</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>25</vomitMtbDays><!-- 嘔吐 -->
+		</li>
+		<li>
+			<minSeverity>6</minSeverity>
+			<label>phase 6</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.5</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.3</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.05</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.25</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>20</vomitMtbDays>
+		</li>
+		<li>
+			<minSeverity>7</minSeverity>
+			<label>phase 7</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.6</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.4</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.1</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.2</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>2.5</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>20</vomitMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>50</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+		<li>
+			<minSeverity>8</minSeverity>
+			<label>phase 8</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.7</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.8</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.2</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.5</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>10</vomitMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>30</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>20</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+		<li>
+			<minSeverity>9</minSeverity>
+			<label>phase 9</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>0.8</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.9</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.3</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.75</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>0.75</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>5</vomitMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>20</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>10</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+		<li>
+			<minSeverity>10</minSeverity>
+			<label>phase 10</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>1</offset></li>
+				<li><capacity>Manipulation</capacity><offset>1</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.75</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.5</offset></li>
+				<li><capacity>Talking</capacity><offset>-1</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>0.1</forgetMemoryThoughtMtbDays>
+			<vomitMtbDays>1</vomitMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>20</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>10</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+		<li>
+			<minSeverity>11</minSeverity>
+			<label>phase 11</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>1.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>1.2</offset></li>
+				<li><capacity>Consciousness</capacity><offset>1</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>0.75</offset></li>
+				<li><capacity>Talking</capacity><offset>-1.25</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>0.05</forgetMemoryThoughtMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>15</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>7.5</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+		<li>
+			<minSeverity>12</minSeverity>
+			<label>phase 12</label>
+			<becomeVisible>true</becomeVisible>
+			<capMods>
+				<li><capacity>Moving</capacity><offset>1.5</offset></li>
+				<li><capacity>Manipulation</capacity><offset>1.5</offset></li>
+				<li><capacity>Consciousness</capacity><offset>1.5</offset></li>
+				<li><capacity>BloodPumping</capacity><offset>1</offset></li>
+				<li><capacity>Talking</capacity><offset>-1.5</offset></li>
+			</capMods>
+			<forgetMemoryThoughtMtbDays>0.01</forgetMemoryThoughtMtbDays>
+			<mentalStateGivers>
+				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>10</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>5</mtbDays></li>
+			</mentalStateGivers>
+		</li>
+	</stages>
+</HediffDef>
+
+</Defs>

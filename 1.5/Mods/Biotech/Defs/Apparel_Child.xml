@@ -46,8 +46,6 @@
 		<wornGraphicPath>Things/Apparel/Mama/MamaDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
-
-	<colorGenerator Class="ColorGenerator_StandardApparel" />
 </ThingDef>
 
 </Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd"><!-- thoughts -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>SCE_Bestiality_Abhorrent</li>
+			<li>SCE_Bestiality_Know_Abhorrent</li>
+			<li>SCE_Bestiality_Horrible</li>
+			<li>SCE_Bestiality_Know_Horrible</li>
+			<li>SCE_Bestiality_Know_Disapproved</li>
+			<li>SCE_DefiledVeneratedAnimal_Social</li>
+			<li>SCE_LayWithBaseAnimal_Social</li>
+			<li>SCE_Incest_Prohibited_Social</li>
+			<li>SCE_Incest_Disapproved_Social</li>
+			<li>SCE_Incest_Disapproved</li>
+			<li>SCE_Rapist_Abhorrent_Social</li>
+			<li>SCE_Rapist_Horrible_Social</li>
+		</value>
+	</Operation>
+</Patch>

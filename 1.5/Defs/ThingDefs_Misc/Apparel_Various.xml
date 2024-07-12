@@ -185,8 +185,7 @@
 		<WorkToMake>3000</WorkToMake>
 		<MaxHitPoints>200</MaxHitPoints>
 		<Mass>0.5</Mass>
-		<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>1</EquipDelay>
@@ -256,7 +255,6 @@
 			<li>Shoulders</li>
 			<li>Torso</li>
 			<li>Arms</li>
-			<li>Hands</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
 			<li MayRequire="rim.job.world">FlankBPG</li>
@@ -314,7 +312,6 @@
 			<li>Shoulders</li>
 			<li>Torso</li>
 			<li>Arms</li>
-			<li>Hands</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
 			<li MayRequire="rim.job.world">FlankBPG</li>

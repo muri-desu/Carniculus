@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName = "CarniNPCFaction"]</xpath>
+		<value>
+	<disallowedPrecepts>
+		<li>PreferredXenotype</li>
+		<li>ApparelDesired_Strong_Subordinate</li>
+		<li>ApparelDesired_Soft_Subordinate</li>
+		<li>AnimalVenerated</li>
+		<li>Research_None</li>
+		<li>Research_ExtremelySlow</li>
+		<li>Research_VerySlow</li>
+		<li>Research_Slow</li>
+		<li>Research_Normal</li>
+		<li>Research_Fast</li>
+		<li>HAR_EatingAliens_Abhorrent</li>
+		<li>HAR_EatingAliens_Disapproved</li>
+		<li>HAR_AlienSlavery_Abhorrent</li>
+		<li>HAR_AlienSlavery_Horrible</li>
+		<li>HAR_AlienSlavery_Disapproved</li>
+		<li>OrganUse_Abhorrent</li>
+		<li>OrganUse_HorribleNoSell</li>
+		<li>OrganUse_HorribleSellOK</li>
+		<li>Nudity_Male_Mandatory</li>
+		<li>Nudity_Female_Mandatory</li>
+		<li>Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+		<li>Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+		<li>Skullspike_Disapproved</li>
+		<li>Slavery_Abhorrent</li>
+		<li>Slavery_Horrible</li>
+		<li>Slavery_Disapproved</li>
+		<li>Cannibalism_Abhorrent</li>
+		<li>Cannibalism_Horrible</li>
+		<li>Cannibalism_Disapproved</li>
+		<li>DrugUse_Prohibited</li>
+		<li>DrugUse_MedicalOnly</li>
+		<li>Execution_Abhorrent</li>
+		<li>Execution_Horrible</li>
+		<li>Execution_HorribleIfInnocent</li>
+		<li>Lovin_Prohibited</li>
+		<li>Lovin_Horrible</li>
+		<li>Lovin_SpouseOnly_Strict</li>
+		<li>Lovin_SpouseOnly_Moderate</li>
+		<li>Lovin_SpouseOnly_Mild</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Forbidden</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved_CloseOnly</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Masturbation_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Disapproved</li>
+		<li MayRequire="calamabanana.rjw.brothelcolony">CB_Prostitution_Horrendous</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Abhorrent</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Horrible</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Disapproved</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Rape_Abhorred</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Rape_Horrible</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Incest_Disapproved</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Incest_Prohibited</li>
+	</disallowedPrecepts>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 		<value>
 			<li>ExecutedGuest_Know_Abhorrent_Mood</li>
@@ -181,9 +266,19 @@
 		<li>CB_Prostitution_Reluctant_After</li>
 		<li>CB_Prostitution_Horrendous_After</li>
 		<li>CB_Prostitution_Horrendous_Know</li>
-		<li></li>
 	</value>
 	</match>
 </Operation>
 
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[@Name = "ThroneBase"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Styleable" />
+		</value>
+	</match>
+</Operation>
 </Patch>

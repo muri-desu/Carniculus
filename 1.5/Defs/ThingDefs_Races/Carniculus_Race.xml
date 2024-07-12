@@ -37,10 +37,12 @@
 		<def>CarniBaby</def>
 		<minAge>0</minAge>
 			<headOffset>(0, -0.05)</headOffset>
+			<headFemaleOffset>(0, -0.05)</headFemaleOffset>
 	</li>
 	<li Class="AlienRace.LifeStageAgeAlien">
 		<def>HumanlikeChild</def>
 			<headOffset>(0, 0.1)</headOffset>
+			<headFemaleOffset>(0, 0.1)</headFemaleOffset>
 		<minAge>3</minAge>
 	</li>
 	<li>
@@ -73,7 +75,6 @@
 		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
 	</lifeStageWorkSettings>
 		<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-		<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 	<specialShadowData>
 		<volume>(0.3, 0.8, 0.4)</volume>
@@ -175,7 +176,7 @@
 		<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 	</bodyTypes>
 	<headOffset>(0, 0)</headOffset>
-	<headFemaleOffset>(0, 0.075)</headFemaleOffset>
+	<headFemaleOffset>(0, 0)</headFemaleOffset>
 	<customDrawSize>(1, 1)</customDrawSize>
 	<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 	<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
@@ -231,51 +232,52 @@
 	<oldHairAgeRange>10000~99999</oldHairAgeRange>
 
 <bodyAddons>
-		<li><!-- 髪の毛 -->
-			<path>Hairs/CarniHair</path>
-			<inFrontOfBody>true</inFrontOfBody>
-			<defaultOffset>Center</defaultOffset>
-			<alignWithHead>true</alignWithHead>
-			<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-			<colorChannel>hair</colorChannel>
-			<conditions>
-				<BodyPart>
-					<bodyPart>Head</bodyPart>
-					<drawWithoutPart>false</drawWithoutPart>
-				</BodyPart>
-				<Apparel>
-					<hiddenUnderApparelFor>
-						<li>UpperHead</li>
-					</hiddenUnderApparelFor>
-				</Apparel>
-				<RotStage>Fresh,Rotting</RotStage>
-				<Posture>
-					<drawnStanding>true</drawnStanding>
-					<drawnLaying>true</drawnLaying>
-					<drawnInBed>true</drawnInBed>
-				</Posture>
-			</conditions>
-			<extendedGraphics>
-				<Gender For="Male">Things/Pawn/Carni/blank</Gender>
-				<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
-				<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
-				<Age For="HumanlikeAdult">Hairs/CarniHair</Age>
-			</extendedGraphics>
-			<offsets>
-				<south>
-					<layerOffset>-0.275</layerOffset>
-					<offset>(0,-0)</offset>
-				</south>
-				<north>
-					<layerOffset>-0.322</layerOffset>
-					<offset>(0,-0)</offset>
-				</north>
-				<east>
-					<layerOffset>-0.275</layerOffset>
-					<offset>(0,-0)</offset>
-				</east>
-			</offsets>
-		</li>
+<li><!-- 1:髪の毛 -->
+	<name>carniculus hair</name>
+	<path>Hairs/CarniHair</path>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<alignWithHead>true</alignWithHead>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>hair</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Head</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Apparel>
+			<hiddenUnderApparelFor>
+				<li>UpperHead</li>
+			</hiddenUnderApparelFor>
+		</Apparel>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Posture>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+			<drawnInBed>true</drawnInBed>
+		</Posture>
+	</conditions>
+	<extendedGraphics>
+		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
+		<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
+		<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
+		<Age For="HumanlikeAdult">Hairs/CarniHair</Age>
+	</extendedGraphics>
+	<offsets>
+		<south>
+			<layerOffset>-0.275</layerOffset>
+			<offset>(0,-0)</offset>
+		</south>
+		<north>
+			<layerOffset>-0.322</layerOffset>
+			<offset>(0,-0)</offset>
+		</north>
+		<east>
+			<layerOffset>-0.275</layerOffset>
+			<offset>(0,-0)</offset>
+		</east>
+	</offsets>
+</li>
 </bodyAddons>
 
 </alienPartGenerator>
@@ -440,6 +442,7 @@
 		<blackGeneList>
 			<li MayRequire="Ludeon.RimWorld.Biotech">CarniMamaGene</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Inbred</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
 		</blackGeneList>
 		<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
 			<li>Melanin</li>

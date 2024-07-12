@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/FactionDef[defName = "CarniPlayerFaction" or defName = "CarniNPCFaction"]/techLevel</xpath>
+	<value>
+		<li>Medieval</li>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>DankPyon_Apparel_Quiver</li>
+			<li>DankPyon_Apparel_FlashPotBelt</li>
+			<li>DankPyon_Apparel_FirePotBelt</li>
+			<li>DankPyon_Apparel_SmokePotBelt</li>
+			<li>DankPyon_Apparel_AcidFlaskBelt</li>
+			<li>DankPyon_Ring_Holding</li>
+			<li>DankPyon_Ring_Haste</li>
+			<li>DankPyon_Ring_Tending</li>
+			<li>DankPyon_Ring_Research</li>
+			<li>DankPyon_Ring_StunImmunity</li>
+			<li>DankPyon_Headgear_WolfTimber</li>
+			<li>DankPyon_Headgear_WolfArctic</li>
+			<li>DankPyon_Headgear_BearGrizzly</li>
+			<li>DankPyon_Headgear_BearPolar</li>
+			<li>DankPyon_Apparel_DirewolfPelt</li>
+			<li>DankPyon_Apparel_HyenaPelt</li>
+			<li>DankPyon_Apparel_LindwurmCloak</li>
+			<li>DankPyon_Apparel_FurCloak</li>
+			<li>DankPyon_Apparel_BonePlating</li>
+			<li>DankPyon_Apparel_AdditionalFurPadding</li>
+			<li>DankPyon_Apparel_RunesAndSigils</li>
+			<li>DankPyon_Footwear_BootsLeather</li>
+			<li>DankPyon_Footwear_BootsSplinted</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesLeather</li>
+			<li>DankPyon_Handwear_GlovesSplinted</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+			<li>DankPyon_Necklace_Citrine</li>
+			<li>DankPyon_Necklace_Jade</li>
+			<li>DankPyon_Necklace_Amber</li>
+			<li>DankPyon_Necklace_Onyx</li>
+			<li>DankPyon_Necklace_Emerald</li>
+			<li>DankPyon_Necklace_Sapphire</li>
+			<li>DankPyon_Necklace_Ruby</li>
+			<li>DankPyon_Ring_Citrine</li>
+			<li>DankPyon_Ring_Jade</li>
+			<li>DankPyon_Ring_Amber</li>
+			<li>DankPyon_Ring_Onyx</li>
+			<li>DankPyon_Ring_Emerald</li>
+			<li>DankPyon_Ring_Sapphire</li>
+			<li>DankPyon_Ring_Ruby</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName = "CarniNPCFaction"]/caravanTraderKinds</xpath>
+		<value>
+			<li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+			<li>DankPyon_Caravan_Medieval_ArtPatron</li>
+			<li>DankPyon_Caravan_Medieval_Scholar</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName = "Apparel_CarniFat"]/costList/Meat_Human</xpath>
+		<value>
+		<costList>
+			<DankPyon_Fat>45</DankPyon_Fat>
+		</costList>
+	</value>
+</Operation>
+
+</Patch>

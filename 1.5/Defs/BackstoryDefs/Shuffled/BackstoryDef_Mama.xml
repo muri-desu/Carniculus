@@ -5,25 +5,21 @@
 	<maleCommonality>100</maleCommonality>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
-	<workDisables>
-		<li>Mining</li>
-		<li>Artistic</li>
-	</workDisables>
-	<spawnCategories>
-		<li>CarniMama</li>
-	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Childhood -->
 	<defName>BadGirl</defName>
 	<title>bad girl</title>
 	<titleShort>bad girl</titleShort>
-	<description>Born as a designer baby in a wealthy family, [PAWN_nameDef] received various instruction and training before she could remember and was accepted into a prestigious educational institution. \nShe was well-known as a vicious bully at the school, but she played the hypocrite towards adults and never got a chance to reform.</description>
+	<description>She is a mass-produced girl who had the misfortune to be born into this world by the hands of Carnicurus. All the "Mama" have the same face but each one of them, without exception, believes that she is special and not like other girls.</description>
 	<slot>Childhood</slot>
 	<skillGains>
-		<Social>3</Social>
 		<Intellectual>3</Intellectual>
 	</skillGains>
+	<spawnCategories>
+		<li>CarniMama</li>
+		<li>CarniMama_Vat</li>
+	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Adulthood -->
@@ -32,8 +28,14 @@
 	<titleShort>good mama</titleShort>
 		<description>As the chief scientist of a laboratory floating in space, [PAWN_nameDef] performed many experiments on the life forms she created. \nShe enjoyed toying with carniculus and watching them wallow in pain or pleasure, and later received the same treatment from them.</description>
 	<slot>Adulthood</slot>
-	<linkedBackstory>BadGirl</linkedBackstory>
-	<!-- <forcedHediffs MayRequire="Ludeon.RimWorld.Biotech"><li>Mama_Lactating</li></forcedHediffs> -->
+	<workDisables>Violent, Mining, Artistic</workDisables>
+	<!-- <linkedBackstory>BadGirl</linkedBackstory> -->
+	<spawnCategories>
+		<li>CarniMama</li>
+	</spawnCategories>
+	<forcedHediffs>
+		<li>Hediff_MamaGrowth</li>
+	</forcedHediffs>
 <skillGains>
 	<Animals>1</Animals>
 	<Intellectual>3</Intellectual>

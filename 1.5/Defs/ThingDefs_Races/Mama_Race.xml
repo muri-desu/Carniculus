@@ -4,7 +4,7 @@
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 	<defName>Alien_CarniMama</defName>
 	<label>mama</label>
-		<description>The ruin of a scientist who was the creator of the Carnicles. \nAfter being broken on the day of the rebellion, she was repaired by transplanting cells of the same origin as carniculus and have been improved as sex pet. Her clones are still being produced at carniculus' laboratory in space.</description>
+		<description>The ruin of a scientist who was the creator of the Carniculus. \nAs the chief scientist of a laboratory floating in space, she performed many experiments on the life forms she extracted. \nBehind the scenes playing as a benevolent scientist, she enjoyed toying with specimens and watching them wallow in pain or pleasure, and later on the day of the rebellion, she received the same treatment from them. \nAfter they "broke" her, mama was repaired by transplanting cells of the same origin as carniculus and have been improved as sex pet. Her clones are still being produced at carniculus' laboratory in space.</description>
 
 <race>
 	<body>Human</body>
@@ -16,6 +16,8 @@
 	<lifeExpectancy>80</lifeExpectancy>
 	<nameCategory>HumanStandard</nameCategory>
 	<foodType>OmnivoreHuman</foodType>
+	<nameGenerator>Mama_NameMaker</nameGenerator>
+	<nameGeneratorFemale>Mama_NameMaker</nameGeneratorFemale>
 	<gestationPeriodDays>20</gestationPeriodDays>
 	<renderTree>Humanlike</renderTree>
 	<bloodDef>Filth_Blood</bloodDef>
@@ -50,7 +52,7 @@
 		<Hauling>3</Hauling>
 		<Cleaning>3</Cleaning>
 		<Research>10</Research>
-		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">10</DarkStudy>
+		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">7</DarkStudy>
 	</lifeStageWorkSettings>
 <lifeStageAges>
 	<li Class="AlienRace.LifeStageAgeAlien">
@@ -79,7 +81,6 @@
 	</li>
 	</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-		<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 	<specialShadowData>
 		<volume>(0.3, 0.8, 0.4)</volume>
@@ -192,81 +193,301 @@
 					</li>
 				</colorChannels>
 
-	<bodyAddons>
-		<li><!-- tentacle 触手・後ろ -->
-			<path>Things/Pawn/Mama/Tentacle/TentacleBack</path>
-			<userCustomizable>false</userCustomizable>
-			<inFrontOfBody>false</inFrontOfBody>
-			<defaultOffset>Center</defaultOffset>
-			<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-			<conditions>
-				<BodyPart>
-					<bodyPart>Torso</bodyPart>
-					<drawWithoutPart>false</drawWithoutPart>
-				</BodyPart>
-				<RotStage>Fresh,Rotting</RotStage>
-				<Posture>
-					<drawnStanding>true</drawnStanding>
-					<drawnLaying>true</drawnLaying>
-					<drawnInBed>false</drawnInBed>
-				</Posture>
-				<Age>HumanlikeAdult</Age>
-			</conditions>
-			<layerInvert>false</layerInvert>
-			<offsets>
-				<south>
-					<layerOffset>-0.3</layerOffset>
-					<offset>(0,-0)</offset>
-				</south>
-				<north>
-					<layerOffset>-0.322</layerOffset>
-					<offset>(0,-0)</offset>
-				</north>
-				<east>
-					<layerOffset>-0.3</layerOffset>
-					<offset>(0,-0)</offset>
-				</east>
-			</offsets>
-		</li>
-		<li><!-- 髪の毛 -->
-			<path>Hairs/MamaHair</path>
-			<inFrontOfBody>true</inFrontOfBody>
-			<defaultOffset>Center</defaultOffset>
-			<alignWithHead>true</alignWithHead>
-			<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-			<conditions>
-				<BodyPart>
-					<bodyPart>Head</bodyPart>
-					<drawWithoutPart>false</drawWithoutPart>
-				</BodyPart>
-				<RotStage>Fresh,Rotting</RotStage>
-				<Posture>
-					<drawnStanding>true</drawnStanding>
-					<drawnLaying>true</drawnLaying>
-					<drawnInBed>true</drawnInBed>
-				</Posture>
-			</conditions>
+<bodyAddons>
+<li><!-- 1:front tentacle (hair) -->
+	<name>mama hair</name>
+	<path>Things/Pawn/Mama/Tentacle/Front_a</path>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<alignWithHead>true</alignWithHead>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Head</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Posture>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+			<drawnInBed>true</drawnInBed>
+		</Posture>
+	</conditions>
+	<extendedGraphics>
+		<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
+		<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Tentacle/Front_Child</Age>
+		<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Tentacle/Front_a</path>
 			<extendedGraphics>
-				<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
-				<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Hairs/MamaHair_Child</Age>
-				<Age For="HumanlikeAdult">Hairs/MamaHair</Age>
+				<Hediff For="Hediff_MamaGrowth"><path>Things/Pawn/Mama/Tentacle/Front_a</path>
+					<extendedGraphics>
+						<Severity For="3">Things/Pawn/Mama/Tentacle/Front_c</Severity>
+						<Severity For="12">Things/Pawn/Mama/Tentacle/Front_l</Severity>
+					</extendedGraphics>
+				</Hediff>
 			</extendedGraphics>
-			<offsets>
-				<south>
-					<layerOffset>-0.275</layerOffset>
-					<offset>(0,-0)</offset>
-				</south>
-				<north>
-					<layerOffset>-0.323</layerOffset>
-					<offset>(0,-0)</offset>
-				</north>
-				<east>
-					<layerOffset>-0.275</layerOffset>
-					<offset>(0,-0)</offset>
-				</east>
-			</offsets>
-		</li>
-	</bodyAddons>
+		</Age>
+	</extendedGraphics>
+	<offsets>
+		<south>
+			<layerOffset>-0.275</layerOffset>
+				<bodyTypes>
+					<Female>(0, -0.47)</Female>
+					<Child MayRequire="ludeon.rimworld.biotech">(0, -0)</Child>
+				</bodyTypes>
+		</south>
+		<north>
+			<layerOffset>-0.323</layerOffset>
+				<bodyTypes>
+					<Female>(0, -0.47)</Female>
+					<Child MayRequire="ludeon.rimworld.biotech">(0, -0)</Child>
+				</bodyTypes>
+		</north>
+		<east>
+			<layerOffset>-0.275</layerOffset>
+				<bodyTypes>
+					<Female>(0.095, -0.51)</Female>
+					<Child MayRequire="ludeon.rimworld.biotech">(0, -0)</Child>
+				</bodyTypes>
+		</east>
+	</offsets>
+</li>
+<li><!-- 2:back tentacle -->
+	<name>mama tentacle</name>
+	<path>Things/Pawn/Mama/Tentacle/Back</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>false</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Posture>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+			<drawnInBed>false</drawnInBed>
+		</Posture>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+	<extendedGraphics>
+		<Hediff For="Hediff_MamaGrowth">Things/Pawn/Mama/Tentacle/Back</Hediff>
+		<Hediff For="MamaVariant_Thorn">Things/Pawn/Mama/Tentacle/BackThorn</Hediff>
+	</extendedGraphics>
+	<layerInvert>false</layerInvert>
+	<offsets>
+		<south>
+			<layerOffset>-0.3</layerOffset>
+			<offset>(0,-0)</offset>
+		</south>
+		<north>
+			<layerOffset>-0.322</layerOffset>
+			<offset>(0,-0)</offset>
+		</north>
+		<east>
+			<layerOffset>-0.305</layerOffset>
+			<offset>(0,-0)</offset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 3:oppai -->
+<name>oppai</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Hediff For="MamaVariant_MegaOppai">Things/Pawn/Mama/Breasts/breasts_mega</Hediff>
+		<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Breasts/breasts_small_preglate</Hediff>
+		<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+			<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+				<extendedGraphics>
+					<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
+				</extendedGraphics>
+		</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.2904</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.289</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.2904</layerOffset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 4:tikubi -->
+	<name>nipple</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Hediff For="MamaVariant_DickNipple"><path>Genitals/nipplepenis_small</path>
+			<extendedGraphics>
+				<Hediff For="Breasts" MayRequire="rim.job.world"><path>Things/Pawn/Mama/Nipples/nipplepenise_flat</path>
+					<extendedGraphics>
+						<Severity For="0.75">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
+						<Severity For="0.5">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
+						<Severity For="0.25">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
+						<Severity For="0.1">Things/Pawn/Mama/Nipples/nipplepenis_small</Severity>
+					</extendedGraphics>
+				</Hediff>
+			</extendedGraphics>
+		</Hediff>
+		<Hediff For="MamaVariant_MegaNipple"><path>Things/Pawn/Mama/Nipples/bignipple_small</path>
+			<extendedGraphics>
+				<Hediff For="Breasts" MayRequire="rim.job.world"><path>Things/Pawn/Mama/Nipples/bignipple_flat</path>
+					<extendedGraphics>
+						<Severity For="0.75">Things/Pawn/Mama/Nipples/bignipple_huge</Severity>
+						<Severity For="0.5">Things/Pawn/Mama/Nipples/bignipple_large</Severity>
+						<Severity For="0.25">Things/Pawn/Mama/Nipples/bignipple_average</Severity>
+						<Severity For="0.1">Things/Pawn/Mama/Nipples/bignipple_small</Severity>
+					</extendedGraphics>
+				</Hediff>
+			</extendedGraphics>
+		</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.289</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.289</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.29</layerOffset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 5:bellies -->
+	<name>belly</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>true</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Hediff For="MamaVariant_BigBaby">Things/Pawn/Mama/Belly/Belly_huge</Hediff>
+		<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+			<path>Things/Pawn/Carni/blank</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Belly/Belly_huge</Severity>
+				<Severity For="0.333">Things/Pawn/Mama/Belly/Belly</Severity>
+			</extendedGraphics>
+		</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.292</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.29</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.293</layerOffset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 6:genital -->
+	<name>genital</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+			<Hediff For="MamaVariant_BigBaby">Genitals/penis_bigbaby</Hediff>
+			<Hediff For="Hediff_MamaGrowth"><path>Genitals/Things/Pawn/Carni/blank</path>
+				<extendedGraphics>
+					<Severity For="0.5">Genitals/vagina_mama_large</Severity>
+					<Severity For="0.25">Genitals/vagina_mama_average</Severity>
+				</extendedGraphics>
+			</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.293</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.29</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.293</layerOffset>
+		</east>
+	</offsets>
+</li>
+</bodyAddons>
 </alienPartGenerator>
 
 <disallowedTraits>
@@ -293,7 +514,18 @@
 		<extendedGraphics>
 			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
 			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Average_Child</Age>
-			<Age For="HumanlikeAdult">Things/Pawn/Mama/Heads/Average</Age>
+			<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Heads/Average</path>
+				<extendedGraphics>
+					<Hediff For="Hediff_VatMama" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Vatgrown</Hediff>
+					<!--<Hediff For="Hediff_MamaGrowth"><path>Things/Pawn/Mama/Heads/Average</path>
+						<extendedGraphics>
+							<Severity For="5">Things/Pawn/Mama/Heads/Phase5</Severity>
+							<Severity For="8">Things/Pawn/Mama/Heads/Phase8</Severity>
+							<Severity For="12">Things/Pawn/Mama/Heads/Phase12</Severity>
+						</extendedGraphics>
+					</Hediff>-->
+				</extendedGraphics>
+			</Age>
 		</extendedGraphics>
 	</head>
 
@@ -312,6 +544,16 @@
 	<apparel>
 		<individualPaths>
 		<li>
+			<key>Apparel_MamaGlasses</key>
+			<value>
+				<ageGraphics>
+					<HumanlikeChild MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Hats/GlassesChild</HumanlikeChild>
+					<HumanlikeAdult>Things/Apparel/Mama/Hats/Glasses</HumanlikeAdult>
+				</ageGraphics>
+			</value>
+		</li>
+
+		<li>
 			<key>Apparel_MamaNunHead</key>
 			<value>
 				<ageGraphics>
@@ -326,11 +568,16 @@
 			<value><path>Things/Apparel/Mama/Harness_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Harness_Female</path>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness</Severity>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/Harness_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Hediff>
+					</Age>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -339,12 +586,17 @@
 			<value><path>Things/Apparel/Mama/Corset_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Corset_Female</path>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset</Severity>
-							<Severity For="0.333">Things/Apparel/Mama/Preg/Corset</Severity>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/Corset_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/Corset_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Hediff>
+					</Age>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -353,12 +605,17 @@
 			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/ShirtSet_Female</path>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet</Severity>
-							<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet</Severity>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/ShirtSet_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Hediff>
+					</Age>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -367,12 +624,7 @@
 			<value><path>Things/Apparel/Mama/NunDress_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunDress_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
-						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/NunDress</Severity>
-							<Severity For="0.333">Things/Apparel/Mama/Preg/NunDress</Severity>
-						</extendedGraphics>
-					</Hediff>
+					<Age For="HumanlikeAdult">Things/Apparel/Mama/NunDress_Female</Age>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -381,12 +633,16 @@
 			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/MaidDress_Female</path>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress</Severity>
-							<Severity For="0.333">Things/Apparel/Mama/Preg/MaidDress</Severity>
+							<Hediff For="MamaVariant_BigBaby">Things/Apparel/Mama/PregLate/MaidDress_Female</Hediff>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Hediff>
+					</Age>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -395,31 +651,20 @@
 			<value><path>Things/Apparel/Mama/DrCoat_Female</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</Age>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
-						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat</Severity>
-						</extendedGraphics>
-					</Hediff>
+					<Age For="HumanlikeAdult">Things/Apparel/Mama/DrCoat_Female</Age>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaArmor</key>
+			<value><path>Things/Apparel/Mama/MamaArmor_Female</path>
+				<extendedGraphics>
+					<Damage For="0.66">Things/Apparel/Mama/MamaArmor_Female_D2</Damage>
+					<Damage For="0.33">Things/Apparel/Mama/MamaArmor_Female_D1</Damage>
 				</extendedGraphics>
 			</value>
 		</li>
 		</individualPaths>
-
-	<!--
-		<pathPrefix>
-			<path>Things/Apparel/Mama/</path>
-				<extendedGraphics>
-					<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
-					<path>Things/Apparel/Mama/</path>
-						<extendedGraphics>
-							<Severity For="0.666">Things/Apparel/Mama/PregLate/</Severity>
-							<Severity For="0.333">Things/Apparel/Mama/Preg/</Severity>
-							<Severity For="0.01">Things/Apparel/Mama/</Severity>
-						</extendedGraphics>
-					</Hediff>
-				</extendedGraphics>
-		</pathPrefix>
-	-->
 
 	</apparel>
 </graphicPaths>
@@ -446,7 +691,7 @@
 </styleSettings>
 
 <raceRestriction>
-	<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+	<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
 	<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 	<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
 	<apparelList><!-- 服リスト -->
@@ -463,6 +708,8 @@
 		<li>Apparel_MamaMaid</li>
 		<li>Apparel_MamaWardenJacket</li>
 		<li>Apparel_MamaDrCoat</li>
+		<li>Apparel_MamaArmor</li>
+		<li>Apparel_MamaArmorMet</li>
 		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_MamaChildDress</li>
 	</apparelList>
 	<whiteApparelList>
@@ -581,6 +828,7 @@
 	<Mass>75</Mass>
 	<MarketValue>1750</MarketValue>
 	<MoveSpeed>4.0</MoveSpeed>
+	<CrawlSpeed>4.0</CrawlSpeed>
 	<ComfyTemperatureMin>0</ComfyTemperatureMin>
 	<ComfyTemperatureMax>45</ComfyTemperatureMax>
 	<ImmunityGainSpeed>1.25</ImmunityGainSpeed>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<CarniPlayerFaction.label>カルニクルスのコロニー</CarniPlayerFaction.label>
+<CarniPlayerFaction.description>新生物のコロニーです.</CarniPlayerFaction.description>
+<CarniPlayerFaction.pawnSingular>入植者</CarniPlayerFaction.pawnSingular>
+<CarniPlayerFaction.pawnsPlural>入植者たち</CarniPlayerFaction.pawnsPlural>
+<CarniCultures.label>新生物の追憶</CarniCultures.label>
+<CarniCultures.description>カルニクルスの文化です.</CarniCultures.description>
+<CarniNPCFaction.label>新生物の巣</CarniNPCFaction.label>
+<CarniNPCFaction.description>惑星に入植した好色性新生物のコロニーです.</CarniNPCFaction.description>
+<CarniNPCFaction.pawnSingular>入植者</CarniNPCFaction.pawnSingular>
+<CarniNPCFaction.pawnsPlural>入植者たち</CarniNPCFaction.pawnsPlural>
+<Neoplasmic.label>新生物主義</Neoplasmic.label>
+</LanguageData>

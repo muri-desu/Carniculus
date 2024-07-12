@@ -10,8 +10,8 @@
 	<pawnSingular>colonist</pawnSingular>
 	<pawnsPlural>colonists</pawnsPlural>
 	<isPlayer>true</isPlayer>
-	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
-	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<factionNameMaker>NamerFactionCarni</factionNameMaker>
+	<settlementNameMaker>NamerSettlementCarni</settlementNameMaker>
 	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 	<techLevel>Industrial</techLevel>
 	<startingResearchTags>
