@@ -179,6 +179,7 @@
 
 	<apparel>
 		<bodyPartGroups>
+			<li>Torso</li>
 			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
@@ -233,7 +234,6 @@
 			<li>Arms</li>
 			<li>Shoulders</li>
 			<li>Neck</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>

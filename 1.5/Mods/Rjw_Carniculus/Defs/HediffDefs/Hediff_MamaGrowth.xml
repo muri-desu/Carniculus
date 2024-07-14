@@ -46,19 +46,25 @@
 			<label>phase 3</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.2</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
+				<li><capacity>Moving</capacity><offset>0.15</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.15</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.05</PsychicSensitivity>
+			</statOffsets>
 		</li>
 		<li>
 			<minSeverity>4</minSeverity>
 			<label>phase 4</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.3</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.05</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.1</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>20</forgetMemoryThoughtMtbDays><!-- ? -->
 		</li>
 		<li>
@@ -66,11 +72,14 @@
 			<label>phase 5</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.4</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
+				<li><capacity>Moving</capacity><offset>0.25</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.25</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
 				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.2</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>10</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>25</vomitMtbDays><!-- 嘔吐 -->
 		</li>
@@ -79,30 +88,34 @@
 			<label>phase 6</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.3</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.05</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.25</offset></li>
+				<li><capacity>Moving</capacity><offset>0.3</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.15</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.1</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.3</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
-			<vomitMtbDays>20</vomitMtbDays>
+			<vomitMtbDays>22.5</vomitMtbDays>
 		</li>
 		<li>
 			<minSeverity>7</minSeverity>
 			<label>phase 7</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.6</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.4</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.35</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.35</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
 				<li><capacity>Talking</capacity><offset>-0.2</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.4</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>2.5</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>20</vomitMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>50</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>50</mtbDays></li>
 			</mentalStateGivers>
 		</li>
 		<li>
@@ -110,17 +123,19 @@
 			<label>phase 8</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.7</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.8</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.2</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.5</offset></li>
+				<li><capacity>Moving</capacity><offset>0.4</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.25</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.3</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.5</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
-			<vomitMtbDays>10</vomitMtbDays>
+			<vomitMtbDays>15</vomitMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>30</mtbDays></li>
-				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>20</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>30</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>25</mtbDays></li>
 			</mentalStateGivers>
 		</li>
 		<li>
@@ -128,17 +143,19 @@
 			<label>phase 9</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.8</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.9</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.3</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.75</offset></li>
+				<li><capacity>Moving</capacity><offset>0.5</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.4</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.6</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.75</forgetMemoryThoughtMtbDays>
-			<vomitMtbDays>5</vomitMtbDays>
+			<vomitMtbDays>7.5</vomitMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>20</mtbDays></li>
-				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>10</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>25</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>20</mtbDays></li>
 			</mentalStateGivers>
 		</li>
 		<li>
@@ -146,17 +163,19 @@
 			<label>phase 10</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>1</offset></li>
-				<li><capacity>Manipulation</capacity><offset>1</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.75</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.5</offset></li>
-				<li><capacity>Talking</capacity><offset>-1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.6</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.6</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.5</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.7</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.1</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>1</vomitMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>20</mtbDays></li>
-				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>10</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>20</mtbDays></li>
+				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>15</mtbDays></li>
 			</mentalStateGivers>
 		</li>
 		<li>
@@ -164,15 +183,17 @@
 			<label>phase 11</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>1.2</offset></li>
-				<li><capacity>Manipulation</capacity><offset>1.2</offset></li>
-				<li><capacity>Consciousness</capacity><offset>1</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>0.75</offset></li>
-				<li><capacity>Talking</capacity><offset>-1.25</offset></li>
+				<li><capacity>Moving</capacity><offset>0.7</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.7</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.75</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>1.6</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.05</forgetMemoryThoughtMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>15</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>15</mtbDays></li>
 				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>7.5</mtbDays></li>
 			</mentalStateGivers>
 		</li>
@@ -181,15 +202,17 @@
 			<label>phase 12</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>1.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>1.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>1.5</offset></li>
-				<li><capacity>BloodPumping</capacity><offset>1</offset></li>
-				<li><capacity>Talking</capacity><offset>-1.5</offset></li>
+				<li><capacity>Moving</capacity><offset>0.8</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.8</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.8</offset></li>
+				<li><capacity>Talking</capacity><offset>-1</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>2</PsychicSensitivity>
+			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.01</forgetMemoryThoughtMtbDays>
 			<mentalStateGivers>
-				<li><mentalState>Wander_Psychotic_Short</mentalState><mtbDays>10</mtbDays></li>
+				<li><mentalState>Wander_OwnRoom</mentalState><mtbDays>10</mtbDays></li>
 				<li MayRequire="rim.job.world"><mentalState>RandomRape</mentalState><mtbDays>5</mtbDays></li>
 			</mentalStateGivers>
 		</li>

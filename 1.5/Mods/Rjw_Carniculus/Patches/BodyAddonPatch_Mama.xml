@@ -342,7 +342,7 @@
 		</value>
 </Operation>
 
-<!-- 改造手術Recipeまわり -->
+<!-- 改造手術Recipeまわり
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/RecipeDef[defName = "MamaSurgery_MegaOppai" or "MamaSurgery_MegaNipple" or defName = "MamaSurgery_DickNipple"]/appliedOnFixedBodyParts/li</xpath>
 		<value>
@@ -362,6 +362,6 @@
 		<value>
 			<li>Genitals</li>
 		</value>
-</Operation>
+</Operation> -->
 
 </Patch>

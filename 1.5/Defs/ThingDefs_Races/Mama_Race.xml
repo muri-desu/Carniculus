@@ -840,6 +840,11 @@
 </statBases>
 
 <recipes>
+	<li MayRequire="rim.job.world">MamaSurgery_MegaOppai</li>
+	<li MayRequire="rim.job.world">MamaSurgery_MegaNipple</li>
+	<li MayRequire="rim.job.world">MamaSurgery_DickNipple</li>
+	<li MayRequire="rim.job.world">MamaSurgery_Thorn</li>
+	<li MayRequire="rim.job.world">MamaSurgery_BigBaby</li>
 </recipes>
 
 </AlienRace.ThingDef_AlienRace>

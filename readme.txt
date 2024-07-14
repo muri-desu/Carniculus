@@ -1,5 +1,5 @@
 A race mod for Rimworld.
-Adds "carniculus", an alien race made of lumps of tumor. HAR & RJW required
+Adds "carniculus", an alien race made of lumps of tumor. HAR required
 
 ⬇️contents⬇️
 
