@@ -15,8 +15,9 @@
 <Operation Class="PatchOperationAdd"><!-- thoughts -->
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
 	<value>
-		<li>GrowthVat_Prohibited_GrowthVatInColony</li>
-		<li>GrowthVat_Prohibited_ChildInGrowthVat</li>
+		<li>ChildInGrowthVat</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">GrowthVat_Prohibited_GrowthVatInColony</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">GrowthVat_Prohibited_ChildInGrowthVat</li>
 	</value>
 </Operation>
 

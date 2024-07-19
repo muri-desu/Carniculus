@@ -6,7 +6,7 @@
 	<title>cultured carniculus</title>
 	<titleShort>cultured</titleShort>
 		<description>[PAWN_nameDef] is a vat-grown strong soldier, but less immune to toxin and sickness.</description>
-	<slot>Adulthood</slot>
+	<slot>Childhood</slot>
 	<spawnCategories>
 		<li>Carni_Vat</li>
 	</spawnCategories>
@@ -53,10 +53,10 @@
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- vat-grown mama -->
 	<defName>VatGrownMama</defName>
-	<title>vat-grown mama</title>
+	<title>vat-grown girl</title>
 	<titleShort>vat-grown</titleShort>
 		<description>[PAWN_nameDef] is a vat-grown mama, is capable of fighting but less immune to toxin and sickness.</description>
-	<slot>Adulthood</slot>
+	<slot>Childhood</slot>
 	<requiredWorkTags>Violent</requiredWorkTags>
 	<skillGains>
 		<Shooting>10</Shooting>

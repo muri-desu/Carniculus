@@ -113,7 +113,7 @@
 	<rulePack>
 		<rulesStrings>
 			<li>r_leaderTitle(gender!=Female)->Alpha</li>
-			<li>r_leaderTitle(gender==Female)-->Matriarch</li>
+			<li>r_leaderTitle(gender==Female)->Matriarch</li>
 		</rulesStrings>
 	</rulePack>
 </RulePackDef>
