@@ -31,7 +31,7 @@
 		<Hediff For="Breasts"><path>Things/Pawn/Carni/blank</path>
 			<extendedGraphics>
 				<Severity For="0.5"><!-- 大 -->
-					<path>Things/Pawn/Mama/Breasts/breasts_large</path>
+					<path>Things/Pawn/Carni/Breasts/breasts_carni_large</path>
 					<extendedGraphics>
 						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
 							<path>Things/Pawn/Carni/Breasts/breasts_carni_large</path>
@@ -85,7 +85,7 @@
 				</Severity>
 
 				<Severity For="0.25"><!-- 中 -->
-					<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+					<path>Things/Pawn/Carni/Breasts/breasts_carni_average</path>
 					<extendedGraphics>
 						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
 							<path>Things/Pawn/Carni/Breasts/breasts_carni_average</path>
@@ -139,7 +139,7 @@
 				</Severity>
 
 				<Severity For="0.1"><!-- 小 -->
-					<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+					<path>Things/Pawn/Carni/Breasts/breasts_carni_small</path>
 					<extendedGraphics>
 						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
 							<path>Things/Pawn/Carni/Breasts/breasts_carni_small</path>
@@ -178,7 +178,7 @@
 								</extendedGraphics>
 						</Hediff>
 						<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
-							<path>Things/Pawn/Mama/Breasts/breasts_small</path>
+							<path>Things/Pawn/Carni/Breasts/breasts_carni_small</path>
 								<extendedGraphics>
 									<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_carni_small_preglate</Severity>
 								</extendedGraphics>

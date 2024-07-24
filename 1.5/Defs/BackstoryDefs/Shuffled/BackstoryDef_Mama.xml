@@ -20,6 +20,64 @@
 		<li>CarniMama</li>
 		<li>CarniMama_Vat</li>
 	</spawnCategories>
+	<forcedHediffs>
+		<li>Hediff_MamaGrowth</li>
+	</forcedHediffs>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- colony child mama -->
+	<defName>GoodGirl</defName>
+	<title>good girl</title>
+	<titleShort>good girl</titleShort>
+		<description>[PAWN_nameDef] is an organic free-range mama. Raised in abundant nature and (probably) 100% free of antibiotics, growth hormones, chemicals.</description>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>CarniMama_Colony</li>
+	</spawnCategories>
+	<skillGains>
+		<Social>5</Social>
+		<Plants>2</Plants>
+		<Animals>2</Animals>
+		<Medicine>5</Medicine>
+		<Intellectual>5</Intellectual>
+	</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- vat-grown mama -->
+	<defName>VatGrownMama</defName>
+	<title>vat-grown mama</title>
+	<titleShort>vat-grown</titleShort>
+		<description>[PAWN_nameDef] is a vat-grown mama, is capable of fighting but less immune to toxin and sickness.</description>
+	<slot>Adulthood</slot>
+	<requiredWorkTags>Violent</requiredWorkTags>
+	<skillGains>
+		<Shooting>10</Shooting>
+		<Melee>10</Melee>
+		<Medicine>6</Medicine>
+		<Social>-10</Social>
+	</skillGains>
+	<workDisables>Crafting, PlantWork, Constructing</workDisables>
+	<forcedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Psychopath>0</Psychopath>
+		<Immunity>-1</Immunity>
+	</forcedTraits>
+	<disallowedTraits>
+		<BodyPurist>0</BodyPurist>
+		<Wimp>0</Wimp>
+		<Nudist>0</Nudist>
+		<TorturedArtist>0</TorturedArtist>
+	</disallowedTraits>
+	<forcedTraitsChance>
+		<li><defName>Nimble</defName><chance>10</chance></li>
+		<li><defName>Brawler</defName><chance>10</chance></li>
+	</forcedTraitsChance>
+	<spawnCategories>
+		<li>CarniMama_Vat</li>
+	</spawnCategories>
+	<forcedHediffs>
+		<li>Hediff_VatMama</li>
+	</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Adulthood -->

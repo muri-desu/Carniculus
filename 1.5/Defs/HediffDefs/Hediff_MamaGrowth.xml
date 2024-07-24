@@ -5,7 +5,7 @@
 	<defName>Hediff_MamaGrowth</defName>
 	<label>aureoloma</label>
 	<defaultLabelColor>(187,116,134)</defaultLabelColor>
-	<description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体機能が向上しますが, 一定のフェーズに達すると思考と容貌が人間離れしていき精神異常をきたすようになります.</description>
+	<description>A neoplastic disease in which tentacle-like tissues develop over time. Basically, the more the disease progresses, the more the physical functions improve, but once it reaches a certain phase, the patient's neurons and appearance becomes abnormal..</description>
 	<isBad>false</isBad>
 	<everCurableByItem>false</everCurableByItem>
 	<maxSeverity>13</maxSeverity>
@@ -50,7 +50,7 @@
 				<li><capacity>Manipulation</capacity><offset>0.15</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.05</PsychicSensitivity>
+				<PsychicSensitivity>0.5</PsychicSensitivity>
 			</statOffsets>
 		</li>
 		<li>
@@ -63,7 +63,7 @@
 				<li><capacity>Consciousness</capacity><offset>0.05</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.1</PsychicSensitivity>
+				<PsychicSensitivity>0.75</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>20</forgetMemoryThoughtMtbDays><!-- ? -->
 		</li>
@@ -78,7 +78,7 @@
 				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.2</PsychicSensitivity>
+				<PsychicSensitivity>1</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>10</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>25</vomitMtbDays><!-- 嘔吐 -->
@@ -94,7 +94,7 @@
 				<li><capacity>Talking</capacity><offset>-0.1</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.3</PsychicSensitivity>
+				<PsychicSensitivity>1.25</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>5</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>22.5</vomitMtbDays>
@@ -110,7 +110,7 @@
 				<li><capacity>Talking</capacity><offset>-0.2</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.4</PsychicSensitivity>
+				<PsychicSensitivity>1.5</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>2.5</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>20</vomitMtbDays>
@@ -129,7 +129,7 @@
 				<li><capacity>Talking</capacity><offset>-0.3</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.5</PsychicSensitivity>
+				<PsychicSensitivity>1.75</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>15</vomitMtbDays>
@@ -149,7 +149,7 @@
 				<li><capacity>Talking</capacity><offset>-0.4</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.6</PsychicSensitivity>
+				<PsychicSensitivity>2</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.75</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>7.5</vomitMtbDays>
@@ -169,7 +169,7 @@
 				<li><capacity>Talking</capacity><offset>-0.5</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.7</PsychicSensitivity>
+				<PsychicSensitivity>3</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.1</forgetMemoryThoughtMtbDays>
 			<vomitMtbDays>1</vomitMtbDays>
@@ -189,7 +189,7 @@
 				<li><capacity>Talking</capacity><offset>-0.75</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.6</PsychicSensitivity>
+				<PsychicSensitivity>4</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.05</forgetMemoryThoughtMtbDays>
 			<mentalStateGivers>
@@ -208,7 +208,7 @@
 				<li><capacity>Talking</capacity><offset>-1</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>2</PsychicSensitivity>
+				<PsychicSensitivity>5</PsychicSensitivity>
 			</statOffsets>
 			<forgetMemoryThoughtMtbDays>0.01</forgetMemoryThoughtMtbDays>
 			<mentalStateGivers>

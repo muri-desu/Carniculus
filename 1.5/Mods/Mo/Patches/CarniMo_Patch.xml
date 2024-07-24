@@ -3,7 +3,7 @@
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/FactionDef[defName = "CarniPlayerFaction" or defName = "CarniNPCFaction"]/techLevel</xpath>
 	<value>
-		<li>Medieval</li>
+		<techLevel>Medieval</techLevel>
 	</value>
 </Operation>
 
@@ -51,6 +51,15 @@
 			<li>DankPyon_Ring_Emerald</li>
 			<li>DankPyon_Ring_Sapphire</li>
 			<li>DankPyon_Ring_Ruby</li>
+			<li>DankPyon_Shield</li>
+			<li>DankPyon_ShieldKite</li>
+			<li>DankPyon_ShieldHeater</li>
+			<li>DankPyon_ShieldHeater_Amboise</li>
+			<li>DankPyon_ShieldHeater_Soren</li>
+			<li>DankPyon_ShieldHeater_Oswin</li>
+			<li>DankPyon_ShieldHeater_Hesse</li>
+			<li>DankPyon_ShieldLiving</li>
+			<li>DankPyon_ShieldLindwurm</li>
 		</value>
 </Operation>
 

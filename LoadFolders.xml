@@ -14,6 +14,6 @@
 		<li IfModActive="rim.job.world.pe">1.5/Mods/Pe_Carniculus</li>
 		<!-- <li IfModActive="rjw.menstruation">1.5/Mods/Mens</li> -->
 		<li IfModActive="VanillaExpanded.VanillaTraitsExpanded">1.5/Mods/Vte</li>
-		<!-- <li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mods/Mo</li> -->
+		<li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mods/Mo</li>
 	</v1.5>
 </loadFolders>

@@ -288,14 +288,14 @@
 			<offset>(0,-0)</offset>
 		</north>
 		<east>
-			<layerOffset>-0.305</layerOffset>
+			<layerOffset>-0.32</layerOffset>
 			<offset>(0,-0)</offset>
 		</east>
 	</offsets>
 </li>
 <li><!-- 3:oppai -->
 <name>oppai</name>
-	<path>Things/Pawn/Carni/blank</path>
+	<path>Things/Pawn/Mama/Breasts/breasts_small</path>
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
@@ -840,11 +840,11 @@
 </statBases>
 
 <recipes>
-	<li MayRequire="rim.job.world">MamaSurgery_MegaOppai</li>
-	<li MayRequire="rim.job.world">MamaSurgery_MegaNipple</li>
-	<li MayRequire="rim.job.world">MamaSurgery_DickNipple</li>
-	<li MayRequire="rim.job.world">MamaSurgery_Thorn</li>
-	<li MayRequire="rim.job.world">MamaSurgery_BigBaby</li>
+	<li>MamaSurgery_MegaOppai</li>
+	<li>MamaSurgery_MegaNipple</li>
+	<li>MamaSurgery_DickNipple</li>
+	<li>MamaSurgery_Thorn</li>
+	<li>MamaSurgery_BigBaby</li>
 </recipes>
 
 </AlienRace.ThingDef_AlienRace>

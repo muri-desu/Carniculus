@@ -81,7 +81,7 @@
 			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaOnSkin</li>
+			<li>OnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/HighSo</wornGraphicPath>
 	<tags>
@@ -104,14 +104,13 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Harness</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
 		<WorkToMake>3500</WorkToMake>
 		<MaxHitPoints>200</MaxHitPoints>
 		<Mass>0.5</Mass>
-		<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>1</EquipDelay>
@@ -130,13 +129,12 @@
 
 	<apparel>
 		<bodyPartGroups>
-			<li MayRequire="rim.job.world">FlankBPG</li>
+			<li>Torso</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaOnSkin</li>
+			<li>OnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/Harness</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
 	<tags>
 		<li>mama_slave</li>
 	</tags>
@@ -152,7 +150,6 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/Corset</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -180,13 +177,11 @@
 	<apparel>
 		<bodyPartGroups>
 			<li>Torso</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaOnSkin</li>
+			<li>OnSkin</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/Corset</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
 	<tags>
 		<li>mama_police</li>
 		<li>mama_nun</li>
@@ -235,13 +230,19 @@
 			<li>Shoulders</li>
 			<li>Neck</li>
 			<li>Legs</li>
+			<li MayRequire="rim.job.world">GenitalsBPG</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaInner</li>
+			<li>Middle</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/MaidDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		<drawData>
+			<defaultData>
+				<layer>22</layer>
+			</defaultData>
+		</drawData>
 	<tags>
 		<li>mama_maid</li>
 	</tags>
@@ -290,13 +291,17 @@
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaInner</li>
 			<li>Middle</li>
 			<li>Shell</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/ShirtSet</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		<drawData>
+			<defaultData>
+				<layer>44</layer>
+			</defaultData>
+		</drawData>
 	<tags>
 		<li>mama_police</li>
 		<li>mama_dr</li>
@@ -344,18 +349,23 @@
 			<li>Torso</li>
 		</bodyPartGroups>
 		<layers>
+			<li>Shell</li>
 			<li>MamaCape</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/NunDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
-		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
+		<drawData>
+			<defaultData>
+				<layer>45</layer>
+			</defaultData>
+		</drawData>
 	<tags>
 		<li>mama_nun</li>
 	</tags>
 	</apparel>
 </ThingDef>
 
-<!-- 看守ジャケット -->
+<!-- 看守ケープ -->
 <ThingDef ParentName="CarniMamaApparelBase">
 	<defName>Apparel_MamaWardenJacket</defName>
 		<label>mama's warden cape</label>
@@ -402,7 +412,11 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/WardenJacket</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
-		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
+		<drawData>
+			<defaultData>
+				<layer>46</layer>
+			</defaultData>
+		</drawData>
 	<tags>
 		<li>mama_police</li>
 	</tags>
@@ -458,7 +472,11 @@
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/DrCoat</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
-		<!--<shellRenderedBehindHead>true</shellRenderedBehindHead>-->
+		<drawData>
+			<defaultData>
+				<layer>46</layer>
+			</defaultData>
+		</drawData>
 	<tags>
 		<li>mama_dr</li>
 	</tags>
@@ -535,6 +553,11 @@
 		<layers>
 			<li>MamaCape</li>
 		</layers>
+		<drawData>
+			<defaultData>
+				<layer>220</layer>
+			</defaultData>
+		</drawData>
 		<defaultOutfitTags>
 			<li>Mama_combat</li>
 		</defaultOutfitTags>
