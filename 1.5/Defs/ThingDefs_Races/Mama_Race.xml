@@ -75,8 +75,8 @@
 		<headFemaleOffsetDirectional>
 			<north><offset>(0.0, 0.1)</offset></north>
 			<south><offset>(0.0, 0.1)</offset></south>
-			<east><offset>(-0.01, 0.125)</offset></east>
-			<west><offset>(0.01, 0.125)</offset></west>
+			<east><offset>(-0.02, 0.125)</offset></east>
+			<west><offset>(0.02, 0.125)</offset></west>
 		</headFemaleOffsetDirectional>
 	</li>
 	</lifeStageAges>
@@ -246,7 +246,7 @@
 		<east>
 			<layerOffset>-0.275</layerOffset>
 				<bodyTypes>
-					<Female>(0.09, -0.5)</Female>
+					<Female>(0.09, -0.445)</Female>
 					<Child MayRequire="ludeon.rimworld.biotech">(0, -0)</Child>
 				</bodyTypes>
 		</east>
