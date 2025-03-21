@@ -197,7 +197,7 @@
 		<smeltable>true</smeltable>
 
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/Glasses</texPath>
+		<texPath>Things/Apparel/Mama/Glasses</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 
@@ -226,7 +226,7 @@
 		<layers>
 			<li>Megane</li>
 		</layers>
-	<wornGraphicPath>Things/Apparel/Mama/Hats/Glasses</wornGraphicPath>
+	<wornGraphicPath>Things/Apparel/Mama/Glasses</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	<renderSkipFlags>
 		<li>None</li>
@@ -257,7 +257,7 @@
 		<smeltable>true</smeltable>
 
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/Gasmask</texPath>
+		<texPath>Things/Apparel/Mama/Gasmask</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.4, 1.4)</drawSize>
 	</graphicData>
@@ -293,7 +293,7 @@
 		<bodyPartGroups>
 			<li>Teeth</li>
 		</bodyPartGroups>
-	<wornGraphicPath>Things/Apparel/Mama/Hats/Gasmask</wornGraphicPath>
+	<wornGraphicPath>Things/Apparel/Mama/Gasmask</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	<immuneToToxGasExposure>true</immuneToToxGasExposure>
 	<renderSkipFlags>
@@ -325,7 +325,7 @@
 		<description>mama's devotee veil.</description>
 
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/NunHead</texPath>
+		<texPath>Things/Apparel/Mama/NunHead</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 
@@ -359,7 +359,7 @@
 		<layers>
 			<li>Overhead</li>
 		</layers>
-		<wornGraphicPath>Things/Apparel/Mama/Hats/NunHead</wornGraphicPath>
+		<wornGraphicPath>Things/Apparel/Mama/NunHead</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	<tags>
 		<li>mama_nun</li>
@@ -373,7 +373,7 @@
 		<description>mama's maid head dress.</description>
 
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/MaidHead</texPath>
+		<texPath>Things/Apparel/Mama/MaidHead</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 
@@ -406,7 +406,7 @@
 		<layers>
 			<li>Overhead</li>
 		</layers>
-	<wornGraphicPath>Things/Apparel/Mama/Hats/MaidHead</wornGraphicPath>
+	<wornGraphicPath>Things/Apparel/Mama/MaidHead</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	<tags>
 		<li>mama_maid</li>
@@ -421,7 +421,7 @@
 		<techLevel>Industrial</techLevel>
 
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/WardenCap</texPath>
+		<texPath>Things/Apparel/Mama/WardenCap</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.2, 1.2)</drawSize>
 	</graphicData>
@@ -456,7 +456,7 @@
 		<layers>
 			<li>Overhead</li>
 		</layers>
-	<wornGraphicPath>Things/Apparel/Mama/Hats/WardenCap</wornGraphicPath>
+	<wornGraphicPath>Things/Apparel/Mama/WardenCap</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	<tags>
 		<li>mama_police</li>
@@ -480,7 +480,7 @@
 		</recipeUsers>
 	</recipeMaker>
 	<graphicData>
-		<texPath>Things/Apparel/Mama/Hats/MamaArmorMet</texPath>
+		<texPath>Things/Apparel/Mama/MamaArmorMet</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<uiIconScale>1.25</uiIconScale>
@@ -509,7 +509,7 @@
 		<bodyPartGroups>
 			<li>FullHead</li>
 		</bodyPartGroups>
-		<wornGraphicPath>Things/Apparel/Mama/Hats/MamaArmorMet</wornGraphicPath>
+		<wornGraphicPath>Things/Apparel/Mama/MamaArmorMet</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		<layers>
@@ -526,6 +526,7 @@
 		</forceEyesVisibleForRotations>
 		<tags>
 			<li>CarniMamaApparel</li>
+			<li MayRequire="kentington.saveourship2">EVA</li>
 		</tags>
 	</apparel>
 	<thingCategories>

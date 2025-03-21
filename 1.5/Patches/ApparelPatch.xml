@@ -128,4 +128,79 @@
 		</match>
 	</Operation>
 
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Kraltech Industries</li>
+		<li>3250496402</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>Apparel_ShieldBeltStrong</li>
+			<li>Apparel_EnforcerShieldBelt</li>
+			<li>Apparel_EnforcerBackPackMelee</li>
+			<li>Apparel_EnforcerBackPackRanger</li>
+			<li>Apparel_TravelersBackPack</li>
+		</value>
+	</match>
+</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ratkin Anomaly+</li>
+			<li>3293914637</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>RA_Prophecy_CurseFlame</li>
+				<li>RA_Prophecy_PusBlood</li>
+				<li>RA_SpadesCartridgeBag</li>
+				<li>RA_DiamondsQuiver</li>
+				<li>RA_HeartsMagazine</li>
+			</value>
+		</match>
+	</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[1.5]边缘仙路-四象之争 RimImmortals-SeasonsOfRule</li>
+		<li>3308877707</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>XXK_RI_HannyaBoy</li>
+			<li>XXK_RI_AutumBall</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>边缘仙路-神机天纵 RimImmortal-Forge</li>
+		<li>3308873789</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>RI_Talisman_JadeRuyi</li>
+			<li>RI_Talisman_CoinsPendant</li>
+			<li>RI_Talisman_TuskPendant</li>
+			<li>RI_Talisman_ToxicBell</li>
+			<li>RI_Talisman_SandalwoodToken</li>
+			<li>RI_Talisman_StorageBag</li>
+			<li>RI_Talisman_PolyStoneTower</li>
+			<li>RI_Talisman_WindRing</li>
+			<li>RI_Talisman_Firefighter</li>
+			<li>RI_Talisman_Greengourd</li>
+			<li>RI_Talisman_PurpleGoldenGourd</li>
+			<li>RI_Talisman_GoldenBowl</li>
+			<li>RI_Talisman_WhiteJadeVase</li>
+			<li>RI_Talisman_ThreeKingTower</li>
+			<li>RI_Talisman_ImmortalBindingRope</li>
+		</value>
+	</match>
+</Operation>
+
 </Patch>

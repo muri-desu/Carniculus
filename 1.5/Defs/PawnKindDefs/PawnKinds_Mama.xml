@@ -8,7 +8,7 @@
 	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 	<initialWillRange>1~3</initialWillRange>
 	<initialResistanceRange>10~20</initialResistanceRange>
-	<apparelMoney>1000~3000</apparelMoney>
+	<apparelMoney>1000~2000</apparelMoney>
 	<techHediffsMoney>1000~3000</techHediffsMoney>
 	<techHediffsChance>0.2</techHediffsChance>
 	<techHediffsTags>
@@ -31,6 +31,7 @@
 	<defName>CarniMama_colonist</defName>
 	<label>mama</label>
 	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<apparelRequired>
 		<li>Apparel_MamaHighSocks</li>
 		<li>Apparel_MamaCorset</li>
@@ -38,7 +39,7 @@
 	<backstoryFiltersOverride>
 		<li>
 			<categories>
-				<li>CarniMama</li>
+				<li>CarniMama_Colony</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
@@ -92,8 +93,8 @@
 	<backstoryFiltersOverride>
 		<li>
 			<categories>
+				<li>CarniMama_Colony</li>
 				<li>CarniMama_Vat</li>
-				<li>CarniMama</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>
@@ -104,10 +105,14 @@
 	<defName>CarniMama_soldier</defName>
 	<defaultFactionType>CarniNPCFaction</defaultFactionType>
 	<label>combatant</label>
-	<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-	<techHediffsChance Inherit="False">0</techHediffsChance>
+	<useFactionXenotypes>false</useFactionXenotypes>
+	<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+	<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+	<techHediffsChance>0.15</techHediffsChance>
+	<techHediffsMoney>0~1800</techHediffsMoney>
 	<chemicalAddictionChance>0.4</chemicalAddictionChance>
-	<weaponMoney>350~2000</weaponMoney>
+	<weaponMoney>350~1500</weaponMoney>
 	<weaponTags>
 		<li>Gun</li>
 	</weaponTags>
@@ -121,7 +126,16 @@
 	<apparelRequired>
 		<li>Apparel_MamaArmorMet</li>
 		<li>Apparel_MamaArmor</li>
+		<li>Apparel_MamaZentai</li>
 	</apparelRequired>
+	<apparelTags>
+		<li>mama_combat</li>
+	</apparelTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<MamaCombat_xenotype MayRequire="Ludeon.RimWorld.Biotech">999</MamaCombat_xenotype>
+			</xenotypeChances>
+		</xenotypeSet>
 </PawnKindDef>
 
 <!-- Slave 奴隷ママ -->
@@ -137,7 +151,8 @@
 	<backstoryFiltersOverride>
 		<li>
 			<categories>
-				<li>CarniMama</li>
+				<li>CarniMama_Vat</li>
+				<li>CarniMama_Colony</li>
 			</categories>
 		</li>
 	</backstoryFiltersOverride>

@@ -21,6 +21,16 @@
 	</value>
 </Operation>
 
+<Operation Class="PatchOperationAdd"><!-- 独自geneが他種族につかないようにするやつ -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction</xpath>
+		<value>
+			<geneList>
+				<li>CarniGene</li>
+				<li>CarniMamaGene</li>
+			</geneList>
+		</value>
+</Operation>
+
 <Operation Class="PatchOperationAdd"><!-- CEによる体型バグ防止用 -->
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/blackGeneList</xpath>
 		<value>
@@ -51,12 +61,11 @@
 				<li><defName>Libido_High</defName><chance>100</chance></li>
 				<li><defName>Fertile</defName><chance>75</chance></li>
 				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_rapist</defName><chance>100</chance></li>
-				<!-- <li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_sadist_gene</defName><chance>50</chance></li> -->
 				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_bisexual</defName><chance>50</chance></li>
 			</raceGenes>
 		</value>
 </Operation>
-<Operation Class="PatchOperationAdd"><!-- ママgenes -->
+<Operation Class="PatchOperationAdd"><!-- ママ -->
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings</xpath>
 		<value>
 			<raceGenes>
@@ -68,7 +77,8 @@
 				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_hypersexual</defName></li>
 				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_masochist</defName></li>
 				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_bisexual</defName></li>
-				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_aphrodisiac_pheromones</defName></li>
+				<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_aphrodisiac_pheromones</defName>
+</li>
 			</raceGenes>
 		</value>
 </Operation>

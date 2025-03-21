@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 <MamaSurgery_MegaOppai.label>改造手術（超乳化）</MamaSurgery_MegaOppai.label>
-<MamaSurgery_MegaOppai.description>超乳化します.</MamaSurgery_MegaOppai.description>
+<MamaSurgery_MegaOppai.description>超乳化します. 施術には最低限の医術と芸術スキルが必要です.</MamaSurgery_MegaOppai.description>
+<MamaSurgery_MegaOppai.jobString>超乳化手術を施しています.</MamaSurgery_MegaOppai.jobString>
+<Remove_MegaOppai.label>改造手術（超乳化除去）</Remove_MegaOppai.label>
+<Remove_MegaOppai.description>超乳を除去します.</Remove_MegaOppai.description>
+<Remove_MegaOppai.jobString>超乳を除去しています.</Remove_MegaOppai.jobString>
+
 <MamaSurgery_MegaNipple.label>改造手術（乳頭肥大化）</MamaSurgery_MegaNipple.label>
-<MamaSurgery_MegaNipple.description>乳頭および乳輪を巨大化します.</MamaSurgery_MegaNipple.description>
+<MamaSurgery_MegaNipple.description>乳頭と乳輪を巨大化します. 施術には最低限の医術と芸術スキルが必要です.</MamaSurgery_MegaNipple.description>
+<MamaSurgery_MegaNipple.jobString>乳頭肥大手術を施しています.</MamaSurgery_MegaNipple.jobString>
+<Remove_MegaNipple.label>改造手術（肥大乳頭除去）</Remove_MegaNipple.label>
+<Remove_MegaNipple.description>乳頭と乳輪を通常化します.</Remove_MegaNipple.description>
+<Remove_MegaNipple.jobString>肥大乳頭を除去しています.</Remove_MegaNipple.jobString>
+
 <MamaSurgery_DickNipple.label>改造手術（乳頭陰茎化）</MamaSurgery_DickNipple.label>
-<MamaSurgery_DickNipple.description>乳頭部に陰茎を植え付けます. 周りを汚す頻度が増えます.</MamaSurgery_DickNipple.description>
-<MamaSurgery_Thorn.label>改造手術（毒棘触手）</MamaSurgery_Thorn.label>
-<MamaSurgery_Thorn.description>触手に有毒の棘を発生させます. \n近接攻撃に毒が付与されるようになり, 毒耐性も得ますが空腹率が少し上がります.</MamaSurgery_Thorn.description>
-<MamaSurgery_BigBaby.label>改造手術（恒久妊娠）</MamaSurgery_BigBaby.label>
-<MamaSurgery_BigBaby.description>子宮を独占する寄生生物を植え付けます. \nこの寄生生物はママの養分を吸い取り内側から犯し続け新たな妊娠を妨げます.</MamaSurgery_BigBaby.description>
+<MamaSurgery_DickNipple.description>乳頭部に陰茎を植え付けます. 周りを汚す頻度が増えます. 施術には最低限の医術と芸術スキルが必要です.</MamaSurgery_DickNipple.description>
+<MamaSurgery_DickNipple.jobString>乳頭陰茎化手術を施しています.</MamaSurgery_DickNipple.jobString>
+<Remove_DickNipple.label>改造手術（乳頭陰茎除去）</Remove_DickNipple.label>
+<Remove_DickNipple.description>乳頭部の陰茎を除去します.</Remove_DickNipple.description>
+<Remove_DickNipple.jobString>陰茎化乳頭を除去しています.</Remove_DickNipple.jobString>
+
+<MamaSurgery_EverPreg.label>改造手術（観賞用胎腹）</MamaSurgery_EverPreg.label>
+<MamaSurgery_EverPreg.description>子宮を独占する肉塊を植え付けます. \n肉塊は分娩されることなく新たな妊娠を妨げ, たびたびママの脳を通して周囲に笑いかけます. 施術には最低限の医術と芸術スキルが必要です.</MamaSurgery_EverPreg.description>
+<MamaSurgery_EverPreg.jobString>子宮に肉塊を詰めています.</MamaSurgery_EverPreg.jobString>
+<Remove_EverPreg.label>改造手術（寄生児除去）</Remove_EverPreg.label>
+<Remove_EverPreg.description>子宮を独占する肉塊を除去します.</Remove_EverPreg.description>
+<Remove_EverPreg.description>子宮内の肉を掻き出しています.</Remove_EverPreg.description>
 </LanguageData>

@@ -233,13 +233,14 @@
 
 <bodyAddons>
 <li><!-- 1:髪の毛 -->
-	<name>carniculus hair</name>
+<name>carniculus hair</name>
 	<path>Hairs/CarniHair</path>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<alignWithHead>true</alignWithHead>
 	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 	<colorChannel>hair</colorChannel>
+	<shaderType>CutoutComplex</shaderType>
 	<conditions>
 		<BodyPart>
 			<bodyPart>Head</bodyPart>
@@ -275,6 +276,245 @@
 		<east>
 			<layerOffset>-0.275</layerOffset>
 			<offset>(0,-0)</offset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 2:oppai -->
+<name>breasts</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<colorChannel>skin</colorChannel>
+	<shaderType>Cutout</shaderType>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
+		<Gender For="Female"><path>Things/Pawn/Mama/Breasts/breasts_average</path>
+			<extendedGraphics>
+				<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
+					<path>Things/Pawn/Carni/Breasts/breasts_carni_average</path>
+						<extendedGraphics>
+							<Severity For="0.666">Things/Pawn/Carni/Breasts/breasts_carni_average_preglate</Severity>
+						</extendedGraphics>
+				</Hediff>
+			</extendedGraphics>
+		</Gender>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.292</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.289</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.292</layerOffset>
+		</east>
+	</offsets>
+</li>
+
+<li><!-- 3:belly -->
+	<name>belly</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<shaderType>Cutout</shaderType>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+	<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	<Hediff For="RJW_pregnancy" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	<Hediff For="RJW_pregnancy_beast" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	<Hediff For="RJW_pregnancy_mech" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	<Hediff For="RJW_UnknownEgg" MayRequire="rim.job.world">Things/Pawn/Carni/Belly/belly_huge</Hediff>
+	<Hediff For="RJW_InsectHiveEgg">Things/Pawn/Carni/Belly/belly_huge</Hediff>
+	<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs"><path>Things/Pawn/Carni/blank</path>
+		<extendedGraphics>
+			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
+			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+		</extendedGraphics>
+	</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.293</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.29</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.293</layerOffset>
+		</east>
+	</offsets>
+</li>
+
+<li><!-- 4:penis -->
+<name>penis</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<shaderType>Cutout</shaderType>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<Apparel>
+			<hiddenUnderApparelTag>
+				<li>coverchinman</li>
+			</hiddenUnderApparelTag>
+		</Apparel>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
+		<Gender For="Female">Things/Pawn/Carni/blank</Gender>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+		<layerOffset>-0.288</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.575)</Male>
+				<Female>(0, -0.575)</Female>
+			</bodyTypes>
+		</south>
+		<north>
+		<layerOffset>-0.291</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.05)</Male>
+				<Female>(0, -0.05)</Female>
+			</bodyTypes>
+		</north>
+		<east>
+		<layerOffset>-0.288</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.65)</Male>
+				<Female>(-0.07, -0.5)</Female>
+			</bodyTypes>
+		</east>
+	</offsets>
+</li>
+
+<li><!-- 5:vagina -->
+	<name>vagina</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<shaderType>Cutout</shaderType>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<Apparel>
+			<hiddenUnderApparelTag>
+				<li>coverchinman</li>
+			</hiddenUnderApparelTag>
+		</Apparel>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+	</conditions>
+
+	<extendedGraphics>
+		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
+		<Gender For="Female">Genitals/vagina_carni_average</Gender>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+		<layerOffset>-0.289</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.575)</Male>
+				<Female>(0, -0.575)</Female>
+			</bodyTypes>
+		</south>
+		<north>
+		<layerOffset>-0.292</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.05)</Male>
+				<Female>(0, -0.05)</Female>
+			</bodyTypes>
+		</north>
+		<east>
+		<layerOffset>-0.288</layerOffset>
+			<bodyTypes>
+				<Male>(0, -0.65)</Male>
+				<Female>(-0.07, -0.5)</Female>
+			</bodyTypes>
 		</east>
 	</offsets>
 </li>
@@ -428,11 +668,6 @@
 		<li>Apparel_ShieldBelt</li>
 		<li>Apparel_SmokepopBelt</li>
 		<li>Apparel_FirefoampopPack</li>
-		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_ShieldBeltStrong</li>
-		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackMelee</li>
-		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerBackPackRanger</li>
-		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_TravelersBackPack</li>
-		<li MayRequire="BlackMarket420.KraltechIndustries">Apparel_EnforcerShieldBelt</li>
 	</whiteApparelList>
 
 	<onlyHaveRaceRestrictedGenes MayRequire="Ludeon.RimWorld.Biotech">false</onlyHaveRaceRestrictedGenes>

@@ -31,8 +31,7 @@
 	<colorGenerator Class="ColorGenerator_Options">
 	<options>
 		<li>
-			<weight>10</weight>
-			<only>(255,255,255,1)</only>
+			<only>(255,255,255,0)</only>
 		</li>
 	</options>
 	</colorGenerator>
@@ -44,6 +43,99 @@
 		<li>Carni_Apparel</li>
 	</tradeTags>
 </ThingDef>	
+
+<!-- 全身タイツ -->
+<ThingDef ParentName="CarniMamaApparelBase">
+	<defName>Apparel_MamaZentai</defName>
+		<label>mama's skinsuit</label>
+		<description>A tight skinsuit covering whole body.</description>
+
+	<graphicData>
+		<texPath>Things/Apparel/Mama/Zentai</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>2500</WorkToMake>
+		<MaxHitPoints>250</MaxHitPoints>
+		<Mass>0.3</Mass>
+		<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+	</statBases>
+
+	<stuffCategories>
+		<li>Fabric</li>
+	</stuffCategories>
+	<costStuffCount>150</costStuffCount>
+
+	<equippedStatOffsets>
+		<PawnBeauty>0.1</PawnBeauty>
+		<Comfort>0.5</Comfort>
+	</equippedStatOffsets>
+
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Feet</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<layers>
+			<li>MamaSkin</li>
+		</layers>
+		<wornGraphicPath>Things/Apparel/Mama/Zentai</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+	<tags>
+		<li>mama_nun</li>
+		<li>mama_maid</li>
+		<li>mama_police</li>
+		<li>mama_dr</li>
+		<li>mama_combat</li>
+		<!-- <li>coveroppai</li>
+		<li>coverchinman</li> -->
+	</tags>
+	</apparel>
+	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255,0)</only>
+		</li>
+	</options>
+	</colorGenerator>
+	<comps>
+		<li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>Hediff_ZentaiBody</hediff>
+		</li>
+	</comps>
+</ThingDef>
+
+<HediffDef>
+	<defName>Hediff_ZentaiBody</defName>
+	<label>skinsuit comfort</label>
+	<labelNoun>skinsuit</labelNoun>
+	<description>Wearing tight skinsuit.</description>
+	<defaultLabelColor>(187,116,134)</defaultLabelColor>
+	<hediffClass>HediffWithComps</hediffClass>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<Comfort>0.25</Comfort>
+				</statOffsets>
+			</li>
+		</stages>
+</HediffDef>
 
 <!-- ニーソ -->
 <ThingDef ParentName="CarniMamaApparelBase">
@@ -91,8 +183,12 @@
 		<li>mama_police</li>
 		<li>mama_dr</li>
 	</tags>
+		<drawData>
+			<defaultData>
+				<layer>20</layer>
+			</defaultData>
+		</drawData>
 	</apparel>
-
 </ThingDef>
 
 <!-- ハーネス -->
@@ -138,6 +234,11 @@
 	<tags>
 		<li>mama_slave</li>
 	</tags>
+		<drawData>
+			<defaultData>
+				<layer>21</layer>
+			</defaultData>
+		</drawData>
 	</apparel>
 </ThingDef>
 
@@ -187,7 +288,13 @@
 		<li>mama_nun</li>
 		<li>mama_dr</li>
 		<li>mama_maid</li>
+		<li MayRequire="kentington.saveourship2">EVA</li>
 	</tags>
+		<drawData>
+			<defaultData>
+				<layer>21</layer>
+			</defaultData>
+		</drawData>
 	</apparel>
 </ThingDef>
 
@@ -234,6 +341,7 @@
 		</bodyPartGroups>
 		<layers>
 			<li>Middle</li>
+			<li>Shell</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/MaidDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -245,6 +353,7 @@
 		</drawData>
 	<tags>
 		<li>mama_maid</li>
+		<li>coverchinman</li>
 	</tags>
 	</apparel>
 </ThingDef>
@@ -292,7 +401,6 @@
 		</bodyPartGroups>
 		<layers>
 			<li>Middle</li>
-			<li>Shell</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/ShirtSet</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -305,6 +413,7 @@
 	<tags>
 		<li>mama_police</li>
 		<li>mama_dr</li>
+		<li>coverchinman</li>
 	</tags>
 	</apparel>
 </ThingDef>
@@ -350,7 +459,6 @@
 		</bodyPartGroups>
 		<layers>
 			<li>Shell</li>
-			<li>MamaCape</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/NunDress</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -408,7 +516,7 @@
 			<li>Torso</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaCape</li>
+			<li>Shell</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/WardenJacket</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -468,7 +576,7 @@
 			<li>Legs</li>
 		</bodyPartGroups>
 		<layers>
-			<li>MamaCape</li>
+			<li>Shell</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/DrCoat</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -491,6 +599,7 @@
 	</colorGenerator>
 </ThingDef>
 
+<!-- アーマー -->
 <ThingDef ParentName="ArmorMachineableBase">
 	<defName>Apparel_MamaArmor</defName>
 		<label>mama's power armor</label>
@@ -546,24 +655,27 @@
 			<li>Shoulders</li>
 			<li>Arms</li>
 			<li>Legs</li>
-			<li MayRequire="rim.job.world">ChestBPG</li>
 		</bodyPartGroups>
 		<wornGraphicPath>Things/Apparel/Mama/MamaArmor</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<layers>
-			<li>MamaCape</li>
+			<li>Shell</li>
 		</layers>
-		<drawData>
+		<!-- <drawData>
 			<defaultData>
-				<layer>220</layer>
+				<layer>48</layer>
 			</defaultData>
-		</drawData>
+		</drawData> -->
 		<defaultOutfitTags>
 			<li>Mama_combat</li>
 		</defaultOutfitTags>
 		<useDeflectMetalEffect>true</useDeflectMetalEffect>
 		<soundWear>Wear_PowerArmor</soundWear>
 		<soundRemove>Remove_PowerArmor</soundRemove>
+		<tags>
+			<li>mama_combat</li>
+			<li MayRequire="kentington.saveourship2">EVA</li>
+		</tags>
 	</apparel>
 </ThingDef>
 

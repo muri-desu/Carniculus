@@ -18,4 +18,11 @@
 <Apparel_MamaDrCoat.description>オリジナルのママが現役時代に着こなしていたモデルです.</Apparel_MamaDrCoat.description>
 <Apparel_MamaChildDress.label>ママの子供服</Apparel_MamaChildDress.label>
 <Apparel_MamaChildDress.description>少女のためのワンピースです.</Apparel_MamaChildDress.description>
+<Apparel_MamaArmor.label>奴隷用アーマー</Apparel_MamaArmor.label>
+<Apparel_MamaArmor.description>人間種下級戦闘員に支給されるアーマーです.</Apparel_MamaArmor.description>
+<Apparel_MamaArmorMet.label>奴隷用メット</Apparel_MamaArmorMet.label>
+<Apparel_MamaArmorMet.description>人間種下級戦闘員に支給されるヘルメットです.</Apparel_MamaArmorMet.description>
+<Apparel_MamaZentai.label>スキンスーツ</Apparel_MamaZentai.label>
+<Apparel_MamaZentai.description>首から下を覆うタイツです.</Apparel_MamaZentai.description>
+
 </LanguageData>

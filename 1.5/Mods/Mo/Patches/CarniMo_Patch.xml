@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<Operation Class="PatchOperationReplace">
-	<xpath>Defs/FactionDef[defName = "CarniPlayerFaction" or defName = "CarniNPCFaction"]/techLevel</xpath>
-	<value>
-		<techLevel>Medieval</techLevel>
-	</value>
-</Operation>
-
 <Operation Class="PatchOperationAdd">
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
 		<value>
@@ -63,22 +56,5 @@
 		</value>
 </Operation>
 
-<Operation Class="PatchOperationAdd">
-	<xpath>Defs/FactionDef[defName = "CarniNPCFaction"]/caravanTraderKinds</xpath>
-		<value>
-			<li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
-			<li>DankPyon_Caravan_Medieval_ArtPatron</li>
-			<li>DankPyon_Caravan_Medieval_Scholar</li>
-		</value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-	<xpath>Defs/ThingDef[defName = "Apparel_CarniFat"]/costList/Meat_Human</xpath>
-		<value>
-		<costList>
-			<DankPyon_Fat>45</DankPyon_Fat>
-		</costList>
-	</value>
-</Operation>
 
 </Patch>

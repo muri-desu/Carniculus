@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 <ApparelLayerDef>
-	<defName>MamaOnSkin</defName>
-	<label>Lingerie</label>
-	<drawOrder>-11</drawOrder>
-</ApparelLayerDef>
-
-<ApparelLayerDef>
-	<defName>MamaInner</defName>
+	<defName>MamaSkin</defName>
 	<label>Inner</label>
 	<drawOrder>-10</drawOrder>
 </ApparelLayerDef>

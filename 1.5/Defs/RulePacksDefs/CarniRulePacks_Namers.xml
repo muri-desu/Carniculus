@@ -7,6 +7,7 @@
 			<rulesFiles>
 				<li>Mama_First->Names/Mama_First</li>
 				<li>Mama_Middle->Names/Animal_Female</li>
+				<li>Mama_MiddleM->Names/Animal_Male</li>
 				<li>Mama_LastCap->WordParts/CapitalLetters</li>
 				<li>Carni_People->Names/Carni_people</li>
 				<li>Carni_adjective->Names/Carni_adjctv</li>
@@ -25,6 +26,18 @@
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Mama_First] '[Mama_Middle]' [Mama_LastCap][Digit][Digit][Digit][Digit]</li>
+			</rulesStrings>
+		</rulePack>
+</RulePackDef>
+
+<RulePackDef>
+	<defName>Mama_NameMakerM</defName>
+		<include>
+			<li>NamerCarniUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Mama_First] '[Mama_MiddleM]' [Mama_LastCap][Digit][Digit][Digit][Digit]</li>
 			</rulesStrings>
 		</rulePack>
 </RulePackDef>

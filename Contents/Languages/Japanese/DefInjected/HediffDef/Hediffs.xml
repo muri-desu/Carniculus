@@ -8,7 +8,7 @@
 <Hediff_NecroArmor.labelNoun>壊疽アーマー</Hediff_NecroArmor.labelNoun>
 <Hediff_NecroArmor.tools.0.label>毒噛みつき</Hediff_NecroArmor.tools.0.label>
 <Hediff_MamaGrowth.label>光背芽腫</Hediff_MamaGrowth.label>
-<Hediff_MamaGrowth.description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体機能が向上しますが, 一定のフェーズに達すると思考と容貌が人間離れしていき精神異常をきたすようになります.</Hediff_MamaGrowth.description>
+<Hediff_MamaGrowth.description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体機能が向上しますが, 一定のフェーズに達すると思考と容貌が人間離れしていき話が通じにくくなります.</Hediff_MamaGrowth.description>
 <Hediff_MamaGrowth.comps.0.labelInBrackets>フェーズ0</Hediff_MamaGrowth.comps.0.labelInBrackets>
 <Hediff_MamaGrowth.comps.1.labelInBrackets>フェーズ1</Hediff_MamaGrowth.comps.1.labelInBrackets>
 <Hediff_MamaGrowth.comps.2.labelInBrackets>フェーズ2</Hediff_MamaGrowth.comps.2.labelInBrackets>
@@ -20,13 +20,18 @@
 <Hediff_MamaGrowth.comps.8.labelInBrackets>フェーズ8</Hediff_MamaGrowth.comps.8.labelInBrackets>
 <Hediff_MamaGrowth.comps.9.labelInBrackets>フェーズ9</Hediff_MamaGrowth.comps.9.labelInBrackets>
 <Hediff_MamaGrowth.comps.10.labelInBrackets>フェーズ10</Hediff_MamaGrowth.comps.10.labelInBrackets>
-<Hediff_MamaGrowth.comps.10.labelInBrackets>フェーズ11</Hediff_MamaGrowth.comps.10.labelInBrackets>
-<Hediff_MamaGrowth.comps.10.labelInBrackets>フェーズ12</Hediff_MamaGrowth.comps.10.labelInBrackets>
-<Hediff_VatMama.label>人口培養"ママ"</Hediff_VatMama.label>
-<Hediff_VatMama.description>培養槽で育てられた量産型モデルです.</Hediff_VatMama.description>
-<MamaVariant_SuperOppai.label>超乳</MamaVariant_SuperOppai.label>
-<MamaVariant_MegaNipple.label>肥大化乳頭</MamaVariant_MegaNipple.label>
-<MamaVariant_DickNipple.label>陰茎化乳頭</MamaVariant_DickNipple.label>
-<MamaVariant_PoisonousThorn.label>毒の棘</MamaVariant_PoisonousThorn.label>
-<MamaVariant_BigBaby.label>寄生児</MamaVariant_BigBaby.label>
+<Hediff_MamaGrowth.comps.11.labelInBrackets>フェーズ11</Hediff_MamaGrowth.comps.11.labelInBrackets>
+<Hediff_MamaGrowth.comps.12.labelInBrackets>フェーズ12</Hediff_MamaGrowth.comps.12.labelInBrackets>
+<Mama_MegaOppai.label>超乳</Mama_MegaOppai.label>
+<Mama_MegaOppai.description>肥大化させられた乳房.</Mama_MegaOppai.description>
+<Mama_MegaNipple.label>肥大化乳頭</Mama_MegaNipple.label>
+<Mama_MegaNipple.description>肥大化させられた乳頭.</Mama_MegaNipple.description>
+<Mama_DickNipple.label>陰茎化乳頭</Mama_DickNipple.label>
+<Mama_DickNipple.description>陰茎化させられた乳頭.</Mama_DickNipple.description>
+<Mama_EverPreg.label>観賞用胎腹</Mama_EverPreg.label>
+<Mama_EverPreg.description>観賞用として膨らませた腹部. 時折中の詰め物がくすくす笑うのが聞こえてきます.</Mama_EverPreg.description>
+<Mama_Thorn.label>毒性触腫</Mama_Thorn.label>
+<Mama_Thorn.description>量産型下級戦闘員に発育する毒棘付きの職種です. このタイプは時間が経っても成長しません.</Mama_Thorn.description>
+<Hediff_ZentaiBody.label>スキンスーツの締め付け</Hediff_ZentaiBody.label>
+<Hediff_ZentaiBody.description>スキンスーツの締め付けによる快適性.</Hediff_ZentaiBody.description>
 </LanguageData>

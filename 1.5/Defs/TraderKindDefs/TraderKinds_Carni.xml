@@ -13,11 +13,11 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
-        <countRange>5~20</countRange>
+        <countRange>15~30</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
-        <countRange>5</countRange>
+        <countRange>15~20</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineUltratech</thingDef>
@@ -65,7 +65,7 @@
       <!-- Genepacks -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
-        <countRange>1~3</countRange>
+        <countRange>12~30</countRange>
       </li>
       
       <!-- Slaves -->
@@ -213,15 +213,19 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
-        <countRange>5~10</countRange>
+        <countRange>15~100</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
-        <countRange>1~5</countRange>
+        <countRange>10~50</countRange>
       </li>
+	<li Class="StockGenerator_SingleDef">
+		<thingDef>Neutroamine</thingDef>
+		<countRange>130~500</countRange>
+	</li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineUltratech</thingDef>
-        <countRange>10~50</countRange>
+        <countRange>30~150</countRange>
       </li>
       <li Class="StockGenerator_ReinforcedBarrels">
         <countRange>1~4</countRange>
@@ -287,13 +291,13 @@
       <!-- Genepacks -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
-        <countRange>15~30</countRange>
+        <countRange>15~50</countRange>
       </li>
       
       <!-- Archite capsules -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>ArchiteCapsule</thingDef>
-        <countRange>10~20</countRange>
+        <countRange>20~50</countRange>
       </li>
       
       <!-- Slaves -->

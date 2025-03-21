@@ -143,7 +143,6 @@
 			<li>Torso</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 		</bodyPartGroups>
 		<layers>
@@ -257,7 +256,6 @@
 			<li>Arms</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 			<li>Feet</li>
 		</bodyPartGroups>
@@ -266,6 +264,9 @@
 	</layers>
 	<wornGraphicPath>Things/Apparel/Fat/Fat</wornGraphicPath>
 	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<tags>
+			<li MayRequire="kentington.saveourship2">EVA</li>
+		</tags>
 	</apparel>
 
 </ThingDef>
@@ -314,7 +315,6 @@
 			<li>Arms</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 			<li>Feet</li>
 		</bodyPartGroups>
@@ -323,6 +323,9 @@
 	</layers>
 		<wornGraphicPath>Things/Apparel/Vein/Vein</wornGraphicPath>
 	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<tags>
+			<li MayRequire="kentington.saveourship2">EVA</li>
+		</tags>
 	</apparel>
 </ThingDef>
 
@@ -371,13 +374,16 @@
 			<li>Hands</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 			<li>Feet</li>
 		</bodyPartGroups>
 		<layers>
 			<li>Middle</li>
 		</layers>
+		<tags>
+			<li>coverchinman</li>
+			<li>coveroppai</li>
+		</tags>
 		<wornGraphicPath>Things/Apparel/Suit/Suit</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
@@ -438,7 +444,6 @@
 			<li>Hands</li>
 			<li>Legs</li>
 			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">FlankBPG</li>
 			<li MayRequire="rim.job.world">GenitalsBPG</li>
 			<li>Feet</li>
 		</bodyPartGroups>
@@ -457,7 +462,10 @@
 			<li>Shell</li>
 		</layers>
 		<tags>
+			<li>coverchinman</li>
+			<li>coveroppai</li>
 			<li>CarniBossApparel</li>
+			<li MayRequire="kentington.saveourship2">EVA</li>
 		</tags>
 		<useWornGraphicMask>true</useWornGraphicMask>
 	</apparel>
@@ -595,6 +603,7 @@
 		<immuneToToxGasExposure>true</immuneToToxGasExposure>
 	</apparel>
 
+
 	<comps>
 		<li Class="CompProperties_CauseHediff_Apparel">
 			<hediff>Hediff_NecroArmor</hediff>
@@ -634,74 +643,6 @@
 			</li>
 		</comps>
 </HediffDef>
-
-<!-- <ThingDef ParentName="CarniArmorBase">
-	<defName>Apparel_CarniCystArmor</defName>
-		<label>boomacyst armor</label>
-		<description>Armor that synthesizes chemfuel from the wearer's body fluids and forms massive cysts on it.</description>
-
-	<graphicData>
-		<texPath>Things/Apparel/NecroArmor/NecroArmor</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-
-	<statBases>
-		<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
-		<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-		<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.2</ArmorRating_Heat>
-		<Insulation_Cold>18</Insulation_Cold>
-		<Insulation_Heat>18</Insulation_Heat>
-	</statBases>
-
-	<equippedStatOffsets>
-		<PainShockThreshold>3</PainShockThreshold>
-		<CrawlSpeed>1</CrawlSpeed>
-		<FilthRate>0.25</FilthRate>
-	</equippedStatOffsets>
-
-	<apparel>
-		<wornGraphicPath>Things/Apparel/NecroArmor/NecroArmor</wornGraphicPath>
-		<immuneToToxGasExposure>true</immuneToToxGasExposure>
-	</apparel>
-
-	<comps>
-		<li Class="CompProperties_CauseHediff_Apparel">
-			<hediff>Hediff_CystArmor</hediff>
-			<part>Fullbody</part>
-		</li>
-	</comps>
-</ThingDef>
-
-<HediffDef>
-	<defName>Hediff_CystArmor</defName>
-	<label>cystarmor explosibility</label>
-	<labelNoun>a cystarmor explosibility</labelNoun>
-	<description>Due to volatile cysts the armor forms, the wearer explodes upon their death.</description>
-	<defaultLabelColor>(187,116,134)</defaultLabelColor>
-	<hediffClass>HediffWithComps</hediffClass>
-	<scenarioCanAdd>false</scenarioCanAdd>
-	<isBad>false</isBad>
-		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-		<comps>
-			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
-			<li Class="DeathActionWorker_BigExplosion" />
-			<li Class="CystArmor.CystArmorCompProperties">
-				<fleck>DustPuff</fleck>
-				<moteCount>6</moteCount>
-				<moteOffsetRange>7</moteOffsetRange>
-				<filth>Filth_Fuel</filth>
-				<sound>Explosion_Flame</sound>
-				<injuryCreatedOnDeath>Burn</injuryCreatedOnDeath>
-				<injuryCount>3~6</injuryCount>
-			</li>
-		</comps>
-</HediffDef> -->
 
 <StuffCategoryDef>
 	<defName>Flesh</defName>

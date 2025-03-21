@@ -20,20 +20,22 @@
 		<li>CarniMama</li>
 		<li>CarniMama_Vat</li>
 	</spawnCategories>
-	<forcedHediffs>
-		<li>Hediff_MamaGrowth</li>
-	</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- colony child mama -->
 	<defName>GoodGirl</defName>
-	<title>good girl</title>
-	<titleShort>good girl</titleShort>
+	<title>good boy</title>
+	<titleFemale>good girl</titleFemale>
+	<titleShort>good boy</titleShort>
+	<titleShortFemale>good girl</titleShortFemale>
 		<description>[PAWN_nameDef] is an organic free-range mama. Raised in abundant nature and (probably) 100% free of antibiotics, growth hormones, chemicals.</description>
 	<slot>Childhood</slot>
 	<spawnCategories>
 		<li>CarniMama_Colony</li>
 	</spawnCategories>
+	<forcedHediffs>
+		<li>Hediff_MamaGrowth</li>
+	</forcedHediffs>
 	<skillGains>
 		<Social>5</Social>
 		<Plants>2</Plants>
@@ -76,7 +78,7 @@
 		<li>CarniMama_Vat</li>
 	</spawnCategories>
 	<forcedHediffs>
-		<li>Hediff_VatMama</li>
+		<li>Mama_Thorn</li>
 	</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
@@ -89,7 +91,28 @@
 	<workDisables>Violent, Mining, Artistic</workDisables>
 	<!-- <linkedBackstory>BadGirl</linkedBackstory> -->
 	<spawnCategories>
-		<li>CarniMama</li>
+		<li>CarniMama_Colony</li>
+	</spawnCategories>
+	<forcedHediffs>
+		<li>Hediff_MamaGrowth</li>
+	</forcedHediffs>
+<skillGains>
+	<Animals>1</Animals>
+	<Intellectual>3</Intellectual>
+</skillGains>
+</AlienRace.AlienBackstoryDef>
+
+<AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- ♂ -->
+	<defName>GoodMan</defName>
+	<title>good man</title>
+	<titleShort>good man</titleShort>
+		<description>Male individuals are said to have been imported from another world line. Genetically modified in the same way as females.</description>
+	<femaleCommonality>0</femaleCommonality>
+	<slot>Adulthood</slot>
+	<workDisables>Violent, Mining, Artistic</workDisables>
+	<!-- <linkedBackstory>BadGirl</linkedBackstory> -->
+	<spawnCategories>
+		<li>CarniMama_Colony</li>
 	</spawnCategories>
 	<forcedHediffs>
 		<li>Hediff_MamaGrowth</li>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<XenotypeDef>
+	<defName>MamaCombat_xenotype</defName>
+	<label>lesser combatant</label>
+	<description>a mama xenotype with enhanced combat ability for conflict or competition. The tentacles have toxic spines and do not developes an aureoloma.</description>
+	<descriptionShort>a mama xenotype with enhanced combat ability.</descriptionShort>
+	<iconPath>UI/Icons/Xenotypes/Hussar</iconPath>
+	<inheritable>true</inheritable>
+	<genes>
+		<li>CarniMamaGene</li>
+		<li>Libido_High</li>
+		<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_hypersexual</defName></li>
+		<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_masochist</defName></li>
+		<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_bisexual</defName></li>
+		<li MayRequire="Vegapnk.rjw.genes"><defName>rjw_genes_aphrodisiac_pheromones</defName></li>
+		<li><defName>Pain_Reduced</defName></li>
+		<li><defName>Unstoppable</defName></li>
+		<li>AptitudeTerrible_Plants</li>
+		<li>AptitudeTerrible_Animals</li>
+		<li>AptitudeTerrible_Social</li>
+		<li>AptitudeTerrible_Artistic</li>
+		<li><defName>Aggression_HyperAggressive</defName></li>
+	</genes>
+</XenotypeDef>
+
+</Defs>

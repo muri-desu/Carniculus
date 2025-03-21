@@ -81,10 +81,15 @@
 <VatGrownCarni.title>人工培養カルニクルス</VatGrownCarni.title>
 <VatGrownCarni.titleShort>人工培養</VatGrownCarni.titleShort>
 <VatGrownCarni.baseDesc>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.baseDesc>
-<GoodGirl.title>善良な少女</GoodGirl.title>
-<GoodGirl.titleShort>善良な少女</GoodGirl.titleShort>
-<GoodGirl.baseDesc>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニックママです. 100%無農薬・抗生物質不使用・ホルモン剤フリーです（多分）</GoodGirl.baseDesc>
+<GoodGirl.title>善良な少年</GoodGirl.title>
+<GoodGirl.titleFemale>善良な少女</GoodGirl.titleFemale>
+<GoodGirl.titleShort>善良な少年</GoodGirl.titleShort>
+<GoodGirl.titleShortFemale>善良な少女</GoodGirl.titleShortFemale>
+<GoodGirl.baseDesc>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニック人間です. 100%無農薬・抗生物質不使用・ホルモン剤フリーです</GoodGirl.baseDesc>
 <VatGrownMama.title>人工培養ママ</VatGrownMama.title>
 <VatGrownMama.titleShort>人工培養</VatGrownMama.titleShort>
 <VatGrownMama.baseDesc>[PAWN_nameDef]は培養槽で育ちました. 通常の個体より戦闘向きですが不妊で, 社交力と免疫力にハンデがあります.</VatGrownMama.baseDesc>
+<GoodMan.title>牡ママ</GoodMan.title>
+<GoodMan.titleShort>牡ママ</GoodMan.titleShort>
+<GoodMan.baseDesc>オスの"ママ"個体は異なる世界線から輸入されました メスと同様にあらゆる性虐待を受け入れるよう改良されています.</GoodMan.baseDesc>
 </LanguageData>

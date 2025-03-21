@@ -4,7 +4,13 @@
 <HeadTypeDef>
 	<defName>Average</defName><!-- mama head -->
 		<graphicPath>Things/Pawn/Mama/Heads/Average</graphicPath>
-		<gender>None</gender>
+		<gender>Female</gender>
+</HeadTypeDef>
+
+<HeadTypeDef>
+	<defName>Average_Male</defName>
+		<graphicPath>Things/Pawn/Mama/Heads/AverageM</graphicPath>
+		<gender>Male</gender>
 </HeadTypeDef>
 
 <HeadTypeDef>

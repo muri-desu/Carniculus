@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Xeno_Carniculus.label>カルニクルス</Xeno_Carniculus.label>
+<Xeno_Carniculus.description>一般的なカルニクルスです.</Xeno_Carniculus.description>
+<Xeno_Carniculus.descriptionShort>一般的なカルニクルス.</Xeno_Carniculus.descriptionShort>
+<Xeno_AlphaCarniculus.label>カルニクルス・アルファ</Xeno_AlphaCarniculus.label>
+<Xeno_AlphaCarniculus.description>群れのボスを務める個体に見られる、攻撃的なカルニクルスのゼノタイプ.</Xeno_AlphaCarniculus.description>
+<Xeno_AlphaCarniculus.descriptionShort>攻撃的なカルニクルスです.</Xeno_AlphaCarniculus.descriptionShort>
+<MamaCombat_xenotype.label>戦闘員ママ</MamaCombat_xenotype.label>
+<MamaCombat_xenotype.description>紛争用、または競技用として戦闘能力を強化したゼノタイプです. 脊髄から伸びる触手には棘が連なり、通常の光背芽腫は併発しません.</MamaCombat_xenotype.description>
+<MamaCombat_xenotype.descriptionShort>紛争用、または競技用として戦闘能力を強化したゼノタイプです.</MamaCombat_xenotype.descriptionShort>
+
+</LanguageData>

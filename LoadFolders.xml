@@ -15,5 +15,7 @@
 		<!-- <li IfModActive="rjw.menstruation">1.5/Mods/Mens</li> -->
 		<li IfModActive="VanillaExpanded.VanillaTraitsExpanded">1.5/Mods/Vte</li>
 		<li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mods/Mo</li>
+		<li IfModActive="RI.RimImmortal.Forge">1.5/Mods/RIF</li>
+		<li IfModActive="RI.RimImmortals.SeasonsOfRule">1.5/Mods/RISoR</li>
 	</v1.5>
 </loadFolders>
