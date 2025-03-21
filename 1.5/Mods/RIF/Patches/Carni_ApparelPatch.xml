@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<Operation Class="PatchOperationSequence">
-	<operations>
-
-	<li Class="PatchOperationAdd"><!-- Apparels -->
+<Operation Class="PatchOperationAdd"><!-- Apparels -->
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+	<li>
 		<value>
 			<li>RI_Talisman_JadeRuyi</li>
 			<li>RI_Talisman_CoinsPendant</li>
@@ -23,5 +21,6 @@
 			<li>RI_Talisman_ImmortalBindingRope</li>
 		</value>
 	</li>
+</Operation>
 
 </Patch>
