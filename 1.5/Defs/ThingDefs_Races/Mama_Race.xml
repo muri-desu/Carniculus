@@ -52,7 +52,7 @@
 		<Hauling>3</Hauling>
 		<Cleaning>3</Cleaning>
 		<Research>7</Research>
-		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">7</DarkStudy>
+		<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">5</DarkStudy>
 	</lifeStageWorkSettings>
 <lifeStageAges>
 	<li Class="AlienRace.LifeStageAgeAlien">
@@ -951,7 +951,7 @@
 		</li>
 		<li>
 			<key>Apparel_MamaNunHead</key>
-			<value><path>Things/Apparel/Mama/Hats/NunHead</path>
+			<value><path>Things/Apparel/Mama/NunHead</path>
 				<extendedGraphics>
 					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunHeadChild</Age>
 				</extendedGraphics>
