@@ -16,7 +16,6 @@
 	<conditions>
 		<BodyPart>
 			<bodyPart>Chest</bodyPart>
-			<drawWithoutPart>false</drawWithoutPart>
 		</BodyPart>
 		<Posture>
 			<drawnInBed>false</drawnInBed>
@@ -33,96 +32,37 @@
 		<!-- no zentai mega-->
 		<li><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
 			<conditions>
-				<Severity>1.0</Severity>
+				<And>
+					<Severity>1.0</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
 					<conditions>
 						<Or>
-							<Not>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							</Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_mega_preglate</Severity>
-							</extendedGraphics>
-						</li>
-					</extendedGraphics>
-				</li>
-			</extendedGraphics>
-		</li>
-
-		<!-- no zentai large-->
-		<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
-			<conditions>
-				<Severity>0.8</Severity>
-			</conditions>
-
-			<extendedGraphics>
-				<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
-					<conditions>
-						<Or>
-							<Not>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							</Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-						</Or>
-					</conditions>
-					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_mega_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
@@ -131,47 +71,76 @@
 		<!-- no zentai huge-->
 		<li><path>Things/Pawn/Mama/Breasts/breasts_huge</path>
 			<conditions>
-				<Severity>0.6</Severity>
+				<And>
+					<Severity>0.8</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breasts_huge</path>
 					<conditions>
 						<Or>
-							<Not>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							</Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breasts_huge</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_huge_preglate</Severity>
+					</extendedGraphics>
+				</li>
+			</extendedGraphics>
+		</li>
+
+		<!-- no zentai large-->
+		<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
+			<conditions>
+				<And>
+					<Severity>0.6</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</And>
+			</conditions>
+			<extendedGraphics>
+				<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
+					<conditions>
+						<Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+						</Or>
+					</conditions>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_large_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
@@ -180,47 +149,37 @@
 		<!-- no zentai average-->
 		<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
 			<conditions>
-				<Severity>0.4</Severity>
+				<And>
+					<Severity>0.4</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
 					<conditions>
 						<Or>
-							<Not>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							</Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
@@ -229,47 +188,37 @@
 		<!-- no zentai small-->
 		<li><path>Things/Pawn/Mama/Breasts/breasts_small</path>
 			<conditions>
-				<Severity>0.2</Severity>
+				<And>
+					<Severity>0.2</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breasts_small</path>
 					<conditions>
 						<Or>
-							<Not>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							</Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breasts_small</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_small</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_small_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
@@ -279,248 +228,212 @@
 		<!-- zentai mega-->
 		<li><path>Things/Pawn/Mama/Breasts/breastsZ_mega</path>
 			<conditions>
-				<Severity>1.0</Severity>
+				<And>
+					<Severity>1.0</Severity>
+					<Hediff>Hediff_ZentaiBody</Hediff>
+				<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breastsZ_mega</path>
 					<conditions>
-						<And>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							<Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-							</Not>
-						</And>
+						<Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breastsZ_mega</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_mega_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_mega_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
 		</li>
 
-		<!-- no zentai large-->
-		<li><path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
-			<conditions>
-				<Severity>0.8</Severity>
-			</conditions>
-
-			<extendedGraphics>
-				<li><path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
-					<conditions>
-						<And>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							<Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-							</Not>
-						</And>
-					</conditions>
-					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_large_preglate</Severity>
-							</extendedGraphics>
-						</li>
-					</extendedGraphics>
-				</li>
-			</extendedGraphics>
-		</li>
-
-		<!-- no zentai huge-->
+		<!-- zentai huge-->
 		<li><path>Things/Pawn/Mama/Breasts/breastsZ_huge</path>
 			<conditions>
-				<Severity>0.6</Severity>
+				<And>
+					<Severity>0.8</Severity>
+					<Hediff>Hediff_ZentaiBody</Hediff>
+				<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breastsZ_huge</path>
 					<conditions>
-						<And>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							<Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-							</Not>
-						</And>
+						<Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breastsZ_huge</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_huge_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_huge_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
 		</li>
 
-		<!-- no zentai average-->
-		<li><path>Things/Pawn/Carni/blank</path>
+		<!-- zentai large-->
+		<li><path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
 			<conditions>
-				<Severity>0.4</Severity>
+				<And>
+					<Severity>0.6</Severity>
+					<Hediff>Hediff_ZentaiBody</Hediff>
+				<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
+			<extendedGraphics>
+				<li><path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
+					<conditions>
+						<Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+						</Or>
+					</conditions>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_large_preglate</Severity>
+					</extendedGraphics>
+				</li>
+			</extendedGraphics>
+		</li>
 
+		<!-- zentai average-->
+		<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
+			<conditions>
+				<And>
+					<Severity>0.4</Severity>
+					<Hediff>Hediff_ZentaiBody</Hediff>
+				<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</Not>
+				</And>
+			</conditions>
 			<extendedGraphics>
 				<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
 					<conditions>
-						<And>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							<Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-							</Not>
-						</And>
+						<Or>
+							<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+							<Hediff>RJW_pregnancy</Hediff>
+							<Hediff>RJW_pregnancy_beast</Hediff>
+							<Hediff>RJW_pregnancy_mech</Hediff>
+							<Hediff>RJW_UnknownEgg</Hediff>
+							<Hediff>RJW_InsectHiveEgg</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+							<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+						</Or>
 					</conditions>
 					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
-							</extendedGraphics>
-						</li>
+						<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
 		</li>
 
-		<!-- no zentai small-->
-		<li><path>Things/Pawn/Carni/blank</path>
+		<!-- zentai small-->
+		<li><path>Things/Pawn/Mama/Breasts/breastsZ_small</path>
 			<conditions>
-				<Severity>0.2</Severity>
+				<And>
+					<Severity>0.2</Severity>
+					<Hediff>Hediff_ZentaiBody</Hediff>
+				<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
-
 			<extendedGraphics>
-				<li><path>Things/Pawn/Mama/Breasts/breastsZ_small</path>
-					<conditions>
-						<And>
-								<Hediff>Hediff_ZentaiBody</Hediff>
-							<Not>
-							<Or>
-								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-								<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
-								<Job>GettinSucked</Job>	<Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
-								<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-								<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job>	<Job>RapeEnemyToParasite</Job>
-								<Job>Quickie</Job>	<Job>GettingQuickie</Job>	<Job>ViolateCorpse</Job>
-								<Job>RJW_Masturbate</Job>	<Job>GettinBred</Job> <Job>Breed</Job>
-								<Job>RJW_Mate</Job>	<Job>Bestiality</Job>	<Job>BestialityForFemale</Job>
-							</Or>
-							</Not>
-						</And>
-					</conditions>
-					<extendedGraphics>
-						<li><path>Things/Pawn/Mama/Breasts/breastsZ_small</path>
-							<conditions>
-								<Or>
-									<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-									<Hediff>RJW_pregnancy</Hediff>
-									<Hediff>RJW_pregnancy_beast</Hediff>
-									<Hediff>RJW_pregnancy_mech</Hediff>
-									<Hediff>RJW_UnknownEgg</Hediff>
-									<Hediff>RJW_InsectHiveEgg</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-									<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-								</Or>
-							</conditions>
-							<extendedGraphics>
-								<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_small</Severity>
-							</extendedGraphics>
-						</li>
-					</extendedGraphics>
-				</li>
-			</extendedGraphics>
-		</li>
-
+			<li><path>Things/Pawn/Mama/Breasts/breastsZ_small</path>
+				<conditions>
+					<Or>
+						<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+						<Hediff>RJW_pregnancy</Hediff>
+						<Hediff>RJW_pregnancy_beast</Hediff>
+						<Hediff>RJW_pregnancy_mech</Hediff>
+						<Hediff>RJW_UnknownEgg</Hediff>
+						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_small_preglate</Severity>
+				</extendedGraphics>
+			</li>
+		</extendedGraphics>
+	</li>
 
 	</extendedGraphics>
 
@@ -567,69 +480,266 @@
 		</Apparel>
 		</Or>
 		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+		<Hediff>Penis</Hediff>
 	</conditions>
 
 	<extendedGraphics>
-		<!-- no zentai -->
-		<li><path>Things/Pawn/Carni/blank</path>
+
+	<Hediff For="Penis">
+		<extendedGraphics>
+		<!-- L -->
+		<!-- no zentai flaccid -->
+		<li><path>Genitals/Flaccid/penis_mama_large</path>
 			<conditions>
-					<Or>
-					<Not>
-						<Hediff>Hediff_ZentaiBody</Hediff>
-					</Not>
-					<Or>
-						<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-						<Hediff>Hediff_ZentaiBody</Hediff><Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job> <Job>GettinSucked</Job>
-						<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>RJW_Masturbate</Job> <Job>Breed</Job>
-						<Job>GettinBred</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job> <Job>RJW_Mate</Job> <Job>ViolateCorpse</Job>
-						<Job>RapeComfortPawn</Job> <Job>GettinRaped</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-						<Job>RandomRape</Job> <Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
-						<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
-						<Need> <need>Outdoors</need> <level>0.0</level> <percentage>false</percentage> </Need>
-						<Need> <need>Indoors</need> <level>0.0</level> <percentage>false</percentage> </Need>
-					</Or>
-					</Or>
+				<And>
+					<Severity>0.75</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				</Or>
+				<Not>
+				<Or>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+					<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
 			<extendedGraphics>
-				<li><path>Genitals/Flaccid/penisZ_mama_average</path>
+				<!-- no zentai okkki -->
+				<li><path>Genitals/penis_mama_large</path>
+					<conditions>
+						<Or>
+						<Or>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+						</Or>
+							<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+						<Not>
+							<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+						</Not>
+						</Or>
+					</conditions>
+				</li>
+				<!-- zentai flaccid -->
+				<li><path>Genitals/Flaccid/penisZ_mama_large</path>
+					<conditions>
+						<And>
+							<Hediff>Hediff_ZentaiBody</Hediff>
+						<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+							<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+						</Or>
+						</Not>
+						</And>
+					</conditions>
 					<extendedGraphics>
-						<Severity For="0.75">Genitals/Flaccid/penis_mama_large</Severity>
-						<Severity For="0.5">Genitals/Flaccid/penis_mama_average</Severity>
-						<Severity For="0.01">Genitals/Flaccid/penis_mama_small</Severity>
+						<!-- zentai okki -->
+						<li><path>Genitals/penisZ_mama_large</path>
+							<conditions>
+								<Or>
+									<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+								<Not>
+									<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+								</Not>
+								</Or>
+							</conditions>
+						</li>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
 		</li>
 
-		<!-- zentai -->
-		<li><path>Things/Pawn/Carni/blank</path>
+		<!-- M -->
+		<!-- no zentai flaccid -->
+		<li><path>Genitals/Flaccid/penis_mama_average</path>
 			<conditions>
+				<And>
+					<Severity>0.33</Severity>
 				<Or>
-					<Hediff>Hediff_ZentaiBody</Hediff>
-					<Not>
-					<Or>
-						<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-						<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job> <Job>GettinSucked</Job>
-						<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>RJW_Masturbate</Job> <Job>Breed</Job>
-						<Job>GettinBred</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job> <Job>RJW_Mate</Job> <Job>ViolateCorpse</Job>
-						<Job>RapeComfortPawn</Job> <Job>GettinRaped</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
-						<Job>RandomRape</Job> <Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
-					</Or>
-					</Not>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 				</Or>
+				<Not>
+				<Or>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+					<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+				</Or>
+				</Not>
+				</And>
 			</conditions>
 			<extendedGraphics>
-				<li><path>Things/Pawn/Carni/blank</path>
+				<!-- no zentai okkki -->
+				<li><path>Genitals/penis_mama_average</path>
+					<conditions>
+						<Or>
+						<Or>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+						</Or>
+							<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+						<Not>
+							<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+						</Not>
+						</Or>
+					</conditions>
+				</li>
+				<!-- zentai flaccid -->
+				<li><path>Genitals/Flaccid/penisZ_mama_average</path>
+					<conditions>
+						<And>
+							<Hediff>Hediff_ZentaiBody</Hediff>
+						<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+							<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+						</Or>
+						</Not>
+						</And>
+					</conditions>
 					<extendedGraphics>
-						<Severity For="0.75">Genitals/penisZ_mama_large</Severity>
-						<Severity For="0.5">Genitals/penisZ_mama_average</Severity>
-						<Severity For="0.01">Genitals/penisZ_mama_small</Severity>
+						<!-- zentai okki -->
+						<li><path>Genitals/penisZ_mama_average</path>
+							<conditions>
+								<Or>
+									<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+								<Not>
+									<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+								</Not>
+								</Or>
+							</conditions>
+						</li>
 					</extendedGraphics>
 				</li>
 			</extendedGraphics>
 		</li>
+
+
+		<!-- S -->
+		<!-- no zentai flaccid -->
+		<li><path>Genitals/Flaccid/penis_mama_small</path>
+			<conditions>
+				<And>
+					<Severity>0.01</Severity>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				</Or>
+				<Not>
+				<Or>
+					<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+					<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+					<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+					<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+					<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+					<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+					<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+					<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+				</Or>
+				</Not>
+				</And>
+			</conditions>
+			<extendedGraphics>
+				<!-- no zentai okkki -->
+				<li><path>Genitals/penis_mama_small</path>
+					<conditions>
+						<Or>
+						<Or>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+						</Or>
+							<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+						<Not>
+							<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+						</Not>
+						</Or>
+					</conditions>
+				</li>
+				<!-- zentai flaccid -->
+				<li><path>Genitals/Flaccid/penisZ_mama_small</path>
+					<conditions>
+						<And>
+							<Hediff>Hediff_ZentaiBody</Hediff>
+						<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+							<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
+							<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
+							<Job>RandomRape</Job> <Job>RapeEnemy</Job> <Job>RapeEnemyByInsect</Job>
+							<Job>RapeEnemyByAnimal</Job> <Job>RapeEnemyByMech</Job> <Job>RapeEnemyToParasite</Job>
+							<Job>Quickie</Job> <Job>GettingQuickie</Job> <Job>ViolateCorpse</Job>
+							<Job>RJW_Masturbate</Job> <Job>GettinBred</Job> <Job>Breed</Job>
+							<Job>RJW_Mate</Job> <Job>Bestiality</Job> <Job>BestialityForFemale</Job>
+							<Need> <need>Sex</need> <level>0.0</level> <percentage>false</percentage> </Need>
+						</Or>
+						</Not>
+						</And>
+					</conditions>
+					<extendedGraphics>
+						<!-- zentai okki -->
+						<li><path>Genitals/penisZ_mama_small</path>
+							<conditions>
+								<Or>
+									<Need><need>Sex</need><level>0.98</level><percentage>true</percentage></Need>
+								<Not>
+									<Need><need>Sex</need><level>0.25</level><percentage>true</percentage></Need>
+								</Not>
+								</Or>
+							</conditions>
+						</li>
+					</extendedGraphics>
+				</li>
+			</extendedGraphics>
+		</li>
+
+	</extendedGraphics>
+</Hediff>
 
 	</extendedGraphics>
 
