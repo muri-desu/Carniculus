@@ -377,7 +377,7 @@
 		</extendedGraphics>
 	</Hediff>
 	<Hediff For="RJW_UnknownEgg" MayRequire="rim.job.world">Things/Pawn/Carni/Belly/belly_huge</Hediff>
-	<Hediff For="RJW_InsectHiveEgg">Things/Pawn/Carni/Belly/belly_huge</Hediff>
+	<Hediff For="RJW_InsectHiveEgg" MayRequire="rim.job.world">Things/Pawn/Carni/Belly/belly_huge</Hediff>
 	<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs"><path>Things/Pawn/Carni/blank</path>
 		<extendedGraphics>
 			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>

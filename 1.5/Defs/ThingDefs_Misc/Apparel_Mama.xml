@@ -661,11 +661,9 @@
 		<layers>
 			<li>Shell</li>
 		</layers>
-		<!-- <drawData>
-			<defaultData>
-				<layer>48</layer>
-			</defaultData>
-		</drawData> -->
+		<drawData>
+			<dataNorth><layer>48</layer></dataNorth>
+		</drawData>
 		<defaultOutfitTags>
 			<li>Mama_combat</li>
 		</defaultOutfitTags>

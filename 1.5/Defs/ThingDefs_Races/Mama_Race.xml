@@ -239,7 +239,7 @@
 			<offset>(0, 0)</offset>
 		</south>
 		<north>
-			<layerOffset>-0.263</layerOffset>
+			<layerOffset>-0.2725</layerOffset>
 			<offset>(0, 0)</offset>
 		</north>
 		<east>
@@ -293,7 +293,7 @@
 			<offset>(0,-0)</offset>
 		</north>
 		<east>
-			<layerOffset>-0.319</layerOffset>
+			<layerOffset>-0.3198</layerOffset>
 			<offset>(0,-0)</offset>
 		</east>
 	</offsets>
@@ -320,43 +320,61 @@
 		</Posture>
 		<RotStage>Fresh,Rotting</RotStage>
 		<Age>HumanlikeAdult</Age>
+		<Gender>Female</Gender>
 	</conditions>
 
 	<extendedGraphics>
-		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
-		<Gender For="Female"><path>Things/Pawn/Mama/Breasts/breasts_average</path>
-			<extendedGraphics>
-				<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Breasts/breastsZ_average</Hediff>
-				<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Mama/Breasts/breasts_average</path>
-					<extendedGraphics>
-						<Severity For="0.666"><path>Things/Pawn/Mama/Breasts/breasts_average_preglate</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Hediff>
-							</extendedGraphics>
-						</Severity>
-					</extendedGraphics>
-				</Hediff>
-				<!-- <Hediff For="Mama_EverPreg"><path>Things/Pawn/Mama/Breasts/breasts_average_preglate</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Hediff>
-					</extendedGraphics>
-				</Hediff>
-				<Hediff For="Mama_MegaOppai"><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Breasts/breastsZ_mega</Hediff>
-						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
-							<extendedGraphics>
-								<Severity For="0.666"><path>Things/Pawn/Mama/Breasts/breasts_mega_preglate</path>
-									<extendedGraphics>
-										<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Breasts/breastsZ_mega_preglate</Hediff>
-									</extendedGraphics>
-								</Severity>
-							</extendedGraphics>
-						</Hediff>
-					</extendedGraphics>
-				</Hediff> -->
-			</extendedGraphics>
-		</Gender>
+
+			<!-- no zentai -->
+			<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
+				<conditions>
+					<Or>
+					<Not>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					</Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+					<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+						<extendedGraphics>
+							<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</li>
+
+			<!-- zentai -->
+			<li><path>Things/Pawn/Carni/blank</path>
+				<conditions>
+					<Or>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Not>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
+						<extendedGraphics>
+							<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+							<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</li>
+				</extendedGraphics>
+			</li>
+
 	</extendedGraphics>
 
 	<offsets>
@@ -394,239 +412,54 @@
 	</conditions>
 
 	<extendedGraphics>
-		<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>	
-			</extendedGraphics>
-		</Hediff>
-		<!-- <Hediff For="Mama_EverPreg"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-			<extendedGraphics>
-				<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-					</extendedGraphics>
-				</Gender>
-				<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-					</extendedGraphics>
-				</Gender>
-			</extendedGraphics>
-		</Hediff> -->
-		<Hediff For="RJW_pregnancy" MayRequire="rim.job.world">
-			<path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
-		<Hediff For="RJW_pregnancy_beast" MayRequire="rim.job.world">
-			<path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
-		<Hediff For="RJW_pregnancy_mech" MayRequire="rim.job.world">
-			<path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
-		<Hediff For="RJW_UnknownEgg" MayRequire="rim.job.world">
-			<path>Things/Pawn/Mama/Belly/Belly_huge</path>
+
+			<!-- no zentai -->
+			<li><path>Things/Pawn/Carni/blank</path>
+				<conditions>
+					<Or>
+					<Not>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					</Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Or>
+				</conditions>
 				<extendedGraphics>
-					<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-					<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
+					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+					<path>Things/Pawn/Carni/blank</path>
 						<extendedGraphics>
-							<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
+							<Severity For="0.666">Things/Pawn/Mama/Belly/Belly_huge</Severity>
+							<Severity For="0.333">Things/Pawn/Mama/Belly/Belly</Severity>
 						</extendedGraphics>
-					</Gender>
+					</Hediff>
 				</extendedGraphics>
-		</Hediff>
-		<Hediff For="RJW_InsectHiveEgg" MayRequire="rim.job.world">
-			<path>Things/Pawn/Mama/Belly/Belly_huge</path>
+			</li>
+			<!-- zentai -->
+			<li><path>Things/Pawn/Carni/blank</path>
+				<conditions>
+					<Or>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Not>
+					</Or>
+				</conditions>
 				<extendedGraphics>
-					<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-					<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
+					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+					<path>Things/Pawn/Carni/blank</path>
 						<extendedGraphics>
-							<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
+							<Severity For="0.666">Things/Pawn/Mama/Belly/BellyZ_huge</Severity>
+							<Severity For="0.333">Things/Pawn/Mama/Belly/BellyZ</Severity>
 						</extendedGraphics>
-					</Gender>
+					</Hediff>
 				</extendedGraphics>
-		</Hediff>
-		<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs">
-			<path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
-		<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs">
-			<path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">hings/Pawn/Mama/Belly/BellyZ_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male_huge</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male_huge</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-					<extendedGraphics>
-						<Gender For="Female"><path>Things/Pawn/Mama/Belly/Belly</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ</Hediff>
-							</extendedGraphics>
-						</Gender>
-						<Gender For="Male"><path>Things/Pawn/Mama/Belly/Belly_male</path>
-							<extendedGraphics>
-								<Hediff For="Hediff_ZentaiBody">Things/Pawn/Mama/Belly/BellyZ_male</Hediff>
-							</extendedGraphics>
-						</Gender>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
+			</li>
+
 	</extendedGraphics>
 
 	<offsets>
@@ -642,7 +475,7 @@
 	</offsets>
 </li>
 <li><!-- 5:penis -->
-	<name>penis</name>
+	<name>ochinchin</name>
 	<path>Things/Pawn/Carni/blank</path>
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
@@ -667,42 +500,88 @@
 		</Apparel>
 		<RotStage>Fresh,Rotting</RotStage>
 		<Age>HumanlikeAdult</Age>
+		<Gender>Male</Gender>
 	</conditions>
 
 	<extendedGraphics>
-		<Gender For="Male"><path>Genitals/Flaccid/penis_mama_average</path>
-			<extendedGraphics>
-				<Hediff For="Hediff_ZentaiBody">Genitals/Flaccid/penisZ_mama_average</Hediff>
-			</extendedGraphics>
-		</Gender>
+			<!-- no zentai -->
+			<li><path>Genitals/Flaccid/penis_mama_average</path>
+				<conditions>
+					<Or>
+					<Not>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					</Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+					<path>Genitals/Flaccid/penis_mama_average</path>
+						<extendedGraphics>
+							<Severity For="0.666">Genitals/Flaccid/penis_mama_average</Severity>
+						</extendedGraphics>
+					</Hediff>
+				</extendedGraphics>
+			</li>
+
+			<!-- zentai -->
+			<li><path>Things/Pawn/Carni/blank</path>
+				<conditions>
+					<Or>
+						<Hediff>Hediff_ZentaiBody</Hediff>
+					<Not>
+						<Or>
+							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+						</Or>
+					</Not>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<li><path>Genitals/Flaccid/penisZ_mama_average</path>
+						<extendedGraphics>
+							<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+							<path>Genitals/Flaccid/penisZ_mama_average</path>
+								<extendedGraphics>
+									<Severity For="0.666">Genitals/Flaccid/penisZ_mama_average</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</li>
+				</extendedGraphics>
+			</li>
+
 	</extendedGraphics>
 
 	<offsets>
 		<south>
-			<layerOffset>-0.2917</layerOffset>
-			<offset>(0,-0.11)</offset>
+			<layerOffset>-0.291</layerOffset>
 			<bodyTypes>
-				<Male>(0,0)</Male>
+				<Male>(0,-0.53)</Male>
+				<Female>(0,-0.422)</Female>
 			</bodyTypes>
 		</south>
 		<north>
 			<layerOffset>-0.29</layerOffset>
-			<offset>(0,-0)</offset>
 			<bodyTypes>
-				<Male>(0,0)</Male>
+				<Male>(0,-0.47)</Male>
+				<Female>(0,-0.38)</Female>
 			</bodyTypes>
 		</north>
 		<east>
 			<layerOffset>-0.291</layerOffset>
-			<offset>(0,-0)</offset>
 			<bodyTypes>
-				<Male>(0,0)</Male>
+				<Male>(-0.11,-0.43)</Male>
+				<Female>(-0.125,-0.4)</Female>
 			</bodyTypes>
 		</east>
 	</offsets>
 </li>
 <li><!-- 6:vagina -->
-	<name>vagina</name>
+	<name>manman</name>
 	<path>Things/Pawn/Carni/blank</path>
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
@@ -728,136 +607,26 @@
 		<RotStage>Fresh,Rotting</RotStage>
 		<Age>HumanlikeAdult</Age>
 	</conditions>
-<!-- 7:tikubi<li>
-	<name>nipple</name>
-	<path>Things/Pawn/Carni/blank</path>
-	<userCustomizable>false</userCustomizable>
-	<inFrontOfBody>true</inFrontOfBody>
-	<defaultOffset>Center</defaultOffset>
-	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-	<colorChannel>base</colorChannel>
-	<shaderType>Transparent</shaderType>
-	<allowColorOverride>false</allowColorOverride>
-	<conditions>
-		<BodyPart>
-			<bodyPart>Torso</bodyPart>
-			<drawWithoutPart>false</drawWithoutPart>
-		</BodyPart>
-		<Posture>
-			<drawnInBed>false</drawnInBed>
-			<drawnStanding>true</drawnStanding>
-			<drawnLaying>true</drawnLaying>
-		</Posture>
-		<RotStage>Fresh,Rotting</RotStage>
-		<Age>HumanlikeAdult</Age>
-	</conditions>
-
-	<extendedGraphics>
-		<Hediff For="Hediff_ZentaiBody">Things/Pawn/Carni/blank</Hediff>
-		<Hediff For="Mama_DickNipple"><path>Genitals/nipplepenis_small</path>
-			<extendedGraphics>
-				<Gender For="Male">Genitals/nipplepenis_male</Gender>
-				<Gender For="Female"><path>Genitals/nipplepenis_small</path>
-					<extendedGraphics>
-						<Hediff For="Breasts" MayRequire="rim.job.world"><path>Things/Pawn/Mama/Nipples/nipplepenise_flat</path>
-							<extendedGraphics>
-								<Severity For="0.75">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
-								<Severity For="0.5">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
-								<Severity For="0.25">Things/Pawn/Mama/Nipples/nipplepenis_average</Severity>
-								<Severity For="0.1">Things/Pawn/Mama/Nipples/nipplepenis_small</Severity>
-							</extendedGraphics>
-						</Hediff>
-					</extendedGraphics>
-				</Gender>
-			</extendedGraphics>
-		</Hediff>
-		<Gender For="Male"><path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Hediff For="Mama_MegaNipple"><path>Things/Pawn/Mama/Nipples/bignipple_male</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Carni/blank</Hediff>
-					</extendedGraphics>
-				</Hediff>
-			</extendedGraphics>
-		</Gender>
-		<Gender For="Female"><path>Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Hediff For="Mama_MegaNipple"><path>Things/Pawn/Mama/Nipples/bignipple_average</path>
-					<extendedGraphics>
-						<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Mama/Nipples/bignipple_average</path>
-							<extendedGraphics>
-								<Severity For="0.666"><path>Things/Pawn/Mama/Nipples/bignipple_average_preglate</path>
-									<extendedGraphics>
-										<Hediff For="Hediff_ZentaiBody">Things/Pawn/Carni/blank</Hediff>
-									</extendedGraphics>
-								</Severity>
-							</extendedGraphics>
-						</Hediff>
-						<Hediff For="Hediff_ZentaiBody">Things/Pawn/Carni/blank</Hediff>
-						<Hediff For="Mama_MegaOppai"><path>Things/Pawn/Mama/Nipples/bignipple_mega</path>
-							<extendedGraphics>
-								<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Mama/Nipples/bignipple_mega</path>
-									<extendedGraphics>
-										<Severity For="0.666"><path>Things/Pawn/Mama/Nipples/bignipple_mega_preglate</path>
-											<extendedGraphics>
-												<Hediff For="Hediff_ZentaiBody">Things/Pawn/Carni/blank</Hediff>
-											</extendedGraphics>
-										</Severity>
-									</extendedGraphics>
-								</Hediff>
-							</extendedGraphics>
-						</Hediff>
-					</extendedGraphics>
-				</Hediff>
-			</extendedGraphics>
-		</Gender>
-</extendedGraphics>
-
-	<offsets>
-		<south>
-			<layerOffset>-0.289</layerOffset>
-			<offset>(0,-0)</offset>
-			<bodyTypes>
-				<Female>(0,0)</Female>
-				<Male>(0,0)</Male>
-			</bodyTypes>
-		</south>
-		<north>
-			<layerOffset>-0.289</layerOffset>
-			<bodyTypes>
-				<Female>(0,0)</Female>
-				<Male>(0,0)</Male>
-			</bodyTypes>
-		</north>
-		<east>
-			<layerOffset>-0.29</layerOffset>
-			<bodyTypes>
-				<Female>(0,0)</Female>
-				<Male>(0,0)</Male>
-			</bodyTypes>
-		</east>
-	</offsets>
-</li> -->
 
 	<extendedGraphics>
 		<Hediff For="Vagina" MayRequire="rim.job.world"><path>Genitals/Things/Pawn/Carni/blank</path>
-				<extendedGraphics>
-					<Severity For="0.75"><path>Genitals/vagina_mama_huge</path>
-						<extendedGraphics>
-							<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-						</extendedGraphics>
-					</Severity>
-					<Severity For="0.5"><path>Genitals/vagina_mama_large</path>
-						<extendedGraphics>
-							<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-						</extendedGraphics>
-					</Severity>
-					<Severity For="0.25"><path>Genitals/vagina_mama_average</path>
-						<extendedGraphics>
-							<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-						</extendedGraphics>
-					</Severity>
-				</extendedGraphics>
+			<extendedGraphics>
+				<Severity For="0.75"><path>Genitals/vagina_mama_huge</path>
+					<extendedGraphics>
+						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
+					</extendedGraphics>
+				</Severity>
+				<Severity For="0.5"><path>Genitals/vagina_mama_large</path>
+					<extendedGraphics>
+						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
+					</extendedGraphics>
+				</Severity>
+				<Severity For="0.25"><path>Genitals/vagina_mama_average</path>
+					<extendedGraphics>
+						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
+					</extendedGraphics>
+				</Severity>
+			</extendedGraphics>
 		</Hediff>
 	</extendedGraphics>
 
