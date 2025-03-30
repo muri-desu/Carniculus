@@ -54,6 +54,7 @@
 		<texPath>Things/Apparel/Mama/Zentai</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(1.2, 1.2)</drawSize>
 	</graphicData>
 
 	<statBases>
@@ -97,8 +98,6 @@
 		<li>mama_police</li>
 		<li>mama_dr</li>
 		<li>mama_combat</li>
-		<!-- <li>coveroppai</li>
-		<li>coverchinman</li> -->
 	</tags>
 	</apparel>
 	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
@@ -618,6 +617,7 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/MamaArmor</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.2, 1.2)</drawSize>
 	</graphicData>
 	<statBases>
 		<WorkToMake>60000</WorkToMake>
@@ -662,6 +662,7 @@
 			<li>Shell</li>
 		</layers>
 		<drawData>
+			<dataSouth><layer>21</layer></dataSouth>
 			<dataNorth><layer>48</layer></dataNorth>
 		</drawData>
 		<defaultOutfitTags>

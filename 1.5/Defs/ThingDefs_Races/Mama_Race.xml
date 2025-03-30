@@ -325,55 +325,55 @@
 
 	<extendedGraphics>
 
-			<!-- no zentai -->
-			<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
-				<conditions>
-					<Or>
-					<Not>
-						<Hediff>Hediff_ZentaiBody</Hediff>
-					</Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Or>
-				</conditions>
+	<!-- no zentai -->
+	<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
+		<conditions>
+			<Or>
+			<Not>
+				<Hediff>Hediff_ZentaiBody</Hediff>
+			</Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				</Or>
+			</Or>
+		</conditions>
+		<extendedGraphics>
+			<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
+			<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+				<extendedGraphics>
+					<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+				</extendedGraphics>
+			</Hediff>
+		</extendedGraphics>
+	</li>
+
+	<!-- zentai -->
+	<li><path>Things/Pawn/Carni/blank</path>
+		<conditions>
+			<Or>
+				<Hediff>Hediff_ZentaiBody</Hediff>
+			<Not>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				</Or>
+			</Not>
+			</Or>
+		</conditions>
+		<extendedGraphics>
+			<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
 				<extendedGraphics>
 					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-					<path>Things/Pawn/Mama/Breasts/breasts_average</path>
+					<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+							<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
 						</extendedGraphics>
 					</Hediff>
 				</extendedGraphics>
 			</li>
-
-			<!-- zentai -->
-			<li><path>Things/Pawn/Carni/blank</path>
-				<conditions>
-					<Or>
-						<Hediff>Hediff_ZentaiBody</Hediff>
-					<Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Not>
-					</Or>
-				</conditions>
-				<extendedGraphics>
-					<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
-						<extendedGraphics>
-							<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-							<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
-								<extendedGraphics>
-									<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
-								</extendedGraphics>
-							</Hediff>
-						</extendedGraphics>
-					</li>
-				</extendedGraphics>
-			</li>
+		</extendedGraphics>
+	</li>
 
 	</extendedGraphics>
 
@@ -413,64 +413,64 @@
 
 	<extendedGraphics>
 
-			<!-- no zentai -->
-			<li><path>Things/Pawn/Carni/blank</path>
-				<conditions>
-					<Or>
-					<Not>
-						<Hediff>Hediff_ZentaiBody</Hediff>
-					</Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Or>
-				</conditions>
+	<li MayRequire="ludeon.rimworld.biotech">
+	<path>Things/Pawn/Carni/blank</path>
+		<conditions>
+			<Hediff>PregnantHuman</Hediff>
+		</conditions>
+		<extendedGraphics>
+			<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
 				<extendedGraphics>
-					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-					<path>Things/Pawn/Carni/blank</path>
+					<li><path>Things/Pawn/Mama/Belly/BellyZ_huge</path>
+						<conditions>
+							<Hediff>Hediff_ZentaiBody</Hediff>
+						</conditions>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Pawn/Mama/Belly/Belly_huge</Severity>
-							<Severity For="0.333">Things/Pawn/Mama/Belly/Belly</Severity>
+							<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+										<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+									</Or>
+								</conditions>
+							</li>
 						</extendedGraphics>
-					</Hediff>
+					</li>
 				</extendedGraphics>
-			</li>
-			<!-- zentai -->
-			<li><path>Things/Pawn/Carni/blank</path>
-				<conditions>
-					<Or>
-						<Hediff>Hediff_ZentaiBody</Hediff>
-					<Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Not>
-					</Or>
-				</conditions>
+			</Severity>
+			<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
 				<extendedGraphics>
-					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-					<path>Things/Pawn/Carni/blank</path>
+					<li><path>Things/Pawn/Mama/Belly/BellyZ</path>
+						<conditions>
+							<Hediff>Hediff_ZentaiBody</Hediff>
+						</conditions>
 						<extendedGraphics>
-							<Severity For="0.666">Things/Pawn/Mama/Belly/BellyZ_huge</Severity>
-							<Severity For="0.333">Things/Pawn/Mama/Belly/BellyZ</Severity>
+							<li><path>Things/Pawn/Mama/Belly/Belly</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+										<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+									</Or>
+								</conditions>
+							</li>
 						</extendedGraphics>
-					</Hediff>
+					</li>
 				</extendedGraphics>
-			</li>
+			</Severity>
+		</extendedGraphics>
+	</li>
 
 	</extendedGraphics>
 
 	<offsets>
 		<south>
-			<layerOffset>-0.292</layerOffset>
+			<layerOffset>-0.291</layerOffset>
 		</south>
 		<north>
 			<layerOffset>-0.29</layerOffset>
 		</north>
 		<east>
-			<layerOffset>-0.293</layerOffset>
+			<layerOffset>-0.2913</layerOffset>
 		</east>
 	</offsets>
 </li>
@@ -560,7 +560,7 @@
 		<south>
 			<layerOffset>-0.291</layerOffset>
 			<bodyTypes>
-				<Male>(0,-0.53)</Male>
+				<Male>(0,-0.51)</Male>
 				<Female>(0,-0.422)</Female>
 			</bodyTypes>
 		</south>
@@ -582,7 +582,7 @@
 </li>
 <li><!-- 6:vagina -->
 	<name>manman</name>
-	<path>Things/Pawn/Carni/blank</path>
+	<path>Genitals/vagina_mama_average</path>
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
@@ -606,34 +606,13 @@
 		</Apparel>
 		<RotStage>Fresh,Rotting</RotStage>
 		<Age>HumanlikeAdult</Age>
+		<Gender>Female</Gender>
 	</conditions>
-
-	<extendedGraphics>
-		<Hediff For="Vagina" MayRequire="rim.job.world"><path>Genitals/Things/Pawn/Carni/blank</path>
-			<extendedGraphics>
-				<Severity For="0.75"><path>Genitals/vagina_mama_huge</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.5"><path>Genitals/vagina_mama_large</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-					</extendedGraphics>
-				</Severity>
-				<Severity For="0.25"><path>Genitals/vagina_mama_average</path>
-					<extendedGraphics>
-						<Hediff For="Hediff_ZentaiBody">Genitals/Things/Pawn/Carni/blank</Hediff>
-					</extendedGraphics>
-				</Severity>
-			</extendedGraphics>
-		</Hediff>
-	</extendedGraphics>
 
 	<offsets>
 		<south>
 			<layerOffset>-0.2917</layerOffset>
-			<offset>(0,-0.11)</offset>
+			<offset>(0,-0.41)</offset>
 			<bodyTypes>
 				<Male>(0,0)</Male>
 			</bodyTypes>

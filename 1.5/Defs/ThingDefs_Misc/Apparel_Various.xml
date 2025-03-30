@@ -153,6 +153,7 @@
 		<shellRenderedBehindHead>true</shellRenderedBehindHead>
 		<tags>
 			<li>Butcher</li>
+			<li>coverchinman</li>
 		</tags>
 	</apparel>
 
@@ -266,6 +267,7 @@
 	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<tags>
 			<li MayRequire="kentington.saveourship2">EVA</li>
+			<li>coverchinman</li>
 		</tags>
 	</apparel>
 
@@ -325,6 +327,7 @@
 	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		<tags>
 			<li MayRequire="kentington.saveourship2">EVA</li>
+			<li>coverchinman</li>
 		</tags>
 	</apparel>
 </ThingDef>

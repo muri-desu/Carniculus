@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd"><!-- race traits -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus"]/alienRace/generalSettings/forcedRaceTraitEntries</xpath>
+	<value>
+		<li><defName>Nymphomaniac</defName><chance>30</chance></li>
+		<li><defName>Rapist</defName><chance>100</chance></li>
+	</value>
+</Operation>
+
+</Patch>

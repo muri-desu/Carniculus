@@ -300,11 +300,11 @@
 		</Posture>
 		<RotStage>Fresh,Rotting</RotStage>
 		<Age>HumanlikeAdult</Age>
+		<Gender>Female</Gender>
 	</conditions>
 
 	<extendedGraphics>
-		<Gender For="Male">Things/Pawn/Carni/blank</Gender>
-		<Gender For="Female"><path>Things/Pawn/Mama/Breasts/breasts_average</path>
+		<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
 			<extendedGraphics>
 				<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech">
 					<path>Things/Pawn/Carni/Breasts/breasts_carni_average</path>
@@ -313,7 +313,7 @@
 						</extendedGraphics>
 				</Hediff>
 			</extendedGraphics>
-		</Gender>
+		</li>
 	</extendedGraphics>
 
 	<offsets>
@@ -352,44 +352,39 @@
 	</conditions>
 
 	<extendedGraphics>
-	<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Carni/blank</path>
+	<li MayRequire="ludeon.rimworld.biotech">
+	<path>Things/Pawn/Carni/blank</path>
+		<conditions>
+			<Hediff>PregnantHuman</Hediff>
+		</conditions>
 		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
+			<Severity For="0.666"><path>Things/Pawn/Carni/Belly/belly_huge</path>
+				<extendedGraphics>
+					<li><path>Things/Pawn/Carni/Belly/belly_huge</path>
+						<conditions>
+							<Or>
+								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+							</Or>
+						</conditions>
+					</li>
+				</extendedGraphics>
+			</Severity>
+			<Severity For="0.333"><path>Things/Pawn/Carni/Belly/belly</path>
+				<extendedGraphics>
+					<li><path>Things/Pawn/Carni/Belly/belly</path>
+						<conditions>
+							<Or>
+								<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+								<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+							</Or>
+						</conditions>
+					</li>
+				</extendedGraphics>
+			</Severity>
 		</extendedGraphics>
-	</Hediff>
-	<Hediff For="RJW_pregnancy" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
-		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
-		</extendedGraphics>
-	</Hediff>
-	<Hediff For="RJW_pregnancy_beast" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
-		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
-		</extendedGraphics>
-	</Hediff>
-	<Hediff For="RJW_pregnancy_mech" MayRequire="rim.job.world"><path>Things/Pawn/Carni/blank</path>
-		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
-		</extendedGraphics>
-	</Hediff>
-	<Hediff For="RJW_UnknownEgg" MayRequire="rim.job.world">Things/Pawn/Carni/Belly/belly_huge</Hediff>
-	<Hediff For="RJW_InsectHiveEgg" MayRequire="rim.job.world">Things/Pawn/Carni/Belly/belly_huge</Hediff>
-	<Hediff For="Cumflation" MayRequire="LustLicentia.RJWLabs"><path>Things/Pawn/Carni/blank</path>
-		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
-		</extendedGraphics>
-	</Hediff>
-	<Hediff For="Cumstuffed" MayRequire="LustLicentia.RJWLabs"><path>Things/Pawn/Carni/blank</path>
-		<extendedGraphics>
-			<Severity For="0.666">Things/Pawn/Carni/Belly/belly_huge</Severity>
-			<Severity For="0.1">Things/Pawn/Carni/Belly/belly</Severity>
-		</extendedGraphics>
-	</Hediff>
+	</li>
+
 	</extendedGraphics>
 
 	<offsets>
