@@ -26,5 +26,9 @@
 <MamaSurgery_EverPreg.jobString>子宮に肉塊を詰めています.</MamaSurgery_EverPreg.jobString>
 <Remove_EverPreg.label>改造手術（寄生児除去）</Remove_EverPreg.label>
 <Remove_EverPreg.description>子宮を独占する肉塊を除去します.</Remove_EverPreg.description>
-<Remove_EverPreg.description>子宮内の肉を掻き出しています.</Remove_EverPreg.description>
+<Remove_EverPreg.jobString>子宮内の肉を掻き出しています.</Remove_EverPreg.jobString>
+
+<Recipe_CarniNeutroamin.label>ニュートロアミンを合成</Recipe_CarniNeutroamin.label>
+<Recipe_CarniNeutroamin.description>食べ残しのタンパク質からニュートロアミンを合成します.</Recipe_CarniNeutroamin.description>
+<Recipe_CarniNeutroamin.jobString>ニュートロアミンを合成中.</Recipe_CarniNeutroamin.jobString>
 </LanguageData>

@@ -88,6 +88,7 @@
 		<recipeUsers>
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
+			<li>CarniWorkBench</li>
 		</recipeUsers>
 	</recipeMaker>
 	<apparel>
@@ -410,6 +411,7 @@
 		<soundWorking>Recipe_Smith</soundWorking>
 		<recipeUsers>
 			<li>FabricationBench</li>
+			<li>CarniWorkBench</li>
 		</recipeUsers>
 		<unfinishedThingDef>UnfinishedCarniApparel</unfinishedThingDef>
 	</recipeMaker>

@@ -52,10 +52,10 @@
 		<thingDef>SculptureLarge</thingDef>
 		<styleDef>Carni_SculptureLarge</styleDef>
 	</li>
-	<li>
+	<!-- <li>
 		<thingDef>SculptureGrand</thingDef>
 		<styleDef>Carni_SculptureGrand</styleDef>
-	</li>
+	</li> -->
 	<li MayRequire="Ludeon.RimWorld.Royalty">
 		<thingDef>Throne</thingDef>
 		<styleDef>Carni_Throne</styleDef>

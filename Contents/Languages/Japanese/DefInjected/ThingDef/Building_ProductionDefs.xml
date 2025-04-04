@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+<CarniWorkBench.label>カルニクルスの作業台</CarniWorkBench.label>
+<CarniWorkBench.description>カルニクルスの装備を作るための作業台です.</CarniWorkBench.description>
+<Blueprint_CarniWorkBench.label>カルニクルスの作業台（設計）</Blueprint_CarniWorkBench.label>
+<Blueprint_Install_CarniWorkBench.label>カルニクルスの作業台（移動先）</Blueprint_Install_CarniWorkBench.label>
+<Frame_CarniWorkBench.label>カルニクルスの作業台（施工）</Frame_CarniWorkBench.label>
+<Frame_CarniWorkBench.description>カルニクルスの装備を作るための作業台です.</Frame_CarniWorkBench.description>
+</LanguageData>

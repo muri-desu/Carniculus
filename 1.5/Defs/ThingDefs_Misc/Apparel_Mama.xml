@@ -12,6 +12,7 @@
 		<recipeUsers>
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
+			<li>CarniWorkBench</li>
 		</recipeUsers>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

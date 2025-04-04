@@ -111,14 +111,14 @@
 	</graphicData>
 </ThingStyleDef>
 
-<ThingStyleDef>
+<!-- <ThingStyleDef>
 	<defName>Carni_SculptureGrand</defName>
 	<graphicData>
 		<texPath>Things/Building/BuildingStyles/Carni/Sculptures/Grand</texPath>
 		<graphicClass>Graphic_Random</graphicClass>
 		<drawSize>(4,4)</drawSize>
 	</graphicData>
-</ThingStyleDef>
+</ThingStyleDef> -->
 
 <ThingStyleDef>
 	<defName>Carni_Throne</defName>

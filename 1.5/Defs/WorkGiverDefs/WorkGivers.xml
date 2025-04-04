@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>Carni_Make</defName>
+		<label>Make carniculus things</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Tailoring</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>CarniWorkBench</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>CarniWorkBench</li>
+		</value>
+	</Operation>
+
+</Defs>
