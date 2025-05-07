@@ -127,6 +127,7 @@
 	<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_RemoveIfApparelDropped" />
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
 		</comps>
 		<stages>
 			<li>
@@ -236,7 +237,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>21</layer>
+				<layer>20.5</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -292,7 +293,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>21</layer>
+				<layer>20.5</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -613,6 +614,7 @@
 		</skillRequirements>
 		<recipeUsers Inherit="False">
 			<li>FabricationBench</li>
+			<li>CarniWorkBench</li>
 		</recipeUsers>
 	</recipeMaker>
 	<graphicData>

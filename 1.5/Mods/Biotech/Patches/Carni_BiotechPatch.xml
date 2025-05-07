@@ -100,15 +100,16 @@
 	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/generalSettings</xpath>
 		<value>
 			<reproduction>
+				<gestatingGender>Either</gestatingGender>
 				<hybridSpecific>
 					<li>
 						<partnerRace>Alien_Carniculus</partnerRace>
 						<childKindDef>CarniColonist</childKindDef>
-						<probability>50</probability>
+						<probability>90</probability>
 					</li>
 					<li>
-						<partnerRace>Alien_Carniculus</partnerRace>
-						<childKindDef>CarniMama_colonist</childKindDef>
+						<partnerRace>Alien_CarniMama</partnerRace>
+						<childKindDef>CarniColonist</childKindDef>
 						<probability>50</probability>
 					</li>
 					<li>
@@ -121,15 +122,23 @@
 			<childBackstoryFilter>
 				<li>
 					<categories>
-					<li>CarniMama_Colony</li>
+						<li>CarniMama_Colony</li>
 					</categories>
 					<commonality>1</commonality>
 				</li>
 			</childBackstoryFilter>
+			<adultBackstoryFilter>
+				<li>
+					<categories>
+						<li>CarniMama_Colony</li>
+					</categories>
+					<commonality>1</commonality>
+				</li>
+			</adultBackstoryFilter>
 			<adultVatBackstoryFilter>
 				<li>
 					<categories>
-					<li>CarniMama_Vat</li>
+						<li>CarniMama_Vat</li>
 					</categories>
 					<commonality>1</commonality>
 				</li>

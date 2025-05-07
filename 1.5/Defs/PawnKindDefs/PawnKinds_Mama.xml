@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<PawnKindDef Name="BaseCarniMamaPawnKind" Abstract="True">
+<PawnKindDef Name="MamaPawnKindBase" Abstract="True">
 	<race>Alien_CarniMama</race>
-	<combatPower>40</combatPower>
-	<isFighter>false</isFighter>
 	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<combatPower>40</combatPower>
 	<initialWillRange>1~3</initialWillRange>
 	<initialResistanceRange>10~20</initialResistanceRange>
+	<apparelMoney>1000~2000</apparelMoney>
+	<techHediffsMoney>1000~3000</techHediffsMoney>
+	<techHediffsChance>0.2</techHediffsChance>
+	<techHediffsTags>
+		<li>Advanced</li>
+		<li>ImplantEmpireRoyal</li>
+		<li>ImplantEmpireCommon</li>
+	</techHediffsTags>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+	<startingHediffs>
+		<li>
+			<def>Hediff_MamaGrowth</def>
+		</li>
+	</startingHediffs>
+</PawnKindDef>
+
+<PawnKindDef Name="VatMamaPawnKindBase" Abstract="True">
+	<race>Alien_CarniMama</race>
+	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<combatPower>60</combatPower>
+	<initialWillRange>1~3</initialWillRange>
+	<initialResistanceRange>30~70</initialResistanceRange>
 	<apparelMoney>1000~2000</apparelMoney>
 	<techHediffsMoney>1000~3000</techHediffsMoney>
 	<techHediffsChance>0.2</techHediffsChance>
@@ -24,10 +50,15 @@
 				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
 			</xenotypeChances>
 		</xenotypeSet>
+	<startingHediffs>
+		<li>
+			<def>Mama_Thorn</def>
+		</li>
+	</startingHediffs>
 </PawnKindDef>
 
 <!-- Player -->
-<PawnKindDef Name="CarniMamaColonist" ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef Name="CarniMamaColonist" ParentName="MamaPawnKindBase">
 	<defName>CarniMama_colonist</defName>
 	<label>mama</label>
 	<defaultFactionType>CarniPlayerFaction</defaultFactionType>
@@ -78,7 +109,7 @@
 </PawnKindDef>
 
 <!-- npc --><!-- ボスママ -->
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="MamaPawnKindBase">
 	<defName>CarniMama_boss</defName>
 	<defaultFactionType>CarniNPCFaction</defaultFactionType>
 	<factionLeader>true</factionLeader>
@@ -101,7 +132,7 @@
 </PawnKindDef>
 
 <!-- npc --><!-- 雑魚戦闘員 -->
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="VatMamaPawnKindBase">
 	<defName>CarniMama_soldier</defName>
 	<defaultFactionType>CarniNPCFaction</defaultFactionType>
 	<label>combatant</label>
@@ -112,7 +143,7 @@
 	<techHediffsChance>0.15</techHediffsChance>
 	<techHediffsMoney>0~1800</techHediffsMoney>
 	<chemicalAddictionChance>0.4</chemicalAddictionChance>
-	<weaponMoney>350~1500</weaponMoney>
+	<weaponMoney>350~1200</weaponMoney>
 	<weaponTags>
 		<li>Gun</li>
 	</weaponTags>
@@ -128,18 +159,10 @@
 		<li>Apparel_MamaArmor</li>
 		<li>Apparel_MamaZentai</li>
 	</apparelRequired>
-	<apparelTags>
-		<li>mama_combat</li>
-	</apparelTags>
-		<xenotypeSet>
-			<xenotypeChances>
-				<MamaCombat_xenotype MayRequire="Ludeon.RimWorld.Biotech">999</MamaCombat_xenotype>
-			</xenotypeChances>
-		</xenotypeSet>
 </PawnKindDef>
 
 <!-- Slave 奴隷ママ -->
-<PawnKindDef ParentName="BaseCarniMamaPawnKind">
+<PawnKindDef ParentName="MamaPawnKindBase">
 	<defName>CarniMama_slave</defName>
 	<label>sex slave</label>
 	<itemQuality>Poor</itemQuality>
@@ -151,7 +174,6 @@
 	<backstoryFiltersOverride>
 		<li>
 			<categories>
-				<li>CarniMama_Vat</li>
 				<li>CarniMama_Colony</li>
 			</categories>
 		</li>

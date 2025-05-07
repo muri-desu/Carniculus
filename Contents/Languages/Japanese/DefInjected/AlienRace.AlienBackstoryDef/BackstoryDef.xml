@@ -72,24 +72,21 @@
 <Kidnapper.title>児童誘拐魔</Kidnapper.title>
 <Kidnapper.titleShort>誘拐魔</Kidnapper.titleShort>
 <Kidnapper.baseDesc>孤独を紛らわせるために[PAWN_nameDef]はしばしば人間の子供をさらって住処の洞窟に連れ込みました. 洞窟の中で何がなされているかは誰も知りませんが子供たちが家に帰る事はなく, [PAWN_nameDef]だけが新しい子供を求めて外へ出てくるのみでした.</Kidnapper.baseDesc>
-<BadGirl.title>性悪な少女</BadGirl.title><!-- mama -->
-<BadGirl.titleShort>性悪な少女</BadGirl.titleShort>
-<BadGirl.baseDesc>不幸にもカルニクルスの手によってこの世に生まれ落ちてきてしまった量産型少女です. ”ママ”は皆同じ顔ですが幼少期の個体は例外なく「自分だけは他と違って特別」と信じています.</BadGirl.baseDesc>
-<GoodMama.title>みんなのママ</GoodMama.title>
-<GoodMama.titleShort>みんなのママ</GoodMama.titleShort>
-<GoodMama.baseDesc>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.baseDesc>
 <VatGrownCarni.title>人工培養カルニクルス</VatGrownCarni.title>
 <VatGrownCarni.titleShort>人工培養</VatGrownCarni.titleShort>
 <VatGrownCarni.baseDesc>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.baseDesc>
+<BadGirl.title>性悪な少女</BadGirl.title><!-- mama -->
+<BadGirl.titleShort>性悪な少女</BadGirl.titleShort>
+<BadGirl.baseDesc>B級品として分類された[PAWN_nameDef]は戦闘要員として培養ポッドに入れられて育ちました.</BadGirl.baseDesc>
+<GoodMama.title>みんなのママ</GoodMama.title>
+<GoodMama.titleShort>みんなのママ</GoodMama.titleShort>
+<GoodMama.baseDesc>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.baseDesc>
 <GoodGirl.title>善良な少年</GoodGirl.title>
 <GoodGirl.titleFemale>善良な少女</GoodGirl.titleFemale>
 <GoodGirl.titleShort>善良な少年</GoodGirl.titleShort>
 <GoodGirl.titleShortFemale>善良な少女</GoodGirl.titleShortFemale>
 <GoodGirl.baseDesc>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニック人間です. 100%無農薬・抗生物質不使用・ホルモン剤フリーです</GoodGirl.baseDesc>
-<VatGrownMama.title>人工培養ママ</VatGrownMama.title>
+<VatGrownMama.title>人工培養戦闘員</VatGrownMama.title>
 <VatGrownMama.titleShort>人工培養</VatGrownMama.titleShort>
 <VatGrownMama.baseDesc>[PAWN_nameDef]は培養槽で育ちました. 通常の個体より戦闘向きですが不妊で, 社交力と免疫力にハンデがあります.</VatGrownMama.baseDesc>
-<GoodMan.title>牡ママ</GoodMan.title>
-<GoodMan.titleShort>牡ママ</GoodMan.titleShort>
-<GoodMan.baseDesc>オスの"ママ"個体は異なる世界線から輸入されました メスと同様にあらゆる性虐待を受け入れるよう改良されています.</GoodMan.baseDesc>
 </LanguageData>

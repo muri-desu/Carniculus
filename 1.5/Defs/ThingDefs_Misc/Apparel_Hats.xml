@@ -479,6 +479,7 @@
 		</skillRequirements>
 		<recipeUsers Inherit="False">
 			<li>FabricationBench</li>
+			<li>CarniWorkBench</li>
 		</recipeUsers>
 	</recipeMaker>
 	<graphicData>

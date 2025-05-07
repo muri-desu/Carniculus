@@ -60,12 +60,20 @@
 										<Severity>0.666</Severity>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody"><path>Things/Pawn/Mama/Breasts/breastsZ_mega_preglate</path>
+									<li><path>Things/Pawn/Mama/Breasts/breastsZ_mega_preglate</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
 										<extendedGraphics>
 											<li><path>Things/Pawn/Mama/Breasts/breasts_mega_preglate</path>
 												<conditions>
 													<Or>
-														<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+														<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 														<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 														<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 														<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -78,16 +86,21 @@
 												</conditions>
 											</li>
 										</extendedGraphics>
-									</Hediff>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Things/Pawn/Mama/Breasts/breastsZ_mega</path>
 								<extendedGraphics>
 									<li><path>Things/Pawn/Mama/Breasts/breasts_mega</path>
 										<conditions>
 											<Or>
-												<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+												<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 												<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 												<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 												<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -121,12 +134,20 @@
 										<Severity>0.666</Severity>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody"><path>Things/Pawn/Mama/Breasts/breastsZ_huge_preglate</path>
+									<li><path>Things/Pawn/Mama/Breasts/breastsZ_huge_preglate</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
 										<extendedGraphics>
 											<li><path>Things/Pawn/Mama/Breasts/breasts_huge_preglate</path>
 												<conditions>
 													<Or>
-														<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+														<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 														<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 														<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 														<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -139,16 +160,21 @@
 												</conditions>
 											</li>
 										</extendedGraphics>
-									</Hediff>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Things/Pawn/Mama/Breasts/breastsZ_huge</path>
 								<extendedGraphics>
 									<li><path>Things/Pawn/Mama/Breasts/breasts_huge</path>
 										<conditions>
 											<Or>
-												<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+												<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 												<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 												<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 												<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -182,12 +208,20 @@
 										<Severity>0.666</Severity>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody"><path>Things/Pawn/Mama/Breasts/breastsZ_large_preglate</path>
+									<li><path>Things/Pawn/Mama/Breasts/breastsZ_large_preglate</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
 										<extendedGraphics>
 											<li><path>Things/Pawn/Mama/Breasts/breasts_large_preglate</path>
 												<conditions>
 													<Or>
-														<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+														<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 														<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 														<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 														<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -200,16 +234,21 @@
 												</conditions>
 											</li>
 										</extendedGraphics>
-									</Hediff>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Things/Pawn/Mama/Breasts/breastsZ_large</path>
 								<extendedGraphics>
 									<li><path>Things/Pawn/Mama/Breasts/breasts_large</path>
 										<conditions>
 											<Or>
-												<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+												<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 												<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 												<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 												<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -243,12 +282,20 @@
 										<Severity>0.666</Severity>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody"><path>Things/Pawn/Mama/Breasts/breastsZ_average_preglate</path>
+									<li><path>Things/Pawn/Mama/Breasts/breastsZ_average_preglate</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
 										<extendedGraphics>
 											<li><path>Things/Pawn/Mama/Breasts/breasts_average_preglate</path>
 												<conditions>
 													<Or>
-														<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+														<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 														<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 														<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 														<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -261,16 +308,21 @@
 												</conditions>
 											</li>
 										</extendedGraphics>
-									</Hediff>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
 								<extendedGraphics>
 									<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
 										<conditions>
 											<Or>
-												<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+												<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 												<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 												<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 												<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -304,12 +356,20 @@
 										<Severity>0.666</Severity>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody"><path>Things/Pawn/Mama/Breasts/breastsZ_small_preglate</path>
+									<li><path>Things/Pawn/Mama/Breasts/breastsZ_small_preglate</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
 										<extendedGraphics>
 											<li><path>Things/Pawn/Mama/Breasts/breasts_small_preglate</path>
 												<conditions>
 													<Or>
-														<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+														<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+														<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 														<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 														<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 														<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -322,16 +382,21 @@
 												</conditions>
 											</li>
 										</extendedGraphics>
-									</Hediff>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Things/Pawn/Mama/Breasts/breastsZ_small</path>
 								<extendedGraphics>
 									<li><path>Things/Pawn/Mama/Breasts/breasts_small</path>
 										<conditions>
 											<Or>
-												<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeShower</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">takeBath</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">UseHotTub</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHGoSwimming</Job>
+												<Job MayRequire="Dubwise.DubsBadHygiene">DBHUseSauna</Job>
+												<!--<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>-->
 												<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
 												<Job>JoinInBed</Job> <Job>GettinLoved</Job> <Job>GettinLicked</Job>
 												<Job>GettinSucked</Job> <Job>GettinRaped</Job> <Job>RapeComfortPawn</Job>
@@ -413,7 +478,7 @@
 				<extendedGraphics>
 					<li><path>Things/Pawn/Mama/Belly/BellyZ_huge</path>
 						<conditions>
-							<Hediff>Hediff_ZentaiBody</Hediff>
+							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 						</conditions>
 						<extendedGraphics>
 							<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
@@ -439,7 +504,7 @@
 				<extendedGraphics>
 					<li><path>Things/Pawn/Mama/Belly/BellyZ</path>
 						<conditions>
-							<Hediff>Hediff_ZentaiBody</Hediff>
+							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 						</conditions>
 						<extendedGraphics>
 							<li><path>Things/Pawn/Mama/Belly/Belly</path>
@@ -553,11 +618,17 @@
 									</Or>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody">Genitals/penisZ_mama_small</Hediff>
+									<li><path>Genitals/penis_mama_small</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
-							<path>Genitals/Flaccid/penisZ_mama_large</path>
+							<li><path>Genitals/Flaccid/penisZ_mama_large</path>
+								<conditions>
+									<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+								</conditions>
 								<extendedGraphics>
 									<li><path>Genitals/Flaccid/penis_mama_large</path>
 										<conditions>
@@ -601,11 +672,17 @@
 									</Or>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody">Genitals/penisZ_mama_average</Hediff>
+									<li><path>Genitals/penis_mama_average</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
-							<path>Genitals/Flaccid/penisZ_mama_average</path>
+							<li><path>Genitals/Flaccid/penisZ_mama_average</path>
+								<conditions>
+									<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+								</conditions>
 								<extendedGraphics>
 									<li><path>Genitals/Flaccid/penis_mama_average</path>
 										<conditions>
@@ -649,11 +726,17 @@
 									</Or>
 								</conditions>
 								<extendedGraphics>
-									<Hediff For="Hediff_ZentaiBody">Genitals/penisZ_mama_small</Hediff>
+									<li><path>Genitals/penis_mama_small</path>
+										<conditions>
+											<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+										</conditions>
+									</li>
 								</extendedGraphics>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
-							<path>Genitals/Flaccid/penisZ_mama_small</path>
+							<li><path>Genitals/Flaccid/penisZ_mama_small</path>
+								<conditions>
+									<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
+								</conditions>
 								<extendedGraphics>
 									<li><path>Genitals/Flaccid/penis_mama_small</path>
 										<conditions>
@@ -759,7 +842,7 @@
 									</Or>
 								</conditions>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Genitals/vaginaZ_mama_huge</path>
 								<extendedGraphics>
 									<li><path>Genitals/vagina_mama_huge</path>
@@ -799,7 +882,7 @@
 									</Or>
 								</conditions>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Genitals/vaginaZ_mama_large</path>
 								<extendedGraphics>
 									<li><path>Genitals/vagina_mama_large</path>
@@ -839,7 +922,7 @@
 									</Or>
 								</conditions>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Genitals/vaginaZ_mama_average</path>
 								<extendedGraphics>
 									<li><path>Genitals/vagina_mama_average</path>
@@ -879,7 +962,7 @@
 									</Or>
 								</conditions>
 							</li>
-							<li><conditions><Hediff>Hediff_ZentaiBody</Hediff></conditions>
+							<li><conditions><ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef></conditions>
 							<path>Genitals/vaginaZ_mama_small</path>
 								<extendedGraphics>
 									<li><path>Genitals/vagina_mama_small</path>

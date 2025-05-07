@@ -4,7 +4,6 @@
 <LifeStageDef>
 	<defName>CarniBaby</defName>
 	<label>baby</label>
-    <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
 	<bodySizeFactor>0.1</bodySizeFactor>
 	<bodyWidth>0.95</bodyWidth>
 	<bodyDrawOffset>(0, 0, -0.03)</bodyDrawOffset>

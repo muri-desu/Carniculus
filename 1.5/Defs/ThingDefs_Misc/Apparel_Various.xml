@@ -102,72 +102,6 @@
 	<tradeability>Sellable</tradeability>
 </ThingDef>
 
-<ThingDef ParentName="CarniApparelMakeableBase"><!-- レザーエプロン -->
-	<defName>Apparel_CarniApron</defName>
-		<label>leather apron</label>
-		<description>apron perfect for cooking and forge work.</description>
-
-	<recipeMaker>
-		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-	</recipeMaker>
-
-	<graphicData>
-		<texPath>Things/Apparel/Apron/Apron</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-	</graphicData>
-
-	<statBases>
-		<WorkToMake>5000</WorkToMake>
-		<MaxHitPoints>200</MaxHitPoints>
-		<Mass>2</Mass>
-		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-		<EquipDelay>1.0</EquipDelay>
-	</statBases>
-
-	<stuffCategories>
-		<li>Leathery</li>
-	</stuffCategories>
-	<costStuffCount>55</costStuffCount>
-
-	<equippedStatOffsets>
-		<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-		<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
-		<FoodPoisonChance>-0.25</FoodPoisonChance>
-		<MedicalTendQuality>0.05</MedicalTendQuality>
-	</equippedStatOffsets>
-
-	<apparel>
-		<bodyPartGroups>
-			<li>Torso</li>
-			<li>Legs</li>
-			<li MayRequire="rim.job.world">ChestBPG</li>
-			<li MayRequire="rim.job.world">GenitalsBPG</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Shell</li>
-		</layers>
-		<wornGraphicPath>Things/Apparel/Apron/Apron</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<shellRenderedBehindHead>true</shellRenderedBehindHead>
-		<tags>
-			<li>Butcher</li>
-			<li>coverchinman</li>
-		</tags>
-	</apparel>
-
-	<colorGenerator Class="ColorGenerator_Options">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>RGBA(0.4,0.3,0.1,1)</only>
-			</li>
-		</options>
-	</colorGenerator>
-</ThingDef>
-
 <ThingDef ParentName="CarniApparelMakeableBase"><!-- グローブ -->
 	<defName>Apparel_CarniGloves</defName>
 		<label>gloves</label>
@@ -331,6 +265,63 @@
 			<li>coverchinman</li>
 		</tags>
 	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="CarniApparelMakeableBase"><!-- レザーエプロン -->
+	<defName>Apparel_CarniApron</defName>
+		<label>leather apron</label>
+		<description>apron perfect for cooking and forge work.</description>
+
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+	</recipeMaker>
+
+	<graphicData>
+		<texPath>Things/Apparel/Apron/Apron</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>5000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.0</EquipDelay>
+	</statBases>
+
+	<stuffCategories>
+		<li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>55</costStuffCount>
+
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		<GeneralLaborSpeed>0.05</GeneralLaborSpeed>
+		<FoodPoisonChance>-0.25</FoodPoisonChance>
+		<MedicalTendQuality>0.05</MedicalTendQuality>
+	</equippedStatOffsets>
+
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Legs</li>
+			<li MayRequire="rim.job.world">ChestBPG</li>
+			<li MayRequire="rim.job.world">GenitalsBPG</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<wornGraphicPath>Things/Apparel/Apron/Apron</wornGraphicPath>
+		<shellRenderedBehindHead>true</shellRenderedBehindHead>
+		<tags>
+			<li>Butcher</li>
+			<li>coverchinman</li>
+		</tags>
+	</apparel>
+
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
 </ThingDef>
 
 <ThingDef ParentName="CarniApparelMakeableBase"><!-- レザースーツ -->

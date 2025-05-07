@@ -141,6 +141,7 @@
 			<li>Apparel_EnforcerBackPackMelee</li>
 			<li>Apparel_EnforcerBackPackRanger</li>
 			<li>Apparel_TravelersBackPack</li>
+			<li>PsyRejuvenatorSerum</li>
 		</value>
 	</match>
 </Operation>
@@ -199,6 +200,50 @@
 			<li>RI_Talisman_WhiteJadeVase</li>
 			<li>RI_Talisman_ThreeKingTower</li>
 			<li>RI_Talisman_ImmortalBindingRope</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ratkin: Promised land Ruleless Moustate</li>
+		<li>3204817310</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>RK_BaiGongDian</li>
+			<li>RK_BaiZhuZaliangJi</li>
+			<li>RK_DuShiJiuRenJi</li>
+			<li>RK_TaoTieJing</li>
+			<li>RK_ZhiGeZongYao</li>
+			<li>RK_ZhuFangBoWuZhi</li>
+			<li>RK_QiShiPu</li>
+			<li>RK_ChangShengSuo</li>
+			<li>RK_Sachet</li>
+			<li>RK_HuanYuPei</li>
+			<li>RK_YuShou</li>
+			<li>RK_BanZhi</li>
+			<li>RK_GoldRing</li>
+			<li>RK_Earrings</li>
+			<li>RK_YuZhuo</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>The Army Of Fetid Corpses 1.5</li>
+		<li>3347517233</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>Apparel_NecroHunterAmmoPack</li>
+			<li>Apparel_NecroHunterFuelPack</li>
+			<li>Apparel_NecroHunterScarletCorePack</li>
+			<li>Apparel_NHTechBoots</li>
+			<li>Apparel_NHTechGloves</li>
 		</value>
 	</match>
 </Operation>

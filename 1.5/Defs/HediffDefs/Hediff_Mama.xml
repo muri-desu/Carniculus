@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<HediffDef ParentName="DiseaseBase">
+<HediffDef>
 	<defName>Hediff_MamaGrowth</defName>
 	<label>aureoloma</label>
 	<defaultLabelColor>(187,116,134)</defaultLabelColor>
@@ -10,9 +10,10 @@
 	<everCurableByItem>false</everCurableByItem>
 	<maxSeverity>13</maxSeverity>
 	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+    <hediffClass>HediffWithComps</hediffClass>
 	<comps>
 		<li Class="HediffCompProperties_SeverityPerDay">
-			<severityPerDay>0.017</severityPerDay>
+			<severityPerDay>0.03</severityPerDay>
 		</li>
 	</comps>
 	<stages>
@@ -215,11 +216,12 @@
 	</stages>
 </HediffDef>
 
-<HediffDef ParentName="DiseaseBase"><!-- 毒針 -->
+<HediffDef><!-- 毒針 -->
 	<defName>Mama_Thorn</defName>
 	<label>thorned tentacle</label>
 	<defaultLabelColor>(187,116,134)</defaultLabelColor>
 	<description>Tentacles with poisonous thorns. This type doesn't grow by aging.</description>
+    <hediffClass>HediffWithComps</hediffClass>
 		<stages>
 			<li>
 				<statOffsets>

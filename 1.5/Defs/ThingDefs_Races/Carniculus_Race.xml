@@ -534,7 +534,11 @@
 <graphicPaths>
 	<head><path>Things/Pawn/Carni/Heads/</path>
 		<extendedGraphics>
-			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
+			<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech"><path>Things/Pawn/Carni/Heads/Baby</path>
+				<extendedGraphics>
+					<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Carni/Heads/Child</Age>
+				</extendedGraphics>
+			</BodyType>
 			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Carni/Heads/</path>
 				<extendedGraphics>
@@ -559,7 +563,11 @@
 
 	<body><path>Things/Pawn/Carni/Bodies/</path>
 		<extendedGraphics>
-			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
+			<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech"><path>Things/Pawn/Carni/Bodies/Naked_Baby</path>
+				<extendedGraphics>
+					<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
+				</extendedGraphics>
+			</BodyType>
 			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Carni/Bodies/</path>
 				<extendedGraphics>

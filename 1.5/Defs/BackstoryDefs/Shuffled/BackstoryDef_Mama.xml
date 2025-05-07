@@ -9,15 +9,28 @@
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Childhood -->
 	<defName>BadGirl</defName>
-	<title>bad girl</title>
-	<titleShort>bad girl</titleShort>
-	<description>She is a mass-produced girl who had the misfortune to be born into this world by the hands of Carnicurus. All the "Mama" have the same face but each one of them, without exception, believes that she is special and not like other girls.</description>
+	<title>bad boy</title>
+	<titleFemale>bad girl</titleFemale>
+	<titleShort>bad boy</titleShort>
+	<titleShortFemale>bad girl</titleShortFemale>
+	<description>[PAWN_nameDef] is one of mass-produced girl but classified as a B-class and raised in a vat pod to be a lesser combatant.</description>
 	<slot>Childhood</slot>
 	<skillGains>
-		<Intellectual>3</Intellectual>
+		<Shooting>3</Shooting>
+		<Melee>3</Melee>
 	</skillGains>
+	<forcedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Psychopath>0</Psychopath>
+		<Immunity>-1</Immunity>
+	</forcedTraits>
+	<disallowedTraits>
+		<BodyPurist>0</BodyPurist>
+		<Wimp>0</Wimp>
+		<Nudist>0</Nudist>
+		<TorturedArtist>0</TorturedArtist>
+	</disallowedTraits>
 	<spawnCategories>
-		<li>CarniMama</li>
 		<li>CarniMama_Vat</li>
 	</spawnCategories>
 </AlienRace.AlienBackstoryDef>
@@ -33,9 +46,6 @@
 	<spawnCategories>
 		<li>CarniMama_Colony</li>
 	</spawnCategories>
-	<forcedHediffs>
-		<li>Hediff_MamaGrowth</li>
-	</forcedHediffs>
 	<skillGains>
 		<Social>5</Social>
 		<Plants>2</Plants>
@@ -47,39 +57,28 @@
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- vat-grown mama -->
 	<defName>VatGrownMama</defName>
-	<title>vat-grown mama</title>
+	<title>vat-grown combatant</title>
 	<titleShort>vat-grown</titleShort>
-		<description>[PAWN_nameDef] is a vat-grown mama, is capable of fighting but less immune to toxin and sickness.</description>
+		<description>[PAWN_nameDef] is a vat-grown mama, is capable of fighting but less immune to sickness.</description>
 	<slot>Adulthood</slot>
 	<requiredWorkTags>Violent</requiredWorkTags>
 	<skillGains>
-		<Shooting>10</Shooting>
-		<Melee>10</Melee>
+		<Shooting>7</Shooting>
+		<Melee>7</Melee>
 		<Medicine>6</Medicine>
 		<Social>-10</Social>
 	</skillGains>
 	<workDisables>Crafting, PlantWork, Constructing</workDisables>
-	<forcedTraits>
-		<Bloodlust>0</Bloodlust>
-		<Psychopath>0</Psychopath>
-		<Immunity>-1</Immunity>
-	</forcedTraits>
-	<disallowedTraits>
-		<BodyPurist>0</BodyPurist>
-		<Wimp>0</Wimp>
-		<Nudist>0</Nudist>
-		<TorturedArtist>0</TorturedArtist>
-	</disallowedTraits>
 	<forcedTraitsChance>
 		<li><defName>Nimble</defName><chance>10</chance></li>
-		<li><defName>Brawler</defName><chance>10</chance></li>
+		<li><defName>Brawler</defName><chance>5</chance></li>
 	</forcedTraitsChance>
 	<spawnCategories>
 		<li>CarniMama_Vat</li>
 	</spawnCategories>
-	<forcedHediffs>
-		<li>Mama_Thorn</li>
-	</forcedHediffs>
+<forcedHediffs>
+	<li>Mama_Thorn</li>
+</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
 <AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- Adulthood -->
@@ -93,33 +92,13 @@
 	<spawnCategories>
 		<li>CarniMama_Colony</li>
 	</spawnCategories>
-	<forcedHediffs>
-		<li>Hediff_MamaGrowth</li>
-	</forcedHediffs>
 <skillGains>
 	<Animals>1</Animals>
 	<Intellectual>3</Intellectual>
 </skillGains>
+<forcedHediffs>
+	<li>Hediff_MamaGrowth</li>
+</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
-<AlienRace.AlienBackstoryDef ParentName="MamaBackStory"><!-- ♂ -->
-	<defName>GoodMan</defName>
-	<title>good man</title>
-	<titleShort>good man</titleShort>
-		<description>Male individuals are said to have been imported from another world line. Genetically modified in the same way as females.</description>
-	<femaleCommonality>0</femaleCommonality>
-	<slot>Adulthood</slot>
-	<workDisables>Violent, Mining, Artistic</workDisables>
-	<!-- <linkedBackstory>BadGirl</linkedBackstory> -->
-	<spawnCategories>
-		<li>CarniMama_Colony</li>
-	</spawnCategories>
-	<forcedHediffs>
-		<li>Hediff_MamaGrowth</li>
-	</forcedHediffs>
-<skillGains>
-	<Animals>1</Animals>
-	<Intellectual>3</Intellectual>
-</skillGains>
-</AlienRace.AlienBackstoryDef>
 </Defs>

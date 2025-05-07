@@ -586,6 +586,27 @@
 					</extendedGraphics>
 				</value>
 			</li>
+			<li>
+				<key>Apparel_CarniLeatherSuit</key>
+				<value>
+					<extendedGraphics>
+						<Gender For="Male">Things/Apparel/Suit/Suit_Male</Gender>
+						<Gender For="Female"><path>Things/Apparel/Suit/Suit_Female</path>
+							<extendedGraphics>
+								<li>
+									<conditions>
+										<Hediff>Breasts</Hediff>
+									</conditions>
+									<extendedGraphics>
+										<Severity For="0.66">Things/Apparel/Suit/Suit_Female_large</Severity>
+										<Severity For="0.33">Things/Apparel/Suit/Suit_Female_average</Severity>
+									</extendedGraphics>
+								</li>
+							</extendedGraphics>
+						</Gender>
+					</extendedGraphics>
+				</value>
+			</li>
 	</value>
 </Operation>
 

@@ -169,7 +169,12 @@
 	<humanRecipeImport>true</humanRecipeImport>
 	<immuneToAge>true</immuneToAge>
 	<maleGenderProbability>0.1</maleGenderProbability>
-
+<growthAges>
+	<li>7</li>
+	<li>10</li>
+	<li>13</li>
+	<li>18</li>
+</growthAges>
 <alienPartGenerator>
 	<bodyTypes>
 		<li>Female</li>
@@ -273,11 +278,11 @@
 	<extendedGraphics>
 		<Hediff For="Hediff_MamaGrowth"><path>Things/Pawn/Mama/Tentacle/Back_a</path>
 			<extendedGraphics>
-				<Severity For="11">Things/Pawn/Mama/Tentacle/Back_e</Severity>
-				<Severity For="9">Things/Pawn/Mama/Tentacle/Back_d</Severity>
-				<Severity For="7">Things/Pawn/Mama/Tentacle/Back_c</Severity>
-				<Severity For="5">Things/Pawn/Mama/Tentacle/Back_b</Severity>
-				<Severity For="3">Things/Pawn/Mama/Tentacle/Back_a</Severity>
+				<Severity For="9">Things/Pawn/Mama/Tentacle/Back_e</Severity>
+				<Severity For="7">Things/Pawn/Mama/Tentacle/Back_d</Severity>
+				<Severity For="5">Things/Pawn/Mama/Tentacle/Back_c</Severity>
+				<Severity For="3">Things/Pawn/Mama/Tentacle/Back_b</Severity>
+				<Severity For="1">Things/Pawn/Mama/Tentacle/Back_a</Severity>
 			</extendedGraphics>
 		</Hediff>
 		<Hediff For="Mama_Thorn">Things/Pawn/Mama/Tentacle/BackThorn</Hediff>
@@ -330,7 +335,7 @@
 		<conditions>
 			<Or>
 			<Not>
-				<Hediff>Hediff_ZentaiBody</Hediff>
+				<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 			</Not>
 				<Or>
 					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
@@ -352,7 +357,7 @@
 	<li><path>Things/Pawn/Carni/blank</path>
 		<conditions>
 			<Or>
-				<Hediff>Hediff_ZentaiBody</Hediff>
+				<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 			<Not>
 				<Or>
 					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
@@ -423,7 +428,7 @@
 				<extendedGraphics>
 					<li><path>Things/Pawn/Mama/Belly/BellyZ_huge</path>
 						<conditions>
-							<Hediff>Hediff_ZentaiBody</Hediff>
+							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 						</conditions>
 						<extendedGraphics>
 							<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
@@ -442,7 +447,7 @@
 				<extendedGraphics>
 					<li><path>Things/Pawn/Mama/Belly/BellyZ</path>
 						<conditions>
-							<Hediff>Hediff_ZentaiBody</Hediff>
+							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 						</conditions>
 						<extendedGraphics>
 							<li><path>Things/Pawn/Mama/Belly/Belly</path>
@@ -509,7 +514,7 @@
 				<conditions>
 					<Or>
 					<Not>
-						<Hediff>Hediff_ZentaiBody</Hediff>
+						<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 					</Not>
 						<Or>
 							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
@@ -531,7 +536,7 @@
 			<li><path>Things/Pawn/Carni/blank</path>
 				<conditions>
 					<Or>
-						<Hediff>Hediff_ZentaiBody</Hediff>
+						<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
 					<Not>
 						<Or>
 							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
@@ -654,12 +659,12 @@
 	<li><defName>Bisexual</defName></li>
 	<li><defName>Masochist</defName></li>
 </forcedRaceTraitEntries>
-
 </generalSettings>
 <graphicPaths>
 	<head><path>Things/Pawn/Mama/Heads/Average</path>
 		<extendedGraphics>
 			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
+			<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Mama/Heads/Baby</Age>
 			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Average_Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Heads/Average</path>
 				<extendedGraphics>
@@ -673,6 +678,7 @@
 	<body><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
 		<extendedGraphics>
 			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
+			<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
 			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Bodies/Naked_Child</Age>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
 				<extendedGraphics>
@@ -827,22 +833,40 @@
 						<extendedGraphics>
 							<Gender For="Female"><path>Things/Apparel/Mama/MaidDress_Female</path>
 								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/MaidDress_Female</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MaidDress_Female</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
-										</extendedGraphics>
-									</Hediff>
+									<li><path>Things/Apparel/Mama/PregLate/MaidDress_Female</path>
+										<conditions>
+											<Or>
+												<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+												<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+												<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+											</Or>
+												<Severity>0.666</Severity>
+										</conditions>
+									</li>
 								</extendedGraphics>
 							</Gender>
 							<Gender For="Male"><path>Things/Apparel/Mama/MaidDress_Male</path>
 								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/MaidDress_Male</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MaidDress_Male</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Male</Severity>
-										</extendedGraphics>
-									</Hediff>
+									<li><path>Things/Apparel/Mama/PregLate/MaidDress_Male</path>
+										<conditions>
+											<Or>
+												<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+												<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+												<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+												<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+											</Or>
+												<Severity>0.666</Severity>
+										</conditions>
+									</li>
 								</extendedGraphics>
 							</Gender>
 						</extendedGraphics>
@@ -858,6 +882,43 @@
 					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/DrCoat_Female</path>
 						<extendedGraphics>
 							<Gender For="Male">Things/Apparel/Mama/DrCoat_Male</Gender>
+							<Gender For="Female"><path>Things/Apparel/Mama/DrCoat_Female</path>
+								<extendedGraphics>
+									<li><path>Things/Apparel/Mama/DrCoat_Female</path>
+										<conditions>
+											<Or>
+												<Hediff MayRequire="rim.job.world">Breasts</Hediff>
+												<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
+												<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
+											</Or>
+										</conditions>
+										<extendedGraphics>
+											<Severity For="1.0">Things/Apparel/Mama/DrCoat_Female_mega</Severity>
+											<Severity For="0.8"><path>Things/Apparel/Mama/DrCoat_Female_huge</path>
+												<extendedGraphics>
+													<li><path>Things/Apparel/Mama/DrCoat_Female_huge_preglate</path>
+														<conditions>
+															<Or>
+																<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+																<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+																<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+																<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+																<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+																<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+																<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+																<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+															</Or>
+																<Severity>0.666</Severity>
+														</conditions>
+													</li>
+												</extendedGraphics>
+											</Severity>
+											<Severity For="0.6">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
+											<Severity For="0.4">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
+										</extendedGraphics>
+									</li>
+								</extendedGraphics>
+							</Gender>
 						</extendedGraphics>
 					</Age>
 				</extendedGraphics>
@@ -867,8 +928,59 @@
 			<key>Apparel_MamaArmor</key>
 			<value><path>Things/Apparel/Mama/MamaArmor_Female</path>
 				<extendedGraphics>
-					<Gender For="Female">>Things/Apparel/Mama/MamaArmor_Female</Gender>
-					<Gender For="Male">Things/Apparel/Mama/MamaArmor_Male</Gender>
+					<Gender For="Female"><path>Things/Apparel/Mama/MamaArmor_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/MamaArmor_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+							<li><path>Things/Apparel/Mama/Preg/MamaArmor_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.333</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</Gender>
+					<Gender For="Male"><path>Things/Apparel/Mama/MamaArmor_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/MamaArmor_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</Gender>
 				</extendedGraphics>
 			</value>
 		</li>
