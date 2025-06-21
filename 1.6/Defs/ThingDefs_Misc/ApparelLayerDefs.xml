@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ApparelLayerDef>
+	<defName>MamaSkin</defName>
+	<label>Inner</label>
+	<drawOrder>-10</drawOrder>
+</ApparelLayerDef>
+
+<!-- OnSkin: 10? -->
+
+<!-- belly  -->
+
+
+<!-- breasts -->
+<!-- nipples -->
+<!-- genitals -->
+
+<!-- Middle: 100 -->
+<!-- Shell: 200 -->
+
+<ApparelLayerDef>
+	<defName>MamaCape</defName>
+	<label>capes</label>
+	<drawOrder>290</drawOrder>
+</ApparelLayerDef>
+
+<!-- Belt: 300 -->
+
+<ApparelLayerDef>
+	<defName>Megane</defName>
+	<label>megane</label>
+	<drawOrder>290</drawOrder>
+</ApparelLayerDef>
+
+<!-- Overhead: 400 -->
+<!-- EyeCover: 500 -->
+</Defs>

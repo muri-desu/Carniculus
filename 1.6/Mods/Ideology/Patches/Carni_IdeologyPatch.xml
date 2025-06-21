@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName = "Cp_PlayerFaction" or defName = "CarniNPCFaction"]</xpath>
+		<value>
+	<disallowedPrecepts>
+		<li>PreferredXenotype</li>
+		<li>ApparelDesired_Strong_Subordinate</li>
+		<li>ApparelDesired_Soft_Subordinate</li>
+		<li>AnimalVenerated</li>
+		<li>Research_None</li>
+		<li>Research_ExtremelySlow</li>
+		<li>Research_VerySlow</li>
+		<li>Research_Slow</li>
+		<li>Research_Normal</li>
+		<li>Research_Fast</li>
+		<li>HAR_EatingAliens_Abhorrent</li>
+		<li>HAR_EatingAliens_Disapproved</li>
+		<li>HAR_AlienSlavery_Abhorrent</li>
+		<li>HAR_AlienSlavery_Horrible</li>
+		<li>HAR_AlienSlavery_Disapproved</li>
+		<li>OrganUse_Abhorrent</li>
+		<li>OrganUse_HorribleNoSell</li>
+		<li>OrganUse_HorribleSellOK</li>
+		<li>Nudity_Male_Mandatory</li>
+		<li>Nudity_Female_Mandatory</li>
+		<li>Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+		<li>Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+		<li>Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+		<li>Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+		<li>Skullspike_Disapproved</li>
+		<li>Slavery_Abhorrent</li>
+		<li>Slavery_Horrible</li>
+		<li>Slavery_Disapproved</li>
+		<li>Cannibalism_Abhorrent</li>
+		<li>Cannibalism_Horrible</li>
+		<li>Cannibalism_Disapproved</li>
+		<li>DrugUse_Prohibited</li>
+		<li>DrugUse_MedicalOnly</li>
+		<li>Execution_Abhorrent</li>
+		<li>Execution_Horrible</li>
+		<li>Execution_HorribleIfInnocent</li>
+		<li>Lovin_Prohibited</li>
+		<li>Lovin_Horrible</li>
+		<li>Lovin_SpouseOnly_Strict</li>
+		<li>Lovin_SpouseOnly_Moderate</li>
+		<li>Lovin_SpouseOnly_Mild</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Rape_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Forbidden</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Incestuos_Disapproved_CloseOnly</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Bestiality_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Abhorrent</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Horrible</li>
+		<li MayRequire="rjw.sexperience.ideology">Necrophilia_Disapproved</li>
+		<li MayRequire="rjw.sexperience.ideology">Masturbation_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Rape_Child_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Marriage_Child_Disapproved</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Abhorrent</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Prohibited</li>
+		<li MayRequire="rim.job.world.pe">Harm_Child_Disapproved</li>
+		<li MayRequire="calamabanana.rjw.brothelcolony">CB_Prostitution_Horrendous</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Abhorrent</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Horrible</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Bestiality_Disapproved</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Rape_Abhorred</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Rape_Horrible</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Incest_Disapproved</li>
+		<li MayRequire="RJW.SexCultEssentials">SCE_Incest_Prohibited</li>
+	</disallowedPrecepts>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>ExecutedGuest_Know_Abhorrent_Mood</li>
+			<li>ExecutedColonist_Know_Abhorrent_Mood</li>
+			<li>ExecutedPrisoner_Know_Abhorrent</li>
+			<li>InnocentPrisonerDied_Know_Abhorrent</li>
+			<li>InnocentPrisonerDied_Know_Abhorrent_Mood</li>
+			<li>InnocentPrisonerDied_Abhorrent</li>
+			<li>ExecutedPrisoner_Horrible</li>
+			<li>InnocentPrisonerDied_Horrible</li>
+			<li>ExecutedPrisoner_Know_Horrible</li>
+			<li>InnocentPrisonerDied_Know_Horrible</li>
+			<li>ExecutedPrisonerInnocent_Horrible</li>
+			<li>ExecutedPrisonerInnocent_Know_Horrible</li>
+			<li>TradedOrgan_Abhorrent</li>
+			<li>TradedOrgan_Know_Abhorrent</li>
+			<li>TradedOrgan_Know_Abhorrent_Mood</li>
+			<li>SoldOrgan_Disapproved</li>
+			<li>SoldOrgan_Know_Disapproved</li>
+			<li>SoldOrgan_Know_Horrible_Mood</li>
+			<li>InstalledOrgan_Abhorrent</li>
+			<li>InstalledOrgan_Know_Abhorrent</li>
+			<li>InstalledOrgan_Know_Abhorrent_Mood</li>
+			<li>HarvestedOrgan_Abhorrent</li>
+			<li>HarvestedOrgan_Know_Abhorrent</li>
+			<li>HarvestedOrgan_Know_Abhorrent_Mood</li>
+			<li>HarvestedOrgan_Horrible</li>
+			<li>HarvestedOrgan_Know_Horrible</li>
+			<li>HarvestedOrgan_Know_Horrible_Mood</li>
+			<li>ObservedTerror</li>
+			<li>ObservedGibbetCage</li>
+			<li>ObservedSkullspike</li>
+			<li>AnyBodyPartCovered_Disapproved_Male</li>
+			<li>AnyBodyPartCovered_Disapproved_Memory</li>
+			<li>AnyBodyPartCovered_Disapproved_Social_Male</li>
+			<li>AnyBodyPartCovered_Disapproved_Social_Female</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Male</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Female</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Memory</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Social_Male</li>
+			<li>AnyBodyPartButGroinCovered_Disapproved_Social_Female</li>
+			<li>GroinUncovered_Disapproved_Male</li>
+			<li>GroinUncovered_Disapproved_Female</li>
+			<li>GroinUncovered_Disapproved_Social_Male</li>
+			<li>GroinUncovered_Disapproved_Social_Female</li>
+			<li>GroinOrChestUncovered_Disapproved_Male</li>
+			<li>GroinOrChestUncovered_Disapproved_Female</li>
+			<li>GroinOrChestUncovered_Disapproved_Social_Male</li>
+			<li>GroinOrChestUncovered_Disapproved_Social_Female</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Male</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Female</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+			<li>GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
+			<li>GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
+			<li>AteMeat_Abhorrent</li>
+			<li>AteMeat_Know_Abhorrent</li>
+			<li>AteMeat_Horrible</li>
+			<li>AteMeat_Know_Horrible</li>
+			<li>AteMeat_Disapproved</li>
+			<li>AteMeat_Know_Disapproved</li>
+			<li>AteHumanMeat_Abhorrent</li>
+			<li>ButcheredHuman_Abhorrent</li>
+			<li>ButcheredHuman_Know_Abhorrent</li>
+			<li>ButcheredHuman_Know_Abhorrent_Opinion</li>
+			<li>AteHumanMeat_Know_Abhorrent</li>
+			<li>HumanLeatherApparel_Abhorrent</li>
+			<li>AteHumanMeat_Horrible</li>
+			<li>ButcheredHuman_Horrible</li>
+			<li>ButcheredHuman_Know_Horrible</li>
+			<li>ButcheredHuman_Know_Horrible_Opinion</li>
+			<li>AteHumanMeat_Know_Horrible</li>
+			<li>HumanLeatherApparel_Horrible</li>
+			<li>AteHumanMeat_Disapproved</li>
+			<li>ButcheredHuman_Disapproved</li>
+			<li>ButcheredHuman_Know_Disapproved</li>
+			<li>ButcheredHuman_Know_Disapproved_Opinion</li>
+			<li>AteHumanMeat_Know_Disapproved</li>
+			<li>HumanLeatherApparel_Disapproved</li>
+			<li>GotLovin_Abhorrent</li>
+			<li>Lovin_Know_Abhorrent</li>
+			<li>GotLovin_Horrible</li>
+			<li>Lovin_Know_Horrible</li>
+			<li>GotLovin_Disapproved</li>
+			<li>Lovin_Know_Disapproved</li>
+			<li>Skullspike_Disapproved</li>
+			<li>Slavery_Abhorrent_SlavesInColony</li>
+			<li>SoldSlave_Know_Abhorrent</li>
+			<li>SoldSlave_Know_Abhorrent_Mood</li>
+			<li>EnslavedPrisoner_Know_Abhorrent</li>
+			<li>Slavery_Horrible_SlavesInColony</li>
+			<li>SoldSlave_Horrible</li>
+			<li>EnslavedPrisoner_Horrible</li>
+			<li>SoldSlave_Know_Horrible</li>
+			<li>SoldSlave_Know_Horrible_Mood</li>
+			<li>EnslavedPrisoner_Know_Horrible</li>
+			<li>EnslavedPrisoner_Know_Horrible_Mood</li>
+			<li>Slavery_Disapproved_SlavesInColony</li>
+			<li>SoldSlave_Disapproved</li>
+			<li>EnslavedPrisoner_Disapproved</li>
+			<li>SoldSlave_Know_Disapproved</li>
+			<li>SoldSlave_Know_Disapproved_Mood</li>
+			<li>EnslavedPrisoner_Know_Disapproved</li>
+			<li>EnslavedPrisoner_Know_Disapproved_Mood</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Ideology Expanded - Memes and Structures</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Always</success>
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>VME_ParticipatedInRaid_Abhorrent</li>
+		<li>VME_RecentConquest_Abhorrent</li>
+	</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Animals</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Always</success>
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>AA_Disgust</li>
+	</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Biomes</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Always</success>
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>AB_RedFogThought</li>
+	</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Genes</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Always</success>
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>AG_Disgust</li>
+		<li>AG_UnsettlingAppearance</li>
+		<li>AG_EldritchVisage</li>
+	</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>RimJobWorld - Brothel Colony</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<success>Always</success>
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>RJWFailedSolicitation</li>
+		<li>RJWTurnedDownWhore</li>
+		<li>SleptInBrothel</li>
+		<li>CB_Prostitution_Unwilling_After</li>
+		<li>CB_Prostitution_Reluctant_After</li>
+		<li>CB_Prostitution_Horrendous_After</li>
+		<li>CB_Prostitution_Horrendous_Know</li>
+	</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[@Name = "ThroneBase"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Styleable" />
+		</value>
+	</match>
+</Operation>
+</Patch>

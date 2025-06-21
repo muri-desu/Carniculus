@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<ThingDef ParentName="BenchBase">
+	<defName>CarniWorkBench</defName>
+	<label>carniculus's workbench</label>
+	<thingClass>Building_WorkTable</thingClass>
+	<description>A workbench for making various carniculus things.</description>
+	<graphicData>
+		<texPath>Things/Building/Production/CarniBench</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>3</drawSize>
+		<damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		</damageData>
+		<shadowData>
+			<volume>(0.3, 0.3, 0.3)</volume>
+			<offset>(0,0,0.38)</offset>
+		</shadowData>
+	</graphicData>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>100</costStuffCount>
+	<costList>
+		<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+	<altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+	<useHitPoints>True</useHitPoints>
+	<statBases>
+		<WorkToBuild>2200</WorkToBuild>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Flammability>0.7</Flammability>
+	</statBases>
+	<size>(2,1)</size>
+	<designationCategory>Production</designationCategory>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<hasInteractionCell>True</hasInteractionCell>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<surfaceType>Item</surfaceType>
+	<!--<recipes>
+		<li>Recipe_CarniNeutroamin</li>
+	</recipes>-->
+	<inspectorTabs>
+		<li>ITab_Bills</li>
+	</inspectorTabs>
+	<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>120</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_AffectedByFacilities">
+			<linkableFacilities>
+				<li>ToolCabinet</li>
+			</linkableFacilities>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+	</comps>
+	<building>
+		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	</building>
+	<researchPrerequisites>
+		<li>Machining</li>
+	</researchPrerequisites>
+	<placeWorkers>
+		<li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+</ThingDef>
+
+</Defs>

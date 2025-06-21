@@ -48,7 +48,7 @@
 <!-- 全身タイツ -->
 <ThingDef ParentName="CarniMamaApparelBase">
 	<defName>Apparel_MamaZentai</defName>
-		<label>mama's skinsuit</label>
+		<label>mama's zentai suit</label>
 		<description>A tight skinsuit covering whole body.</description>
 
 	<graphicData>
@@ -60,11 +60,11 @@
 
 	<statBases>
 		<WorkToMake>2500</WorkToMake>
-		<MaxHitPoints>250</MaxHitPoints>
+		<MaxHitPoints>3500</MaxHitPoints>
 		<Mass>0.3</Mass>
-		<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+		<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>1.5</EquipDelay>
 	</statBases>
 
@@ -75,7 +75,6 @@
 
 	<equippedStatOffsets>
 		<PawnBeauty>0.1</PawnBeauty>
-		<Comfort>0.5</Comfort>
 	</equippedStatOffsets>
 
 	<apparel>
@@ -100,6 +99,11 @@
 		<li>mama_dr</li>
 		<li>mama_combat</li>
 	</tags>
+		<drawData>
+			<defaultData>
+				<layer>19.75</layer>
+			</defaultData>
+		</drawData>
 	</apparel>
 	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
 	<options>
@@ -293,7 +297,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>20.5</layer>
+				<layer>20.8</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -600,6 +604,75 @@
 	</colorGenerator>
 </ThingDef>
 
+<!-- レオタード -->
+<ThingDef ParentName="CarniMamaApparelBase">
+	<defName>Apparel_MamaLeotard</defName>
+		<label>mama's combat leotard</label>
+		<description>A high-legged leotard with simple armor.</description>
+
+	<graphicData>
+		<texPath>Things/Apparel/Mama/Leotard</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.2, 1.2)</drawSize>
+	</graphicData>
+
+	<statBases>
+		<WorkToMake>1500</WorkToMake>
+		<MaxHitPoints>2200</MaxHitPoints>
+		<Mass>0.2</Mass>
+		<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+	</statBases>
+
+	<stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>70</costStuffCount>
+
+	<equippedStatOffsets>
+		<PawnBeauty>0.1</PawnBeauty>
+		<MoveSpeed>0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Waist</li>
+			<li>Shoulders</li>
+		</bodyPartGroups>
+		<layers>
+			<li>OnSkin</li>
+			<li>Middle</li>
+			<li>Shell</li>
+		</layers>
+		<wornGraphicPath>Things/Apparel/Mama/Leotard</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<tags>
+			<li>mama_combat</li>
+			<li>coverchinman</li>
+		</tags>
+		<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
+		<drawData>
+			<defaultData>
+				<layer>45</layer>
+			</defaultData>
+		</drawData>
+	</apparel>
+
+	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255,0)</only>
+		</li>
+	</options>
+	</colorGenerator>
+</ThingDef>
+
 <!-- アーマー -->
 <ThingDef ParentName="ArmorMachineableBase">
 	<defName>Apparel_MamaArmor</defName>
@@ -662,6 +735,7 @@
 		<wornGraphicPath>Things/Apparel/Mama/MamaArmor</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<layers>
+			<li>Middle</li>
 			<li>Shell</li>
 		</layers>
 		<drawData>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+		<defName>Carniculus_GeneCat</defName>
+		<label>carniculus</label>
+		<displayPriorityInXenotype>1</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneDef>
+		<defName>CarniGene</defName>
+		<label>carniculus core</label>
+		<labelShortAdj>carniculus core</labelShortAdj>
+		<description>Core gene of walking cancer progeny.</description>
+		<displayCategory>Carniculus_GeneCat</displayCategory>
+		<iconPath>UI/Icons/geneicon_carni</iconPath>
+		<statFactors>
+			<CancerRate>0</CancerRate>
+			<PawnBeauty>-5</PawnBeauty>
+		</statFactors>
+		<hediffGiversCannotGive>
+			<li MayRequire="rim.job.world">FeelingBroken</li>
+		</hediffGiversCannotGive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>Carniculus_GeneCat</li>
+		</exclusionTags>
+		<symbolPack>
+		<prefixSymbols>
+			<li><symbol>carni</symbol></li>
+			<li><symbol>terat</symbol></li>
+		</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef><!-- ママ用 -->
+		<defName>CarniMamaGene</defName>
+		<label>mama's love</label>
+		<labelShortAdj>mama's love</labelShortAdj>
+		<description>Idealized loving mama's gene.</description>
+		<displayCategory>Carniculus_GeneCat</displayCategory>
+		<iconPath>UI/Icons/geneicon_carnimama</iconPath>
+		<socialFightChanceFactor>0</socialFightChanceFactor>
+		<aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>-1</prisonBreakMTBFactor>
+		<statFactors>
+			<PawnBeauty>5</PawnBeauty>
+			<Vulnerability MayRequire="rim.job.world">3</Vulnerability>
+		</statFactors>
+		<hediffGiversCannotGive>
+			<li MayRequire="rim.job.world">FeelingBroken</li>
+		</hediffGiversCannotGive>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>Carniculus_GeneCat</li>
+		</exclusionTags>
+		<symbolPack>
+		<prefixSymbols>
+			<li><symbol>mama</symbol></li>
+			<li><symbol>mom</symbol></li>
+			<li><symbol>matr</symbol></li>
+		</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs><!-- 
+<RecipeDef Abstract="True" Name="MamaRemoldBase" ParentName="SurgeryFlesh">
+	<developmentalStageFilter>Adult</developmentalStageFilter>
+	<recipeUsers Inherit="False">
+		<li>Alien_CarniMama</li>
+	</recipeUsers>
+	<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+	<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+	<isViolation>true</isViolation>
+		<workAmount>10</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs><li>Meat_Human</li></thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Meat_Human</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<jobString>remolding mama's flesh.</jobString>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>MamaSurgery_MegaOppai</defName>
+	<label>attach mega breasts</label>
+	<description>Supersize breasts. Requires least medicine and art skills.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_MegaOppai</HediffDef>
+	</descriptionHyperlinks>
+	<skillRequirements>
+		<Artistic>3</Artistic>
+		<Medicine>3</Medicine>
+	</skillRequirements>
+    <jobString>attaching mega breasts.</jobString>
+	<addsHediff>Mama_MegaOppai</addsHediff>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+</RecipeDef>
+
+<RecipeDef ParentName="SurgeryRemoveImplantBase">
+	<defName>Remove_MegaOppai</defName>
+	<label>remove mega breasts</label>
+	<description>Remove mega breasts.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_MegaOppai</HediffDef>
+	</descriptionHyperlinks>
+	<jobString>Removing mega breasts.</jobString>
+	<removesHediff>Mama_MegaOppai</removesHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>MamaSurgery_MegaNipple</defName>
+	<label>attach mega nipples</label>
+	<description>enlarge nipples. Requires least medicine and art skills.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_MegaNipple</HediffDef>
+	</descriptionHyperlinks>
+	<skillRequirements>
+		<Artistic>3</Artistic>
+		<Medicine>3</Medicine>
+	</skillRequirements>
+    <jobString>attaching mega nipples.</jobString>
+	<addsHediff>Mama_MegaNipple</addsHediff>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>Remove_MegaNipple</defName>
+	<label>remove mega nipples</label>
+	<description>remove enlarged nipples.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_MegaNipple</HediffDef>
+	</descriptionHyperlinks>
+	<workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>normalsizing nipples.</jobString>
+	<removesHediff>Mama_MegaNipple</removesHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>MamaSurgery_DickNipple</defName>
+	<label>attach dick nipples</label>
+	<description>replace mama's nipples with dicks. Requires least medicine and art skills.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_DickNipple</HediffDef>
+	</descriptionHyperlinks>
+	<surgerySuccessChanceFactor>0.99</surgerySuccessChanceFactor>
+	<skillRequirements>
+		<Artistic>3</Artistic>
+		<Medicine>3</Medicine>
+	</skillRequirements>
+    <jobString>attaching dick nipples.</jobString>
+	<addsHediff>Mama_DickNipple</addsHediff>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+</RecipeDef>
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>Remove_DickNipple</defName>
+	<label>remove dick nipples</label>
+	<description>remove dick nipples.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_DickNipple</HediffDef>
+	</descriptionHyperlinks>
+	<workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>removing dick nipples.</jobString>
+	<removesHediff>Mama_DickNipple</removesHediff>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>MamaSurgery_EverPreg</defName>
+	<label>attach everpreg states</label>
+	<description>implant a big tumor in mama's uterus. Requires least medicine and art skills.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_EverPreg</HediffDef>
+	</descriptionHyperlinks>
+	<skillRequirements>
+		<Artistic>3</Artistic>
+		<Medicine>3</Medicine>
+	</skillRequirements>
+    <workerClass>Recipe_TerminatePregnancy</workerClass>
+    <jobString>stuffing uterus.</jobString>
+	<addsHediff>Mama_EverPreg</addsHediff>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+	<incompatibleWithHediffTags>
+		<li>Sterilized</li>
+	</incompatibleWithHediffTags>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaRemoldBase">
+	<defName>Remove_EverPreg</defName>
+	<label>remove everpreg</label>
+	<description>remove tumor from uterus.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_EverPreg</HediffDef>
+	</descriptionHyperlinks>
+	<workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>removing everpreg.</jobString>
+	<removesHediff>Mama_EverPreg</removesHediff>
+	<appliedOnFixedBodyParts>
+		<li>Torso</li>
+	</appliedOnFixedBodyParts>
+</RecipeDef>
+ -->
+</Defs>

@@ -68,19 +68,19 @@
 		<kindDef>Combat</kindDef>
 		<commonality>100</commonality>
 		<options>
+			<Carni_boss>1</Carni_boss>
 			<Carni_worker>10</Carni_worker>
 			<Carni_butcher>10</Carni_butcher>
 			<Carni_miner>10</Carni_miner>
-			<Carni_boss>5</Carni_boss>
 		</options>
 	</li>
 	<li>
 		<kindDef>Combat</kindDef>
 		<commonality>50</commonality>
 		<options>
-			<CarniMama_soldier>10</CarniMama_soldier>
+			<CarniMama_soldier>5</CarniMama_soldier>
+			<CarniMama_lessersoldier>10</CarniMama_lessersoldier>
 			<Carnigigas>6</Carnigigas>
-			<CarniMama_boss>1</CarniMama_boss>
 		</options>
 	</li>
 	<li>
@@ -105,7 +105,8 @@
 			<Carnigigas>6</Carnigigas>
 		</carriers>
 		<guards>
-			<CarniMama_soldier>50</CarniMama_soldier>
+			<CarniMama_clothedslave>10</CarniMama_clothedslave>
+			<CarniMama_soldier>10</CarniMama_soldier>
 		</guards>
 	</li>
 	<li>

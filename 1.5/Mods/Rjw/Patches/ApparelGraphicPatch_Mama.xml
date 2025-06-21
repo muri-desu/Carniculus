@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+	<operations>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[3]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaHarness</key>
+			<value><path>Things/Apparel/Mama/Harness_Female</path>
+				<extendedGraphics>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/Harness_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/Harness_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/Harness_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/Harness_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[4]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaCorset</key>
+			<value><path>Things/Apparel/Mama/Corset_Female</path>
+				<extendedGraphics>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/Corset_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/Corset_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+										<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/Corset_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/Corset_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Male</Severity>
+										<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Male</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+		</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[5]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaShirtSet</key>
+			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
+				<extendedGraphics>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/ShirtSet_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/ShirtSet_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+										<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Female</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/ShirtSet_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/ShirtSet_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Male</Severity>
+										<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Male</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[7]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaMaid</key>
+			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
+				<extendedGraphics>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/MaidDress_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/MaidDress_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/MaidDress_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/PregLate/MaidDress_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+										<Severity>0.666</Severity>
+								</conditions>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[8]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaDrCoat</key>
+			<value><path>Things/Apparel/Mama/DrCoat_Female</path>
+				<extendedGraphics>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</BodyType>
+					<BodyType For="Male">Things/Apparel/Mama/DrCoat_Male</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/DrCoat_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/DrCoat_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="rim.job.world">Breasts</Hediff>
+										<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
+										<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
+									</Or>
+								</conditions>
+								<extendedGraphics>
+									<Severity For="1.0">Things/Apparel/Mama/DrCoat_Female_mega</Severity>
+									<Severity For="0.8"><path>Things/Apparel/Mama/DrCoat_Female_huge</path>
+										<extendedGraphics>
+											<li><path>Things/Apparel/Mama/DrCoat_Female_huge_preglate</path>
+												<conditions>
+													<Or>
+														<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
+														<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+														<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+														<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+														<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+														<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+														<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+														<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+													</Or>
+														<Severity>0.666</Severity>
+												</conditions>
+											</li>
+										</extendedGraphics>
+									</Severity>
+									<Severity For="0.6">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
+									<Severity For="0.4">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
+								</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[9]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaArmor</key>
+			<value><path>Things/Apparel/Mama/MamaArmor_Female</path>
+				<extendedGraphics>
+					<Gender For="Female"><path>Things/Apparel/Mama/MamaArmor_Female</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/MamaArmor_Female</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/MamaArmor_Female</Severity>
+										<Severity For="0.333">Things/Apparel/Mama/Preg/MamaArmor_Female</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</Gender>
+					<Gender For="Male"><path>Things/Apparel/Mama/MamaArmor_Male</path>
+						<extendedGraphics>
+							<li><path>Things/Apparel/Mama/MamaArmor_Male</path>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
+										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
+									</Or>
+								</conditions>
+									<extendedGraphics>
+										<Severity For="0.666">Things/Apparel/Mama/PregLate/MamaArmor_Male</Severity>
+									</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</Gender>
+				</extendedGraphics>
+			</value>
+		</li>
+	</value>
+</li>
+
+<li Class="PatchOperationReplace">
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/graphicPaths/apparel/individualPaths/li[10]</xpath>
+		<value>
+		<li>
+			<key>Apparel_MamaLeotard</key>
+			<value><path>Things/Apparel/Mama/Leotard_Female_average</path>
+				<extendedGraphics>
+					<Gender For="Male">Things/Apparel/Mama/Leotard_Male</Gender>
+					<Gender For="Female"><path>Things/Apparel/Mama/Leotard_Female_average</path>
+						<extendedGraphics>
+							<li>
+								<conditions>
+									<Or>
+										<Hediff MayRequire="rim.job.world">Breasts</Hediff>
+										<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
+										<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
+									</Or>
+								</conditions>
+								<extendedGraphics>
+									<Severity For="1.0">Things/Apparel/Mama/Leotard_Female_mega</Severity>
+									<Severity For="0.8">Things/Apparel/Mama/Leotard_Female_huge</Severity>
+									<Severity For="0.6">Things/Apparel/Mama/Leotard_Female_large</Severity>
+									<Severity For="0.4">Things/Apparel/Mama/Leotard_Female_average</Severity>
+									<Severity For="0.2">Things/Apparel/Mama/Leotard_Female_small</Severity>
+								</extendedGraphics>
+							</li>
+						</extendedGraphics>
+					</Gender>
+				</extendedGraphics>
+			</value>
+		</li>
+	</value>
+</li>
+
+	</operations>
+</Operation>
+</Patch>

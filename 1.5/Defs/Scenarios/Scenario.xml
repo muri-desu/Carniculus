@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ScenarioDef>
+<ScenarioDef Name="CarniScenario">
 	<defName>CarniScenario</defName>
 	<label>metastasis and proliferation</label>
 		<description>Carniculus are experimental life form which have escaped from the glass cases  and taken over a laboratory in planetary orbit.\n Some of them, unable to bear the brutality of their brethren and the overcrowding caused by their reproduction, decided to test their own vitality by descending to the earth in pods.</description>

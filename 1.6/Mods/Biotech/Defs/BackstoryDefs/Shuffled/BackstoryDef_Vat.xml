@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.AlienBackstoryDef ParentName="CarniBackStory"><!-- vat-grown carni -->
+	<defName>VatGrownCarni</defName>
+	<title>cultured carniculus</title>
+	<titleShort>cultured</titleShort>
+		<description>[PAWN_nameDef] is a vat-grown strong soldier, but less immune to toxin and sickness.</description>
+	<slot>Childhood</slot>
+	<spawnCategories>
+		<li>Carni_Vat</li>
+	</spawnCategories>
+	<skillGains>
+		<Shooting>10</Shooting>
+		<Melee>10</Melee>
+		<Medicine>3</Medicine>
+	</skillGains>
+		<workDisables>Social, Intellectual, Artistic, Crafting, PlantWork, Mining, Constructing</workDisables>
+	<forcedTraits>
+		<Bloodlust>0</Bloodlust>
+		<Psychopath>0</Psychopath>
+		<Immunity>-1</Immunity>
+	</forcedTraits>
+	<disallowedTraits>
+		<BodyPurist>0</BodyPurist>
+		<Wimp>0</Wimp>
+		<Nudist>0</Nudist>
+		<TorturedArtist>0</TorturedArtist>
+	</disallowedTraits>
+	<forcedTraitsChance>
+		<li><defName>Nimble</defName><chance>10</chance></li>
+		<li><defName>Brawler</defName><chance>10</chance></li>
+	</forcedTraitsChance>
+</AlienRace.AlienBackstoryDef>
+
+</Defs>

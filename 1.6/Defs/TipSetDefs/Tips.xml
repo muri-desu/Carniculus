@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<TipSetDef>
+	<defName>CarniculusTips</defName>
+		<tips>
+			<li>If you have lots of rotting corpses and extra chemfuels, you can produce neutroamines from them on carniculus' workbench. Make sure your colonists are prepared for rot stink and corpse exposure.</li>
+		</tips>
+</TipSetDef>
+</Defs>

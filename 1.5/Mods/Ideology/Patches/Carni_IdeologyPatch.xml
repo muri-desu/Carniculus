@@ -4,7 +4,6 @@
 	<xpath>Defs/FactionDef[defName = "CarniNPCFaction"]</xpath>
 		<value>
 	<disallowedPrecepts>
-		<li>PreferredXenotype</li>
 		<li>ApparelDesired_Strong_Subordinate</li>
 		<li>ApparelDesired_Soft_Subordinate</li>
 		<li>AnimalVenerated</li>

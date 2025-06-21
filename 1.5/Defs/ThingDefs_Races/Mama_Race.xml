@@ -209,7 +209,7 @@
 <bodyAddons>
 <li><!-- 1:hair -->
 	<name>mama hair</name>
-	<path>Things/Pawn/Mama/Hairs/MamaHair</path>
+	<path>Things/Pawn/Carni/blank</path>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<alignWithHead>true</alignWithHead>
@@ -229,14 +229,10 @@
 		</Posture>
 	</conditions>
 	<extendedGraphics>
-		<Age For="HumanlikeAdult">
-			<extendedGraphics>
-				<Gender For="Male">Things/Pawn/Mama/Hairs/MamaHairM</Gender>
-				<Gender For="Female">Things/Pawn/Mama/Hairs/MamaHair</Gender>
-			</extendedGraphics>
-		</Age>
-		<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</Age>
-		<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Hairs/MamaHairChild</Age>
+		<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</BodyType>
+		<BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Hairs/MamaHairChild</BodyType>
+		<BodyType For="Female">Things/Pawn/Mama/Hairs/MamaHair</BodyType>
+		<BodyType For="Male">Things/Pawn/Mama/Hairs/MamaHairM</BodyType>
 	</extendedGraphics>
 	<offsets>
 		<south>
@@ -305,18 +301,14 @@
 </li>
 <li><!-- 3:oppai -->
 <name>oppai</name>
-	<path>Things/Pawn/Carni/blank</path>
+	<path>Things/Pawn/Mama/Breasts/breasts_average</path><!-- 常に表示 -->
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-	<colorChannel>skin</colorChannel>
-	<shaderType>Transparent</shaderType>
-	<allowColorOverride>false</allowColorOverride>
 	<conditions>
 		<BodyPart>
 			<bodyPart>Torso</bodyPart>
-			<drawWithoutPart>false</drawWithoutPart>
 		</BodyPart>
 		<Posture>
 			<drawnInBed>false</drawnInBed>
@@ -329,68 +321,22 @@
 	</conditions>
 
 	<extendedGraphics>
-
-	<!-- no zentai -->
-	<li><path>Things/Pawn/Mama/Breasts/breasts_average</path>
-		<conditions>
-			<Or>
-			<Not>
-				<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-			</Not>
-				<Or>
-					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-				</Or>
-			</Or>
-		</conditions>
-		<extendedGraphics>
-			<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-			<path>Things/Pawn/Mama/Breasts/breasts_average</path>
-				<extendedGraphics>
-					<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
-				</extendedGraphics>
-			</Hediff>
-		</extendedGraphics>
-	</li>
-
-	<!-- zentai -->
-	<li><path>Things/Pawn/Carni/blank</path>
-		<conditions>
-			<Or>
-				<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-			<Not>
-				<Or>
-					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-				</Or>
-			</Not>
-			</Or>
-		</conditions>
-		<extendedGraphics>
-			<li><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
-				<extendedGraphics>
-					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-					<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
-						<extendedGraphics>
-							<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
-						</extendedGraphics>
-					</Hediff>
-				</extendedGraphics>
-			</li>
-		</extendedGraphics>
-	</li>
-
+		<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman"><path>Things/Pawn/Mama/Breasts/breasts_average</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Breasts/breasts_average_preglate</Severity>
+			</extendedGraphics>
+		</Hediff>
 	</extendedGraphics>
 
 	<offsets>
 		<south>
-			<layerOffset>-0.2904</layerOffset>
+			<layerOffset>-0.2905</layerOffset>
 		</south>
 		<north>
 			<layerOffset>-0.289</layerOffset>
 		</north>
 		<east>
-			<layerOffset>-0.2904</layerOffset>
+			<layerOffset>-0.29107</layerOffset>
 		</east>
 	</offsets>
 </li>
@@ -401,8 +347,6 @@
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-	<colorChannel>skin</colorChannel>
-	<shaderType>Transparent</shaderType>
 	<conditions>
 		<BodyPart>
 			<bodyPart>Torso</bodyPart>
@@ -418,76 +362,58 @@
 
 	<extendedGraphics>
 
-	<li MayRequire="ludeon.rimworld.biotech">
-	<path>Things/Pawn/Carni/blank</path>
-		<conditions>
-			<Hediff>PregnantHuman</Hediff>
-		</conditions>
-		<extendedGraphics>
-			<Severity For="0.666"><path>Things/Pawn/Mama/Belly/Belly_huge</path>
+		<li MayRequire="ludeon.rimworld.biotech">
+		<path>Things/Pawn/Carni/blank</path>
+			<conditions>
+				<Hediff>PregnantHuman</Hediff>
+			</conditions>
+			<extendedGraphics>
+				<Gender For="Male"><path>Things/Pawn/Mama/Belly/Things/Pawn/Carni/blank</path>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Belly/Belly_huge_male</Severity>
+						<Severity For="0.333">Things/Pawn/Mama/Belly/Belly_male</Severity>
+					</extendedGraphics>
+				</Gender>
+				<Gender For="Female"><path>Things/Pawn/Carni/blank</path>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Belly/Belly_huge</Severity>
+						<Severity For="0.333">Things/Pawn/Mama/Belly/Belly</Severity>
+					</extendedGraphics>
+				</Gender>
+			</extendedGraphics>
+		</li>
+		<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
+			<conditions>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLabor</Hediff>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLaborPushing</Hediff>
+			</conditions>
 				<extendedGraphics>
-					<li><path>Things/Pawn/Mama/Belly/BellyZ_huge</path>
-						<conditions>
-							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-						</conditions>
-						<extendedGraphics>
-							<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
-								<conditions>
-									<Or>
-										<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-										<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-									</Or>
-								</conditions>
-							</li>
-						</extendedGraphics>
-					</li>
+					<Gender For="Male">Things/Pawn/Mama/Belly/Belly_huge</Gender>
+					<Gender For="Male">Things/Pawn/Mama/Belly/Belly_huge_male</Gender>
 				</extendedGraphics>
-			</Severity>
-			<Severity For="0.333"><path>Things/Pawn/Mama/Belly/Belly</path>
-				<extendedGraphics>
-					<li><path>Things/Pawn/Mama/Belly/BellyZ</path>
-						<conditions>
-							<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-						</conditions>
-						<extendedGraphics>
-							<li><path>Things/Pawn/Mama/Belly/Belly</path>
-								<conditions>
-									<Or>
-										<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-										<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-									</Or>
-								</conditions>
-							</li>
-						</extendedGraphics>
-					</li>
-				</extendedGraphics>
-			</Severity>
-		</extendedGraphics>
-	</li>
-
+		</li>
 	</extendedGraphics>
 
 	<offsets>
 		<south>
-			<layerOffset>-0.291</layerOffset>
+			<layerOffset>-0.2921</layerOffset>
 		</south>
 		<north>
-			<layerOffset>-0.29</layerOffset>
+			<layerOffset>-0.2921</layerOffset>
 		</north>
 		<east>
-			<layerOffset>-0.2913</layerOffset>
+			<layerOffset>-0.2921</layerOffset>
 		</east>
 	</offsets>
 </li>
 <li><!-- 5:penis -->
 	<name>ochinchin</name>
-	<path>Things/Pawn/Carni/blank</path>
+	<path>Genitals/Flaccid/penis_mama_average</path>
 	<userCustomizable>false</userCustomizable>
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-	<colorChannel>skin</colorChannel>
-	<shaderType>Transparent</shaderType>
 	<conditions>
 		<BodyPart>
 			<bodyPart>Torso</bodyPart>
@@ -509,79 +435,29 @@
 	</conditions>
 
 	<extendedGraphics>
-			<!-- no zentai -->
-			<li><path>Genitals/Flaccid/penis_mama_average</path>
-				<conditions>
-					<Or>
-					<Not>
-						<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-					</Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Or>
-				</conditions>
-				<extendedGraphics>
-					<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-					<path>Genitals/Flaccid/penis_mama_average</path>
-						<extendedGraphics>
-							<Severity For="0.666">Genitals/Flaccid/penis_mama_average</Severity>
-						</extendedGraphics>
-					</Hediff>
-				</extendedGraphics>
-			</li>
-
-			<!-- zentai -->
-			<li><path>Things/Pawn/Carni/blank</path>
-				<conditions>
-					<Or>
-						<ApparelDef><apparel>Apparel_MamaZentai</apparel></ApparelDef>
-					<Not>
-						<Or>
-							<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
-							<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
-						</Or>
-					</Not>
-					</Or>
-				</conditions>
-				<extendedGraphics>
-					<li><path>Genitals/Flaccid/penisZ_mama_average</path>
-						<extendedGraphics>
-							<Hediff MayRequire="ludeon.rimworld.biotech" For="PregnantHuman">
-							<path>Genitals/Flaccid/penisZ_mama_average</path>
-								<extendedGraphics>
-									<Severity For="0.666">Genitals/Flaccid/penisZ_mama_average</Severity>
-								</extendedGraphics>
-							</Hediff>
-						</extendedGraphics>
-					</li>
-				</extendedGraphics>
-			</li>
-
+		<li><path>Genitals/Flaccid/penis_mama_average</path>
+			<conditions>
+				<Or>
+					<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+					<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+					<Job MayRequire="OskarPotocki.VFE.Classical">VFEC_Relax_Thermaebath</Job>
+				</Or>
+			</conditions>
+		</li>
 	</extendedGraphics>
 
 	<offsets>
 		<south>
-			<layerOffset>-0.291</layerOffset>
-			<bodyTypes>
-				<Male>(0,-0.51)</Male>
-				<Female>(0,-0.422)</Female>
-			</bodyTypes>
+			<layerOffset>-0.2915</layerOffset>
+			<offset>(0,-0.1)</offset>
 		</south>
 		<north>
 			<layerOffset>-0.29</layerOffset>
-			<bodyTypes>
-				<Male>(0,-0.47)</Male>
-				<Female>(0,-0.38)</Female>
-			</bodyTypes>
+			<offset>(0,0)</offset>
 		</north>
 		<east>
 			<layerOffset>-0.291</layerOffset>
-			<bodyTypes>
-				<Male>(-0.11,-0.43)</Male>
-				<Female>(-0.125,-0.4)</Female>
-			</bodyTypes>
+			<offset>(0.005,0)</offset>
 		</east>
 	</offsets>
 </li>
@@ -592,8 +468,6 @@
 	<inFrontOfBody>true</inFrontOfBody>
 	<defaultOffset>Center</defaultOffset>
 	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-	<colorChannel>skin</colorChannel>
-	<shaderType>Transparent</shaderType>
 	<conditions>
 		<BodyPart>
 			<bodyPart>Torso</bodyPart>
@@ -617,24 +491,230 @@
 	<offsets>
 		<south>
 			<layerOffset>-0.2917</layerOffset>
-			<offset>(0,-0.41)</offset>
-			<bodyTypes>
-				<Male>(0,0)</Male>
-			</bodyTypes>
+			<offset>(0,0)</offset>
 		</south>
 		<north>
 			<layerOffset>-0.29</layerOffset>
-			<offset>(0,-0)</offset>
-			<bodyTypes>
-				<Male>(0,0)</Male>
-			</bodyTypes>
+			<offset>(0,0)</offset>
 		</north>
 		<east>
 			<layerOffset>-0.291</layerOffset>
+			<offset>(0,0)</offset>
+		</east>
+	</offsets>
+</li>
+
+<li><!-- 7:zentai oppai -->
+<name>zentai breasts</name>
+	<path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<allowColorOverride>false</allowColorOverride>
+	<conditions>
+		<ApparelDef>Apparel_MamaZentai</ApparelDef>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+		<Gender>Female</Gender>
+		<!-- 入浴時除外　 -->
+		<Not>
+			<Or>
+				<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+				<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				<Job MayRequire="OskarPotocki.VFE.Classical">VFEC_Relax_Thermaebath</Job>
+				<ApparelDef>Apparel_MamaLeotard</ApparelDef>
+			</Or>
+		</Not>
+	</conditions>
+
+	<extendedGraphics>
+		<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Pawn/Mama/Breasts/breastsZ_average</path>
+			<extendedGraphics>
+				<Severity For="0.666">Things/Pawn/Mama/Breasts/breastsZ_average_preglate</Severity>
+			</extendedGraphics>
+		</Hediff>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.2902</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.290</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.2903</layerOffset>
+		</east>
+	</offsets>
+</li>
+
+<li><!-- 8:zentai belly -->
+<name>zentai belly</name>
+	<path>Things/Pawn/Carni/blank</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<allowColorOverride>false</allowColorOverride>
+	<conditions>
+		<ApparelDef>Apparel_MamaZentai</ApparelDef>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+		<Not><!-- 入浴時除外　 -->
+			<Or>
+				<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+				<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				<Job MayRequire="OskarPotocki.VFE.Classical">VFEC_Relax_Thermaebath</Job>
+				<ApparelDef>Apparel_MamaLeotard</ApparelDef>
+			</Or>
+		</Not>
+	</conditions>
+
+	<extendedGraphics>
+		<li MayRequire="ludeon.rimworld.biotech">
+		<path>Things/Pawn/Carni/blank</path>
+			<conditions>
+				<Hediff>PregnantHuman</Hediff>
+			</conditions>
+			<extendedGraphics>
+				<Gender For="Male"><path>Things/Pawn/Mama/Belly/Things/Pawn/Carni/blank</path>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Belly/BellyZ_huge_male</Severity>
+						<Severity For="0.333">Things/Pawn/Mama/Belly/BellyZ_male</Severity>
+					</extendedGraphics>
+				</Gender>
+				<Gender For="Female"><path>Things/Pawn/Carni/blank</path>
+					<extendedGraphics>
+						<Severity For="0.666">Things/Pawn/Mama/Belly/BellyZ_huge</Severity>
+						<Severity For="0.333">Things/Pawn/Mama/Belly/BellyZ</Severity>
+					</extendedGraphics>
+				</Gender>
+			</extendedGraphics>
+		</li>
+		<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
+			<conditions>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLabor</Hediff>
+				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLaborPushing</Hediff>
+			</conditions>
+			<extendedGraphics>
+				<Gender For="Male">Things/Pawn/Mama/Belly/BellyZ_huge</Gender>
+				<Gender For="Male">Things/Pawn/Mama/Belly/BellyZ_huge_male</Gender>
+			</extendedGraphics>
+		</li>
+	</extendedGraphics>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.2914</layerOffset>
+		</south>
+		<north>
+			<layerOffset>-0.2914</layerOffset>
+		</north>
+		<east>
+			<layerOffset>-0.2914</layerOffset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 9:zentai penis -->
+	<name>zentai chinchin</name>
+	<path>Genitals/Flaccid/penisZ_mama_average</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<ApparelDef>Apparel_MamaZentai</ApparelDef>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+		<Gender>Male</Gender>
+		<Not><!-- 入浴時除外　 -->
+			<Or>
+				<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+				<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				<Job MayRequire="OskarPotocki.VFE.Classical">VFEC_Relax_Thermaebath</Job>
+				<ApparelDef>Apparel_MamaLeotard</ApparelDef>
+			</Or>
+		</Not>
+	</conditions>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.291</layerOffset>
+			<offset>(0,-0.1)</offset>
+		</south>
+		<north>
+			<layerOffset>-0.2905</layerOffset>
+			<offset>(0,0)</offset>
+		</north>
+		<east>
+			<layerOffset>-0.2905</layerOffset>
+			<offset>(0.01,0)</offset>
+		</east>
+	</offsets>
+</li>
+<li><!-- 10: zentai vagina -->
+	<name>zentai manman</name>
+	<path>Genitals/vaginaZ_mama_average</path>
+	<userCustomizable>false</userCustomizable>
+	<inFrontOfBody>true</inFrontOfBody>
+	<defaultOffset>Center</defaultOffset>
+	<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+	<conditions>
+		<ApparelDef>Apparel_MamaZentai</ApparelDef>
+		<BodyPart>
+			<bodyPart>Torso</bodyPart>
+			<drawWithoutPart>false</drawWithoutPart>
+		</BodyPart>
+		<Posture>
+			<drawnInBed>false</drawnInBed>
+			<drawnStanding>true</drawnStanding>
+			<drawnLaying>true</drawnLaying>
+		</Posture>
+		<RotStage>Fresh,Rotting</RotStage>
+		<Age>HumanlikeAdult</Age>
+		<Gender>Female</Gender>
+		<Not><!-- 入浴時除外 -->
+			<Or>
+				<Hediff MayRequire="Dubwise.DubsBadHygiene">Washing</Hediff>
+				<Hediff MayRequire="ssulunge.KijinRace3">IntheHotSpring</Hediff>
+				<Job MayRequire="OskarPotocki.VFE.Classical">VFEC_Relax_Thermaebath</Job>
+				<ApparelDef>Apparel_MamaLeotard</ApparelDef>
+			</Or>
+		</Not>
+	</conditions>
+
+	<offsets>
+		<south>
+			<layerOffset>-0.2914</layerOffset>
 			<offset>(0,-0)</offset>
-			<bodyTypes>
-				<Male>(0,0)</Male>
-			</bodyTypes>
+		</south>
+		<north>
+			<layerOffset>-0.2905</layerOffset>
+			<offset>(0,-0)</offset>
+		</north>
+		<east>
+			<layerOffset>-0.2905</layerOffset>
+			<offset>(0,-0)</offset>
 		</east>
 	</offsets>
 </li>
@@ -663,9 +743,8 @@
 <graphicPaths>
 	<head><path>Things/Pawn/Mama/Heads/Average</path>
 		<extendedGraphics>
-			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</Age>
-			<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Mama/Heads/Baby</Age>
-			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Average_Child</Age>
+			<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Heads/Baby</BodyType>
+			<BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Heads/Average_Child</BodyType>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Heads/Average</path>
 				<extendedGraphics>
 					<Gender For="Male">Things/Pawn/Mama/Heads/AverageM</Gender>
@@ -677,9 +756,8 @@
 
 	<body><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
 		<extendedGraphics>
-			<Age For="CarniBaby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
-			<Age For="HumanlikeToddler" MayRequire="cyanobot.toddlers">Things/Pawn/Carni/Bodies/Naked_Baby</Age>
-			<Age For="HumanlikeChild" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Bodies/Naked_Child</Age>
+			<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/Bodies/Naked_Baby</BodyType>
+			<BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Bodies/Naked_Child</BodyType>
 			<Age For="HumanlikeAdult"><path>Things/Pawn/Mama/Bodies/Naked_Female</path>
 				<extendedGraphics>
 					<Gender For="Male">Things/Pawn/Mama/Bodies/Naked_Male</Gender>
@@ -699,7 +777,7 @@
 			<key>Apparel_MamaGlasses</key>
 			<value><path>Things/Apparel/Mama/Glasses</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/GlassesChild</Age>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/GlassesChild</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -707,7 +785,7 @@
 			<key>Apparel_MamaNunHead</key>
 			<value><path>Things/Apparel/Mama/NunHead</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunHeadChild</Age>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunHeadChild</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -715,31 +793,25 @@
 			<key>Apparel_MamaHarness</key>
 			<value><path>Things/Apparel/Mama/Harness_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Harness_Female</path>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Harness_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/Harness_Female</path>
 						<extendedGraphics>
-							<Gender For="Female"><path>Things/Apparel/Mama/Harness_Female</path>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/PregLate/Harness_Female</path>
 								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/Harness_Female</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/PregLate/Harness_Female</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
-										</extendedGraphics>
-									</Hediff>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Female</Severity>
 								</extendedGraphics>
-							</Gender>
-							<Gender For="Male"><path>Things/Apparel/Mama/Harness_Male</path>
-								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/Harness_Male</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/PregLate/Harness_Male</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Male</Severity>
-										</extendedGraphics>
-									</Hediff>
-								</extendedGraphics>
-							</Gender>
+							</Hediff>
 						</extendedGraphics>
-					</Age>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/Harness_Male</path>
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/PregLate/Harness_Male</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Harness_Male</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -747,33 +819,27 @@
 			<key>Apparel_MamaCorset</key>
 			<value><path>Things/Apparel/Mama/Corset_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Corset_Female</path>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Corset_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/Corset_Female</path>
 						<extendedGraphics>
-							<Gender For="Female"><path>Things/Apparel/Mama/Corset_Female</path>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/Corset_Female</path>
 								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/Corset_Female</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/Corset_Female</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
-											<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
-										</extendedGraphics>
-									</Hediff>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Female</Severity>
 								</extendedGraphics>
-							</Gender>
-							<Gender For="Male"><path>Things/Apparel/Mama/Corset_Male</path>
-								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/Corset_Male</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/Corset_Male</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Male</Severity>
-											<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Male</Severity>
-										</extendedGraphics>
-								</Hediff>
-								</extendedGraphics>
-							</Gender>
+							</Hediff>
 						</extendedGraphics>
-					</Age>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/Corset_Male</path>
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/Corset_Male</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/Corset_Male</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/Corset_Male</Severity>
+								</extendedGraphics>
+						</Hediff>
+						</extendedGraphics>
+					</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -781,33 +847,27 @@
 			<key>Apparel_MamaShirtSet</key>
 			<value><path>Things/Apparel/Mama/ShirtSet_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/ShirtSet_Female</path>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/ShirtSet_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/ShirtSet_Female</path>
 						<extendedGraphics>
-							<Gender For="Female"><path>Things/Apparel/Mama/ShirtSet_Female</path>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/ShirtSet_Female</path>
 								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/ShirtSet_Female</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/ShirtSet_Female</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
-											<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Female</Severity>
-										</extendedGraphics>
-									</Hediff>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Female</Severity>
 								</extendedGraphics>
-							</Gender>
-							<Gender For="Male"><path>Things/Apparel/Mama/ShirtSet_Male</path>
-								<extendedGraphics>
-									<!-- <Hediff For="Mama_EverPreg">Things/Apparel/Mama/PregLate/ShirtSet_Male</Hediff> -->
-									<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/ShirtSet_Male</path>
-										<extendedGraphics>
-											<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Male</Severity>
-											<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Male</Severity>
-										</extendedGraphics>
-									</Hediff>
-								</extendedGraphics>
-							</Gender>
+							</Hediff>
 						</extendedGraphics>
-					</Age>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/ShirtSet_Male</path>
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/ShirtSet_Male</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/ShirtSet_Male</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/ShirtSet_Male</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -815,12 +875,9 @@
 			<key>Apparel_MamaNun</key>
 			<value><path>Things/Apparel/Mama/NunDress_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunDress_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/NunDress_Female</path>
-						<extendedGraphics>
-							<Gender For="Male">Things/Apparel/Mama/NunDress_Male</Gender>
-						</extendedGraphics>
-					</Age>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/NunDress_Child</BodyType>
+					<BodyType For="Female">Things/Apparel/Mama/NunDress_Female</BodyType>
+					<BodyType For="Male">Things/Apparel/Mama/NunDress_Male</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -828,49 +885,25 @@
 			<key>Apparel_MamaMaid</key>
 			<value><path>Things/Apparel/Mama/MaidDress_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/MaidDress_Female</path>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/MaidDress_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/MaidDress_Female</path>
 						<extendedGraphics>
-							<Gender For="Female"><path>Things/Apparel/Mama/MaidDress_Female</path>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MaidDress_Female</path>
 								<extendedGraphics>
-									<li><path>Things/Apparel/Mama/PregLate/MaidDress_Female</path>
-										<conditions>
-											<Or>
-												<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-												<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-												<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-											</Or>
-												<Severity>0.666</Severity>
-										</conditions>
-									</li>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Female</Severity>
 								</extendedGraphics>
-							</Gender>
-							<Gender For="Male"><path>Things/Apparel/Mama/MaidDress_Male</path>
-								<extendedGraphics>
-									<li><path>Things/Apparel/Mama/PregLate/MaidDress_Male</path>
-										<conditions>
-											<Or>
-												<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-												<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-												<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-												<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-											</Or>
-												<Severity>0.666</Severity>
-										</conditions>
-									</li>
-								</extendedGraphics>
-							</Gender>
+							</Hediff>
 						</extendedGraphics>
-					</Age>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/MaidDress_Male</path>
+						<extendedGraphics>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MaidDress_Male</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MaidDress_Male</Severity>
+								</extendedGraphics>
+							</Hediff>
+						</extendedGraphics>
+					</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -878,49 +911,17 @@
 			<key>Apparel_MamaDrCoat</key>
 			<value><path>Things/Apparel/Mama/DrCoat_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/DrCoat_Female</path>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/DrCoat_Child</BodyType>
+					<BodyType For="Female"><path>Things/Apparel/Mama/DrCoat_Female</path>
 						<extendedGraphics>
-							<Gender For="Male">Things/Apparel/Mama/DrCoat_Male</Gender>
-							<Gender For="Female"><path>Things/Apparel/Mama/DrCoat_Female</path>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/DrCoat_Female</path>
 								<extendedGraphics>
-									<li><path>Things/Apparel/Mama/DrCoat_Female</path>
-										<conditions>
-											<Or>
-												<Hediff MayRequire="rim.job.world">Breasts</Hediff>
-												<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
-												<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
-											</Or>
-										</conditions>
-										<extendedGraphics>
-											<Severity For="1.0">Things/Apparel/Mama/DrCoat_Female_mega</Severity>
-											<Severity For="0.8"><path>Things/Apparel/Mama/DrCoat_Female_huge</path>
-												<extendedGraphics>
-													<li><path>Things/Apparel/Mama/DrCoat_Female_huge_preglate</path>
-														<conditions>
-															<Or>
-																<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-																<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-																<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-																<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-																<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-																<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-																<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-																<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-															</Or>
-																<Severity>0.666</Severity>
-														</conditions>
-													</li>
-												</extendedGraphics>
-											</Severity>
-											<Severity For="0.6">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
-											<Severity For="0.4">Things/Apparel/Mama/DrCoat_Female_avelarge</Severity>
-										</extendedGraphics>
-									</li>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/DrCoat_Female_avelarge</Severity>
 								</extendedGraphics>
-							</Gender>
+							</Hediff>
 						</extendedGraphics>
-					</Age>
+					</BodyType>
+					<BodyType For="Male">Things/Apparel/Mama/DrCoat_Male</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -928,59 +929,34 @@
 			<key>Apparel_MamaArmor</key>
 			<value><path>Things/Apparel/Mama/MamaArmor_Female</path>
 				<extendedGraphics>
-					<Gender For="Female"><path>Things/Apparel/Mama/MamaArmor_Female</path>
+					<BodyType For="Female"><path>Things/Apparel/Mama/MamaArmor_Female</path>
 						<extendedGraphics>
-							<li><path>Things/Apparel/Mama/PregLate/MamaArmor_Female</path>
-								<conditions>
-									<Or>
-										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-									</Or>
-										<Severity>0.666</Severity>
-								</conditions>
-							</li>
-							<li><path>Things/Apparel/Mama/Preg/MamaArmor_Female</path>
-								<conditions>
-									<Or>
-										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-									</Or>
-										<Severity>0.333</Severity>
-								</conditions>
-							</li>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MamaArmor_Female</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MamaArmor_Female</Severity>
+									<Severity For="0.333">Things/Apparel/Mama/Preg/MamaArmor_Female</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Gender>
-					<Gender For="Male"><path>Things/Apparel/Mama/MamaArmor_Male</path>
+					</BodyType>
+					<BodyType For="Male"><path>Things/Apparel/Mama/MamaArmor_Male</path>
 						<extendedGraphics>
-							<li><path>Things/Apparel/Mama/PregLate/MamaArmor_Male</path>
-								<conditions>
-									<Or>
-										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
-										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
-									</Or>
-										<Severity>0.666</Severity>
-								</conditions>
-							</li>
+							<Hediff For="PregnantHuman" MayRequire="ludeon.rimworld.biotech"><path>Things/Apparel/Mama/MamaArmor_Male</path>
+								<extendedGraphics>
+									<Severity For="0.666">Things/Apparel/Mama/PregLate/MamaArmor_Male</Severity>
+								</extendedGraphics>
+							</Hediff>
 						</extendedGraphics>
-					</Gender>
+					</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaLeotard</key>
+			<value><path>Things/Apparel/Mama/Leotard_Female_average</path>
+				<extendedGraphics>
+					<BodyType For="Male">Things/Apparel/Mama/Leotard_Male</BodyType>
+					<BodyType For="Female">Things/Apparel/Mama/Leotard_Female_average</BodyType>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -988,13 +964,18 @@
 			<key>Apparel_MamaZentai</key>
 			<value><path>Things/Apparel/Mama/Zentai_Female</path>
 				<extendedGraphics>
-					<Age For="HumanlikeChild" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Zentai_Child</Age>
-					<Age For="HumanlikeAdult"><path>Things/Apparel/Mama/Zentai_Female</path>
-						<extendedGraphics>
-							<Gender For="Female">Things/Apparel/Mama/Zentai_Female</Gender>
-							<Gender For="Male">Things/Apparel/Mama/Zentai_Male</Gender>
-						</extendedGraphics>
-					</Age>
+					<BodyType For="Child" MayRequire="ludeon.rimworld.biotech">Things/Apparel/Mama/Zentai_Child</BodyType>
+					<BodyType For="Female">Things/Apparel/Mama/Zentai_Female</BodyType>
+					<BodyType For="Male">Things/Apparel/Mama/Zentai_Male</BodyType>
+				</extendedGraphics>
+			</value>
+		</li>
+		<li>
+			<key>Apparel_MamaZentaiMask</key>
+			<value><path>Things/Apparel/Mama/ZentaiMask_Female</path>
+				<extendedGraphics>
+					<Gender For="Female">Things/Apparel/Mama/ZentaiMask_Female</Gender>
+					<Gender For="Male">Things/Apparel/Mama/ZentaiMask_Male</Gender>
 				</extendedGraphics>
 			</value>
 		</li>
@@ -1046,6 +1027,8 @@
 		<li>Apparel_MamaArmorMet</li>
 		<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_MamaChildDress</li>
 		<li>Apparel_MamaZentai</li>
+		<li>Apparel_MamaZentaiMask</li>
+		<li>Apparel_MamaLeotard</li>
 		<li>Apparel_MamaArmor</li>
 	</apparelList>
 	<whiteApparelList>
@@ -1150,7 +1133,15 @@
 		<li>Affair</li>
 		<li>Incestuous</li>
 <!-- etc -->
+		<li MayRequire="Dubwise.DubsBadHygiene">WashPrivacy</li>
+		<li MayRequire="Dubwise.DubsBadHygiene">ToiletPrivacy</li>
+		<li MayRequire="Dubwise.DubsBadHygiene">openDefecation</li>
 		<li MayRequire="sarg.alphagenes">AG_Disgust</li>
+		<li MayRequire="rjw.whoring">Whorish_Thoughts</li>
+		<li MayRequire="rjw.whoring">Whorish_Thoughts_Captive</li>
+		<li MayRequire="rjw.whoring">RJWFailedSolicitation</li>
+		<li MayRequire="rjw.whoring">RJWTurnedDownWhore</li>
+		<li MayRequire="rjw.whoring">SleptInBrothel</li>
 	</cannotReceiveThoughts>
 </thoughtSettings>
 </alienRace>
@@ -1170,14 +1161,6 @@
 	<NegotiationAbility>1.25</NegotiationAbility>
 </statBases>
 
-<!-- <recipes>
-	<li>MamaSurgery_MegaOppai</li>
-	<li>Remove_MegaOppai</li>
-	<li>MamaSurgery_MegaNipple</li>
-	<li>Remove_MegaNipple</li>
-	<li>MamaSurgery_EverPreg</li>
-	<li>Remove_EverPreg</li>
-</recipes> -->
 
 </AlienRace.ThingDef_AlienRace>
 </Defs>

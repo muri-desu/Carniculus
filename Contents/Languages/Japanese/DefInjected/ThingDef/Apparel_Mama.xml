@@ -22,7 +22,9 @@
 <Apparel_MamaArmor.description>人間種性奴隷兼下級戦闘員に支給されるアーマーです.</Apparel_MamaArmor.description>
 <Apparel_MamaArmorMet.label>性奴用メット</Apparel_MamaArmorMet.label>
 <Apparel_MamaArmorMet.description>人間種性奴隷兼下級戦闘員に支給されるヘルメットです.</Apparel_MamaArmorMet.description>
-<Apparel_MamaZentai.label>スキンスーツ</Apparel_MamaZentai.label>
+<Apparel_MamaZentai.label>ママのスキンスーツ</Apparel_MamaZentai.label>
 <Apparel_MamaZentai.description>首から下を覆うタイツです.</Apparel_MamaZentai.description>
+<Apparel_MamaLeotard.label>ママのコンバットレオタード</Apparel_MamaLeotard.label>
+<Apparel_MamaLeotard.description>主に上半身の防御を補うハイレグカットのレオタードです.</Apparel_MamaLeotard.description>
 
 </LanguageData>

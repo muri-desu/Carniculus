@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<LifeStageDef>
+	<defName>CarniBaby</defName>
+	<label>baby</label>
+	<bodySizeFactor>0.1</bodySizeFactor>
+	<bodyWidth>0.95</bodyWidth>
+	<bodyDrawOffset>(0, 0, -0.03)</bodyDrawOffset>
+	<voxPitch>1.6</voxPitch>
+	<headSizeFactor>0.6</headSizeFactor>
+	<eyeSizeFactor>0.7</eyeSizeFactor>
+	<foodMaxFactor>0.625</foodMaxFactor>
+	<hungerRateFactor>0.1</hungerRateFactor>
+	<healthScaleFactor>0.2</healthScaleFactor>
+	<marketValueFactor>0.5</marketValueFactor>
+	<meleeDamageFactor>0.5</meleeDamageFactor>
+	<developmentalStage>Baby</developmentalStage>
+	<fallAsleepMaxThresholdOverride>.60</fallAsleepMaxThresholdOverride>
+	<naturalWakeThresholdOverride>1.0</naturalWakeThresholdOverride>
+	<alwaysDowned>true</alwaysDowned>
+	<claimable>true</claimable>
+	<involuntarySleepIsNegativeEvent>false</involuntarySleepIsNegativeEvent>
+	<thinkTreeMainOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBaby</thinkTreeMainOverride>
+	<thinkTreeConstantOverride MayRequire="Ludeon.RimWorld.Biotech">HumanlikeBabyConstant</thinkTreeConstantOverride>
+	<canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
+	<canSleepWhileHeld>true</canSleepWhileHeld>
+	<canVoluntarilySleep>true</canVoluntarilySleep>
+	<canSleepWhenStarving>false</canSleepWhenStarving>
+	<canInitiateSocialInteraction>false</canInitiateSocialInteraction>
+	<customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
+	<silhouetteGraphicData>
+		<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanBaby</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1</drawSize>
+	</silhouetteGraphicData>
+	<statFactors>
+		<MoveSpeed>0.4</MoveSpeed>
+	</statFactors>
+	<statOffsets>
+	<ComfyTemperatureMin>-46</ComfyTemperatureMin>
+	<ComfyTemperatureMax>4</ComfyTemperatureMax>
+	</statOffsets>
+	<involuntarySleepMTBDaysFromRest>
+	<points>
+		<li>(.00, 0)</li>
+		<li>(.01, .01)</li>
+		<li>(.15, .166)</li>
+		<li>(.30, 1)</li>
+		<li>(.59, 10)</li>
+		<li>(.60, Infinity)</li>
+	</points>
+	</involuntarySleepMTBDaysFromRest>
+	<hairStyleFilter>
+		<whitelist>false</whitelist>
+		<tags>
+			<li>Balding</li>
+		</tags>
+	</hairStyleFilter>
+</LifeStageDef>
+
+<!--<LifeStageDef Name="CarniChild" ParentName="HumanlikeAdolescent">
+	<defName>CarniChild</defName>
+	<label>child</label>
+	<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
+	<bodySizeFactor>0.35</bodySizeFactor>
+	<bodyWidth>1.125</bodyWidth>
+	<bodyDrawOffset>(0, 0, -0.1)</bodyDrawOffset>
+	<voxPitch>1.2</voxPitch>
+	<headSizeFactor>0.75</headSizeFactor>
+	<eyeSizeFactor>0.85</eyeSizeFactor>
+	<healthScaleFactor>0.5</healthScaleFactor>
+	<foodMaxFactor>2.286</foodMaxFactor>
+	<hungerRateFactor>0.8</hungerRateFactor>
+	<marketValueFactor>0.9</marketValueFactor>
+	<meleeDamageFactor>0.7</meleeDamageFactor>
+	<developmentalStage>Child</developmentalStage>
+	<equipmentDrawDistanceFactor>0.55</equipmentDrawDistanceFactor>
+	<sittingOffset>0.3</sittingOffset>
+	<silhouetteGraphicData>
+		<texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanChild</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1</drawSize>
+	</silhouetteGraphicData>
+	<statFactors>
+		<MoveSpeed>0.75</MoveSpeed>
+	</statFactors>
+	<hairStyleFilter>
+		<whitelist>false</whitelist>
+		<tags>
+			<li>CarniChild_Hair</li>
+		</tags>
+	</hairStyleFilter>
+</LifeStageDef> -->
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd"><!-- Apparels -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+	<value>
+		<li>Apparel_DisruptorFlarePack</li>
+		<li>Apparel_PackTurret</li>
+		<li>Apparel_DeadlifePack</li>
+		<li>Apparel_ShardPsychicShockLance</li>
+		<li>Apparel_ShardPsychicInsanityLance</li>
+		<li>Apparel_BiomutationLance</li>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd"><!-- anomaly study stats -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/statBases</xpath>
+	<value>
+		<StudyEfficiency>1.3</StudyEfficiency>
+		<ActivitySuppressionRate>1</ActivitySuppressionRate>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd"><!-- thoughts -->
+	<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+	<value>
+		<li>AteTwistedMeat</li>
+		<li>MutatedMyArm</li>
+		<li>UnnaturalCorpseDestroyed</li>
+		<li>Chimera</li>
+		<li>BecameGhoul</li>
+		<li>GhoulNegative</li>
+		<li>GhoulPositive</li>
+		<li>FleshTentacle</li>
+		<li>FleshWhip</li>
+		<li>UnnaturalCorpse</li>
+		<li>ImprisonedWithEntity</li>
+	</value>
+</Operation>
+</Patch>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<StyleCategoryDef>
+<defName>Neoplasmic</defName>
+<label>neoplasmic</label>
+<iconPath>WorldIcon/Carnicolonylarge</iconPath>
+<soundOngoingRitual>RitualSustainer_Morbid</soundOngoingRitual>
+<ritualVisualEffectDef>Morbid</ritualVisualEffectDef>
+<thingDefStyles>
+	<li>
+		<thingDef>Column</thingDef>
+		<styleDef>Carni_Column</styleDef>
+	</li>
+	<li>
+		<thingDef>PlantPot</thingDef>
+		<styleDef>Carni_PlantPot</styleDef>
+	</li>
+	<li>
+		<thingDef>Autodoor</thingDef>
+		<styleDef>Carni_Autodoor</styleDef>
+	</li>
+	<li>
+		<thingDef>Altar_Small</thingDef>
+		<styleDef>Carni_AltarSmall</styleDef>
+	</li>
+	<li>
+		<thingDef>Altar_Medium</thingDef>
+		<styleDef>Carni_AltarMedium</styleDef>
+	</li>
+	<li>
+		<thingDef>Altar_Large</thingDef>
+		<styleDef>Carni_AltarLarge</styleDef>
+	</li>
+	<li>
+		<thingDef>Altar_Grand</thingDef>
+		<styleDef>Carni_AltarGrand</styleDef>
+	</li>
+	<li>
+		<thingDef>Ideogram</thingDef>
+		<styleDef>Carni_IdeogramA</styleDef>
+	</li>
+	<li>
+		<thingDef>Ideogram</thingDef>
+		<styleDef>Carni_IdeogramA</styleDef>
+	</li>
+	<li>
+		<thingDef>SculptureSmall</thingDef>
+		<styleDef>Carni_SculptureSmall</styleDef>
+	</li>
+	<li>
+		<thingDef>SculptureLarge</thingDef>
+		<styleDef>Carni_SculptureLarge</styleDef>
+	</li>
+	<!-- <li>
+		<thingDef>SculptureGrand</thingDef>
+		<styleDef>Carni_SculptureGrand</styleDef>
+	</li> -->
+	<li MayRequire="Ludeon.RimWorld.Royalty">
+		<thingDef>Throne</thingDef>
+		<styleDef>Carni_Throne</styleDef>
+	</li>
+	<li MayRequire="Ludeon.RimWorld.Royalty">
+		<thingDef>GrandThrone</thingDef>
+		<styleDef>Carni_GrandThrone</styleDef>
+	</li>
+</thingDefStyles>
+<!-- <addDesignators>
+	<li>CarniSlab_Medium</li>
+	<li>CarniSlab_Broad</li>
+</addDesignators> -->
+</StyleCategoryDef>
+
+</Defs>

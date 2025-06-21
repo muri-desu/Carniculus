@@ -544,16 +544,16 @@
 				<extendedGraphics>
 					<Gender For="Female"><path>Things/Pawn/Carni/Heads/</path>
 						<extendedGraphics>
-							<HeadType For="Female_Head1">Things/Pawn/Carni/Heads/Female_Head1</HeadType>
-							<HeadType For="Female_Head2">Things/Pawn/Carni/Heads/Female_Head2</HeadType>
-							<HeadType For="Female_Head3">Things/Pawn/Carni/Heads/Female_Head3</HeadType>
+							<HeadType For="Female_Head1">Things/Pawn/Carni/Heads/Female_Head_A</HeadType>
+							<HeadType For="Female_Head2">Things/Pawn/Carni/Heads/Female_Head_B</HeadType>
+							<HeadType For="Female_Head3">Things/Pawn/Carni/Heads/Female_Head_C</HeadType>
 						</extendedGraphics>
 					</Gender>
 					<Gender For="Male"><path>Things/Pawn/Carni/Heads/</path>
 						<extendedGraphics>
-							<HeadType For="Male_Head1">Things/Pawn/Carni/Heads/Male_Head1</HeadType>
-							<HeadType For="Male_Head2">Things/Pawn/Carni/Heads/Male_Head2</HeadType>
-							<HeadType For="Male_Head3">Things/Pawn/Carni/Heads/Male_Head3</HeadType>
+							<HeadType For="Male_Head1">Things/Pawn/Carni/Heads/Male_Head_A</HeadType>
+							<HeadType For="Male_Head2">Things/Pawn/Carni/Heads/Male_Head_B</HeadType>
+							<HeadType For="Male_Head3">Things/Pawn/Carni/Heads/Male_Head_C</HeadType>
 						</extendedGraphics>
 					</Gender>
 				</extendedGraphics>

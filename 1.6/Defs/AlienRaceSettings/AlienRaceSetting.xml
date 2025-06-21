@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+<AlienRace.RaceSettings>
+<defName>CarniRaceSettings</defName>
+<pawnKindSettings>
+<startingColonists><!-- start member -->
+<li>
+	<pawnKindEntries>
+	<li>
+		<kindDefs>
+			<li>CarniColonist</li>
+		</kindDefs>
+		<chance>100.0</chance>
+	</li>
+	<li>
+		<kindDefs>
+			<li>CarniMama_nun</li>
+			<li>CarniMama_maid</li>
+			<li>CarniMama_police</li>
+			<li>CarniMama_dr</li>
+		</kindDefs>
+		<chance>30.0</chance>
+	</li>
+	</pawnKindEntries>
+	<factionDefs>
+		<li>CarniPlayerFaction</li>
+	</factionDefs>
+</li>
+</startingColonists>
+
+<alienslavekinds><!-- 奴隷 -->
+	<li>
+		<kindDefs>
+			<li>CarniSlave</li>
+			<li>CarniMama_slave</li>
+			<li>CarniMama_maid</li>
+		</kindDefs>
+		<chance>100.0</chance>
+	</li>
+</alienslavekinds>
+
+<alienwandererkinds><!-- 放浪者 -->
+	<li>
+		<pawnKindEntries>
+			<li>
+				<kindDefs>
+					<li>CarniSlave</li>
+					<li>CarniWanderer</li>
+				</kindDefs>
+				<chance>100.0</chance>
+			</li>
+		</pawnKindEntries>
+	</li>
+</alienwandererkinds>
+
+</pawnKindSettings>
+</AlienRace.RaceSettings>
+</Defs>

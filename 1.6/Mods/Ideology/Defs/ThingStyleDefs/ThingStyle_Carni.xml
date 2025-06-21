@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingStyleDef ParentName="IdeoColumnStyleBase">
+	<defName>Carni_Column</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/CarniColumn</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(0.75,1.25)</drawSize>
+		<drawOffset>(0,0,0.2)</drawOffset>
+		<shadowData>
+			<volume>(0.3, 0.5, 0.3)</volume>
+			<offset>(0,0,-0.23)</offset>
+		</shadowData>
+		<damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		</damageData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_PlantPot</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/CarniPlantPot</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_Autodoor</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Autodoor/CarniAutodoor_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<damageData>
+			<enabled>false</enabled>
+		</damageData>
+	</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Carni/Autodoor/CarniAutodoor_MenuIcon</uiIconPath>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_AltarSmall</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Altars/AltarCarni1x1</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shadowData>
+			<volume>(0.8, 1, 0.8)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_AltarMedium</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Altars/AltarCarni1x3</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+		<shadowData>
+			<volume>(2.4, 1, 0.8)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_AltarLarge</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Altars/AltarCarni2x3</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,2)</drawSize>
+		<shadowData>
+			<volume>(2.4, 1, 1.6)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_AltarGrand</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Altars/AltarCarni3x3</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,3)</drawSize>
+		<shadowData>
+			<volume>(2.4, 1, 2.4)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_IdeogramA</defName>
+	<graphicData>
+		<texPath>Things/Building/Misc/Ideogram/IconCarni/IconCarniA</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,3)</drawSize>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_SculptureSmall</defName>
+		<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Sculptures/Small</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_SculptureLarge</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Sculptures/Large</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+		<drawSize>(3,3)</drawSize>
+	</graphicData>
+</ThingStyleDef>
+
+<!-- <ThingStyleDef>
+	<defName>Carni_SculptureGrand</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Sculptures/Grand</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+</ThingStyleDef> -->
+
+<ThingStyleDef>
+	<defName>Carni_Throne</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Furniture/ThroneCarni</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(2.4,2.4)</drawSize>
+		<shadowData>
+			<volume>(0.5,0.35,0.4)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+<ThingStyleDef>
+	<defName>Carni_GrandThrone</defName>
+	<graphicData>
+		<texPath>Things/Building/BuildingStyles/Carni/Furniture/GrandThroneCarni</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(4,4)</drawSize>
+		<shadowData>
+			<volume>(2.1,0.5,1.5)</volume>
+		</shadowData>
+	</graphicData>
+</ThingStyleDef>
+
+</Defs>

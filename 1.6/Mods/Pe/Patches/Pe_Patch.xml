@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd"><!-- thoughts -->
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName= "Alien_Carniculus" or defName = "Alien_CarniMama"]/alienRace/thoughtSettings/cannotReceiveThoughts</xpath>
+		<value>
+			<li>ChildRapedByAdult</li>
+			<li>RapedMyChild</li>
+			<li>AdultRapedChildDispleased</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Know_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Know_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Harm_Child_Know_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Know_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Know_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Marriage_Child_Know_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Know_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Know_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rape_Child_Know_Disapproved</li>
+		</value>
+	</Operation>
+</Patch>
