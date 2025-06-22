@@ -359,12 +359,11 @@
 		</li>
 		<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
 			<conditions>
-				<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
 				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLabor</Hediff>
 				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLaborPushing</Hediff>
 			</conditions>
 				<extendedGraphics>
-					<Gender For="Male">Things/Pawn/Mama/Belly/Belly_huge</Gender>
+					<Gender For="Female">Things/Pawn/Mama/Belly/Belly_huge</Gender>
 					<Gender For="Male">Things/Pawn/Mama/Belly/Belly_huge_male</Gender>
 				</extendedGraphics>
 		</li>
@@ -826,12 +825,11 @@
 		</li>
 		<li><path>Things/Pawn/Mama/Belly/Belly_huge</path>
 			<conditions>
-				<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
 				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLabor</Hediff>
 				<Hediff MayRequire="ludeon.rimworld.biotech">PregnancyLaborPushing</Hediff>
 			</conditions>
 			<extendedGraphics>
-				<Gender For="Male">Things/Pawn/Mama/Belly/BellyZ_huge</Gender>
+				<Gender For="Female">Things/Pawn/Mama/Belly/BellyZ_huge</Gender>
 				<Gender For="Male">Things/Pawn/Mama/Belly/BellyZ_huge_male</Gender>
 			</extendedGraphics>
 		</li>
