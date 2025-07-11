@@ -101,7 +101,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>9</layer>
+				<layer>19.75</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -190,7 +190,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>9.5</layer>
+				<layer>20</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -241,7 +241,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>9.7</layer>
+				<layer>20.5</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -297,7 +297,7 @@
 	</tags>
 		<drawData>
 			<defaultData>
-				<layer>9.75</layer>
+				<layer>20.8</layer>
 			</defaultData>
 		</drawData>
 	</apparel>
@@ -653,6 +653,7 @@
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<tags>
 			<li>mama_combat</li>
+			<li>coverchinman</li>
 		</tags>
 		<developmentalStageFilter Inherit="False">Adult</developmentalStageFilter>
 		<drawData>

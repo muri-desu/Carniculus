@@ -954,7 +954,7 @@
 			<layerOffset>-0.291</layerOffset>
 			<bodyTypes>
 				<Male>(0,-0.1)</Male>
-				<Female>(0,-0.1)</Female>
+				<Female>(0,0)</Female>
 			</bodyTypes>
 		</south>
 		<north>
@@ -968,7 +968,7 @@
 			<layerOffset>-0.2905</layerOffset>
 			<bodyTypes>
 				<Male>(0.012,0)</Male>
-				<Female>(0,0)</Female>
+				<Female>(-0.02,0.075)</Female>
 			</bodyTypes>
 		</east>
 	</offsets>

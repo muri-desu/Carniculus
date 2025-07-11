@@ -16,7 +16,7 @@
 			<FilthRate>30</FilthRate>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 			<LeatherAmount>0</LeatherAmount>
-			<Wildness>0.75</Wildness>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -176,7 +176,7 @@
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
 			<FilthRate>16</FilthRate>
-			<Wildness>0.75</Wildness>
+			<Wildness>0</Wildness>
 		</statBases>
 	<tools>
 		<li>

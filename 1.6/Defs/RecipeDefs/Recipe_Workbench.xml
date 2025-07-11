@@ -71,12 +71,3 @@
 	</RecipeDef>
 
 </Defs>
-
-<!-- <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="CarniWorkBench"]/recipes</xpath>
-		<value>
-			<li>Recipe_CarniNeutroamin</li>
-		</value>
-	</Operation>
-</Patch> -->

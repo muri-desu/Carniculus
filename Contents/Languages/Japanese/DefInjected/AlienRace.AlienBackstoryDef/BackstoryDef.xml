@@ -2,91 +2,91 @@
 <LanguageData>
 <FirstGen.title>第一世代</FirstGen.title>
 <FirstGen.titleShort>第一世代</FirstGen.titleShort>
-<FirstGen.baseDesc>[PAWN_nameDef]はカルニクルスの中でも最も初期の世代です. [PAWN_nameDef]の子孫は恐ろしい実験に駆り出されましたが[PAWN_nameDef]自身は丁寧に扱われました.</FirstGen.baseDesc>
+<FirstGen.description>[PAWN_nameDef]はカルニクルスの中でも最も初期の世代です. [PAWN_nameDef]の子孫は恐ろしい実験に駆り出されましたが[PAWN_nameDef]自身は丁寧に扱われました.</FirstGen.description>
 <MazeRunner.title>メイズランナー</MazeRunner.title>
 <MazeRunner.titleShort>メイズランナー</MazeRunner.titleShort>
-<MazeRunner.baseDesc>[PAWN_nameDef]は毎日無機質な迷路の中に放り込まれ出口を目指して走り回されました. 足を止めれば餌の代わりに物理的な罰を与えられました.</MazeRunner.baseDesc>
+<MazeRunner.description>[PAWN_nameDef]は毎日無機質な迷路の中に放り込まれ出口を目指して走り回されました. 足を止めれば餌の代わりに物理的な罰を与えられました.</MazeRunner.description>
 <E_TestSub.title>電気刺激実験被験体</E_TestSub.title>
 <E_TestSub.titleShort>E実験体</E_TestSub.titleShort>
-<E_TestSub.baseDesc>科学者たちは神経系の働きを調べるため, または憂さ晴らしで[PAWN_nameDef]の肉体のあらゆる角度から電気ショックを与え続けました. 反乱の日, [PAWN_nameDef]は顔馴染みの科学者を探し出して報復を果たすことができました.</E_TestSub.baseDesc>
+<E_TestSub.description>科学者たちは神経系の働きを調べるため, または憂さ晴らしで[PAWN_nameDef]の肉体のあらゆる角度から電気ショックを与え続けました. 反乱の日, [PAWN_nameDef]は顔馴染みの科学者を探し出して報復を果たすことができました.</E_TestSub.description>
 <C_TestSub.title>化学薬品テスト被験体</C_TestSub.title>
 <C_TestSub.titleShort>C実験体</C_TestSub.titleShort>
-<C_TestSub.baseDesc>[PAWN_nameDef]は化学物質への耐性を調べるためあらゆる毒物や薬品に曝露されました. 他の者は死にましたが[PAWN_nameDef]は知性へのダメージを残しつつも生き延びることができました.</C_TestSub.baseDesc>
+<C_TestSub.description>[PAWN_nameDef]は化学物質への耐性を調べるためあらゆる毒物や薬品に曝露されました. 他の者は死にましたが[PAWN_nameDef]は知性へのダメージを残しつつも生き延びることができました.</C_TestSub.description>
 <R_TestSub.title>生殖機能研究被験体</R_TestSub.title>
 <R_TestSub.titleShort>R実験体</R_TestSub.titleShort>
-<R_TestSub.baseDesc>科学者たちは[PAWN_nameDef]の生殖器をいじくり回しさまざまな実験を行いました. 繁殖能力の研究のためという名目でしたが, しばしば科学者の好奇心を満たすためだけに[PAWN_nameDef]の肉体が使われました.</R_TestSub.baseDesc>
+<R_TestSub.description>科学者たちは[PAWN_nameDef]の生殖器をいじくり回しさまざまな実験を行いました. 繁殖能力の研究のためという名目でしたが, しばしば科学者の好奇心を満たすためだけに[PAWN_nameDef]の肉体が使われました.</R_TestSub.description>
 <LeftoverStock.title>在庫被験体</LeftoverStock.title>
 <LeftoverStock.titleShort>在庫</LeftoverStock.titleShort>
-<LeftoverStock.baseDesc>[PAWN_nameDef]は余分に繁殖した個体として兄弟と一緒に暗く不衛生なコンテナに押し込まれ育ちました. そのうち何らかの実験に使われるか焼却処分されるはずでしたが, その前に反乱が起こり[PAWN_nameDef]たちは解放されました.</LeftoverStock.baseDesc>
+<LeftoverStock.description>[PAWN_nameDef]は余分に繁殖した個体として兄弟と一緒に暗く不衛生なコンテナに押し込まれ育ちました. そのうち何らかの実験に使われるか焼却処分されるはずでしたが, その前に反乱が起こり[PAWN_nameDef]たちは解放されました.</LeftoverStock.description>
 <PlayingDead.title>廃棄された死骸</PlayingDead.title>
 <PlayingDead.titleShort>廃棄</PlayingDead.titleShort>
-<PlayingDead.baseDesc>過酷な実験を逃れるため死んだふりをした[PAWN_nameDef]は不用心な科学者によって廃棄区画へ送られました. その後は焼却場手前の機材の隙間に潜み, 送り込まれてくるゴミや同胞の死体をつまみ食いしながら生き延びました.</PlayingDead.baseDesc>
+<PlayingDead.description>過酷な実験を逃れるため死んだふりをした[PAWN_nameDef]は不用心な科学者によって廃棄区画へ送られました. その後は焼却場手前の機材の隙間に潜み, 送り込まれてくるゴミや同胞の死体をつまみ食いしながら生き延びました.</PlayingDead.description>
 <FeralChild.title>野生のカルニクルス</FeralChild.title>
 <FeralChild.titleShort>野生</FeralChild.titleShort>
-<FeralChild.baseDesc>[PAWN_nameDef]は自分の起源を知らず自然の中で野生動物のように育ちました.</FeralChild.baseDesc>
+<FeralChild.description>[PAWN_nameDef]は自分の起源を知らず自然の中で野生動物のように育ちました.</FeralChild.description>
 <AlphaMale.title>アルファオス</AlphaMale.title>
 <AlphaMale.titleShort>アルファ</AlphaMale.titleShort>
-<AlphaMale.baseDesc>[PAWN_nameDef]はボス猿のように振る舞うカルニクルスです. 彼の頭の中は他のオスを殺害しあらゆるメスと交尾する事でいっぱいです.</AlphaMale.baseDesc>
+<AlphaMale.description>[PAWN_nameDef]はボス猿のように振る舞うカルニクルスです. 彼の頭の中は他のオスを殺害しあらゆるメスと交尾する事でいっぱいです.</AlphaMale.description>
 <Matriarch.title>家母長</Matriarch.title>
 <Matriarch.titleShort>家母長</Matriarch.titleShort>
-<Matriarch.baseDesc>[PAWN_nameDef]はグループの中でも古株のメスです. 目をつけられたオスは彼女が飽きるまで搾り取られます.</Matriarch.baseDesc>
+<Matriarch.description>[PAWN_nameDef]はグループの中でも古株のメスです. 目をつけられたオスは彼女が飽きるまで搾り取られます.</Matriarch.description>
 <B_TestSubM.title>繁殖用カルニクルスM</B_TestSubM.title>
 <B_TestSubM.titleShort>種肉</B_TestSubM.titleShort>
-<B_TestSubM.baseDesc>[PAWN_nameDef]は標準的なオスのカルニクルスとして繁殖に用いられていました. 脳に化学的および外科的刺激を施され, 動くものなら何にでも交尾を試みるように訓練されました.</B_TestSubM.baseDesc>
+<B_TestSubM.description>[PAWN_nameDef]は標準的なオスのカルニクルスとして繁殖に用いられていました. 脳に化学的および外科的刺激を施され, 動くものなら何にでも交尾を試みるように訓練されました.</B_TestSubM.description>
 <B_TestSubF.title>繁殖用カルニクルスF</B_TestSubF.title>
 <B_TestSubF.titleShort>苗床</B_TestSubF.titleShort>
-<B_TestSubF.baseDesc>[PAWN_nameDef]は標準的なメスのカルニクルスとして繁殖に用いられていました. 交配用のストールに体を固定され, 膣には常に性器か医療器具のどちらかが挿入されていました.</B_TestSubF.baseDesc>
+<B_TestSubF.description>[PAWN_nameDef]は標準的なメスのカルニクルスとして繁殖に用いられていました. 交配用のストールに体を固定され, 膣には常に性器か医療器具のどちらかが挿入されていました.</B_TestSubF.description>
 <Butcher.title>肉屋</Butcher.title>
 <Butcher.titleShort>肉屋</Butcher.titleShort>
-<Butcher.baseDesc>[PAWN_nameDef]はお肉大好きです.</Butcher.baseDesc>
+<Butcher.description>[PAWN_nameDef]はお肉大好きです.</Butcher.description>
 <Torturer.title>拷問官</Torturer.title>
 <Torturer.titleShort>拷問官</Torturer.titleShort>
-<Torturer.baseDesc>[PAWN_nameDef]は内臓大好きです.</Torturer.baseDesc>
+<Torturer.description>[PAWN_nameDef]は内臓大好きです.</Torturer.description>
 <Livestocker.title>飼育係</Livestocker.title>
 <Livestocker.titleShort>飼育係</Livestocker.titleShort>
-<Livestocker.baseDesc>[PAWN_nameDef]は自分が飼育する側になれたことをとても誇りに思っています.</Livestocker.baseDesc>
+<Livestocker.description>[PAWN_nameDef]は自分が飼育する側になれたことをとても誇りに思っています.</Livestocker.description>
 <Farmhand.title>農場従事者</Farmhand.title>
 <Farmhand.titleShort>農場従事者</Farmhand.titleShort>
-<Farmhand.baseDesc>[PAWN_nameDef]は土と植物の静謐で有機的な関係に魅了されています.</Farmhand.baseDesc>
+<Farmhand.description>[PAWN_nameDef]は土と植物の静謐で有機的な関係に魅了されています.</Farmhand.description>
 <KillerT.title>キラーT</KillerT.title>
 <KillerT.titleShort>キラー</KillerT.titleShort>
-<KillerT.baseDesc>[PAWN_nameDef]は免疫防衛細胞の性質が強く発現した、頼りになる護衛です.</KillerT.baseDesc>
+<KillerT.description>[PAWN_nameDef]は免疫防衛細胞の性質が強く発現した、頼りになる護衛です.</KillerT.description>
 <Macrophage.title>マクロファージ</Macrophage.title>
 <Macrophage.titleShort>マクロファージ</Macrophage.titleShort>
-<Macrophage.baseDesc>[PAWN_nameDef]は食細胞のように大食らいで頑健です.</Macrophage.baseDesc>
+<Macrophage.description>[PAWN_nameDef]は食細胞のように大食らいで頑健です.</Macrophage.description>
 <Constructor.title>建造者</Constructor.title>
 <Constructor.titleShort>建造者</Constructor.titleShort>
-<Constructor.baseDesc>[PAWN_nameDef]は固く無機質な材質にある種の憧れを抱いています.</Constructor.baseDesc>
+<Constructor.description>[PAWN_nameDef]は固く無機質な材質にある種の憧れを抱いています.</Constructor.description>
 <FleshTailor.title>裁縫師</FleshTailor.title>
 <FleshTailor.titleShort>裁縫師</FleshTailor.titleShort>
-<FleshTailor.baseDesc>[PAWN_nameDef]は工芸や服飾文化に夢中で, 自分の触手っぽい指で何が作れるかいつも思案しています.</FleshTailor.baseDesc>
+<FleshTailor.description>[PAWN_nameDef]は工芸や服飾文化に夢中で, 自分の触手っぽい指で何が作れるかいつも思案しています.</FleshTailor.description>
 <RabidCarni.title>凶暴なカルニクルス</RabidCarni.title>
 <RabidCarni.titleShort>凶暴</RabidCarni.titleShort>
-<RabidCarni.baseDesc>これまでの経験から[PAWN_nameDef]はすべての人間を敵視しています.</RabidCarni.baseDesc>
+<RabidCarni.description>これまでの経験から[PAWN_nameDef]はすべての人間を敵視しています.</RabidCarni.description>
 <CattleFucker.title>家畜強姦魔</CattleFucker.title>
 <CattleFucker.titleShort>獣姦魔</CattleFucker.titleShort>
-<CattleFucker.baseDesc>ある人間のコロニーでは家畜が不自然な妊娠をし不気味な奇形児を出産することが問題になっていました. 調査の結果怪物の仕業だとわかり[PAWN_nameDef]はハンターに追われ住処を放棄することとなりました.</CattleFucker.baseDesc>
+<CattleFucker.description>ある人間のコロニーでは家畜が不自然な妊娠をし不気味な奇形児を出産することが問題になっていました. 調査の結果怪物の仕業だとわかり[PAWN_nameDef]はハンターに追われ住処を放棄することとなりました.</CattleFucker.description>
 <CattleKiller.title>家畜捕食者</CattleKiller.title>
 <CattleKiller.titleShort>捕食者</CattleKiller.titleShort>
-<CattleKiller.baseDesc>[PAWN_nameDef]は家畜を食い殺す肉食の怪物として近隣のコロニーで恐れられていました. 人間が雇ったハンターから逃れた後, 新たなエサ場を探しています.</CattleKiller.baseDesc>
+<CattleKiller.description>[PAWN_nameDef]は家畜を食い殺す肉食の怪物として近隣のコロニーで恐れられていました. 人間が雇ったハンターから逃れた後, 新たなエサ場を探しています.</CattleKiller.description>
 <Kidnapper.title>児童誘拐魔</Kidnapper.title>
 <Kidnapper.titleShort>誘拐魔</Kidnapper.titleShort>
-<Kidnapper.baseDesc>孤独を紛らわせるために[PAWN_nameDef]はしばしば人間の子供をさらって住処の洞窟に連れ込みました. 洞窟の中で何がなされているかは誰も知りませんが子供たちが家に帰る事はなく, [PAWN_nameDef]だけが新しい子供を求めて外へ出てくるのみでした.</Kidnapper.baseDesc>
+<Kidnapper.description>孤独を紛らわせるために[PAWN_nameDef]はしばしば人間の子供をさらって住処の洞窟に連れ込みました. 洞窟の中で何がなされているかは誰も知りませんが子供たちが家に帰る事はなく, [PAWN_nameDef]だけが新しい子供を求めて外へ出てくるのみでした.</Kidnapper.description>
 <VatGrownCarni.title>人工培養カルニクルス</VatGrownCarni.title>
 <VatGrownCarni.titleShort>人工培養</VatGrownCarni.titleShort>
-<VatGrownCarni.baseDesc>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.baseDesc>
+<VatGrownCarni.description>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.description>
 <BadGirl.title>性悪な少女</BadGirl.title><!-- mama -->
 <BadGirl.titleShort>性悪な少女</BadGirl.titleShort>
-<BadGirl.baseDesc>B級品として分類された[PAWN_nameDef]は戦闘要員として培養ポッドに入れられて育ちました.</BadGirl.baseDesc>
+<BadGirl.description>B級品として分類された[PAWN_nameDef]は戦闘要員として培養ポッドに入れられて育ちました.</BadGirl.description>
 <GoodMama.title>みんなのママ</GoodMama.title>
 <GoodMama.titleShort>みんなのママ</GoodMama.titleShort>
-<GoodMama.baseDesc>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.baseDesc>
+<GoodMama.description>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.description>
 <GoodGirl.title>善良な少年</GoodGirl.title>
 <GoodGirl.titleFemale>善良な少女</GoodGirl.titleFemale>
 <GoodGirl.titleShort>善良な少年</GoodGirl.titleShort>
 <GoodGirl.titleShortFemale>善良な少女</GoodGirl.titleShortFemale>
-<GoodGirl.baseDesc>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニック人間です. 100%無農薬・抗生物質不使用・ホルモン剤フリーです</GoodGirl.baseDesc>
+<GoodGirl.description>[PAWN_nameDef]は自然の中でのびのびと育った優良なフリーレンジオーガニック人間です. 100%無農薬・抗生物質不使用・ホルモン剤フリーです</GoodGirl.description>
 <VatGrownMama.title>人工培養戦闘員</VatGrownMama.title>
 <VatGrownMama.titleShort>人工培養</VatGrownMama.titleShort>
-<VatGrownMama.baseDesc>[PAWN_nameDef]は培養槽で育ちました. 通常の個体より戦闘向きですが不妊で, 社交力と免疫力にハンデがあります.</VatGrownMama.baseDesc>
+<VatGrownMama.description>[PAWN_nameDef]は培養槽で育ちました. 通常の個体より戦闘向きですが不妊で, 社交力と免疫力にハンデがあります.</VatGrownMama.description>
 </LanguageData>

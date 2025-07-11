@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <Operation Class="PatchOperationAdd">
-	<xpath>Defs/FactionDef[defName = "Cp_PlayerFaction" or defName = "CarniNPCFaction"]</xpath>
+	<xpath>Defs/FactionDef[defName = "CarniNPCFaction"]</xpath>
 		<value>
 	<disallowedPrecepts>
-		<li>PreferredXenotype</li>
 		<li>ApparelDesired_Strong_Subordinate</li>
 		<li>ApparelDesired_Soft_Subordinate</li>
 		<li>AnimalVenerated</li>

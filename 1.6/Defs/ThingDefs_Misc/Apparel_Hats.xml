@@ -260,6 +260,7 @@
 	<graphicData>
 		<texPath>Things/Apparel/Mama/ZentaiMask</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
 	</graphicData>
 
 	<statBases>
@@ -290,6 +291,7 @@
 			<li>Megane</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/ZentaiMask</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<tags>
 			<li>Mama_combat</li>
 		</tags>
@@ -302,6 +304,14 @@
 			</dataNorth>
 		</drawData>
 	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255)</only>
+		</li>
+	</options>
+	</colorGenerator>
 </ThingDef>
 
 <ThingDef ParentName="CarniMama_HatBase"><!-- ガスマスク -->

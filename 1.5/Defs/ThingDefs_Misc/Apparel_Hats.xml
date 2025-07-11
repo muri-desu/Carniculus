@@ -291,6 +291,7 @@
 			<li>Megane</li>
 		</layers>
 		<wornGraphicPath>Things/Apparel/Mama/ZentaiMask</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 		<tags>
 			<li>Mama_combat</li>
 		</tags>

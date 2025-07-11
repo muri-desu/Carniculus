@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs><!-- 
-<RecipeDef Abstract="True" Name="MamaRemoldBase" ParentName="SurgeryFlesh">
-	<developmentalStageFilter>Adult</developmentalStageFilter>
+<Defs>
+<RecipeDef Abstract="True" Name="MamaSurgeryBase" ParentName="SurgeryFlesh">
 	<recipeUsers Inherit="False">
 		<li>Alien_CarniMama</li>
 	</recipeUsers>
+	<workerClass>Recipe_AddHediff</workerClass>
 	<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
 	<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
 	<isViolation>true</isViolation>
-		<workAmount>10</workAmount>
-		<hideBodyPartNames>true</hideBodyPartNames>
-		<targetsBodyPart>false</targetsBodyPart>
+	<workAmount>500</workAmount>
+</RecipeDef>
+
+<RecipeDef ParentName="MamaSurgeryBase">
+	<defName>MamaSurgery_Aureoloma</defName>
+	<label>attach aureoloma</label>
+	<description>Surgically stimulates the area near the medulla oblongata to produce an aureoloma.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Hediff_MamaGrowth</HediffDef>
+	</descriptionHyperlinks>
+	<jobString>Attaching aureoloma.</jobString>
+	<addsHediff>Hediff_MamaGrowth</addsHediff>
+	<removesHediff>Mama_Thorn</removesHediff>
+	<targetsBodyPart>false</targetsBodyPart>
 	<ingredients>
 		<li>
 			<filter>
 				<thingDefs><li>Meat_Human</li></thingDefs>
+			</filter>
+			<count>25</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs><li>Gold</li></thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs><li>Neutroamine</li></thingDefs>
 			</filter>
 			<count>5</count>
 		</li>
@@ -24,10 +47,47 @@
 			<li>Meat_Human</li>
 		</thingDefs>
 	</fixedIngredientFilter>
-	<jobString>remolding mama's flesh.</jobString>
 </RecipeDef>
 
-<RecipeDef ParentName="MamaRemoldBase">
+<RecipeDef ParentName="MamaSurgeryBase">
+	<defName>MamaSurgery_Thorn</defName>
+	<label>attach thorn</label>
+	<description>Surgically stimulates the area near the medulla oblongata to produce a variant of aureoloma.</description>
+	<descriptionHyperlinks>
+		<HediffDef>Mama_Thorn</HediffDef>
+	</descriptionHyperlinks>
+	<jobString>Attaching poisonous thorn.</jobString>
+	<addsHediff>Mama_Thorn</addsHediff>
+	<removesHediff>Hediff_MamaGrowth</removesHediff>
+	<targetsBodyPart>false</targetsBodyPart>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs><li>Meat_Human</li></thingDefs>
+			</filter>
+			<count>15</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs><li>Uranium</li></thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs><li>Neutroamine</li></thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Meat_Human</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+</RecipeDef>
+
+<!-- <RecipeDef ParentName="MamaSurgeryBase">
 	<defName>MamaSurgery_MegaOppai</defName>
 	<label>attach mega breasts</label>
 	<description>Supersize breasts. Requires least medicine and art skills.</description>

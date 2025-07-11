@@ -31,4 +31,11 @@
 <Recipe_CarniNeutroamin.label>ニュートロアミンを合成</Recipe_CarniNeutroamin.label>
 <Recipe_CarniNeutroamin.description>食べ残しのタンパク質からニュートロアミンを合成します.</Recipe_CarniNeutroamin.description>
 <Recipe_CarniNeutroamin.jobString>ニュートロアミンを合成中.</Recipe_CarniNeutroamin.jobString>
+
+<MamaSurgery_Aureoloma.label>光背芽腫発生手術</MamaSurgery_Aureoloma.label>
+<MamaSurgery_Aureoloma.description>延髄の近くにある器官に刺激や養分となる物質を埋め込み光背芽腫を発症させます.</MamaSurgery_Aureoloma.description>
+<MamaSurgery_Aureoloma.jobString>光背芽腫発生手術を施術中.</MamaSurgery_Aureoloma.jobString>
+<MamaSurgery_Thorn.label>毒性触腫発生手術</MamaSurgery_Thorn.label>
+<MamaSurgery_Thorn.description>延髄の近くにある器官に刺激や養分となる物質を埋め込み毒性触腫を発症させます.</MamaSurgery_Thorn.description>
+<MamaSurgery_Thorn.jobString>毒性触腫発生手術を施術中.</MamaSurgery_Thorn.jobString>
 </LanguageData>

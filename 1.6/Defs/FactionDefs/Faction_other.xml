@@ -17,6 +17,9 @@
 	<canMakeRandomly>true</canMakeRandomly>
 	<canSiege>true</canSiege>
 	<canStageAttacks>true</canStageAttacks>
+	<arrivalLayerWhitelist>
+		<li>Surface</li>
+	</arrivalLayerWhitelist>
 	<melaninRange>0.2</melaninRange>
 	<factionIconPath>WorldIcon/Carnicolony</factionIconPath>
 	<requiredMemes>
@@ -38,7 +41,6 @@
 	<backstoryCategories>
 		<li>Offworld</li>
 	</backstoryCategories>
-	<arrivalLayerWhitelist>Surface</arrivalLayerWhitelist>
 
 	<caravanTraderKinds>
 		<li>Caravan_Outlander_PirateMerchant</li>

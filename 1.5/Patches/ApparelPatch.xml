@@ -258,7 +258,6 @@
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
 		<value>
 			<li>High_Heels_Sexy</li>
-			<li>Apparel_NecroHunterFuelPack</li>
 			<li>High_Heels_Lewd</li>
 			<li>High_Heels_Boots</li>
 			<li>High_Heels_Office</li>
@@ -268,6 +267,21 @@
 			<li>High_Heels_Goth</li>
 			<li>High_Heels_Cute</li>
 			<li>High_Heels_Maid</li>
+		</value>
+	</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Apparel Expanded</li>
+		<li>1814987817</li>
+	</mods>
+	<match Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "Alien_CarniMama"]/alienRace/raceRestriction/whiteApparelList</xpath>
+		<value>
+			<li>VAE_Footwear_Boots</li>
+			<li>VAE_Footwear_Shoes</li>
+			<li>VAE_Handwear_Gloves</li>
 		</value>
 	</match>
 </Operation>

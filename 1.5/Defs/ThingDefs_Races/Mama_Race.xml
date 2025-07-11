@@ -118,6 +118,7 @@
 		</points>
 	</ageGenerationCurve>
 	<hediffGiverSets>
+		<li>MamaHediffGiver</li>
 		<li>OrganicStandard</li>
 		<li>Human</li>
 	</hediffGiverSets>
@@ -658,15 +659,24 @@
 	<offsets>
 		<south>
 			<layerOffset>-0.291</layerOffset>
-			<offset>(0,-0.1)</offset>
+			<bodyTypes>
+				<Male>(0,-0.1)</Male>
+				<Female>(0,0)</Female>
+			</bodyTypes>
 		</south>
 		<north>
 			<layerOffset>-0.2905</layerOffset>
-			<offset>(0,0)</offset>
+			<bodyTypes>
+				<Male>(0,0)</Male>
+				<Female>(0,0)</Female>
+			</bodyTypes>
 		</north>
 		<east>
 			<layerOffset>-0.2905</layerOffset>
-			<offset>(0.01,0)</offset>
+			<bodyTypes>
+				<Male>(0.012,0)</Male>
+				<Female>(-0.02,0.075)</Female>
+			</bodyTypes>
 		</east>
 	</offsets>
 </li>
@@ -1159,6 +1169,10 @@
 	<NegotiationAbility>1.25</NegotiationAbility>
 </statBases>
 
+<recipes>
+	<li>MamaSurgery_Aureoloma</li>
+	<li>MamaSurgery_Thorn</li>
+</recipes>
 
 </AlienRace.ThingDef_AlienRace>
 </Defs>
