@@ -420,6 +420,11 @@
 			<li>Neck</li>
 			<li>Shoulders</li>
 		</bodyPartGroups>
+		<drawData>
+			<dataNorth>
+				<layer>75</layer>
+			</dataNorth>
+		</drawData>
 		<layers>
 			<li>Overhead</li>
 		</layers>
@@ -562,6 +567,7 @@
 	<equippedStatOffsets>
 		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 	</equippedStatOffsets>
+	<smeltable>true</smeltable>
 	<costList>
 		<ComponentSpacer>2</ComponentSpacer>
 		<Neutroamine>2</Neutroamine>

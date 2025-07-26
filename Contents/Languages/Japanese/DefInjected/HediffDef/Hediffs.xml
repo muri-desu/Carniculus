@@ -8,7 +8,7 @@
 <Hediff_NecroArmor.labelNoun>壊疽アーマー</Hediff_NecroArmor.labelNoun>
 <Hediff_NecroArmor.tools.0.label>毒噛みつき</Hediff_NecroArmor.tools.0.label>
 <Hediff_MamaGrowth.label>光背芽腫</Hediff_MamaGrowth.label>
-<Hediff_MamaGrowth.description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体機能が向上しますが, 一定のフェーズに達すると思考と容貌が人間離れしていき話が通じにくくなります.</Hediff_MamaGrowth.description>
+	<Hediff_MamaGrowth.description>時間をかけて触手状の器官が発達する腫瘍性疾患です. 基本的に進行するほど身体能力が向上しますが, 少しずつ会話能力が落ちます.</Hediff_MamaGrowth.description>
 <Hediff_MamaGrowth.comps.0.labelInBrackets>フェーズ1</Hediff_MamaGrowth.comps.0.labelInBrackets>
 <Hediff_MamaGrowth.comps.1.labelInBrackets>フェーズ2</Hediff_MamaGrowth.comps.1.labelInBrackets>
 <Hediff_MamaGrowth.comps.2.labelInBrackets>フェーズ3</Hediff_MamaGrowth.comps.2.labelInBrackets>
@@ -30,7 +30,7 @@
 <Mama_EverPreg.label>観賞用胎腹</Mama_EverPreg.label>
 <Mama_EverPreg.description>観賞用として膨らませた腹部. 時折中の詰め物がくすくす笑うのが聞こえてきます.</Mama_EverPreg.description>
 <Mama_Thorn.label>毒性触腫</Mama_Thorn.label>
-<Mama_Thorn.description>量産型下級戦闘員に発育する毒棘付きの職種です. このタイプは時間が経っても成長しません.</Mama_Thorn.description>
+<Mama_Thorn.description>通常は量産型下級戦闘員に発育する毒棘付きの職種です.</Mama_Thorn.description>
 <Hediff_ZentaiBody.label>スキンスーツの締め付け</Hediff_ZentaiBody.label>
 <Hediff_ZentaiBody.description>スキンスーツの締め付けによる快適性.</Hediff_ZentaiBody.description>
 </LanguageData>

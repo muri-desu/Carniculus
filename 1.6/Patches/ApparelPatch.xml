@@ -18,6 +18,7 @@
 				<li>Apparel_military_Boots</li>
 				<li>Apparel_sandals</li>
 				<li>Apparel_shoes</li>
+				<li>Apparel_feetwraps</li>
 			</value>
 		</match>
 	</Operation>
@@ -165,7 +166,7 @@
 
 <Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>[1.5]边缘仙路-四象之争 RimImmortals-SeasonsOfRule</li>
+		<li>[1.6]边缘仙路-四象之争 RimImmortals-SeasonsOfRule</li>
 		<li>3308877707</li>
 	</mods>
 	<match Class="PatchOperationAdd">

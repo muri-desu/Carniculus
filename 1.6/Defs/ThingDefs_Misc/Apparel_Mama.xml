@@ -717,7 +717,7 @@
 		<li>Armor</li>
 	</tradeTags>
 	<costList>
-		<ComponentSpacer>4</ComponentSpacer>
+		<ComponentSpacer>3</ComponentSpacer>
 		<Neutroamine>4</Neutroamine>
 	</costList>
 	<stuffCategories>

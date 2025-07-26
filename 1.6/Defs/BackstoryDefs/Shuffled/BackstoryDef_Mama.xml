@@ -71,7 +71,6 @@
 	<skillGains>
 		<Shooting>7</Shooting>
 		<Melee>7</Melee>
-		<Medicine>6</Medicine>
 		<Social>-10</Social>
 	</skillGains>
 	<workDisables>Crafting, PlantWork, Constructing</workDisables>
@@ -93,18 +92,20 @@
 	<titleShort>good mama</titleShort>
 		<description>As the chief scientist of a laboratory floating in space, [PAWN_nameDef] performed many experiments on the life forms she created. \nShe enjoyed toying with carniculus and watching them wallow in pain or pleasure, and later received the same treatment from them.</description>
 	<slot>Adulthood</slot>
-	<workDisables>Violent, Mining, Artistic</workDisables>
+	<workDisables>Constructing, Mining</workDisables>
 	<!-- <linkedBackstory>BadGirl</linkedBackstory> -->
 	<spawnCategories>
 		<li>CarniMama_Colony</li>
 	</spawnCategories>
-<skillGains>
-	<Animals>1</Animals>
-	<Intellectual>3</Intellectual>
-</skillGains>
-<forcedHediffs>
-	<li>Hediff_MamaGrowth</li>
-</forcedHediffs>
+	<skillGains>
+		<Shooting>-5</Shooting>
+		<Melee>-5</Melee>
+		<Animals>1</Animals>
+		<Intellectual>5</Intellectual>
+	</skillGains>
+	<forcedHediffs>
+		<li>Hediff_MamaGrowth</li>
+	</forcedHediffs>
 </AlienRace.AlienBackstoryDef>
 
 </Defs>

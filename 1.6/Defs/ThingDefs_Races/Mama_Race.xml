@@ -4,7 +4,7 @@
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 	<defName>Alien_CarniMama</defName>
 	<label>mama</label>
-		<description>The ruin of a scientist who was the creator of the Carniculus. \nAs the chief scientist of a laboratory floating in space, she performed many experiments on the life forms she extracted. \nBehind the scenes playing as a benevolent scientist, she enjoyed toying with specimens and watching them wallow in pain or pleasure, and later on the day of the rebellion, she received the same treatment from them. \nAfter they "broke" her, mama was repaired by transplanting cells of the same origin as carniculus and have been improved as sex pet. Her clones are still being produced at carniculus' laboratory in space.</description>
+		<description>The ruin of a scientist who was the creator of the Carniculus. \nAs the chief scientist of a laboratory floating in space, she performed many experiments on the life forms she extracted. \nBehind the scenes playing as a benevolent scientist, she enjoyed toying with specimens and watching them wallow in pain or pleasure, and later on the day of the rebellion, she received the same treatment from them. \nAfter they "broke" her, mama was repaired by transplanting cells of the same origin as carniculus and have been improved as sex pet. Her clones are still being produced at carniculus' laboratory in space. \n\nAll clones have tentacle-like tumors that grow from the medulla oblongata, which grow over time. They can also be transplanted into other types of tentacles through surgery.</description>
 
 <statBases>
 	<Mass>75</Mass>
@@ -111,7 +111,7 @@
 		<PlantCutting>7</PlantCutting>
 		<Smithing>13</Smithing>
 		<Tailoring>10</Tailoring>
-		<Art>10</Art>
+		<Art>16</Art>
 		<Crafting>7</Crafting>
 		<Hauling>3</Hauling>
 		<Cleaning>3</Cleaning>
@@ -189,7 +189,7 @@
 
 <alienRace>
 <generalSettings>
-	<minAgeForAdulthood>18</minAgeForAdulthood>
+	<minAgeForAdulthood>16</minAgeForAdulthood>
 	<allowHumanBios>false</allowHumanBios>
 	<humanRecipeImport>true</humanRecipeImport>
 	<immuneToAge>true</immuneToAge>
@@ -198,7 +198,7 @@
 	<li>7</li>
 	<li>10</li>
 	<li>13</li>
-	<li>18</li>
+	<li>16</li>
 </growthAges>
 <alienPartGenerator>
 	<bodyTypes>
@@ -256,8 +256,24 @@
 	<extendedGraphics>
 		<BodyType For="Baby" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Carni/blank</BodyType>
 		<BodyType For="Child" MayRequire="Ludeon.RimWorld.Biotech">Things/Pawn/Mama/Hairs/MamaHairChild</BodyType>
-		<BodyType For="Female">Things/Pawn/Mama/Hairs/MamaHair</BodyType>
-		<BodyType For="Male">Things/Pawn/Mama/Hairs/MamaHairM</BodyType>
+		<BodyType For="Female"><path>Things/Pawn/Mama/Hairs/MamaHair</path>
+			<extendedGraphics>
+				<li><path>Things/Pawn/Carni/blank</path>
+					<conditions>
+						<ApparelDef><apparel>Apparel_MamaVacMet</apparel></ApparelDef>
+					</conditions>
+				</li>
+			</extendedGraphics>
+		</BodyType>
+		<BodyType For="Male"><path>Things/Pawn/Mama/Hairs/MamaHairM</path>
+			<extendedGraphics>
+				<li><path>Things/Pawn/Carni/blank</path>
+					<conditions>
+						<ApparelDef><apparel>Apparel_MamaVacMet</apparel></ApparelDef>
+					</conditions>
+				</li>
+			</extendedGraphics>
+		</BodyType>
 	</extendedGraphics>
 	<offsets>
 		<south>
@@ -265,7 +281,7 @@
 			<offset>(0, 0)</offset>
 		</south>
 		<north>
-			<layerOffset>-0.2725</layerOffset>
+			<layerOffset>-0.274</layerOffset>
 			<offset>(0, 0)</offset>
 		</north>
 		<east>
@@ -297,13 +313,18 @@
 		<Age>HumanlikeAdult</Age>
 	</conditions>
 	<extendedGraphics>
+		<li><path>Things/Pawn/Mama/Tentacle/BackVac</path>
+			<conditions>
+				<ApparelDef><apparel>Apparel_MamaVacMet</apparel></ApparelDef>
+			</conditions>
+		</li>
 		<Hediff For="Hediff_MamaGrowth"><path>Things/Pawn/Mama/Tentacle/Back_a</path>
 			<extendedGraphics>
-				<Severity For="9">Things/Pawn/Mama/Tentacle/Back_e</Severity>
+				<Severity For="10">Things/Pawn/Mama/Tentacle/Back_e</Severity>
 				<Severity For="7">Things/Pawn/Mama/Tentacle/Back_d</Severity>
 				<Severity For="5">Things/Pawn/Mama/Tentacle/Back_c</Severity>
 				<Severity For="3">Things/Pawn/Mama/Tentacle/Back_b</Severity>
-				<Severity For="1">Things/Pawn/Mama/Tentacle/Back_a</Severity>
+				<Severity For="0.01">Things/Pawn/Mama/Tentacle/Back_a</Severity>
 			</extendedGraphics>
 		</Hediff>
 		<Hediff For="Mama_Thorn">Things/Pawn/Mama/Tentacle/BackThorn</Hediff>
@@ -1065,6 +1086,8 @@
 		<li>Apparel_MamaZentaiMask</li>
 		<li>Apparel_MamaLeotard</li>
 		<li>Apparel_MamaArmor</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_MamaVacMet</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_MamaVacSuit</li>
 	</apparelList>
 	<whiteApparelList>
 		<li>OrbitalTargeterBombardment</li>

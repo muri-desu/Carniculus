@@ -427,6 +427,7 @@
 	<equippedStatOffsets>
 		<PawnBeauty>-2</PawnBeauty>
 		<BedHungerRateFactor>0.2</BedHungerRateFactor>
+		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 	</equippedStatOffsets>
 
 	<apparel>

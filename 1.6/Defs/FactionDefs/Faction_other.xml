@@ -88,6 +88,7 @@
 	</li>
 	<li>
 		<kindDef>Trader</kindDef>
+		<commonality>50</commonality>
 		<traders>
 			<Carni_boss>1</Carni_boss>
 		</traders>

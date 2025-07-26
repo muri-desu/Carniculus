@@ -118,7 +118,6 @@
 		</points>
 	</ageGenerationCurve>
 	<hediffGiverSets>
-		<li>MamaHediffGiver</li>
 		<li>OrganicStandard</li>
 		<li>Human</li>
 	</hediffGiverSets>

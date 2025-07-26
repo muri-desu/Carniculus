@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ArmorMachineableBase">
+	<defName>Apparel_MamaVacSuit</defName>
+		<label>mama's vac suit</label>
+		<description>Mama's vacuum resistant suit.</description>
+	<techLevel>Spacer</techLevel>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>PoweredArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+			<li>CarniWorkBench</li>
+		</recipeUsers>
+	</recipeMaker>
+	<graphicData>
+		<texPath>Things/Apparel/Mama/MamaVacSuit</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.2, 1.2)</drawSize>
+	</graphicData>
+	<statBases>
+		<WorkToMake>50000</WorkToMake>
+		<MaxHitPoints>500</MaxHitPoints>
+		<Mass>12</Mass>
+		<Flammability>0.4</Flammability>
+		<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+		<Insulation_Cold>94</Insulation_Cold>
+		<Insulation_Heat>10</Insulation_Heat>
+		<EquipDelay>14</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>-0.7</MoveSpeed>
+		<VacuumResistance>0.32</VacuumResistance>
+	</equippedStatOffsets>
+	<thingCategories>
+		<li>ApparelArmor</li>
+	</thingCategories>
+	<tradeTags>
+		<li>HiTechArmor</li>
+		<li>Armor</li>
+	</tradeTags>
+	<costList>
+		<ComponentSpacer>3</ComponentSpacer>
+		<Neutroamine>6</Neutroamine>
+	</costList>
+	<stuffCategories>
+		<li>Metallic</li>
+	</stuffCategories>
+	<costStuffCount>110</costStuffCount>
+	<apparel>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Mama/MamaVacSuit</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<layers>
+			<li>Middle</li>
+			<li>Shell</li>
+		</layers>
+		<drawData>
+			<dataSouth><layer>30</layer></dataSouth>
+			<dataEast><layer>30</layer></dataEast>
+			<dataWest><layer>30</layer></dataWest>
+			<dataNorth><layer>48</layer></dataNorth>
+		</drawData>
+		<defaultOutfitTags>
+			<li>Mama_space</li>
+		</defaultOutfitTags>
+		<soundWear>Wear_PowerArmor</soundWear>
+		<soundRemove>Remove_PowerArmor</soundRemove>
+		<tags>
+			<li>coverchinman</li>
+			<li>CarniMamaApparel</li>
+			<li MayRequire="kentington.saveourship2">EVA</li>
+		</tags>
+	</apparel>
+	<colorGenerator Inherit="False" Class="ColorGenerator_Options">
+	<options>
+		<li>
+			<weight>10</weight>
+			<only>(255,255,255,0)</only>
+		</li>
+	</options>
+	</colorGenerator>
+</ThingDef>
+
+</Defs>
