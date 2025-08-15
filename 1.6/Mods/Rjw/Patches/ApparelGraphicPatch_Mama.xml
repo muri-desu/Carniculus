@@ -17,11 +17,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -36,11 +36,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -69,11 +69,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -91,11 +91,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -127,11 +127,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -149,11 +149,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -185,11 +185,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -204,11 +204,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -237,9 +237,9 @@
 							<li><path>Things/Apparel/Mama/DrCoat_Female</path>
 								<conditions>
 									<Or>
-										<Hediff MayRequire="rim.job.world">Breasts</Hediff>
-										<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
-										<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
+										<Hediff>Breasts</Hediff>
+										<Hediff>BionicBreasts</Hediff>
+										<Hediff>ArchotechBreasts</Hediff>
 									</Or>
 								</conditions>
 								<extendedGraphics>
@@ -250,11 +250,11 @@
 												<conditions>
 													<Or>
 														<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>	
-														<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-														<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-														<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-														<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-														<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+														<Hediff>RJW_pregnancy</Hediff>
+														<Hediff>RJW_pregnancy_beast</Hediff>
+														<Hediff>RJW_pregnancy_mech</Hediff>
+														<Hediff>RJW_UnknownEgg</Hediff>
+														<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 														<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 														<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 													</Or>
@@ -288,11 +288,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -310,11 +310,11 @@
 								<conditions>
 									<Or>
 										<Hediff MayRequire="ludeon.rimworld.biotech">PregnantHuman</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_beast</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_pregnancy_mech</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_UnknownEgg</Hediff>
-										<Hediff MayRequire="rim.job.world">RJW_InsectHiveEgg</Hediff>
+										<Hediff>RJW_pregnancy</Hediff>
+										<Hediff>RJW_pregnancy_beast</Hediff>
+										<Hediff>RJW_pregnancy_mech</Hediff>
+										<Hediff>RJW_UnknownEgg</Hediff>
+										<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 										<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 									</Or>
@@ -344,9 +344,9 @@
 							<li>
 								<conditions>
 									<Or>
-										<Hediff MayRequire="rim.job.world">Breasts</Hediff>
-										<Hediff MayRequire="rim.job.world">BionicBreasts</Hediff>
-										<Hediff MayRequire="rim.job.world">ArchotechBreasts</Hediff>
+										<Hediff>Breasts</Hediff>
+										<Hediff>BionicBreasts</Hediff>
+										<Hediff>ArchotechBreasts</Hediff>
 									</Or>
 								</conditions>
 								<extendedGraphics>
