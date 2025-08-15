@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <Body_Mama.label>ママ</Body_Mama.label>
+  <Body_Mama.corePart.parts.CarniMama_Tentacles.customLabel>触腫</Body_Mama.corePart.parts.CarniMama_Tentacles.customLabel>
+  <Body_Mama.corePart.parts.left_lung.customLabel>左肺</Body_Mama.corePart.parts.left_lung.customLabel>
+  <Body_Mama.corePart.parts.right_lung.customLabel>右肺</Body_Mama.corePart.parts.right_lung.customLabel>
+  <Body_Mama.corePart.parts.left_kidney.customLabel>左腎</Body_Mama.corePart.parts.left_kidney.customLabel>
+  <Body_Mama.corePart.parts.right_kidney.customLabel>右腎</Body_Mama.corePart.parts.right_kidney.customLabel>
+  <Body_Mama.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>左眼</Body_Mama.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <Body_Mama.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>右眼</Body_Mama.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <Body_Mama.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>左耳</Body_Mama.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <Body_Mama.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>右耳</Body_Mama.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.customLabel>左肩</Body_Mama.corePart.parts.left_shoulder.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>左鎖骨</Body_Mama.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.customLabel>左腕</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>左上腕</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>左橈骨</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>左手</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>左小指</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>左薬指</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>左中指</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>左人差指</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>左親指</Body_Mama.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.customLabel>右肩</Body_Mama.corePart.parts.right_shoulder.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>右鎖骨</Body_Mama.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.customLabel>右腕</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>右上腕</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>右橈骨</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>右手</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>右小指</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>右薬指</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>右中指</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>右人差指</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>右親指</Body_Mama.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <Body_Mama.corePart.parts.left_leg.customLabel>左脚</Body_Mama.corePart.parts.left_leg.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_femur.customLabel>左大腿</Body_Mama.corePart.parts.left_leg.parts.left_femur.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_tibia.customLabel>左脛骨</Body_Mama.corePart.parts.left_leg.parts.left_tibia.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.customLabel>左足</Body_Mama.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>左第五趾</Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>左第四趾</Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>左第三趾</Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>左第二趾</Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>
+  <Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>左第一趾</Body_Mama.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>
+  <Body_Mama.corePart.parts.right_leg.customLabel>右脚</Body_Mama.corePart.parts.right_leg.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_femur.customLabel>右大腿</Body_Mama.corePart.parts.right_leg.parts.right_femur.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_tibia.customLabel>右脛骨</Body_Mama.corePart.parts.right_leg.parts.right_tibia.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.customLabel>右足</Body_Mama.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>右第五趾</Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>右第四趾</Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>右第三趾</Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>右第二趾</Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>
+  <Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>右第一趾</Body_Mama.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>
+  
+</LanguageData>

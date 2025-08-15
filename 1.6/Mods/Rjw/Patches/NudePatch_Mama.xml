@@ -58,7 +58,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -108,7 +108,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -158,7 +158,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -208,7 +208,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -258,7 +258,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -337,7 +337,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>
@@ -564,7 +564,7 @@
 
 	<offsets>
 		<south>
-			<layerOffset>-0.292</layerOffset>
+			<layerOffset>-0.293</layerOffset>
 			<offset>(0,0)</offset>
 			<bodyTypes>
 				<Male>(0,-0.1)</Male>
@@ -647,7 +647,7 @@
 						<Hediff>RJW_pregnancy_beast</Hediff>
 						<Hediff>RJW_pregnancy_mech</Hediff>
 						<Hediff>RJW_UnknownEgg</Hediff>
-						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 					</Or>
@@ -669,7 +669,7 @@
 						<Hediff>RJW_pregnancy_beast</Hediff>
 						<Hediff>RJW_pregnancy_mech</Hediff>
 						<Hediff>RJW_UnknownEgg</Hediff>
-						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 					</Or>
@@ -691,7 +691,7 @@
 						<Hediff>RJW_pregnancy_beast</Hediff>
 						<Hediff>RJW_pregnancy_mech</Hediff>
 						<Hediff>RJW_UnknownEgg</Hediff>
-						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 					</Or>
@@ -713,7 +713,7 @@
 						<Hediff>RJW_pregnancy_beast</Hediff>
 						<Hediff>RJW_pregnancy_mech</Hediff>
 						<Hediff>RJW_UnknownEgg</Hediff>
-						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 					</Or>
@@ -735,7 +735,7 @@
 						<Hediff>RJW_pregnancy_beast</Hediff>
 						<Hediff>RJW_pregnancy_mech</Hediff>
 						<Hediff>RJW_UnknownEgg</Hediff>
-						<Hediff>RJW_InsectHiveEgg</Hediff>
+						<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 						<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 					</Or>
@@ -803,7 +803,7 @@
 					<Hediff>RJW_pregnancy_beast</Hediff>
 					<Hediff>RJW_pregnancy_mech</Hediff>
 					<Hediff>RJW_UnknownEgg</Hediff>
-					<Hediff>RJW_InsectHiveEgg</Hediff>
+					<Hediff MayRequire="Ed86.rjwinsects">RJW_InsectHiveEgg</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumflation</Hediff>
 					<Hediff MayRequire="lustlicentia.rjwlabs">Cumstuffed</Hediff>
 				</Or>

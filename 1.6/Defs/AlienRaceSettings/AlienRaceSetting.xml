@@ -28,18 +28,25 @@
 </li>
 </startingColonists>
 
-<alienslavekinds><!-- 奴隷 -->
+<alienrefugeekinds>
+	<li>
+	<kindDefs>
+		<li>CarniMama_kidsoldier</li>
+	</kindDefs>
+	<chance>15.0</chance>
+	</li>
+</alienrefugeekinds>
+<alienslavekinds>
 	<li>
 		<kindDefs>
 			<li>CarniSlave</li>
 			<li>CarniMama_slave</li>
-			<li>CarniMama_maid</li>
+			<li>CarniMama_kidsoldier</li>
 		</kindDefs>
 		<chance>100.0</chance>
 	</li>
 </alienslavekinds>
-
-<alienwandererkinds><!-- 放浪者 -->
+<alienwandererkinds>
 	<li>
 		<pawnKindEntries>
 			<li>

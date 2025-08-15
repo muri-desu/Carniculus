@@ -13,7 +13,7 @@
 	<titleFemale>bad girl</titleFemale>
 	<titleShort>bad boy</titleShort>
 	<titleShortFemale>bad girl</titleShortFemale>
-	<description>[PAWN_nameDef] is one of mass-produced girl but classified as a B-class and raised in a vat pod to be a lesser combatant.</description>
+	<description>[PAWN_nameDef] is one of mass-produced girl but classified as a B-class and raised to be a lesser combatant.</description>
 	<slot>Childhood</slot>
 	<skillGains>
 		<Shooting>3</Shooting>
@@ -71,6 +71,7 @@
 	<skillGains>
 		<Shooting>7</Shooting>
 		<Melee>7</Melee>
+		<Medicine>6</Medicine>
 		<Social>-10</Social>
 	</skillGains>
 	<workDisables>Crafting, PlantWork, Constructing</workDisables>
@@ -101,7 +102,7 @@
 		<Shooting>-5</Shooting>
 		<Melee>-5</Melee>
 		<Animals>1</Animals>
-		<Intellectual>5</Intellectual>
+		<Intellectual>3</Intellectual>
 	</skillGains>
 	<forcedHediffs>
 		<li>Hediff_MamaGrowth</li>

@@ -74,7 +74,7 @@
 	<nameCategory>HumanStandard</nameCategory>
 	<nameGenerator>Mama_NameMakerM</nameGenerator>
 	<nameGeneratorFemale>Mama_NameMaker</nameGeneratorFemale>
-	<body>Human</body>
+	<body>Body_Mama</body>
 	<renderTree>Humanlike</renderTree>
 	<baseBodySize>1</baseBodySize>
 	<baseHealthScale>1</baseHealthScale>
@@ -301,8 +301,8 @@
 	<allowColorOverride>false</allowColorOverride>
 	<conditions>
 		<BodyPart>
-			<bodyPart>Torso</bodyPart>
-			<drawWithoutPart>false</drawWithoutPart>
+			<bodyPart>CarniMama_Tentacles</bodyPart>
+			<drawWithoutPart>true</drawWithoutPart>
 		</BodyPart>
 		<RotStage>Fresh,Rotting</RotStage>
 		<Posture>
@@ -538,7 +538,7 @@
 
 	<offsets>
 		<south>
-			<layerOffset>-0.2917</layerOffset>
+			<layerOffset>-0.293</layerOffset>
 			<offset>(0,0)</offset>
 		</south>
 		<north>

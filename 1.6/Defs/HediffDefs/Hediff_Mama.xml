@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<HediffDef>
-	<defName>Hediff_MamaGrowth</defName>
-	<label>aureoloma</label>
+<HediffDef Name="MamaDiseaseBase" ParentName="AddedBodyPartBase" Abstract="True">
 	<defaultLabelColor>(187,116,134)</defaultLabelColor>
-	<description>A neoplastic disease in which tentacle-like tissues develop over time. Basically, the more the disease progresses, the more the physical functions improve, but talking ability lowers little by little.</description>
 	<isBad>false</isBad>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>10</maxSeverity>
 	<initialSeverity>0.01</initialSeverity>
-	<maxSeverity>13</maxSeverity>
 	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>false</keepOnBodyPartRestoration>
+	<duplicationAllowed>false</duplicationAllowed>
 	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
-    <hediffClass>HediffWithComps</hediffClass>
+	<defaultInstallPart>CarniMama_Tentacles</defaultInstallPart>
+	<hediffClass>HediffWithComps</hediffClass>
 	<comps>
 		<li Class="HediffCompProperties_SeverityPerDay">
-			<severityPerDay>0.025</severityPerDay>
+			<severityPerDay>0.03</severityPerDay>
 		</li>
 	</comps>
+	<tags>
+		<li>MamaTentacleHediff</li>
+	</tags>
+</HediffDef>
+
+<HediffDef ParentName="MamaDiseaseBase">
+	<defName>Hediff_MamaGrowth</defName>
+	<label>aureoloma</label>
+	<description>A neoplastic disease in which tentacle-like tissues develop over time. Basically, the more the disease progresses, the more the physical functions improve, but talking ability lowers little by little.</description>
+    <spawnThingOnRemoved>Gold</spawnThingOnRemoved>
 	<stages>
 		<li>
 			<label>phase 0</label>
@@ -25,35 +36,58 @@
 				<li><capacity>Moving</capacity><offset>0.01</offset></li>
 				<li><capacity>Manipulation</capacity><offset>0.01</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>0.01</PsychicSensitivity>
+				<ImmunityGainSpeed>0.01</ImmunityGainSpeed>
+				<ToxicResistance>-0.01</ToxicResistance>
+			</statOffsets>
 		</li>
 		<li>
 			<minSeverity>1</minSeverity>
 			<label>phase 1</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.05</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.05</offset></li>
+				<li><capacity>Moving</capacity><offset>0.1</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.1</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+				<li><capacity>Sight</capacity><offset>0.1</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>0.25</PsychicSensitivity>
+				<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+				<ToxicResistance>-0.1</ToxicResistance>
+			</statOffsets>
 		</li>
 		<li>
 			<minSeverity>2</minSeverity>
 			<label>phase 2</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.1</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
+				<li><capacity>Sight</capacity><offset>0.2</offset></li>
 			</capMods>
+			<statOffsets>
+				<PsychicSensitivity>0.5</PsychicSensitivity>
+				<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+				<ToxicResistance>-0.2</ToxicResistance>
+			</statOffsets>
 		</li>
 		<li>
 			<minSeverity>3</minSeverity>
 			<label>phase 3</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.15</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.15</offset></li>
+				<li><capacity>Moving</capacity><offset>0.3</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.3</offset></li>
+				<li><capacity>Sight</capacity><offset>0.3</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>0.5</PsychicSensitivity>
+				<PsychicSensitivity>0.75</PsychicSensitivity>
+				<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+				<ToxicResistance>-0.3</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -61,13 +95,14 @@
 			<label>phase 4</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.2</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.05</offset></li>
+				<li><capacity>Moving</capacity><offset>0.4</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.4</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>0.75</PsychicSensitivity>
-				<VacuumResistance>0.1</VacuumResistance>
+				<PsychicSensitivity>1</PsychicSensitivity>
+				<ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+				<ToxicResistance>-0.4</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -75,13 +110,16 @@
 			<label>phase 5</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.25</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.25</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.5</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
+				<li><capacity>Sight</capacity><offset>0.5</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1</PsychicSensitivity>
-				<VacuumResistance>0.15</VacuumResistance>
+				<PsychicSensitivity>1.25</PsychicSensitivity>
+				<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				<VacuumResistance>0.05</VacuumResistance>
+				<ToxicResistance>-0.5</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -89,14 +127,17 @@
 			<label>phase 6</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.3</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.15</offset></li>
-				<li><capacity>Sight</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.6</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.6</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
+				<li><capacity>Sight</capacity><offset>0.6</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.25</PsychicSensitivity>
-				<VacuumResistance>0.2</VacuumResistance>
+				<PsychicSensitivity>1.5</PsychicSensitivity>
+				<ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+				<VacuumResistance>0.1</VacuumResistance>
+				<ToxicResistance>-0.6</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -104,14 +145,17 @@
 			<label>phase 7</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.35</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.35</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
-				<li><capacity>Sight</capacity><offset>0.2</offset></li>
+				<li><capacity>Moving</capacity><offset>0.7</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.7</offset></li>
+				<li><capacity>Sight</capacity><offset>0.7</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.1</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.5</PsychicSensitivity>
-				<VacuumResistance>0.25</VacuumResistance>
+				<PsychicSensitivity>2</PsychicSensitivity>
+				<ImmunityGainSpeed>0.7</ImmunityGainSpeed>
+				<VacuumResistance>0.2</VacuumResistance>
+				<ToxicResistance>-0.7</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -119,14 +163,17 @@
 			<label>phase 8</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.4</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.25</offset></li>
-				<li><capacity>Sight</capacity><offset>0.3</offset></li>
+				<li><capacity>Moving</capacity><offset>0.8</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.8</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.8</offset></li>
+				<li><capacity>Sight</capacity><offset>0.8</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.15</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>1.75</PsychicSensitivity>
+				<PsychicSensitivity>3</PsychicSensitivity>
+				<ImmunityGainSpeed>0.8</ImmunityGainSpeed>
 				<VacuumResistance>0.3</VacuumResistance>
+				<ToxicResistance>-0.8</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -134,15 +181,17 @@
 			<label>phase 9</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
-				<li><capacity>Sight</capacity><offset>0.4</offset></li>
+				<li><capacity>Moving</capacity><offset>0.9</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.9</offset></li>
+				<li><capacity>Consciousness</capacity><offset>0.9</offset></li>
+				<li><capacity>Sight</capacity><offset>0.9</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.2</offset></li>
 			</capMods>
 			<statOffsets>
-				<PsychicSensitivity>2</PsychicSensitivity>
-				<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				<PsychicSensitivity>4</PsychicSensitivity>
+				<ImmunityGainSpeed>0.9</ImmunityGainSpeed>
 				<VacuumResistance>0.4</VacuumResistance>
+				<ToxicResistance>-0.9</ToxicResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -150,63 +199,27 @@
 			<label>phase 10</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.6</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.6</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
-				<li><capacity>Sight</capacity><offset>0.5</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.01</offset></li>
-			</capMods>
-			<statOffsets>
-				<PsychicSensitivity>2.5</PsychicSensitivity>
-				<ImmunityGainSpeed>1</ImmunityGainSpeed>
-				<VacuumResistance>0.5</VacuumResistance>
-			</statOffsets>
-		</li>
-		<li>
-			<minSeverity>11</minSeverity>
-			<label>phase 11</label>
-			<becomeVisible>true</becomeVisible>
-			<capMods>
-				<li><capacity>Moving</capacity><offset>0.7</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.7</offset></li>
-				<li><capacity>Sight</capacity><offset>0.75</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
-			</capMods>
-			<statOffsets>
-				<PsychicSensitivity>3</PsychicSensitivity>
-				<ImmunityGainSpeed>2</ImmunityGainSpeed>
-				<VacuumResistance>0.66</VacuumResistance>
-			</statOffsets>
-		</li>
-		<li>
-			<minSeverity>12</minSeverity>
-			<label>phase 12</label>
-			<becomeVisible>true</becomeVisible>
-			<capMods>
-				<li><capacity>Moving</capacity><offset>1.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>1.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>1.5</offset></li>
-				<li><capacity>Sight</capacity><offset>1</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>1</offset></li>
+				<li><capacity>Manipulation</capacity><offset>1</offset></li>
+				<li><capacity>Consciousness</capacity><offset>1.2</offset></li>
+				<li><capacity>Sight</capacity><offset>1.2</offset></li>
+				<li><capacity>Talking</capacity><offset>-0.25</offset></li>
 			</capMods>
 			<statOffsets>
 				<PsychicSensitivity>5</PsychicSensitivity>
-				<ImmunityGainSpeed>3</ImmunityGainSpeed>
-				<VacuumResistance>0.99</VacuumResistance>
+				<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+				<VacuumResistance>0.5</VacuumResistance>
+				<ToxicResistance>-1</ToxicResistance>
 			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
 
-<HediffDef><!-- 毒針 -->
+<HediffDef ParentName="MamaDiseaseBase"><!-- 毒針 -->
 	<defName>Mama_Thorn</defName>
 	<label>thorned tentacle</label>
-	<defaultLabelColor>(187,116,134)</defaultLabelColor>
 	<description>Tentacles with poisonous thorns.</description>
-	<isBad>false</isBad>
-	<initialSeverity>0</initialSeverity>
-    <hediffClass>HediffWithComps</hediffClass>
+    <spawnThingOnRemoved>Uranium</spawnThingOnRemoved>
 	<stages>
 		<li>
 			<label>phase 0</label>
@@ -215,19 +228,27 @@
 				<li><capacity>Moving</capacity><offset>0.01</offset></li>
 				<li><capacity>Manipulation</capacity><offset>0.01</offset></li>
 			</capMods>
+			<statOffsets>
+				<MeleeArmorPenetration>0.01</MeleeArmorPenetration>
+				<PsychicSensitivity>-0.01</PsychicSensitivity>
+				<ToxicResistance>0.01</ToxicResistance>
+				<ImmunityGainSpeed>-0.01</ImmunityGainSpeed>
+			</statOffsets>
 		</li>
 		<li>
 			<minSeverity>1</minSeverity>
 			<label>phase 1</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.05</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.05</offset></li>
+				<li><capacity>Moving</capacity><offset>0.1</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.1</offset></li>
 			</capMods>
 			<statOffsets>
-				<ToxicResistance>0.1</ToxicResistance>
-				<MeleeArmorPenetration>0.01</MeleeArmorPenetration>
+				<MeleeDPS>0.1</MeleeDPS>
+				<MeleeArmorPenetration>0.1</MeleeArmorPenetration>
 				<PsychicSensitivity>-0.1</PsychicSensitivity>
+				<ToxicResistance>0.1</ToxicResistance>
+				<ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
 		<li>
@@ -235,15 +256,16 @@
 			<label>phase 2</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.1</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
 			</capMods>
 			<statOffsets>
+				<MeleeDPS>0.2</MeleeDPS>
+				<MeleeArmorPenetration>0.2</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.2</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.2</PsychicSensitivity>
 				<ToxicResistance>0.2</ToxicResistance>
-				<MeleeDPS>0.1</MeleeDPS>
-				<MeleeCooldownFactor>0.1</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.02</MeleeArmorPenetration>
-				<PsychicSensitivity>-0.25</PsychicSensitivity>
+				<ImmunityGainSpeed>-0.2</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
 		<li>
@@ -251,15 +273,16 @@
 			<label>phase 3</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.15</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.15</offset></li>
+				<li><capacity>Moving</capacity><offset>0.3</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
 			</capMods>
 			<statOffsets>
+				<MeleeDPS>0.3</MeleeDPS>
+				<MeleeArmorPenetration>0.3</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.3</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.3</PsychicSensitivity>
 				<ToxicResistance>0.3</ToxicResistance>
-				<MeleeDPS>0.2</MeleeDPS>
-				<MeleeCooldownFactor>0.2</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.05</MeleeArmorPenetration>
-				<PsychicSensitivity>-0.5</PsychicSensitivity>
+				<ImmunityGainSpeed>-0.3</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
 		<li>
@@ -267,17 +290,16 @@
 			<label>phase 4</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.2</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.2</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.05</offset></li>
+				<li><capacity>Moving</capacity><offset>0.4</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
 			</capMods>
 			<statOffsets>
+				<MeleeDPS>0.4</MeleeDPS>
+				<MeleeArmorPenetration>0.4</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.4</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.4</PsychicSensitivity>
 				<ToxicResistance>0.4</ToxicResistance>
-				<MeleeDPS>0.3</MeleeDPS>
-				<MeleeCooldownFactor>0.3</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.1</MeleeArmorPenetration>
-				<PsychicSensitivity>-0.75</PsychicSensitivity>
-				<VacuumResistance>0.1</VacuumResistance>
+				<ImmunityGainSpeed>-0.4</ImmunityGainSpeed>
 			</statOffsets>
 		</li>
 		<li>
@@ -285,17 +307,17 @@
 			<label>phase 5</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.25</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.25</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.5</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
 			</capMods>
 			<statOffsets>
+				<MeleeDPS>0.5</MeleeDPS>
+				<MeleeArmorPenetration>0.5</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.5</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.5</PsychicSensitivity>
 				<ToxicResistance>0.5</ToxicResistance>
-				<MeleeDPS>0.4</MeleeDPS>
-				<MeleeCooldownFactor>0.4</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.2</MeleeArmorPenetration>
-				<PsychicSensitivity>-1</PsychicSensitivity>
-				<VacuumResistance>0.15</VacuumResistance>
+				<ImmunityGainSpeed>-0.5</ImmunityGainSpeed>
+				<VacuumResistance>0.05</VacuumResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -303,18 +325,17 @@
 			<label>phase 6</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.3</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.3</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.15</offset></li>
-				<li><capacity>Sight</capacity><offset>0.1</offset></li>
+				<li><capacity>Moving</capacity><offset>0.6</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.6</offset></li>
 			</capMods>
 			<statOffsets>
-				<ToxicResistance>0.75</ToxicResistance>
-				<MeleeDPS>0.5</MeleeDPS>
-				<MeleeCooldownFactor>0.5</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.3</MeleeArmorPenetration>
-				<PsychicSensitivity>-1.25</PsychicSensitivity>
-				<VacuumResistance>0.2</VacuumResistance>
+				<MeleeDPS>0.6</MeleeDPS>
+				<MeleeArmorPenetration>0.6</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.6</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.6</PsychicSensitivity>
+				<ToxicResistance>0.6</ToxicResistance>
+				<ImmunityGainSpeed>-0.6</ImmunityGainSpeed>
+				<VacuumResistance>0.1</VacuumResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -322,18 +343,17 @@
 			<label>phase 7</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.35</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.35</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.2</offset></li>
-				<li><capacity>Sight</capacity><offset>0.2</offset></li>
+				<li><capacity>Moving</capacity><offset>0.7</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
 			</capMods>
 			<statOffsets>
-				<ToxicResistance>0.9</ToxicResistance>
-				<MeleeDPS>0.6</MeleeDPS>
-				<MeleeCooldownFactor>0.6</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.4</MeleeArmorPenetration>
-				<PsychicSensitivity>-1.5</PsychicSensitivity>
-				<VacuumResistance>0.25</VacuumResistance>
+				<MeleeDPS>0.7</MeleeDPS>
+				<MeleeArmorPenetration>0.7</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.7</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.7</PsychicSensitivity>
+				<ToxicResistance>0.7</ToxicResistance>
+				<ImmunityGainSpeed>-0.7</ImmunityGainSpeed>
+				<VacuumResistance>0.2</VacuumResistance>
 			</statOffsets>
 		</li>
 		<li>
@@ -341,17 +361,16 @@
 			<label>phase 8</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.4</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.4</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.25</offset></li>
-				<li><capacity>Sight</capacity><offset>0.3</offset></li>
+				<li><capacity>Moving</capacity><offset>0.8</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.8</offset></li>
 			</capMods>
 			<statOffsets>
-				<ToxicResistance>1</ToxicResistance>
-				<MeleeDPS>0.7</MeleeDPS>
-				<MeleeCooldownFactor>0.7</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.5</MeleeArmorPenetration>
-				<PsychicSensitivity>-1.75</PsychicSensitivity>
+				<MeleeDPS>0.8</MeleeDPS>
+				<MeleeArmorPenetration>0.8</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.8</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.8</PsychicSensitivity>
+				<ToxicResistance>0.8</ToxicResistance>
+				<ImmunityGainSpeed>-0.8</ImmunityGainSpeed>
 				<VacuumResistance>0.3</VacuumResistance>
 			</statOffsets>
 		</li>
@@ -360,18 +379,16 @@
 			<label>phase 9</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.5</offset></li>
-				<li><capacity>Sight</capacity><offset>0.4</offset></li>
+				<li><capacity>Moving</capacity><offset>0.9</offset></li>
+				<li><capacity>Manipulation</capacity><offset>0.9</offset></li>
 			</capMods>
 			<statOffsets>
-				<ToxicResistance>1</ToxicResistance>
-				<MeleeDPS>0.8</MeleeDPS>
-				<MeleeCooldownFactor>0.8</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.6</MeleeArmorPenetration>
-				<PsychicSensitivity>-2</PsychicSensitivity>
-				<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+				<MeleeDPS>0.9</MeleeDPS>
+				<MeleeArmorPenetration>0.9</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-0.9</MeleeCooldownFactor>
+				<PsychicSensitivity>-0.9</PsychicSensitivity>
+				<ToxicResistance>0.9</ToxicResistance>
+				<ImmunityGainSpeed>-0.9</ImmunityGainSpeed>
 				<VacuumResistance>0.4</VacuumResistance>
 			</statOffsets>
 		</li>
@@ -380,62 +397,17 @@
 			<label>phase 10</label>
 			<becomeVisible>true</becomeVisible>
 			<capMods>
-				<li><capacity>Moving</capacity><offset>0.6</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.6</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.6</offset></li>
-				<li><capacity>Sight</capacity><offset>0.5</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.01</offset></li>
+				<li><capacity>Moving</capacity><offset>1.2</offset></li>
+				<li><capacity>Manipulation</capacity><offset>1.2</offset></li>
 			</capMods>
 			<statOffsets>
+				<MeleeDPS>1.2</MeleeDPS>
+				<MeleeArmorPenetration>1.2</MeleeArmorPenetration>
+				<MeleeCooldownFactor>-1.2</MeleeCooldownFactor>
+				<PsychicSensitivity>-1</PsychicSensitivity>
 				<ToxicResistance>1</ToxicResistance>
-				<MeleeDPS>0.9</MeleeDPS>
-				<MeleeCooldownFactor>0.9</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.7</MeleeArmorPenetration>
-				<PsychicSensitivity>-2.5</PsychicSensitivity>
-				<ImmunityGainSpeed>1</ImmunityGainSpeed>
+				<ImmunityGainSpeed>-1</ImmunityGainSpeed>
 				<VacuumResistance>0.5</VacuumResistance>
-			</statOffsets>
-		</li>
-		<li>
-			<minSeverity>11</minSeverity>
-			<label>phase 11</label>
-			<becomeVisible>true</becomeVisible>
-			<capMods>
-				<li><capacity>Moving</capacity><offset>0.7</offset></li>
-				<li><capacity>Manipulation</capacity><offset>0.7</offset></li>
-				<li><capacity>Consciousness</capacity><offset>0.7</offset></li>
-				<li><capacity>Sight</capacity><offset>0.75</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.05</offset></li>
-			</capMods>
-			<statOffsets>
-				<ToxicResistance>1</ToxicResistance>
-				<MeleeDPS>1</MeleeDPS>
-				<MeleeCooldownFactor>1</MeleeCooldownFactor>
-				<MeleeArmorPenetration>0.8</MeleeArmorPenetration>
-				<PsychicSensitivity>-3</PsychicSensitivity>
-				<ImmunityGainSpeed>2</ImmunityGainSpeed>
-				<VacuumResistance>0.66</VacuumResistance>
-			</statOffsets>
-		</li>
-		<li>
-			<minSeverity>12</minSeverity>
-			<label>phase 12</label>
-			<becomeVisible>true</becomeVisible>
-			<capMods>
-				<li><capacity>Moving</capacity><offset>1.5</offset></li>
-				<li><capacity>Manipulation</capacity><offset>1.5</offset></li>
-				<li><capacity>Consciousness</capacity><offset>1.5</offset></li>
-				<li><capacity>Sight</capacity><offset>1</offset></li>
-				<li><capacity>Talking</capacity><offset>-0.1</offset></li>
-			</capMods>
-			<statOffsets>
-				<ToxicResistance>2</ToxicResistance>
-				<MeleeDPS>2</MeleeDPS>
-				<MeleeCooldownFactor>2</MeleeCooldownFactor>
-				<MeleeArmorPenetration>1</MeleeArmorPenetration>
-				<PsychicSensitivity>-5</PsychicSensitivity>
-				<ImmunityGainSpeed>3</ImmunityGainSpeed>
-				<VacuumResistance>0.99</VacuumResistance>
 			</statOffsets>
 		</li>
 	</stages>
@@ -457,7 +429,7 @@
 								<li>ScratchToxic</li>
 							</capacities>
 						<power>15</power>
-						<cooldownTime>1</cooldownTime>
+						<cooldownTime>0.7</cooldownTime>
 						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 					</li>
 				</tools>

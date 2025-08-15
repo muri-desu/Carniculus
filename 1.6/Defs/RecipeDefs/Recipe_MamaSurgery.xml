@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<RecipeDef Abstract="True" Name="MamaSurgeryBase" ParentName="SurgeryFlesh">
+<RecipeDef Abstract="True" Name="MamaSurgeryBase" ParentName="SurgeryInstallBodyPartNaturalBase">
 	<recipeUsers Inherit="False">
 		<li>Alien_CarniMama</li>
 	</recipeUsers>
-	<workerClass>Recipe_AddHediff</workerClass>
 	<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
 	<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
 	<isViolation>true</isViolation>
 	<workAmount>500</workAmount>
+	<hideBodyPartNames>false</hideBodyPartNames>
+	<targetsBodyPart>true</targetsBodyPart>
+	<appliedOnFixedBodyParts>
+		<li>CarniMama_Tentacles</li>
+	</appliedOnFixedBodyParts>
 </RecipeDef>
 
 <RecipeDef ParentName="MamaSurgeryBase">
@@ -19,9 +23,8 @@
 		<HediffDef>Hediff_MamaGrowth</HediffDef>
 	</descriptionHyperlinks>
 	<jobString>Attaching aureoloma.</jobString>
-	<addsHediff>Hediff_MamaGrowth</addsHediff>
 	<removesHediff>Mama_Thorn</removesHediff>
-	<targetsBodyPart>false</targetsBodyPart>
+	<addsHediff>Hediff_MamaGrowth</addsHediff>
 	<ingredients>
 		<li>
 			<filter>
@@ -47,6 +50,9 @@
 			<li>Meat_Human</li>
 		</thingDefs>
 	</fixedIngredientFilter>
+	<incompatibleWithHediffTags>
+		<li>MamaTentacleHediff</li>
+	</incompatibleWithHediffTags>
 </RecipeDef>
 
 <RecipeDef ParentName="MamaSurgeryBase">
@@ -57,9 +63,8 @@
 		<HediffDef>Mama_Thorn</HediffDef>
 	</descriptionHyperlinks>
 	<jobString>Attaching poisonous thorn.</jobString>
-	<addsHediff>Mama_Thorn</addsHediff>
 	<removesHediff>Hediff_MamaGrowth</removesHediff>
-	<targetsBodyPart>false</targetsBodyPart>
+	<addsHediff>Mama_Thorn</addsHediff>
 	<ingredients>
 		<li>
 			<filter>
@@ -85,6 +90,9 @@
 			<li>Meat_Human</li>
 		</thingDefs>
 	</fixedIngredientFilter>
+	<incompatibleWithHediffTags>
+		<li>MamaTentacleHediff</li>
+	</incompatibleWithHediffTags>
 </RecipeDef>
 
 <!-- <RecipeDef ParentName="MamaSurgeryBase">

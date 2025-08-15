@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>CarniMama_Tentacles</defName>
+    <label>tentacle</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <destroyableByDamage>false</destroyableByDamage>
+    <skinCovered>false</skinCovered>
+    <bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

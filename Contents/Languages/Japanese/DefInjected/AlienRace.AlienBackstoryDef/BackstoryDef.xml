@@ -75,9 +75,11 @@
 <VatGrownCarni.title>人工培養カルニクルス</VatGrownCarni.title>
 <VatGrownCarni.titleShort>人工培養</VatGrownCarni.titleShort>
 <VatGrownCarni.description>[PAWN_nameDef]は培養槽で清潔に育ちました. 戦闘能力に秀でていますがシャバの事情に疎くバイ菌に弱いです.</VatGrownCarni.description>
-<BadGirl.title>性悪な少女</BadGirl.title><!-- mama -->
-<BadGirl.titleShort>性悪な少女</BadGirl.titleShort>
-<BadGirl.description>B級品として分類された[PAWN_nameDef]は戦闘要員として培養ポッドに入れられて育ちました.</BadGirl.description>
+<BadGirl.title>性悪な少年</BadGirl.title><!-- mama -->
+<BadGirl.titleFemale>性悪な少女</BadGirl.titleFemale>
+<BadGirl.titleShort>性悪な少年</BadGirl.titleShort>
+<BadGirl.titleShortFemale>性悪な少女</BadGirl.titleShortFemale>
+<BadGirl.description>B級品として分類された[PAWN_nameDef]は戦闘要員として育ちました.</BadGirl.description>
 <GoodMama.title>みんなのママ</GoodMama.title>
 <GoodMama.titleShort>みんなのママ</GoodMama.titleShort>
 <GoodMama.description>[PAWN_nameDef]はコンパニオンアニマルから崇拝の対象まで様々な役割をこなせるよう躾けられたスタンダードな品種のママです.</GoodMama.description>
