@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <Carni_boss.labelFemale>畸瘤女族长</Carni_boss.labelFemale>
+  
+  <Carni_boss.labelMale>阿尔法畸瘤</Carni_boss.labelMale>
+  
+  <Carni_butcher.label>畸瘤屠夫</Carni_butcher.label>
+  
+  <Carni_logger.label>畸瘤伐木工</Carni_logger.label>
+  
+  <Carni_miner.label>畸瘤矿工</Carni_miner.label>
+  
+  <Carni_worker.label>畸瘤劳工</Carni_worker.label>
+  
+  <CarniColonist.label>畸瘤殖民者</CarniColonist.label>
+  
+  <CarniSlave.label>畸瘤肉奴</CarniSlave.label>
+  
+  <CarniWanderer.label>畸瘤游荡者</CarniWanderer.label>
+  
+  <WildMan_Carni.label>野生畸瘤</WildMan_Carni.label>
+  
+</LanguageData>

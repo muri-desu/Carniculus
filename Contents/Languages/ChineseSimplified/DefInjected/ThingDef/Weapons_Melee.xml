@@ -1,11 +1,23 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-<Melee_CarniButcherknife.label>切肉刀</Melee_CarniButcherknife.label>
-<Melee_CarniButcherknife.description>死肉活肉都容易切开的大菜刀。</Melee_CarniButcherknife.description>
-<Melee_CarniGardenScissors.label>园艺剪刀</Melee_CarniGardenScissors.label>
-<Melee_CarniGardenScissors.description>双手使用的特大剪刀。</Melee_CarniGardenScissors.description>
-<Melee_CarniPickax.label>鹤嘴锄</Melee_CarniPickax.label>
-<Melee_CarniPickax.description>协助不擅长土石作业的畸瘤的坚固工具。</Melee_CarniPickax.description>
-<Melee_CarniProd.label>电牛棒</Melee_CarniProd.label>
-<Melee_CarniProd.description>用电驱赶家畜的工具，当然对牛以外的生物也有效。</Melee_CarniProd.description>
+  
+  <Melee_CarniButcherknife.label>切肉刀</Melee_CarniButcherknife.label>
+  <Melee_CarniButcherknife.description>死肉活肉都容易切开的大菜刀。</Melee_CarniButcherknife.description>
+  <Melee_CarniButcherknife.tools.head.label>头部</Melee_CarniButcherknife.tools.head.label>
+  <Melee_CarniButcherknife.tools.edge.label>刃部</Melee_CarniButcherknife.tools.edge.label>
+  
+  <Melee_CarniGardenScissors.label>园艺剪刀</Melee_CarniGardenScissors.label>
+  <Melee_CarniGardenScissors.description>双手使用的特大剪刀。</Melee_CarniGardenScissors.description>
+  <Melee_CarniGardenScissors.tools.point.label>尖端</Melee_CarniGardenScissors.tools.point.label>
+  <Melee_CarniGardenScissors.tools.edge.label>刃部</Melee_CarniGardenScissors.tools.edge.label>
+  
+  <Melee_CarniPickax.label>鹤嘴锄</Melee_CarniPickax.label>
+  <Melee_CarniPickax.description>一根用于辅助工程作业的坚固棍棒。</Melee_CarniPickax.description>
+  <Melee_CarniPickax.tools.shaft.label>柄部</Melee_CarniPickax.tools.shaft.label>
+  <Melee_CarniPickax.tools.point.label>尖端</Melee_CarniPickax.tools.point.label>
+  
+  <Melee_CarniProd.label>电牛棒</Melee_CarniProd.label>
+  <Melee_CarniProd.description>用电驱赶家畜的工具，当然对牛以外的生物也有效。</Melee_CarniProd.description>
+  <Melee_CarniProd.tools.head.label>头部</Melee_CarniProd.tools.head.label>
+  
 </LanguageData>

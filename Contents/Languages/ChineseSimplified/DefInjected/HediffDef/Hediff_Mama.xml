@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <Hediff_MamaGrowth.label>光环瘤</Hediff_MamaGrowth.label>
+  <Hediff_MamaGrowth.description>一种新生物疾病，随时间推移长出触手状组织。病情越发展，身体机能越改善，但说话能力会逐渐降低。</Hediff_MamaGrowth.description>
+  <Hediff_MamaGrowth.stages.phase_0.label>光环瘤：初始期</Hediff_MamaGrowth.stages.phase_0.label>
+  <Hediff_MamaGrowth.stages.phase_1.label>光环瘤：前驱期</Hediff_MamaGrowth.stages.phase_1.label>
+  <Hediff_MamaGrowth.stages.phase_2.label>光环瘤：早期</Hediff_MamaGrowth.stages.phase_2.label>
+  <Hediff_MamaGrowth.stages.phase_3.label>光环瘤：早期</Hediff_MamaGrowth.stages.phase_3.label>
+  <Hediff_MamaGrowth.stages.phase_4.label>光环瘤：中期</Hediff_MamaGrowth.stages.phase_4.label>
+  <Hediff_MamaGrowth.stages.phase_5.label>光环瘤：中期</Hediff_MamaGrowth.stages.phase_5.label>
+  <Hediff_MamaGrowth.stages.phase_6.label>光环瘤：后期</Hediff_MamaGrowth.stages.phase_6.label>
+  <Hediff_MamaGrowth.stages.phase_7.label>光环瘤：后期</Hediff_MamaGrowth.stages.phase_7.label>
+  <Hediff_MamaGrowth.stages.phase_8.label>光环瘤：完全体</Hediff_MamaGrowth.stages.phase_8.label>
+  <Hediff_MamaGrowth.stages.phase_9.label>光环瘤：完全体</Hediff_MamaGrowth.stages.phase_9.label>
+  <Hediff_MamaGrowth.stages.phase_10.label>光环瘤：超完全体</Hediff_MamaGrowth.stages.phase_10.label>
+  
+  <Mama_Thorn.label>棘刺触手</Mama_Thorn.label>
+  <Mama_Thorn.description>带有毒刺的触手。</Mama_Thorn.description>
+  <Mama_Thorn.comps.HediffComp_VerbGiver.tools.poisonous_thorn-0.label>毒棘</Mama_Thorn.comps.HediffComp_VerbGiver.tools.poisonous_thorn-0.label>
+  <Mama_Thorn.comps.HediffComp_VerbGiver.tools.poisonous_thorn-1.label>毒棘</Mama_Thorn.comps.HediffComp_VerbGiver.tools.poisonous_thorn-1.label>
+  <Mama_Thorn.stages.phase_0.label>棘刺触手：初始期</Mama_Thorn.stages.phase_0.label>
+  <Mama_Thorn.stages.phase_1.label>棘刺触手：前驱期</Mama_Thorn.stages.phase_1.label>
+  <Mama_Thorn.stages.phase_2.label>棘刺触手：早期</Mama_Thorn.stages.phase_2.label>
+  <Mama_Thorn.stages.phase_3.label>棘刺触手：早期</Mama_Thorn.stages.phase_3.label>
+  <Mama_Thorn.stages.phase_4.label>棘刺触手：中期</Mama_Thorn.stages.phase_4.label>
+  <Mama_Thorn.stages.phase_5.label>棘刺触手：中期</Mama_Thorn.stages.phase_5.label>
+  <Mama_Thorn.stages.phase_6.label>棘刺触手：后期</Mama_Thorn.stages.phase_6.label>
+  <Mama_Thorn.stages.phase_7.label>棘刺触手：后期</Mama_Thorn.stages.phase_7.label>
+  <Mama_Thorn.stages.phase_8.label>棘刺触手：完全体</Mama_Thorn.stages.phase_8.label>
+  <Mama_Thorn.stages.phase_9.label>棘刺触手：完全体</Mama_Thorn.stages.phase_9.label>
+  <Mama_Thorn.stages.phase_10.label>棘刺触手：超完全体</Mama_Thorn.stages.phase_10.label>
+  
+</LanguageData>

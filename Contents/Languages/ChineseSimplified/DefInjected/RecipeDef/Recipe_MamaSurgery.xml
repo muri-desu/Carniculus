@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <MamaSurgery_Aureoloma.label>附着光环瘤</MamaSurgery_Aureoloma.label>
+  <MamaSurgery_Aureoloma.description>通过外科手术刺激延髓附近区域，以催生光环瘤。</MamaSurgery_Aureoloma.description>
+  <MamaSurgery_Aureoloma.jobString>正在附着光环瘤。</MamaSurgery_Aureoloma.jobString>
+  
+  <MamaSurgery_Thorn.label>附着棘刺</MamaSurgery_Thorn.label>
+  <MamaSurgery_Thorn.description>通过外科手术刺激延髓附近区域，以催生一种光环瘤的变体。</MamaSurgery_Thorn.description>
+  <MamaSurgery_Thorn.jobString>正在附着毒棘。</MamaSurgery_Thorn.jobString>
+  
+</LanguageData>

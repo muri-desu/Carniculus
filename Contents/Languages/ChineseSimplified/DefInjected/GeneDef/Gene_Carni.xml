@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <CarniGene.label>畸瘤核心</CarniGene.label>
+  <CarniGene.description>行走的癌症后裔的核心基因。</CarniGene.description>
+  <CarniGene.labelShortAdj>畸瘤核心</CarniGene.labelShortAdj>
+  <CarniGene.symbolPack.prefixSymbols.0.symbol>畸瘤</CarniGene.symbolPack.prefixSymbols.0.symbol>
+  <CarniGene.symbolPack.prefixSymbols.1.symbol>畸胎</CarniGene.symbolPack.prefixSymbols.1.symbol>
+  
+  <CarniMamaGene.label>妈妈的爱</CarniMamaGene.label>
+  <CarniMamaGene.description>理想化的慈爱妈妈的基因。</CarniMamaGene.description>
+  <CarniMamaGene.labelShortAdj>妈妈的爱</CarniMamaGene.labelShortAdj>
+  <CarniMamaGene.symbolPack.prefixSymbols.0.symbol>妈妈</CarniMamaGene.symbolPack.prefixSymbols.0.symbol>
+  <CarniMamaGene.symbolPack.prefixSymbols.1.symbol>母亲</CarniMamaGene.symbolPack.prefixSymbols.1.symbol>
+  <CarniMamaGene.symbolPack.prefixSymbols.2.symbol>母体</CarniMamaGene.symbolPack.prefixSymbols.2.symbol>
+  
+</LanguageData>

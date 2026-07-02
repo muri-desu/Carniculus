@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <BadGirl.description>[PAWN_nameDef] 是一名批量生产的女孩，但被归类为B级，并被培养为次级战斗员。</BadGirl.description>
+  <BadGirl.title>不良少女</BadGirl.title>
+  <BadGirl.titleFemale>不良少女</BadGirl.titleFemale>
+  <BadGirl.titleShort>不良少女</BadGirl.titleShort>
+  <BadGirl.titleShortFemale>不良少女</BadGirl.titleShortFemale>
+  
+  <GoodGirl.description>[PAWN_nameDef] 是一名有机散养妈妈。在丰富的自然环境中长大，(可能) 100% 不含抗生素、生长激素和化学物质。</GoodGirl.description>
+  <GoodGirl.title>好男孩</GoodGirl.title>
+  <GoodGirl.titleFemale>好女孩</GoodGirl.titleFemale>
+  <GoodGirl.titleShort>好男孩</GoodGirl.titleShort>
+  <GoodGirl.titleShortFemale>好女孩</GoodGirl.titleShortFemale>
+  
+  <GoodMama.description>作为漂浮在太空中的实验室的首席科学家，[PAWN_nameDef] 对自己创造的生命形式进行了许多实验。\n她喜欢玩弄畸瘤，看着它们在痛苦或快乐中沉沦，后来也受到了它们同样的对待。</GoodMama.description>
+  <GoodMama.title>最好的“妈妈”</GoodMama.title>
+  <GoodMama.titleShort>最好的“妈妈”</GoodMama.titleShort>
+  
+  <VatGrownMama.description>[PAWN_nameDef] 是一名培养槽中生长的妈妈，能够战斗，但对疾病的免疫力较弱。</VatGrownMama.description>
+  <VatGrownMama.title>培养槽生长的战斗员</VatGrownMama.title>
+  <VatGrownMama.titleShort>培养槽生长</VatGrownMama.titleShort>
+  
+</LanguageData>
