@@ -3,7 +3,7 @@
 	<GeneCategoryDef>
 		<defName>Carniculus_GeneCat</defName>
 		<label>carniculus</label>
-		<displayPriorityInXenotype>1</displayPriorityInXenotype>
+		<displayPriorityInXenotype>249</displayPriorityInXenotype>
 	</GeneCategoryDef>
 
 	<GeneDef>
