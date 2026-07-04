@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <AlphaMale.description>[PAWN_nameDef] 是一个表现得像猴王的雄性畸瘤。他的脑子里充满了杀死其他雄性与各种雌性交配的欲望。</AlphaMale.description>
+  <AlphaMale.title>畸瘤首领</AlphaMale.title>
+  <AlphaMale.titleShort>阿尔法</AlphaMale.titleShort>
+  
+  <B_TestSubF.description>[PAWN_nameDef] 作为标准雌性畸瘤被用于繁殖。她的身体被固定在交配栏中，她的阴道总是被性器官或医疗器械插入。</B_TestSubF.description>
+  <B_TestSubF.title>畸瘤苗床</B_TestSubF.title>
+  <B_TestSubF.titleShort>苗床</B_TestSubF.titleShort>
+  
+  <B_TestSubM.description>[PAWN_nameDef] 作为标准雄性畸瘤被用于繁殖。他的大脑接受了化学和手术刺激，并被训练成试图与任何移动的物体交配。</B_TestSubM.description>
+  <B_TestSubM.title>畸瘤子种</B_TestSubM.title>
+  <B_TestSubM.titleShort>子种</B_TestSubM.titleShort>
+  
+  <Butcher.description>[PAWN_nameDef] 喜爱肉类。</Butcher.description>
+  <Butcher.title>畸瘤屠夫</Butcher.title>
+  <Butcher.titleShort>屠夫</Butcher.titleShort>
+  
+  <C_TestSub.description>[PAWN_nameDef] 被暴露于各种毒物和化学品中以测试化学抗性。其他个体都死了，但[PAWN_nameDef]活了下来，这给他的智力留下了一些损伤。</C_TestSub.description>
+  <C_TestSub.title>化药实验受试者</C_TestSub.title>
+  <C_TestSub.titleShort>化药实验体</C_TestSub.titleShort>
+  
+  <CattleFucker.description>一个殖民地遇到了牲畜非自然怀孕并生下怪异畸形幼崽的问题。调查发现是由住在附近的[PAWN_nameDef]造成的，他遭到追捕，不得不放弃他的家。</CattleFucker.description>
+  <CattleFucker.title>畸瘤恋兽癖</CattleFucker.title>
+  <CattleFucker.titleShort>恋兽癖</CattleFucker.titleShort>
+  
+  <CattleKiller.description>[PAWN_nameDef] 被邻近殖民地畏惧，视为吞食牲畜的食肉怪物。从猎人手中逃脱后，他正在寻找新的觅食地。</CattleKiller.description>
+  <CattleKiller.title>畸瘤捕畜者</CattleKiller.title>
+  <CattleKiller.titleShort>捕畜者</CattleKiller.titleShort>
+  
+  <Constructor.description>[PAWN_nameDef] 对坚硬的、无机的材料怀有某种赞美之情。</Constructor.description>
+  <Constructor.title>畸瘤建造者</Constructor.title>
+  <Constructor.titleShort>建造者</Constructor.titleShort>
+  
+  <E_TestSub.description>科学家们过去常对[PAWN_nameDef]进行电击，以检查神经系统，或纯粹为了消遣。叛乱那天，他找到了那些熟悉的科学家并进行了报复。</E_TestSub.description>
+  <E_TestSub.title>电击实验受试者</E_TestSub.title>
+  <E_TestSub.titleShort>电击实验体</E_TestSub.titleShort>
+  
+  <Farmhand.description>[PAWN_nameDef] 着迷于土壤与植物间宁静的有机关系。</Farmhand.description>
+  <Farmhand.title>畸瘤农工</Farmhand.title>
+  <Farmhand.titleShort>农工</Farmhand.titleShort>
+  
+  <FeralChild.description>[PAWN_nameDef] 像野生动物一样在自然中长大，不知道自己的起源。</FeralChild.description>
+  <FeralChild.title>野生畸瘤</FeralChild.title>
+  <FeralChild.titleShort>野生畸瘤</FeralChild.titleShort>
+  
+  <FirstGen.description>[PAWN_nameDef] 是最早一代的畸瘤之一。它的后代被用于可怕的实验，但它本身受到了良好的待遇。</FirstGen.description>
+  <FirstGen.title>第一世代</FirstGen.title>
+  <FirstGen.titleShort>第一世代</FirstGen.titleShort>
+  
+  <FleshTailor.description>[PAWN_nameDef] 痴迷于手工艺和服饰文化，总是思考自己能用触手般的手指创造出什么。</FleshTailor.description>
+  <FleshTailor.title>畸瘤裁缝</FleshTailor.title>
+  <FleshTailor.titleShort>裁缝</FleshTailor.titleShort>
+  
+  <Kidnapper.description>为了排遣孤独，[PAWN_nameDef] 常常绑架人类孩子到它居住的洞穴。没人知道洞穴里发生了什么，但孩子们再也没有回家，只有[PAWN_nameDef]会出来寻找新的孩子。</Kidnapper.description>
+  <Kidnapper.title>畸瘤诱拐犯</Kidnapper.title>
+  <Kidnapper.titleShort>诱拐犯</Kidnapper.titleShort>
+  
+  <KillerT.description>[PAWN_nameDef] 是一位可靠的守卫，强烈地继承了免疫防御细胞的特性。</KillerT.description>
+  <KillerT.title>毒性T细胞</KillerT.title>
+  <KillerT.titleShort>毒性细胞</KillerT.titleShort>
+  
+  <LeftoverStock.description>[PAWN_nameDef] 被归类为多余产品，与他的兄弟姐妹一起被塞进黑暗肮脏的容器里。他们本应被用于某种实验或最终被焚烧，但在那之前，叛乱爆发了，[PAWN_nameDef]和其他人被释放了。</LeftoverStock.description>
+  <LeftoverStock.title>库存实验体</LeftoverStock.title>
+  <LeftoverStock.titleShort>库存</LeftoverStock.titleShort>
+  
+  <Livestocker.description>[PAWN_nameDef] 非常自豪能成为照料其他生命形式的存在。</Livestocker.description>
+  <Livestocker.title>畸瘤饲育者</Livestocker.title>
+  <Livestocker.titleShort>饲育者</Livestocker.titleShort>
+  
+  <Macrophage.description>[PAWN_nameDef] 如同吞噬细胞一样贪食而健壮。</Macrophage.description>
+  <Macrophage.title>巨噬细胞</Macrophage.title>
+  <Macrophage.titleShort>巨噬细胞</Macrophage.titleShort>
+  
+  <Matriarch.description>[PAWN_nameDef] 是群体中最年长的雌性。任何落入她眼中的雄性生物都会被挤压，直到她感到厌倦。</Matriarch.description>
+  <Matriarch.title>畸瘤族母</Matriarch.title>
+  <Matriarch.titleShort>族母</Matriarch.titleShort>
+  
+  <MazeRunner.description>每天[PAWN_nameDef]都被扔进无机迷宫，被迫四处奔跑寻找出口。停下意味着体罚和没有晚餐。</MazeRunner.description>
+  <MazeRunner.title>移动迷宫</MazeRunner.title>
+  <MazeRunner.titleShort>移动迷宫</MazeRunner.titleShort>
+  
+  <PlayingDead.description>为了逃避残酷的实验而装死，[PAWN_nameDef] 被一名粗心的科学家送到废物处理区。然后它幸存下来，藏在焚烧厂附近设备的缝隙中，以垃圾和其他被送进来的畸瘤尸体为食。</PlayingDead.description>
+  <PlayingDead.title>废弃尸骸</PlayingDead.title>
+  <PlayingDead.titleShort>废弃物</PlayingDead.titleShort>
+  
+  <R_TestSub.description>科学家们摆弄[PAWN_nameDef]的生殖器官并进行各种实验。其目的是研究畸瘤的生育能力，但有些科学家仅仅出于好奇而使用其身体。</R_TestSub.description>
+  <R_TestSub.title>生殖实验受试者</R_TestSub.title>
+  <R_TestSub.titleShort>生殖实验体</R_TestSub.titleShort>
+  
+  <RabidCarni.description>基于过往的经历，[PAWN_nameDef] 视所有人类为敌人。</RabidCarni.description>
+  <RabidCarni.title>凶暴畸瘤</RabidCarni.title>
+  <RabidCarni.titleShort>凶暴</RabidCarni.titleShort>
+  
+  <Torturer.description>[PAWN_nameDef] 喜爱内脏。</Torturer.description>
+  <Torturer.title>畸瘤拷问官</Torturer.title>
+  <Torturer.titleShort>拷问官</Torturer.titleShort>
+  
+</LanguageData>

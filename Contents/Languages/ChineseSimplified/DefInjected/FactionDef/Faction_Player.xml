@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-<CarniPlayerFaction.label>畸瘤聚落</CarniPlayerFaction.label>
-<CarniPlayerFaction.description>新生的殖民地。</CarniPlayerFaction.description>
-<CarniPlayerFaction.pawnSingular>植入物</CarniPlayerFaction.pawnSingular>
-<CarniPlayerFaction.pawnsPlural>植入物们</CarniPlayerFaction.pawnsPlural>
-<CarniCultures.label>畸瘤文化</CarniCultures.label>
-<CarniCultures.description>畸瘤文化</CarniCultures.description>
+  
+  <CarniPlayerFaction.label>畸瘤聚落</CarniPlayerFaction.label>
+  <CarniPlayerFaction.description>新生的殖民地。</CarniPlayerFaction.description>
+  <CarniPlayerFaction.leaderTitle>首领</CarniPlayerFaction.leaderTitle>
+  <CarniPlayerFaction.pawnSingular>瘤民</CarniPlayerFaction.pawnSingular>
+  <CarniPlayerFaction.pawnsPlural>瘤民们</CarniPlayerFaction.pawnsPlural>
+  
 </LanguageData>

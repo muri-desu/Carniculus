@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <DeityTypeMakerCarni.rulePack.rulesStrings>
+    <li>r_deityType->[memeConcept]之[god]</li>
+    <li>r_deityType->[adjctv][god]</li>
+    <li>adjctv->原初</li>
+    <li>adjctv->先祖</li>
+    <li>adjctv->奇迹</li>
+    <li>god->婴儿</li>
+    <li>god->孤儿</li>
+    <li>god->核酸团块</li>
+    <li>god->有机酸之星</li>
+    <li>god->错误宇宙的逃亡者</li>
+  </DeityTypeMakerCarni.rulePack.rulesStrings>
+  
+  <LeaderTitleMakerCarni.rulePack.rulesStrings>
+    <li>r_leaderTitle(gender!=Female)->阿尔法</li>
+    <li>r_leaderTitle(gender==Female)->女族长</li>
+  </LeaderTitleMakerCarni.rulePack.rulesStrings>
+  
+  <Mama_NameMaker.rulePack.rulesStrings>
+    <li>r_name->[Mama_First] '[Mama_Middle]' [Mama_LastCap][Digit][Digit][Digit][Digit]</li>
+  </Mama_NameMaker.rulePack.rulesStrings>
+  
+  <Mama_NameMakerM.rulePack.rulesStrings>
+    <li>r_name->[Mama_First] '[Mama_MiddleM]' [Mama_LastCap][Digit][Digit][Digit][Digit]</li>
+  </Mama_NameMakerM.rulePack.rulesStrings>
+  
+  <NamerDeityCarni.rulePack.rulesStrings>
+    <li>r_deityName->初生子</li>
+  </NamerDeityCarni.rulePack.rulesStrings>
+  
+  <NamerFactionCarni.rulePack.rulesStrings>
+    <li>r_name->[Mama_First]的[Carni_People]</li>
+    <li>r_name->[Carni_adjective][Carni_nounMed]的[Carni_People]</li>
+  </NamerFactionCarni.rulePack.rulesStrings>
+  
+  <NamerFestivalCarni.rulePack.rulesStrings>
+    <li>festivalName->[Carni_People]的集体繁殖</li>
+    <li>festivalName->[Carni_nounLewd]的祈祷</li>
+    <li>festivalName->[Carni_nounMed]的祈祷</li>
+    <li>festivalName->[Carni_People]的[Carni_adjective]盛宴</li>
+  </NamerFestivalCarni.rulePack.rulesStrings>
+  
+  <NamerIdeoCarni.rulePack.rulesStrings>
+    <li>r_ideoName->新生物主义</li>
+    <li>r_ideoName->新生物之誓</li>
+    <li>r_ideoName->新生物之法</li>
+    <li>r_ideoName->翻腾肿瘤之律</li>
+    <li>r_ideoName->强欲渗透主义</li>
+    <li>r_ideoName->分裂增殖主义</li>
+    <li>r_ideoName->畸形母亲教会</li>
+    <li>r_ideoName->肢解母亲教会</li>
+    <li>r_memberName->[Carni_adjective][Carni_People]</li>
+    <li>r_memberName->新生物主义者</li>
+    <li>r_name->[Carni_nounMed]的[Carni_People]</li>
+    <li>r_ideoAdjective->新生物的</li>
+  </NamerIdeoCarni.rulePack.rulesStrings>
+  
+  <NamerSettlementCarni.rulePack.rulesStrings>
+    <li>r_name->为[Mama_First]而设的[Carni_Place]</li>
+    <li>r_name->[Carni_People]的[Carni_Place]</li>
+  </NamerSettlementCarni.rulePack.rulesStrings>
+  
+</LanguageData>

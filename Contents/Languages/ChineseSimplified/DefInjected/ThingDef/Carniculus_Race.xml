@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <Alien_Carniculus.label>畸瘤</Alien_Carniculus.label>
+  <Alien_Carniculus.description>畸瘤是由外星病变组织构成的生命体。\n其拥有强壮的肉体，即使没有装备也能适应大部分的气温，但是外貌丑陋，食欲、性欲旺盛，容易弄脏地板。</Alien_Carniculus.description>
+  <Alien_Carniculus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.name>畸瘤毛发</Alien_Carniculus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.name>
+  <Alien_Carniculus.tools.left_fist.label>左拳</Alien_Carniculus.tools.left_fist.label>
+  <Alien_Carniculus.tools.right_fist.label>右拳</Alien_Carniculus.tools.right_fist.label>
+  <Alien_Carniculus.tools.head.label>头部</Alien_Carniculus.tools.head.label>
+  
+</LanguageData>
